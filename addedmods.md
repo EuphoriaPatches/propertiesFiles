@@ -4,29 +4,29 @@ Here we can keep track of what mods has been added and what version a contribute
 ## Mod List
 | Mod Name | Version | Status | Link |
 |----------|---------|--------|------|
-| absentbydesign | | | |
-| ad_astra | | | |
-| additionallanterns | | | |
-| advancednetherite | | | |
-| adventurez | | | |
-| ae2 | | | |
-| aether | | | |
-| aether_redux | | | |
-| alexscaves | | | |
-| allthecompressed | | | |
-| allthemodium | | | |
-| alltheores | | | |
-| allthetweaks | | | |
-| amendments | | | |
-| ancient_aether | | | |
-| another_furniture | | | |
-| antiblocksrechiseled | | | |
-| architects_palette | | | |
-| ars_elemental | | | |
-| ars_nouveau | | | |
-| astrological | | | |
-| autumnity | | | |
-| bakery | | | |
+| Absent by Design | | Partial Support | https://modrinth.com/mod/absent-by-design |
+| Ad Astra | 1.15.18 | Fully Added | https://modrinth.com/mod/ad-astra |
+| Additional Lanterns | | Partial Support | https://modrinth.com/mod/additional-lanterns |
+| Advanced Netherite | | Partial Support | https://modrinth.com/mod/advanced-netherite |
+| AdventureZ | | Fully Added | https://modrinth.com/mod/adventurez |
+| Applied Energistics 2 | | Partial Support | https://modrinth.com/mod/ae2 |
+| The Aether | | Partial Support | https://modrinth.com/mod/aether |
+| The Aether: Redux | | Partial Support | https://modrinth.com/mod/the-aether-redux |
+| Alex's Caves | | Fully Added | https://modrinth.com/mod/alexs-caves |
+| AllTheCompressed | | Fully Added | https://www.curseforge.com/minecraft/mc-mods/allthecompressed |
+| Allthemodium | | Fully Added | https://www.curseforge.com/minecraft/mc-mods/allthemodium |
+| ATO - All the Ores | | Fully Added | https://www.curseforge.com/minecraft/mc-mods/ato |
+| All The Tweaks | | Fully Added | https://www.curseforge.com/minecraft/mc-mods/all-the-tweaks |
+| Amendments | | Fully Added | https://modrinth.com/mod/amendments |
+| Ancient Aether | | Partial Support | https://modrinth.com/mod/ancient-aether |
+| Another Furniture | 3.0.1 | Fully Added | https://modrinth.com/mod/another-furniture |
+| AntiBlocksReChiseled | | Partial Support | https://modrinth.com/mod/antiblocksrechiseled |
+| Architect's Palette | | Partial Support | https://modrinth.com/mod/architects-palette |
+| Ars Elemental | | Partial Support | https://www.curseforge.com/minecraft/mc-mods/ars-elemental |
+| Ars Nouveau | | Partial Support | https://modrinth.com/mod/ars-nouveau |
+| Astrological (End Terrain & Biomes) | | Partial Support | https://modrinth.com/mod/astrological |
+| Autumnity | | Partial Support | https://modrinth.com/mod/autumnity |
+| \[Let's Do\] Bakery | | Partial Support | https://modrinth.com/mod/lets-do-bakery |
 | beachparty | | | |
 | beo | | | |
 | betterend | | | |
