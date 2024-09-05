@@ -1,24 +1,206 @@
 # CURRENTLY ADDED MODS
-
 Here we can keep track of what mods has been added and what version a contributer used to add said mod.
 
 ## Mod List
-
 | Mod Name | Version | Status | Link |
 |----------|---------|--------|------|
-| [Mod Name 1] | [e.g., 1.2.3] | [e.g., Fully Supported] | [Download](https://example.com/mod1) |
-| [Mod Name 2] | [e.g., 2.0.0] | [e.g., Partial Support] | [Download](https://example.com/mod2) |
-| [Mod Name 3] | [e.g., 3.1.5] | [e.g., In Testing] | [Download](https://example.com/mod3) |
-
-<!-- Add more mods following the same format -->
+| absentbydesign | | | |
+| ad_astra | | | |
+| additionallanterns | | | |
+| advancednetherite | | | |
+| adventurez | | | |
+| ae2 | | | |
+| aether | | | |
+| aether_redux | | | |
+| alexscaves | | | |
+| allthecompressed | | | |
+| allthemodium | | | |
+| alltheores | | | |
+| allthetweaks | | | |
+| amendments | | | |
+| ancient_aether | | | |
+| another_furniture | | | |
+| antiblocksrechiseled | | | |
+| architects_palette | | | |
+| ars_elemental | | | |
+| ars_nouveau | | | |
+| astrological | | | |
+| autumnity | | | |
+| bakery | | | |
+| beachparty | | | |
+| beo | | | |
+| betterend | | | |
+| betternether | | | |
+| biggerreactors | | | |
+| biomemakeover | | | |
+| biomesoplenty | | | |
+| blockus | | | |
+| bloodmagic | | | |
+| bloomingnature | | | |
+| blossom | | | |
+| blue_skies | | | |
+| boh | | | |
+| born_in_chaos_v1 | | | |
+| botania | | | |
+| bountiful | | | |
+| bountifulfares | | | |
+| bug | | | |
+| burnt | | | |
+| bushierflowers | | | |
+| buzzier_bees | | | |
+| byg | | | |
+| candlelight | | | |
+| caupona | | | |
+| chalk | | | |
+| charm | | | |
+| chemlib | | | |
+| chipped | | | |
+| cinderscapes | | | |
+| cobblemon | | | |
+| corn_delight | | | |
+| create | | | |
+| create_bic_bit | | | |
+| create_enchantment_industry | | | |
+| create_new_age | | | |
+| createaddition | | | |
+| createbigcannons | | | |
+| createdeco | | | |
+| createutilities | | | |
+| croptopia | | | |
+| culturaldelights | | | |
+| darkerdepths | | | |
+| decorative_blocks | | | |
+| deep_aether | | | |
+| deeperdarker | | | |
+| delight | | | |
+| diagonalfences | | | |
+| diagonalwindows | | | |
+| dimdoors | | | |
+| draconicevolution | | | |
+| dtbeachparty | | | |
+| dtbloomingnature | | | |
+| dtbop | | | |
+| dtmeadow | | | |
+| dtnatures_spirit | | | |
+| dtquark | | | |
+| dtvinery | | | |
+| dynamictrees | | | |
+| ecologics | | | |
+| eidolon | | | |
+| enderio | | | |
+| estrogen | | | |
+| etcetera | | | |
+| evilcraft | | | |
+| excavated_variants | | | |
+| exdeorum | | | |
+| expandeddelight | | | |
+| extshape | | | |
+| extshape_blockus | | | |
+| farlanders | | | |
+| farm_and_charm | | | |
+| farmersdelight | | | |
+| farmersrespite | | | |
+| flowerpatch | | | |
+| forbidden_arcanus | | | |
+| frame_changer | | | |
+| friendsandfoes | | | |
+| frostiful | | | |
+| fruitsdelight | | | |
+| galosphere | | | |
+| garnished | | | |
+| geode_plus | | | |
+| goodending | | | |
+| grapplemod | | | |
+| gtceu | | | |
+| handcrafted | | | |
+| hauntedharvest | | | |
+| hearth_and_home | | | |
+| herbalbrews | | | |
+| hydrol | | | |
+| immersive_weathering | | | |
+| infinite_abyss | | | |
+| infinitybuttons | | | |
+| infusion_table | | | |
+| inversia | | | |
+| ironchests | | | |
+| ironfurnaces | | | |
+| lockus | | | |
+| lootr | | | |
+| lost_aether_content | | | |
+| luckytntmod | | | |
+| magnumtorch | | | |
+| malum | | | |
+| mca | | | |
+| meadow | | | |
+| midnight_madness | | | |
+| minecraft | | | |
+| mob_grinding_utils | | | |
+| more_slabs_stairs_and_walls | | | |
+| mores | | | |
+| mysticalagradditions | | | |
+| mysticalagriculture | | | |
+| mythicmetals | | | |
+| mythicupgrades | | | |
+| naturalist | | | |
+| natures_spirit | | | |
+| nethersdelight | | | |
+| occultism | | | |
+| oreganized | | | |
+| organics | | | |
+| productivetrees | | | |
+| projectvibrantjourneys | | | |
+| pureores | | | |
+| quark | | | |
+| railways | | | |
+| raitherts | | | |
+| randomium | | | |
+| rechiseled | | | |
+| rechiseledcreate | | | |
+| redbits | | | |
+| regions_unexplored | | | |
+| ribbits | | | |
+| sandwichable | | | |
+| scorchful | | | |
+| scpo | | | |
+| seasonsextras | | | |
+| securitycraft | | | |
+| silentgear | | | |
+| silentgems | | | |
+| sliceanddice | | | |
+| snowyspirit | | | |
+| soulsweapons | | | |
+| spelunkers_charm | | | |
+| spelunkery | | | |
+| supplementaries | | | |
+| sushigocrafting | | | |
+| tconstruct | | | |
+| terrestria | | | |
+| tfc | | | |
+| theabyss | | | |
+| thermal | | | |
+| thermal_extra | | | |
+| travelersbackpack | | | |
+| traverse | | | |
+| twigs | | | |
+| twilightforest | | | |
+| undead_revamp2 | | | |
+| undergarden | | | |
+| universal_ores | | | |
+| upgrade_aquatic | | | |
+| verdantvibes | | | |
+| vinery | | | |
+| vs_clockwork | | | |
+| waystones | | | |
+| weeping_angels | | | |
+| wildernature | | | |
+| wilderwild | | | |
+| wondrouswilds | | | |
 
 ## Status Definitions
-
 - Fully Added: All blocks, items, entities, and dimensions (if applicable) has been reviewed and added to it's most appropriate ID.
 - Partial Support: Only parts of a mod was added. For example, only foliage and flowers were added to is respective block ID.
 - In Testing: This mod either needs to be re-reviewed, or simply is still in the process of being added.
 - Planned: Support for this mod is planned but not yet implemented.
 
 ---
-
 Last updated: [Date]
