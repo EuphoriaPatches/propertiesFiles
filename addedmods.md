@@ -27,34 +27,33 @@ Here we can keep track of what mods has been added and what version a contribute
 | Astrological (End Terrain & Biomes) | | Partial Support | https://modrinth.com/mod/astrological |
 | Autumnity | | Partial Support | https://modrinth.com/mod/autumnity |
 | \[Let's Do\] Bakery | | Partial Support | https://modrinth.com/mod/lets-do-bakery |
-| beachparty | | | |
-| beo | | | |
-| betterend | | | |
-| betternether | | | |
-| biggerreactors | | | |
-| biomemakeover | | | |
-| biomesoplenty | | | |
-| blockus | | | |
-| bloodmagic | | | |
-| bloomingnature | | | |
-| blossom | | | |
-| blue_skies | | | |
-| boh | | | |
-| born_in_chaos_v1 | | | |
-| botania | | | |
-| bountiful | | | |
-| bountifulfares | | | |
-| bug | | | |
-| burnt | | | |
-| bushierflowers | | | |
-| buzzier_bees | | | |
-| byg | | | |
-| candlelight | | | |
-| caupona | | | |
-| chalk | | | |
-| charm | | | |
-| chemlib | | | |
-| chipped | | | |
+| \[Let's Do\] Beachparty | | Partial Support | https://modrinth.com/mod/lets-do-beachparty |
+| Better End Ore | 1.0.3 | Fully Added | https://modrinth.com/mod/better-end-ore |
+| BetterEnd | 4.0.11 | Fully Added | https://modrinth.com/mod/betterend |
+| BetterNether | 9.0.10 | Fully Added | https://modrinth.com/mod/betternether |
+| Bigger Reactors | | Fully Added | https://www.curseforge.com/minecraft/mc-mods/biggerreactors |
+| Biome Makeover | | Fully Added | https://modrinth.com/mod/biome-makeover |
+| Biomes O' Plenty | | Fully Added | https://modrinth.com/mod/biomes-o-plenty |
+| Blockus | 2.7.15 | Fully Added | https://modrinth.com/mod/blockus |
+| Blood Magic | | Partial Support | https://modrinth.com/mod/blood-magic |
+| \[Let's Do\] BloomingNature | | Partial Support | https://modrinth.com/mod/lets-do-bloomingnature |
+| Blossom | 1.0.7 | Fully Added | https://modrinth.com/mod/blossom |
+| Blue Skies | | Partial Support | https://modrinth.com/mod/blue-skies |
+| The Box Of Horrors | | Partial Support | https://modrinth.com/mod/the-box-of-horrors |
+| Born in Chaos | 1.3.1 | Fully Added | https://www.curseforge.com/minecraft/mc-mods/born-in-chaos |
+| Botania | | Partial Support | https://modrinth.com/mod/botania |
+| Bountiful | 6.0.3 | Fully Added | https://modrinth.com/mod/bountiful |
+| Bountiful Fares | | Fully Added | https://modrinth.com/mod/bountiful-fares |
+| Burnt | | Fully Added | https://modrinth.com/mod/burnt |
+| Bushier Flowers | | Partial Support | https://modrinth.com/mod/bushier-flowers |
+| Buzzier Bees | | Partial Support | https://modrinth.com/mod/buzzier-bees |
+| Oh The Biomes You'll Go | | Partial Support | https://modrinth.com/mod/biomesyougo |
+| \[Let's Do\] Candlelight | | Partial Support  | https://modrinth.com/mod/lets-do-candlelight |
+| Caupona | | Partial Support | https://modrinth.com/mod/caupona |
+| Chalk | | Fully Added | https://modrinth.com/mod/chalk-mod |
+| Charm | | Fully Added | https://modrinth.com/mod/charm |
+| ChemLib | | Partial Support | https://www.curseforge.com/minecraft/mc-mods/chemlib |
+| Chipped | | Fully Added | https://modrinth.com/mod/chipped |
 | cinderscapes | | | |
 | cobblemon | | | |
 | corn_delight | | | |
