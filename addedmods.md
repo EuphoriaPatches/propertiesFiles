@@ -56,12 +56,12 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Charm](https://modrinth.com/mod/charm) | | Fully Added |
 | [ChemLib](https://www.curseforge.com/minecraft/mc-mods/chemlib) | | Partial Support |
 | [Chipped](https://modrinth.com/mod/chipped) | | Fully Added |
-| cinderscapes | | |
-| cobblemon | | |
-| corn_delight | | |
-| create | | |
-| create_bic_bit | | |
-| create_enchantment_industry | | |
+| [Cinderscapes](https://modrinth.com/mod/cinderscapes) | | Fully Added |
+| [Cobblemon](https://modrinth.com/mod/cobblemon) | | Partial Support | # Someone should see if the entities look good
+| [Corn Delight](https://modrinth.com/mod/corn-delight) | | In Testing | # Corn plants are 2 blocks tall, current blocks.properties only has one entry!
+| [Create](https://modrinth.com/mod/create) | 0.5.1.f-build.1417 | Fully Added | # Create has a new version out on forge but has yet to make it's way to fabric, unless you build it yourself. Waiting for offical release so addons can update as well
+| [Create: Bitterballen](https://modrinth.com/mod/create-bitterballen) | | Miniscule | 
+| [Create Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry) | 1.2.16 | Fully Added |
 | create_new_age | | |
 | createaddition | | |
 | createbigcannons | | |
@@ -204,6 +204,9 @@ Here we can keep track of what mods has been added and what version a contribute
 - Partial Support: Only parts of a mod was added. For example, only foliage and flowers were added to is respective block ID.
 - In Testing: This mod either needs to be re-reviewed, or simply is still in the process of being added.
 - Planned: Support for this mod is planned but not yet implemented.
+- Miniscule: A very small portion of the mod's content has been added or reviewed.
+- Foliage Only: Self-explanitory, only plants, flowers, vines, and other various plantlife has been added.
+- Unkown: Unable to make a determination of how well a mod has been added due to various factors. Please leave a comment if you're gonna use this status!
 
 ---
 Last updated: [Date]
