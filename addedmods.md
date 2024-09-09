@@ -27,8 +27,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Ars Elemental](https://www.curseforge.com/minecraft/mc-mods/ars-elemental) | | Partial Support |
 | [Ars Nouveau](https://modrinth.com/mod/ars-nouveau) | | Partial Support |
 | [Artifacts](https://modrinth.com/mod/artifacts) | 9.5.12 | Fully Added |
-| [Astrological (End Terrain & Biomes)](https://modrinth.com/mod/astrological) | | Partial Support |
-| [Astrological (formerly Inversia)](https://modrinth.com/mod/astrological) | | Partial Support |
+| [Astrological (End Terrain & Biomes)](https://modrinth.com/mod/astrological) | | Partial Support | # Was formally called Inversia, mod ID must have changed at some point. We should keep both
 | [ATO - All the Ores](https://www.curseforge.com/minecraft/mc-mods/ato) | | Fully Added |
 | [Autumnity](https://modrinth.com/mod/autumnity) | | Partial Support |
 | [\[Let's Do\] Bakery](https://modrinth.com/mod/lets-do-bakery) | | Partial Support |
