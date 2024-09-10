@@ -4,7 +4,7 @@ Welcome to the community-driven block.property files!
 - A Pull Request can be opened and the changes will be merged with Euphoria Patches.
 - The raw property file can also be shared on [discord](https://discord.gg/5N45SAsC3X) for those who have not worked with GitHub before
 
-**Please use the Template!**
+**Please use the Template!**  
 **Please document mods in addedmods.md!**
 ## Template
 ### At the top of each property file, there is a template on how new entries should look like
