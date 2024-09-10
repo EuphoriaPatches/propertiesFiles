@@ -5,7 +5,7 @@ Welcome to the community-driven block.property files!
 - The raw property file can also be shared on [discord](https://discord.gg/5N45SAsC3X) for those who have not worked with GitHub before
 
 **Please use the Template!**  
-**Please document mods in addedmods.md!**
+**Please document mods in addedMods.md!**
 ## Template
 ### At the top of each property file, there is a template on how new entries should look like
 <details><summary><ins><strong>Click</strong></ins> to expand for block.properties template!</summary>
@@ -92,7 +92,7 @@ dimension.world1 = ...
 This template was implemented so modded blocks can be easily added without having the risk of vanilla blocks being edited and one can easily see which mods are already supported as different mods are in different lines. 
 
 ## Documentating Changes
-Once you've added your blocks, please go to addedmods.md and add what mod you've added with the appropriate status following this template.
+Once you've added your blocks, please go to addedMods.md and add what mod you've added with the appropriate status following this template.
 <details><summary><ins><strong>Click</strong></ins> to expand for addedmods.md template!</summary>
 
 <p>
