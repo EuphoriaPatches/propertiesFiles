@@ -93,7 +93,7 @@ This template was implemented so modded blocks can be easily added without havin
 
 ## Documentating Changes
 Once you've added your blocks, please go to addedMods.md and add what mod you've added with the appropriate status following this template.
-<details><summary><ins><strong>Click</strong></ins> to expand for addedmods.md template!</summary>
+<details><summary><ins><strong>Click</strong></ins> to expand for addedMods.md template!</summary>
 
 <p>
 
