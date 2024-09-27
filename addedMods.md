@@ -74,6 +74,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Create: Steam 'n' Rails](https://modrinth.com/mod/create-steam-n-rails) | 1.6.4 | Fully Added |
 | [Create Utilities](https://modrinth.com/mod/create-utilities) | 0.3.0 | Fully Added | # Parts of blocks that use the end portal shader doesn't render at all
 | [Croptopia](https://www.curseforge.com/minecraft/mc-mods/croptopia) | | Fully Added |
+| [Cuisine Delight](https://www.curseforge.com/minecraft/mc-mods/cuisine-delight) | 1.1.14 | Fully Added |
 | [Cultural Delights](https://modrinth.com/mod/cultural-delights) | | Partial Support | # Looks like more crops got added since this was added to the list
 | [Darker Depths](https://www.curseforge.com/minecraft/mc-mods/darker-depths) | | Partial Support |
 | [Decorative Blocks](https://modrinth.com/mod/decorative-blocks) | | Miniscule |
@@ -112,7 +113,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Forbidden and Arcanus](https://modrinth.com/mod/forbidden-arcanus) | | Miniscule |
 | [Frame Changer](https://modrinth.com/mod/frame-changer) | | Miniscule |
 | [Friends&Foes](https://modrinth.com/mod/friends-and-foes) | | Partial Support |
-| [Frostiful](https://modrinth.com/mod/frostiful) | | Partial Support |
+| [Frostiful](https://modrinth.com/mod/frostiful) | 1.0.11 | Partial Support |
 | [Fruits Delight](https://modrinth.com/mod/fruits-delight) | | Foliage Only |
 | [Galosphere](https://modrinth.com/mod/galosphere) | | Partial Support |
 | [Geode+](https://modrinth.com/mod/geode-plus) | | Partial Support |
@@ -171,9 +172,9 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Red Bits (redstone)](https://modrinth.com/mod/red-bits) | | Partial Support |
 | [Regions Unexplored](https://modrinth.com/mod/regions-unexplored) | 0.5.6 | Partial Support |
 | [Ribbits](https://modrinth.com/mod/ribbits) | | Foliage Only |
-| [Rustic Delight](https://www.curseforge.com/minecraft/mc-mods/rustic-delight) | 1.1.2 | Partial Support |
+| [Rustic Delight](https://www.curseforge.com/minecraft/mc-mods/rustic-delight) | 1.1.2 | Fully Added |
 | [Sandwichable](https://modrinth.com/mod/sandwichable) | | Foliage Only |
-| [Scorchful](https://modrinth.com/mod/scorchful) | | Miniscule |
+| [Scorchful](https://modrinth.com/mod/scorchful) | 0.6.5 | Fully Added |
 | [SCP: Overtime](https://modrinth.com/mod/scp-overtime) | | Miniscule |
 | [Searchlight (& Wall Lights)](https://www.curseforge.com/minecraft/mc-mods/searchlight-forge) | 1.1.11 | Fully Added |
 | [SecurityCraft](https://modrinth.com/mod/security-craft) | 1.9.10 | Fully Added |
