@@ -74,6 +74,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Create: Steam 'n' Rails](https://modrinth.com/mod/create-steam-n-rails) | 1.6.4 | Fully Added |
 | [Create Utilities](https://modrinth.com/mod/create-utilities) | 0.3.0 | Fully Added | # Parts of blocks that use the end portal shader doesn't render at all
 | [Croptopia](https://www.curseforge.com/minecraft/mc-mods/croptopia) | | Fully Added |
+| [Cuisine Delight](https://www.curseforge.com/minecraft/mc-mods/cuisine-delight) | 1.1.14 | Fully Added |
 | [Cultural Delights](https://modrinth.com/mod/cultural-delights) | | Partial Support | # Looks like more crops got added since this was added to the list
 | [Darker Depths](https://www.curseforge.com/minecraft/mc-mods/darker-depths) | | Partial Support |
 | [Decorative Blocks](https://modrinth.com/mod/decorative-blocks) | | Miniscule |
@@ -102,6 +103,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Expanded Delight](https://modrinth.com/mod/expanded-delight) | | Fully Added |
 | [Extended block shapes](https://modrinth.com/mod/extshape/version/2.2.1-fabric-1.20.1) | 2.2.1 | Fully Added | # Total fucking anguish trying to add this. 
 | [Extended Block Shapes - Blockus](https://modrinth.com/mod/extshape_blockus) | 2.1.4 | Fully Added | # Same with you
+| [Extractinator](https://modrinth.com/mod/extractinator) | 2.3.0 | Fully Added |
 | [Fabric Seasons: Extras](https://modrinth.com/mod/fabric-seasons-extras) | 1.2-BETA | Fully Added |
 | [The Farlanders](https://modrinth.com/mod/the-farlanders) | | Miniscule |
 | [\[Let's Do\] Farm & Charm](https://modrinth.com/mod/lets-do-farm-charm) | | Partial Support |
@@ -111,7 +113,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Forbidden and Arcanus](https://modrinth.com/mod/forbidden-arcanus) | | Miniscule |
 | [Frame Changer](https://modrinth.com/mod/frame-changer) | | Miniscule |
 | [Friends&Foes](https://modrinth.com/mod/friends-and-foes) | | Partial Support |
-| [Frostiful](https://modrinth.com/mod/frostiful) | | Partial Support |
+| [Frostiful](https://modrinth.com/mod/frostiful) | 1.0.11 | Partial Support |
 | [Fruits Delight](https://modrinth.com/mod/fruits-delight) | | Foliage Only |
 | [Galosphere](https://modrinth.com/mod/galosphere) | | Partial Support |
 | [Geode+](https://modrinth.com/mod/geode-plus) | | Partial Support |
@@ -141,6 +143,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [MCA Reborn](https://modrinth.com/mod/minecraft-comes-alive-reborn) | 7.5.19 | Fully Added |
 | [\[Let's Do\] Meadow](https://modrinth.com/mod/lets-do-meadow) | | Partial Support |
 | [Midnight Madness](https://modrinth.com/mod/midnight-madness) | | Partial Support |
+| [Miner's Delight +](https://www.curseforge.com/minecraft/mc-mods/miners-delight-plus) | 1.2.3 | Partial Support |
 | [More Buckets](https://modrinth.com/mod/more-buckets) | | Partial Support | # Someone Should return to this
 | [More Slabs Stairs & Walls](https://modrinth.com/mod/more-slabs-stairs-and-walls) | | In Testing | # A lot of these blocks were added before the partial block ID's were added and needs to be fixed.
 | [MoreOres+](https://modrinth.com/mod/moreores+) | | Partial Support |
@@ -152,6 +155,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Nature's Spirit](https://modrinth.com/mod/natures-spirit) | | Foliage Only |
 | [Nether's Delight](https://modrinth.com/mod/nethers-delight) | | In Testing | # Why is soil in the Deepslate Diamond Ore ID?? 
 | [Occultism](https://modrinth.com/mod/occultism) | | Miniscule |
+| [Oh The Biomes We've Gone](https://modrinth.com/mod/oh-the-biomes-weve-gone) | 1.3.0 | Foliage Only |
 | [Oh The Biomes You'll Go](https://modrinth.com/mod/biomesyougo) | | Partial Support |
 | [Ore Creeper](https://modrinth.com/mod/ore-creeper) | | Fully Added |
 | [Oreganized](https://modrinth.com/mod/oreganized) | | Miniscule |
@@ -168,15 +172,18 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Red Bits (redstone)](https://modrinth.com/mod/red-bits) | | Partial Support |
 | [Regions Unexplored](https://modrinth.com/mod/regions-unexplored) | 0.5.6 | Partial Support |
 | [Ribbits](https://modrinth.com/mod/ribbits) | | Foliage Only |
+| [Rustic Delight](https://www.curseforge.com/minecraft/mc-mods/rustic-delight) | 1.1.2 | Fully Added |
 | [Sandwichable](https://modrinth.com/mod/sandwichable) | | Foliage Only |
-| [Scorchful](https://modrinth.com/mod/scorchful) | | Miniscule |
+| [Scorchful](https://modrinth.com/mod/scorchful) | 0.6.5 | Fully Added |
 | [SCP: Overtime](https://modrinth.com/mod/scp-overtime) | | Miniscule |
+| [Searchlight (& Wall Lights)](https://www.curseforge.com/minecraft/mc-mods/searchlight-forge) | 1.1.11 | Fully Added |
 | [SecurityCraft](https://modrinth.com/mod/security-craft) | 1.9.10 | Fully Added |
+| [Serene Shrubbery](https://modrinth.com/mod/serene-shrubbery) | 1.5.1 | Fully Added |
 | [Silent Gear](https://modrinth.com/mod/silent-gear) | | Miniscule |
 | [Silent's Gems](https://modrinth.com/mod/silents-gems) | | Miniscule |
 | [Snowy Spirit](https://modrinth.com/mod/snowy-spirit) | | Foliage Only |
 | soulsweapons | | Foliage Only / Unknown | # Is this it? https://www.curseforge.com/minecraft/mc-mods/mariums-soulslike-weaponry
-| [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | | Foliage Only |
+| [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
 | [Spelunkery](https://modrinth.com/mod/spelunkery) | | Fully Added |
 | [Supplementaries](https://modrinth.com/mod/supplementaries) | | Fully Added |
 | [Sushi Go Crafting](https://modrinth.com/mod/sushigocrafting) | | Foliage Only |
