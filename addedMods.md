@@ -190,7 +190,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Terrestria](https://modrinth.com/mod/terrestria) | | Foliage Only |
 | [TerraFirmaCraft](https://modrinth.com/mod/terrafirmacraft) | | Foliage Only |
 | [Theabyss](https://www.curseforge.com/minecraft/mc-mods/the-abyss-chapter-ii) | | Partial Support |
-| [Theurgy]((https://www.curseforge.com/minecraft/mc-mods/theurgy)) | | Fully Added |
+| [Theurgy](https://www.curseforge.com/minecraft/mc-mods/theurgy) | | Fully Added |
 | [Thermal Expansion](https://modrinth.com/mod/thermal-expansion) | | Miniscule |
 | [Thermal: Extra](https://modrinth.com/mod/thermal-extra) | | Miniscule |
 | [Tinkers' Construct](https://modrinth.com/mod/tinkers-construct) | | Partial Support | # Need to add liquids
