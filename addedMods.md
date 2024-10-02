@@ -118,7 +118,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Frame Changer](https://modrinth.com/mod/frame-changer) | | Miniscule |
 | [Friends&Foes](https://modrinth.com/mod/friends-and-foes) | | Partial Support |
 | [Frostiful](https://modrinth.com/mod/frostiful) | 1.0.11 | Partial Support |
-| [Fruits Delight](https://modrinth.com/mod/fruits-delight) | 1.0.11 | Foliage Only |
+| [Fruits Delight](https://modrinth.com/mod/fruits-delight) | 1.0.11 | Partial Support |
 | [Galosphere](https://modrinth.com/mod/galosphere) | | Partial Support |
 | [Geode+](https://modrinth.com/mod/geode-plus) | | Partial Support |
 | [Good Ending](https://modrinth.com/mod/good-ending) | 1.0.1 | Miniscule |
