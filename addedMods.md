@@ -157,6 +157,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Mythic Upgrades](https://modrinth.com/mod/mythic-upgrades) | | Partial Support |
 | [Naturalist](https://modrinth.com/mod/naturalist) | 4.0.3 | Fully Added |
 | [Nature's Spirit](https://modrinth.com/mod/natures-spirit) | | Foliage Only |
+| [Neapolitan](https://www.curseforge.com/minecraft/mc-mods/neapolitan) | 5.0.0 | Foliage Only |
 | [Nether's Delight](https://modrinth.com/mod/nethers-delight) | | In Testing | # Why is soil in the Deepslate Diamond Ore ID?? 
 | [Occultism](https://modrinth.com/mod/occultism) | | Miniscule |
 | [Oh The Biomes We've Gone](https://modrinth.com/mod/oh-the-biomes-weve-gone) | 1.3.0 | Foliage Only |
