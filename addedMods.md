@@ -116,6 +116,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Flower Patch](https://modrinth.com/mod/flower-patch) | | Foliage Only | # Someone should confirm if the flowers can be placed in flower pots
 | [Forbidden and Arcanus](https://modrinth.com/mod/forbidden-arcanus) | | Miniscule |
 | [Frame Changer](https://modrinth.com/mod/frame-changer) | | Miniscule |
+| [Framed Blocks](https://www.curseforge.com/minecraft/mc-mods/framedblocks) | 10.2.0 | Partial Support |
 | [Friends&Foes](https://modrinth.com/mod/friends-and-foes) | | Partial Support |
 | [Frostiful](https://modrinth.com/mod/frostiful) | 1.0.11 | Partial Support |
 | [Fruits Delight](https://modrinth.com/mod/fruits-delight) | 1.0.11 | Partial Support |
