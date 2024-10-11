@@ -41,7 +41,7 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Bigger Reactors](https://www.curseforge.com/minecraft/mc-mods/biggerreactors) | | Fully Added |
 | [Biome Makeover](https://modrinth.com/mod/biome-makeover) | | Fully Added |
 | [Biomes O' Plenty](https://modrinth.com/mod/biomes-o-plenty) | | Fully Added |
-| [Blockus](https://modrinth.com/mod/blockus) | 2.7.15 | Fully Added |
+| [Blockus](https://modrinth.com/mod/blockus) | 2.7.19 | Fully Added |
 | [Blood Magic](https://modrinth.com/mod/blood-magic) | | Partial Support |
 | [\[Let's Do\] BloomingNature](https://modrinth.com/mod/lets-do-bloomingnature) | | Partial Support |
 | [Blossom](https://modrinth.com/mod/blossom) | 1.0.7 | Fully Added |
