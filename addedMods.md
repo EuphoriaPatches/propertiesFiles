@@ -166,6 +166,8 @@ Here we can keep track of what mods has been added and what version a contribute
 | [Ore Creeper](https://modrinth.com/mod/ore-creeper) | | Fully Added |
 | [Oreganized](https://modrinth.com/mod/oreganized) | | Miniscule |
 | [Organics](https://www.curseforge.com/minecraft/mc-mods/organics) | | Miniscule |
+| [Pam's HarvestCraft 2 - Trees](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-trees) | | Fully Added |
+| [Pam's HarvestCraft 2 - Crops](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops) | | Partial Support |
 | [Productive Trees](https://modrinth.com/mod/productivetrees) | | Foliage Only |
 | [Project: Vibrant Journeys](https://www.curseforge.com/minecraft/mc-mods/project-vibrant-journeys) | | Miniscule |
 | [Prominent](https://www.curseforge.com/minecraft/mc-mods/prominent) | | Miniscule |
