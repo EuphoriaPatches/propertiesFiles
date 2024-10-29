@@ -11,7 +11,7 @@ Here we can keep track of what mods has been added and what version a contributo
 |----------|---------|--------|
 | [Absent by Design](https://modrinth.com/mod/absent-by-design) | | Partial Support |
 | [Ad Astra](https://modrinth.com/mod/ad-astra) | 1.15.18 | Fully Added |
-| [Additional Lanterns](https://modrinth.com/mod/additional-lanterns) | | Partial Support |
+| [Additional Lanterns](https://modrinth.com/mod/additional-lanterns) | 1.1.1a | Fullly Added |
 | [Advanced Netherite](https://modrinth.com/mod/advanced-netherite) | | Partial Support |
 | [AdventureZ](https://modrinth.com/mod/adventurez) | | Fully Added |
 | [The Aether](https://modrinth.com/mod/aether) | | Partial Support |
