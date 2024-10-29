@@ -11,7 +11,7 @@ Here we can keep track of what mods has been added and what version a contributo
 |----------|---------|--------|
 | [Absent by Design](https://modrinth.com/mod/absent-by-design) | | Partial Support |
 | [Ad Astra](https://modrinth.com/mod/ad-astra) | 1.15.18 | Fully Added |
-| [Additional Lanterns](https://modrinth.com/mod/additional-lanterns) | | Partial Support |
+| [Additional Lanterns](https://modrinth.com/mod/additional-lanterns) | 1.1.1a | Fullly Added |
 | [Advanced Netherite](https://modrinth.com/mod/advanced-netherite) | | Partial Support |
 | [AdventureZ](https://modrinth.com/mod/adventurez) | | Fully Added |
 | [The Aether](https://modrinth.com/mod/aether) | | Partial Support |
@@ -44,7 +44,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Bigger Reactors](https://www.curseforge.com/minecraft/mc-mods/biggerreactors) | | Fully Added |
 | [Biome Makeover](https://modrinth.com/mod/biome-makeover) | | Fully Added |
 | [Biomes O' Plenty](https://modrinth.com/mod/biomes-o-plenty) | | Fully Added |
-| [Blockus](https://modrinth.com/mod/blockus) | 2.7.15 | Fully Added |
+| [Blockus](https://modrinth.com/mod/blockus) | 2.7.19 | Fully Added |
 | [Blood Magic](https://modrinth.com/mod/blood-magic) | | Partial Support |
 | [\[Let's Do\] BloomingNature](https://modrinth.com/mod/lets-do-bloomingnature) | | Partial Support |
 | [Blossom](https://modrinth.com/mod/blossom) | 1.0.7 | Fully Added |
