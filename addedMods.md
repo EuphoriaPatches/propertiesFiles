@@ -193,7 +193,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Serene Shrubbery](https://modrinth.com/mod/serene-shrubbery) | 1.5.1 | Fully Added |
 | [Silent Gear](https://modrinth.com/mod/silent-gear) | | Miniscule |
 | [Silent's Gems](https://modrinth.com/mod/silents-gems) | | Miniscule |
-| [Simply Light](https://www.curseforge.com/minecraft/mc-mods/simply-light) | Miniscule |
+| [Simply Light](https://www.curseforge.com/minecraft/mc-mods/simply-light) | 1.4.6 | Miniscule |
 | [Snowy Spirit](https://modrinth.com/mod/snowy-spirit) | | Foliage Only |
 | soulsweapons | | Foliage Only / Unknown | # Is this it? https://www.curseforge.com/minecraft/mc-mods/mariums-soulslike-weaponry
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
