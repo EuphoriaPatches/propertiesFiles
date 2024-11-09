@@ -110,7 +110,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Dynamic Trees for Nature's Spirit](https://modrinth.com/mod/dynamic-trees-for-natures-spirit) | | Foliage Only |
 | [Dynamic Trees - Neapolitan](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-neapolitan) | | Foliage Only |
 | [Dynamic Trees - Quark](https://modrinth.com/mod/dynamic-trees-quark) | | Foliage Only |
-| [Dynamic Trees - Terralith](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-terralith) | | Foliage Only |
+| [Dynamic Trees - Terralith](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-terralith) | | Partial Foliage |
 | [Dynamic Trees - Upgrade Aquatic](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-upgrade-aquatic) | | Foliage Only |
 | [Dynamic Trees for Vinery](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-vinery) | | Foliage Only |
 | [Ecologics](https://modrinth.com/mod/ecologics) | 2.2.0 | Fully Added |
