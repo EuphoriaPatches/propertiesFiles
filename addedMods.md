@@ -98,12 +98,20 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Doctor Who: Weeping Angels](https://modrinth.com/mod/weeping-angels) | | Miniscule |
 | [Draconic Evolution](https://modrinth.com/mod/draconic-evolution) | | Miniscule |
 | [Dynamic Trees](https://modrinth.com/mod/dynamictrees) | | Foliage Only |
+| [Dynamic Trees +](https://modrinth.com/mod/dynamictreesplus) | | Fully Added |
+| [Dynamic Trees - Alex's Mobs](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-alexs-mobs) | | Foliage Only |
+| [Dynamic Trees - Autumnity](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-autumnity) | | Foliage Only |
 | [Dynamic Trees - Biomes O' Plenty](https://modrinth.com/mod/dynamic-trees-biomes-o-plenty) | | Foliage Only |
 | [Dynamic Trees for Beachparty](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-beachparty) | | Foliage Only |
 | [Dynamic Trees for BloomingNature](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-bloomingnature) | | Foliage Only |
+| [Dynamic Trees - Ecologics](https://modrinth.com/mod/dynamic-trees-ecologics) | | Foliage Only |
+| [Dynamic Trees - Hexerei](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-hexerei) | | Foliage Only |
 | [Dynamic Trees for Meadow](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-meadow) | | Foliage Only |
 | [Dynamic Trees for Nature's Spirit](https://modrinth.com/mod/dynamic-trees-for-natures-spirit) | | Foliage Only |
+| [Dynamic Trees - Neapolitan](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-neapolitan) | | Foliage Only |
 | [Dynamic Trees - Quark](https://modrinth.com/mod/dynamic-trees-quark) | | Foliage Only |
+| [Dynamic Trees - Terralith](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-terralith) | | Partial Foliage |
+| [Dynamic Trees - Upgrade Aquatic](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-upgrade-aquatic) | | Foliage Only |
 | [Dynamic Trees for Vinery](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-vinery) | | Foliage Only |
 | [Ecologics](https://modrinth.com/mod/ecologics) | 2.2.0 | Fully Added |
 | eidolon | | Miniscule / Unknown | # Unsure of which fork was used to add support
