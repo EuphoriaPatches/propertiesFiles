@@ -1,7 +1,4 @@
 # CURRENTLY ADDED MODS
-## Last updated (YYYY/MM/DD): 2024/11/04
-
----
 ### WHERE TO CONTRIBUTE:
 If you want to contribute to the Euphoria Patches modded support library, please only edit the files from GitHub. https://euphoriapatches.com/properties
 
