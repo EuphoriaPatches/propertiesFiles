@@ -206,7 +206,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Simply Light](https://www.curseforge.com/minecraft/mc-mods/simply-light) | 1.4.6 | Miniscule |
 | [Sky Arena](https://www.curseforge.com/minecraft/mc-mods/sky-arena) | 1.0.0 | Fully Added |
 | [Snowy Spirit](https://modrinth.com/mod/snowy-spirit) | | Foliage Only |
-| soulsweapons | | Foliage Only / Unknown | # Is this it? https://www.curseforge.com/minecraft/mc-mods/mariums-soulslike-weaponry
+| [SoulsWeapons](https://www.curseforge.com/minecraft/mc-mods/mariums-soulslike-weaponry) | 1.1.5 | Added Ore Glowing | Partial Support
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
 | [Spelunkery](https://modrinth.com/mod/spelunkery) | | Fully Added |
 | [Supplementaries](https://modrinth.com/mod/supplementaries) | | Fully Added |
@@ -235,7 +235,8 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Wilder Wild](https://modrinth.com/mod/wilder-wild) | | Partial Support |
 | [Wondrous Wilds](https://modrinth.com/mod/wondrous-wilds) | | Foliage Only |
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
-
+| [Things](https://www.curseforge.com/minecraft/mc-mods/things-fabric) | 0.3.3 | Partial | Ores Are Glowing Now
+| [TechReborn](https://www.curseforge.com/minecraft/mc-mods/techreborn) | 5.8.7 | Partial | Only Added Glowing Ores |
 ---
 
 ## Status Definitions
