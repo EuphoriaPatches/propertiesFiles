@@ -237,7 +237,8 @@ Here we can keep track of what mods has been added and what version a contributo
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
 | [Things](https://www.curseforge.com/minecraft/mc-mods/things-fabric) | 0.3.3 | Partial | #Ores are glowing now 
 | [TechReborn](https://www.curseforge.com/minecraft/mc-mods/techreborn) | 5.8.7 | Partial | #Only Added Glowing Ores 
-| [https://www.curseforge.com/minecraft/mc-mods/eldritch-end] | 0.3.2 | Miniscule | #added ore emissive to etyr ore
+| [EldritchEnd](https://www.curseforge.com/minecraft/mc-mods/eldritch-end) | 0.3.2 | Miniscule | #added ore emissive to etyr ore
+| [MineCells](https://www.curseforge.com/minecraft/mc-mods/minecells) | 1.9.1 | Miniscule | #added emissive torches
 ---
 
 ## Status Definitions
