@@ -239,6 +239,11 @@ Here we can keep track of what mods has been added and what version a contributo
 | [TechReborn](https://www.curseforge.com/minecraft/mc-mods/techreborn) | 5.8.7 | Fully Added | #basically added full support, only thing missing is items glowing and what not, but is not rly needed
 | [EldritchEnd](https://www.curseforge.com/minecraft/mc-mods/eldritch-end) | 0.3.2 | Miniscule | #added ore emissive to etyr ore
 | [MineCells](https://www.curseforge.com/minecraft/mc-mods/minecells) | 1.9.1 | Miniscule | #added emissive torches
+| [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | | Planned | #ADreadedKing
+| [Bosses Of Mass Destruction](https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction) || Planned |#AdreadedKing
+| [ExtendedAE](https://www.curseforge.com/minecraft/mc-mods/ex-pattern-provider) | | Planned | #AdreadedKing
+| [Alloy Forgery](https://www.curseforge.com/minecraft/mc-mods/alloy-forgery) || Planned | #ADreadedKing
+| [Industrial Revolution](https://www.curseforge.com/minecraft/mc-mods/industrial-revolution) || Planned | #ADreadedKing
 ---
 
 ## Status Definitions
