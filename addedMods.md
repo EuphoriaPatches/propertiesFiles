@@ -163,6 +163,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [LevelZ](https://modrinth.com/mod/levelz) | 1.4.13 | Fully Added |
 | [Lootr](https://modrinth.com/mod/lootr) | 0.7.33.81 | Fully Added |
 | [Lucky TNT Mod (Too Much TNT)](https://www.curseforge.com/minecraft/mc-mods/luckytnt) | | Unknown | # Wait we don't have an ID for TNT??
+| [Luminax](https://www.curseforge.com/minecraft/mc-mods/luminax) | 1.1.1 | Fully Added |
 | [Magnum Torch](https://modrinth.com/mod/magnum-torch) | 8.0.2 | Fully Added |
 | [Malum](https://modrinth.com/mod/malum) | | Partial Support |
 | [Man of Many Planes](https://modrinth.com/mod/man-of-many-planes) | 0.1.0 | Fully Added |
