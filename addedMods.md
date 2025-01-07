@@ -247,7 +247,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Vintage Delight](https://www.curseforge.com/minecraft/mc-mods/vintage-delight) | 0.1.4 | Partial Support |
 | [Waystones](https://modrinth.com/mod/waystones) | | Fully Added |
 | [\[Let's Do\] WilderNature](https://modrinth.com/mod/lets-do-wildernature) | | Miniscule |
-| [Wilder Wild](https://modrinth.com/mod/wilder-wild) | | Partial Support |
+| [Wilder Wild](https://modrinth.com/mod/wilder-wild) | 3.0.7 | In Testing | # Fixed some waving issues with Bush blocks, Baobab Nuts and Coconuts (in their hanging blockstates) and added pretty much all missing blocks and items, and improved Hanging Tendril emission. Stone Chests seem to glow in the dark though and Geysers are still under Lit Redstone Lamp. No entities added.
 | [Wondrous Wilds](https://modrinth.com/mod/wondrous-wilds) | | Foliage Only |
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
