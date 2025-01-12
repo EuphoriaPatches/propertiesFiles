@@ -251,6 +251,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Wondrous Wilds](https://modrinth.com/mod/wondrous-wilds) | | Foliage Only |
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
+| [Little Tiles](https://modrinth.com/mod/littletiles) | | Miniscule |
 ---
 
 ## Status Definitions
