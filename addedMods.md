@@ -169,6 +169,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Man of Many Planes](https://modrinth.com/mod/man-of-many-planes) | 0.1.0 | Fully Added |
 | [MCA Reborn](https://modrinth.com/mod/minecraft-comes-alive-reborn) | 7.5.19 | Fully Added |
 | [\[Let's Do\] Meadow](https://modrinth.com/mod/lets-do-meadow) | | Partial Support |
+| [MEGA Cells](https://www.curseforge.com/minecraft/mc-mods/mega-cells) | 4.3.0 | Fully Added |
 | [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) | 10.7.7.64 | Partial Support |
 | [Midnight Madness](https://modrinth.com/mod/midnight-madness) | | Partial Support |
 | [MineCells](https://www.curseforge.com/minecraft/mc-mods/minecells) | 1.9.1 | Miniscule | #added emissive torches
