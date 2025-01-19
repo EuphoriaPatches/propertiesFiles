@@ -13,9 +13,10 @@ Here we can keep track of what mods has been added and what version a contributo
 |----------|---------|--------|
 | [Absent by Design](https://modrinth.com/mod/absent-by-design) | | Partial Support |
 | [Ad Astra](https://modrinth.com/mod/ad-astra) | 1.15.18 | Fully Added |
-| [Additional Lanterns](https://modrinth.com/mod/additional-lanterns) | 1.1.1a | Fullly Added |
+| [Additional Lanterns](https://modrinth.com/mod/additional-lanterns) | 1.1.1a | Fully Added |
 | [Advanced Netherite](https://modrinth.com/mod/advanced-netherite) | | Partial Support |
 | [AdventureZ](https://modrinth.com/mod/adventurez) | | Fully Added |
+| [Artifality](https://modrinth.com/mod/artifality) |0.6.1 | Fully Added |
 | [The Aether](https://modrinth.com/mod/aether) | | Partial Support |
 | [The Aether: Redux](https://modrinth.com/mod/the-aether-redux) | | Partial Support |
 | [Aether: Lost Content Addon](https://modrinth.com/mod/aether-lost-content) | | Miniscule |
@@ -220,7 +221,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Simply Light](https://www.curseforge.com/minecraft/mc-mods/simply-light) | 1.4.6 | Miniscule |
 | [Sky Arena](https://www.curseforge.com/minecraft/mc-mods/sky-arena) | 1.0.0 | Fully Added |
 | [Snowy Spirit](https://modrinth.com/mod/snowy-spirit) | | Foliage Only |
-| [SoulsWeapons](https://www.curseforge.com/minecraft/mc-mods/mariums-soulslike-weaponry) | 1.1.5 |Partial Support | #Added Ore Glowing
+| [SoulsWeapons](https://modrinth.com/mod/mariums-soulslike-weaponry) | 1.2 |Partial Support | #Added Ore Glowing
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
 | [Spelunkery](https://modrinth.com/mod/spelunkery) | | Fully Added |
 | [Supplementaries](https://modrinth.com/mod/supplementaries) | | Fully Added |
