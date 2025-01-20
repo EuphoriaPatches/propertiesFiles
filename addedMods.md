@@ -82,8 +82,10 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Create: Estrogen](https://modrinth.com/mod/estrogen) | | Partial Support |
 | [Create: Garnished](https://modrinth.com/mod/create-garnished) | | Foliage Only |
 | [Create Goggles](https://modrinth.com/mod/create-goggles) | 0.5.5.g | Fully Added |
+| [Created Metallurgy](https://www.curseforge.com/minecraft/mc-mods/create-metallurgy) | 0.0.6-1.20.1 | Partial Support | #The lightbulbs should have their respected color
 | [Create: New Age](https://modrinth.com/mod/create-new-age) | | Miniscule |
 | [Create: Steam 'n' Rails](https://modrinth.com/mod/create-steam-n-rails) | 1.6.4 | Fully Added |
+| [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) | 0.9.3-1.20.1 | Partial Support | #Only touched block.properties here; most blocks besides the concrete, cinderblocks, bauxit, and galena were added
 | [Create Utilities](https://modrinth.com/mod/create-utilities) | 0.3.0 | Fully Added | # Parts of blocks that use the end portal shader doesn't render at all
 | [Croptopia](https://www.curseforge.com/minecraft/mc-mods/croptopia) | | Fully Added |
 | [Cuisine Delight](https://www.curseforge.com/minecraft/mc-mods/cuisine-delight) | 1.1.14 | Fully Added |
@@ -141,6 +143,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Frostiful](https://modrinth.com/mod/frostiful) | 1.0.11 | Partial Support |
 | [Fruits Delight](https://modrinth.com/mod/fruits-delight) | 1.0.11 | Partial Support |
 | [Galosphere](https://modrinth.com/mod/galosphere) | | Partial Support |
+| [Gauges & Switches](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches) | 1.2.22 | Miniscule | #Only did the alarm lamp
 | [Geode+](https://modrinth.com/mod/geode-plus) | | Partial Support |
 | [Good Ending](https://modrinth.com/mod/good-ending) | 1.0.1 | Miniscule |
 | [Grappling Hook Mod: Restitched](https://modrinth.com/mod/grappling-hook-mod-fabric) | 1.99.0 | Fully Added |
@@ -210,6 +213,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Ribbits](https://modrinth.com/mod/ribbits) | | Foliage Only |
 | [Rustic Delight](https://www.curseforge.com/minecraft/mc-mods/rustic-delight) | 1.1.2 | Fully Added |
 | [Sandwichable](https://modrinth.com/mod/sandwichable) | | Foliage Only |
+| [Scorched Guns 2](https://www.curseforge.com/minecraft/mc-mods/scorched-guns) | 0.3.2.5 | Miniscule | #Only the Plasma lantern was added
 | [Scorchful](https://modrinth.com/mod/scorchful) | 0.6.5 | Fully Added |
 | [SCP: Overtime](https://modrinth.com/mod/scp-overtime) | | Miniscule |
 | [Seafarer](https://www.curseforge.com/minecraft/mc-mods/seafarer-forge) | 1.0.1 | Partial Support |
@@ -233,6 +237,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Theurgy](https://www.curseforge.com/minecraft/mc-mods/theurgy) | | Fully Added |
 | [Thermal Expansion](https://modrinth.com/mod/thermal-expansion) | | Miniscule |
 | [Thermal: Extra](https://modrinth.com/mod/thermal-extra) | | Miniscule |
+| [Thin Air](https://www.curseforge.com/minecraft/mc-mods/new-thin-air) | | Full Support | #It was only one lantern
 | [Things](https://www.curseforge.com/minecraft/mc-mods/things-fabric) | 0.3.3 | Partial | #Ores are glowing now 
 | [Tide](https://www.curseforge.com/minecraft/mc-mods/tide) | 1.3.3 | Fully Added |
 | [Tinkers' Construct](https://modrinth.com/mod/tinkers-construct) | | Partial Support | # Need to add liquids
@@ -252,6 +257,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Wilder Wild](https://modrinth.com/mod/wilder-wild) | 3.0.11 | Fully Added | # Added hopefully all remaining blocks and fixed Stone Chests. Scorched entity and all boats added. wilderwild:hollowed_pale_oak_log will need to be added to a non-full Pale Oak Log id once one is available.
 | [Wondrous Wilds](https://modrinth.com/mod/wondrous-wilds) | | Foliage Only |
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
+| [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
 | [Little Tiles](https://modrinth.com/mod/littletiles) | | Miniscule |
 ---
