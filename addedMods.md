@@ -140,9 +140,11 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Frame Changer](https://modrinth.com/mod/frame-changer) | | Miniscule |
 | [Framed Blocks](https://www.curseforge.com/minecraft/mc-mods/framedblocks) | 10.2.0 | Partial Support |
 | [Friends&Foes](https://modrinth.com/mod/friends-and-foes) | | Partial Support |
+| [Frights and Foliage](https://modrinth.com/mod/frights-and-foliage) | 1.0.1 | Fully Added |
 | [Frostiful](https://modrinth.com/mod/frostiful) | 1.0.11 | Partial Support |
 | [Fruits Delight](https://modrinth.com/mod/fruits-delight) | 1.0.11 | Partial Support |
 | [Galosphere](https://modrinth.com/mod/galosphere) | | Partial Support |
+| [Gardens of the Dead](https://modrinth.com/mod/gardens-of-the-dead) |4.0.1 | Fully Added |
 | [Gauges & Switches](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches) | 1.2.22 | Miniscule | #Only did the alarm lamp
 | [Geode+](https://modrinth.com/mod/geode-plus) | | Partial Support |
 | [Good Ending](https://modrinth.com/mod/good-ending) | 1.0.1 | Miniscule |
@@ -163,6 +165,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Infusion Table](https://modrinth.com/mod/infusion-table) | 1.2.0 | Fully Added |
 | [Iron Chests: Restocked](https://modrinth.com/mod/ironchests) | 5.0.2 | Fully Added |
 | Iron Furnaces | | Unknown | # Not sure what version of this mod was used
+| [Jaden's Nether Expansion](https://modrinth.com/mod/jadens-nether-expansion) | 2.1.3 | Fully Added |
 | [JDK's Mob Grinding Utilities](https://modrinth.com/mod/jdk-mgu) | | Miniscule |
 | [LevelZ](https://modrinth.com/mod/levelz) | 1.4.13 | Fully Added |
 | [Lootr](https://modrinth.com/mod/lootr) | 0.7.33.81 | Fully Added |
@@ -188,7 +191,8 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Naturalist](https://modrinth.com/mod/naturalist) | 4.0.3 | Fully Added |
 | [Nature's Spirit](https://modrinth.com/mod/natures-spirit) | | Foliage Only |
 | [Neapolitan](https://www.curseforge.com/minecraft/mc-mods/neapolitan) | 5.0.0 | Foliage Only |
-| [Nether's Delight](https://modrinth.com/mod/nethers-delight) | | In Testing | # Why is soil in the Deepslate Diamond Ore ID?? 
+| [Nether's Delight](https://modrinth.com/mod/nethers-delight) | | In Testing | # Why is soil in the Deepslate Diamond Ore ID??
+| [Nether Archives](https://modrinth.com/mod/nether-archives) | 0.3.6| Fully Added |
 | [Occultism](https://modrinth.com/mod/occultism) | | Miniscule |
 | [Oh The Biomes We've Gone](https://modrinth.com/mod/oh-the-biomes-weve-gone) | 1.3.0 | Foliage Only |
 | [Oh The Biomes You'll Go](https://modrinth.com/mod/biomesyougo) | | Partial Support |
@@ -254,6 +258,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Vintage Delight](https://www.curseforge.com/minecraft/mc-mods/vintage-delight) | 0.1.4 | Partial Support |
 | [Waystones](https://modrinth.com/mod/waystones) | | Fully Added |
 | [\[Let's Do\] WilderNature](https://modrinth.com/mod/lets-do-wildernature) | | Miniscule |
+| [Whisperwoods](https://modrinth.com/mod/whisperwoods) | 2.1.2 | Fully Added |
 | [Wilder Wild](https://modrinth.com/mod/wilder-wild) | 3.0.11 | Fully Added | # Added hopefully all remaining blocks and fixed Stone Chests. Scorched entity and all boats added. wilderwild:hollowed_pale_oak_log will need to be added to a non-full Pale Oak Log id once one is available.
 | [Wondrous Wilds](https://modrinth.com/mod/wondrous-wilds) | | Foliage Only |
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
