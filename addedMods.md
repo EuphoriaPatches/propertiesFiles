@@ -165,7 +165,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Infusion Table](https://modrinth.com/mod/infusion-table) | 1.2.0 | Fully Added |
 | [Iron Chests: Restocked](https://modrinth.com/mod/ironchests) | 5.0.2 | Fully Added |
 | Iron Furnaces | | Unknown | # Not sure what version of this mod was used
-| [Jaden's Nether Expansion](https://modrinth.com/mod/jadens-nether-expansion) | 2.1.3 | Fully Added |
+| [Jaden's Nether Expansion](https://modrinth.com/mod/jadens-nether-expansion) | 2.2.1 | Partial Support |
 | [JDK's Mob Grinding Utilities](https://modrinth.com/mod/jdk-mgu) | | Miniscule |
 | [LevelZ](https://modrinth.com/mod/levelz) | 1.4.13 | Fully Added |
 | [Lootr](https://modrinth.com/mod/lootr) | 0.7.33.81 | Fully Added |
