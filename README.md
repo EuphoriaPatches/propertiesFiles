@@ -111,7 +111,7 @@ Once you've added your blocks, please go to addedMods.md and add what mod you've
 <p>
 
 ```markdown
-| [modName1](modLink) | Mod's Version | Mod's Added Status |
+| [modName1](modLink) | Mod's Version | Mod's Added Status | #Optional Comment
 ```
 <p>
 </details>
