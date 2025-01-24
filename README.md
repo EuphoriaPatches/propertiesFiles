@@ -27,7 +27,7 @@ lastModInThisIDName:modId1 lastModInThisIDName:modId2 lastModInThisIDName:modId3
 block.YYYYY = ...
 ...
 
-The last line of a block.XXXX does not have a `\`
+- The last line of a block.XXXX does not have a "\"
 
 --- IDs should be grouped by mods, for every new mod it should be added in a new line using "\" ---
 ```
@@ -45,10 +45,14 @@ item.XXXXX = vanillaId1 vanillaId2 vanillaId3 ... \
 modName1:modId1 modName1:modId2 modName1:modId3 ... \
 \
 modName2:modId1 modName2:modId2 modName2:modId3 ... \
+...
+lastModInThisIDName:modId1 lastModInThisIDName:modId2 lastModInThisIDName:modId3
 
 # Description of the Next item ID
 item.YYYYY = ...
 ...
+
+- The last line of a item.XXXX does not have a "\"
 
 --- IDs should be grouped by mods, for every new mod it should be added in a new line using "\" ---
 ```
@@ -66,10 +70,14 @@ entity.XXXXX = vanillaId1 vanillaId2 vanillaId3 ... \
 modName1:modId1 modName1:modId2 modName1:modId3 ... \
 \
 modName2:modId1 modName2:modId2 modName2:modId3 ... \
+...
+lastModInThisIDName:modId1 lastModInThisIDName:modId2 lastModInThisIDName:modId3
 
 # Description of the Next Entity ID
 entity.YYYYY = ...
 ...
+
+- The last line of a entity.XXXX does not have a "\"
 
 --- IDs should be grouped by mods, for every new mod it should be added in a new line using "\" ---
 ```
