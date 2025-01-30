@@ -265,6 +265,8 @@ Here we can keep track of what mods has been added and what version a contributo
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
 | [Little Tiles](https://modrinth.com/mod/littletiles) | | Miniscule |
+| [GregTechCEu Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern) | 1.6.3 | Partial support | # Add support for lamps and coil blocks
+| [GTOcore] | 1.0.1 | Partial support | # Add support for coil blocks
 ---
 
 ## Status Definitions
