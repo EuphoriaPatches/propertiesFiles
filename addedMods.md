@@ -121,6 +121,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | eidolon | | Miniscule / Unknown | # Unsure of which fork was used to add support
 | [EldritchEnd](https://www.curseforge.com/minecraft/mc-mods/eldritch-end) | 0.3.2 | Miniscule | #added ore emissive to etyr ore
 | [Ender IO](https://modrinth.com/mod/enderio) | | Partial Support |
+| [Environmental](https://modrinth.com/mod/environmental) | | Foliage Only |
 | [Etcetera](https://modrinth.com/mod/etcetera/versions) | | Miniscule |
 | [Eternal Starlight](https://www.curseforge.com/minecraft/mc-mods/eternal-starlight) | 0.2.0 | Partial Support |
 | [EvilCraft](https://modrinth.com/mod/evilcraft) | | Foliage Only |
