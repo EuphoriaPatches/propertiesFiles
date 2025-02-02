@@ -65,6 +65,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Buzzier Bees](https://modrinth.com/mod/buzzier-bees) | | Partial Support |
 | [\[Let's Do\] Candlelight](https://modrinth.com/mod/lets-do-candlelight) | | Partial Support  |
 | [Caupona](https://modrinth.com/mod/caupona) | | Partial Support |
+| [Caverns & Chasms](https://modrinth.com/mod/caverns-and-chasms) | | Partial Support |
 | [Chalk](https://modrinth.com/mod/chalk-mod) | | Fully Added |
 | [Charm](https://modrinth.com/mod/charm) | | Fully Added |
 | [ChemLib](https://www.curseforge.com/minecraft/mc-mods/chemlib) | | Partial Support |
