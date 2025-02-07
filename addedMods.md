@@ -235,6 +235,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [SoulsWeapons](https://modrinth.com/mod/mariums-soulslike-weaponry) | 1.2 |Partial Support | #Added Ore Glowing
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
 | [Spelunkery](https://modrinth.com/mod/spelunkery) | | Fully Added |
+| [Streams] (https://www.curseforge.com/minecraft/mc-mods/streams) | 0.4.9 | Fullly Added |
 | [Supplementaries](https://modrinth.com/mod/supplementaries) | | Fully Added |
 | [Sushi Go Crafting](https://modrinth.com/mod/sushigocrafting) | | Foliage Only |
 | [Terrestria](https://modrinth.com/mod/terrestria) | | Foliage Only |
@@ -244,7 +245,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Theurgy](https://www.curseforge.com/minecraft/mc-mods/theurgy) | | Fully Added |
 | [Thermal Expansion](https://modrinth.com/mod/thermal-expansion) | | Miniscule |
 | [Thermal: Extra](https://modrinth.com/mod/thermal-extra) | | Miniscule |
-| [Thin Air](https://www.curseforge.com/minecraft/mc-mods/new-thin-air) | | Full Support | #It was only one lantern
+| [Thin Air](https://www.curseforge.com/minecraft/mc-mods/new-thin-air) | | Fullly Added | #It was only one lantern
 | [Things](https://www.curseforge.com/minecraft/mc-mods/things-fabric) | 0.3.3 | Partial | #Ores are glowing now 
 | [Tide](https://www.curseforge.com/minecraft/mc-mods/tide) | 1.3.3 | Fully Added |
 | [Tinkers' Construct](https://modrinth.com/mod/tinkers-construct) | | Partial Support | # Need to add liquids
