@@ -134,6 +134,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Extended block shapes](https://modrinth.com/mod/extshape/version/2.2.1-fabric-1.20.1) | 2.2.1 | Fully Added | # Total fucking anguish trying to add this. 
 | [Extended Block Shapes - Blockus](https://modrinth.com/mod/extshape_blockus) | 2.1.4 | Fully Added | # Same with you
 | [Extractinator](https://modrinth.com/mod/extractinator) | 2.3.0 | Fully Added |
+| [Eyes in the Darkness](https://www.curseforge.com/minecraft/mc-mods/eyes-in-the-darkness) | 0.1.0 |  Fully Added |
 | [Fabric Seasons: Extras](https://modrinth.com/mod/fabric-seasons-extras) | 1.2-BETA | Fully Added |
 | [The Farlanders](https://modrinth.com/mod/the-farlanders) | | Miniscule |
 | [\[Let's Do\] Farm & Charm](https://modrinth.com/mod/lets-do-farm-charm) | | Partial Support |
