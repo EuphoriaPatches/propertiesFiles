@@ -71,6 +71,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Charm](https://modrinth.com/mod/charm) | | Fully Added |
 | [ChemLib](https://www.curseforge.com/minecraft/mc-mods/chemlib) | | Partial Support |
 | [Chipped](https://modrinth.com/mod/chipped) | | Fully Added |
+| [ChocoCraft Plus](https://modrinth.com/mod/chococraft-plus) | 4.5.8 | Foliage Only |
 | [Cinderscapes](https://modrinth.com/mod/cinderscapes) | | Fully Added |
 | [Clockwork](https://modrinth.com/mod/create-clockwork) | | Miniscule |
 | [Cobblemon](https://modrinth.com/mod/cobblemon) | | Partial Support | # Someone should see if the entities look good
@@ -138,6 +139,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [\[Let's Do\] Farm & Charm](https://modrinth.com/mod/lets-do-farm-charm) | | Partial Support |
 | [Farmer's Delight](https://modrinth.com/mod/farmers-delight) | | Fully Added | # Used the Fabric port to add support, hoping forge just works lol
 | [Farmer's Respite](https://www.curseforge.com/minecraft/mc-mods/farmers-respite) | | Partial Support |
+| [Farming for Blockheads](https://modrinth.com/mod/farming-for-blockheads) | 3.1.28 | Miniscule |
 | [Flower Patch](https://modrinth.com/mod/flower-patch) | | Foliage Only | # Someone should confirm if the flowers can be placed in flower pots
 | [Forbidden and Arcanus](https://modrinth.com/mod/forbidden-arcanus) | | Miniscule |
 | [Frame Changer](https://modrinth.com/mod/frame-changer) | | Miniscule |
@@ -153,11 +155,14 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Good Ending](https://modrinth.com/mod/good-ending) | 1.0.1 | Miniscule |
 | [Grappling Hook Mod: Restitched](https://modrinth.com/mod/grappling-hook-mod-fabric) | 1.99.0 | Fully Added |
 | [GregTech CE Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial) | | Miniscule / Unknown | # Mod ID is gtceu, Unknown if this mod was the one used.
+| [Growthcraft Community Edition](https://www.curseforge.com/minecraft/mc-mods/growthcraft-community-edition) | 4.2.3 | Foliage Only | # Seems like this is a collection of smaller Growthcraft mods, all mod namespace starts with "growthcraft"
 | [Hamsters](https://modrinth.com/mod/hamsters) | 1.0.3 | Fully Added |
 | [Handcrafted](https://modrinth.com/mod/handcrafted/gallery) | | Miniscule |
 | [Haunted Harvest](https://modrinth.com/mod/haunted-harvest) | | Fully Added |
 | [Hearth & Home](https://modrinth.com/mod/hearth-and-home) | 2.0.3 | Fully Added |
 | [\[Let's Do\] HerbalBrews](https://modrinth.com/mod/lets-do-herbalbrews) | | Partial Support |
+| [Hexxit Gear](https://www.curseforge.com/minecraft/mc-mods/hexxit-gear) | 2.8.3 | Foliage Only |
+| [Hexxit World](https://www.technicpack.net/modpack/hexxit-ii.896745/mods) | 1.1.0-33 | Foliage Only | # Seems like this is the only place that even lists Hexxit World.
 | [Hydrological](https://modrinth.com/mod/hydrological) | | Unknown | # Not even sure if this is the correct mod, ID is hydrol
 | [Immersive Aircraft](https://modrinth.com/mod/immersive-aircraft) | | Fully Added |
 | [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering) | 12.0.0 | Partial Support |
@@ -173,6 +178,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [LevelZ](https://modrinth.com/mod/levelz) | 1.4.13 | Fully Added |
 | [Lootr](https://modrinth.com/mod/lootr) | 0.7.33.81 | Fully Added |
 | [Lucky TNT Mod (Too Much TNT)](https://www.curseforge.com/minecraft/mc-mods/luckytnt) | | Unknown | # Wait we don't have an ID for TNT??
+| [Illuminations Legacy 🔥](https://www.curseforge.com/minecraft/mc-mods/illuminations-legacy) | 0.4.4-hexxit | Entities Only  | # Can only find this specific edit here?? https://www.technicpack.net/modpack/hexxit-ii.896745/mods
 | [Luminax](https://www.curseforge.com/minecraft/mc-mods/luminax) | 1.1.1 | Fully Added |
 | [Magnum Torch](https://modrinth.com/mod/magnum-torch) | 8.0.2 | Fully Added |
 | [Malum](https://modrinth.com/mod/malum) | | Partial Support |
@@ -191,6 +197,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Mystical Agriculture](https://modrinth.com/mod/mystical-agriculture) | | Miniscule |
 | [Mythic Metals](https://modrinth.com/mod/mythicmetals) | | Miniscule |
 | [Mythic Upgrades](https://modrinth.com/mod/mythic-upgrades) | | Partial Support |
+| [Natura](https://www.curseforge.com/minecraft/mc-mods/natura) | 4.3.2.69 | Foliage Only |
 | [Naturalist](https://modrinth.com/mod/naturalist) | 4.0.3 | Fully Added |
 | [Nature's Spirit](https://modrinth.com/mod/natures-spirit) | | Foliage Only |
 | [Neapolitan](https://www.curseforge.com/minecraft/mc-mods/neapolitan) | 5.0.0 | Foliage Only |
@@ -206,10 +213,10 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Pam's HarvestCraft 2 - Crops](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops) | | Partial Support |
 | [Productive Trees](https://modrinth.com/mod/productivetrees) | | Foliage Only |
 | [Productive Bees](https://www.curseforge.com/minecraft/mc-mods/productivebees) | 13.6.6 | Miniscule |
-| [Project: Vibrant Journeys](https://www.curseforge.com/minecraft/mc-mods/project-vibrant-journeys) | | Miniscule |
+| [Project: Vibrant Journeys](https://modrinth.com/mod/project-vibrant-journeys) | 1.6.4 | Foliage Only |
 | [Prominent](https://www.curseforge.com/minecraft/mc-mods/prominent) | | Miniscule |
 | [Pure Ores](https://modrinth.com/mod/pureores) | | Partial Support |
-| [Quark](https://modrinth.com/mod/quark) | | Fully Added |
+| [Quark](https://modrinth.com/mod/quark) | | Fully Added | # Some stuff from 1.12.2 has to be added in addition to modern versions
 | raitherts | | Miniscule / Unknown | # I legit have no idea what mod this is or why it was added
 | [Railcraft Reborn](https://www.curseforge.com/minecraft/mc-mods/railcraft-reborn) | 1.2.4 | Partial Support |
 | [Randomium Ore](https://modrinth.com/mod/randomium-ore) | | Partial Support |
@@ -274,7 +281,7 @@ Here we can keep track of what mods has been added and what version a contributo
 ---
 
 ## Status Definitions
-- Fully Added: All blocks, items, entities, and dimensions (if applicable) has been reviewed and added to it's most appropriate ID.
+- Fully Added: All blocks, items, entities, and dimensions (if applicable) has been reviewed and added to its most appropriate ID.
 - Partial Support: Only parts of a mod was added / reviewed. For example, only block.properties and dimension.properties were updated to include mod ID's, or a good amount of blocks were added, but not all.
 - In Testing: This mod either needs to be re-reviewed, or simply is still in the process of being added.
 - Planned: Support for this mod is planned but not yet implemented. Please leave your username if you are the one adding this status so we don't have multiple people working on the same thing.
