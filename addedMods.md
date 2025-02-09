@@ -134,7 +134,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Extended block shapes](https://modrinth.com/mod/extshape/version/2.2.1-fabric-1.20.1) | 2.2.1 | Fully Added | # Total fucking anguish trying to add this. 
 | [Extended Block Shapes - Blockus](https://modrinth.com/mod/extshape_blockus) | 2.1.4 | Fully Added | # Same with you
 | [Extractinator](https://modrinth.com/mod/extractinator) | 2.3.0 | Fully Added |
-| [Eyes in the Darkness](https://www.curseforge.com/minecraft/mc-mods/eyes-in-the-darkness) | 0.1.0 |  Fully Added |
+| [Eyes in the Darkness](https://www.curseforge.com/minecraft/mc-mods/eyes-in-the-darkness) | 0.1.0 | Fully Added |
 | [Fabric Seasons: Extras](https://modrinth.com/mod/fabric-seasons-extras) | 1.2-BETA | Fully Added |
 | [The Farlanders](https://modrinth.com/mod/the-farlanders) | | Miniscule |
 | [\[Let's Do\] Farm & Charm](https://modrinth.com/mod/lets-do-farm-charm) | | Partial Support |
@@ -191,6 +191,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Midnight Madness](https://modrinth.com/mod/midnight-madness) | | Partial Support |
 | [MineCells](https://www.curseforge.com/minecraft/mc-mods/minecells) | 1.9.1 | Miniscule | #added emissive torches
 | [Miner's Delight +](https://www.curseforge.com/minecraft/mc-mods/miners-delight-plus) | 1.2.3 | Partial Support |
+| [Mo' Creatures Extended](https://www.curseforge.com/minecraft/mc-mods/mo-creatures-extended) | 12.3.2 | Ores Only |
 | [More Buckets](https://modrinth.com/mod/more-buckets) | | Partial Support | # Someone Should return to this
 | [More Slabs Stairs & Walls](https://modrinth.com/mod/more-slabs-stairs-and-walls) | | In Testing | # A lot of these blocks were added before the partial block ID's were added and needs to be fixed.
 | [MoreOres+](https://modrinth.com/mod/moreores+) | | Partial Support |
@@ -202,12 +203,14 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Naturalist](https://modrinth.com/mod/naturalist) | 4.0.3 | Fully Added |
 | [Nature's Spirit](https://modrinth.com/mod/natures-spirit) | | Foliage Only |
 | [Neapolitan](https://www.curseforge.com/minecraft/mc-mods/neapolitan) | 5.0.0 | Foliage Only |
+| [Netherending Ores](https://www.curseforge.com/minecraft/mc-mods/netherending-ores) | 1.4.2 | Fully Added |
+| [Nether Archives](https://modrinth.com/mod/nether-archives) | 0.3.6 | Fully Added |
 | [Nether's Delight](https://modrinth.com/mod/nethers-delight) | | In Testing | # Why is soil in the Deepslate Diamond Ore ID??
-| [Nether Archives](https://modrinth.com/mod/nether-archives) | 0.3.6| Fully Added |
 | [Occultism](https://modrinth.com/mod/occultism) | | Miniscule |
 | [Oh The Biomes We've Gone](https://modrinth.com/mod/oh-the-biomes-weve-gone) | 1.3.0 | Foliage Only |
 | [Oh The Biomes You'll Go](https://modrinth.com/mod/biomesyougo) | | Partial Support |
 | [Ore Creeper](https://modrinth.com/mod/ore-creeper) | | Fully Added |
+| [Oreberries](https://www.curseforge.com/minecraft/mc-mods/oreberries) | 0.5.0 | Fully Added |
 | [Oreganized](https://modrinth.com/mod/oreganized) | | Miniscule |
 | [Organics](https://www.curseforge.com/minecraft/mc-mods/organics) | | Miniscule |
 | [Pam's HarvestCraft 2 - Trees](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-trees) | | Fully Added |
@@ -237,10 +240,11 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Serene Shrubbery](https://modrinth.com/mod/serene-shrubbery) | 1.5.1 | Fully Added |
 | [Silent Gear](https://modrinth.com/mod/silent-gear) | | Miniscule |
 | [Silent's Gems](https://modrinth.com/mod/silents-gems) | | Miniscule |
+| [Simple Gravel Ores](https://modrinth.com/mod/simple-gravel-ores) | 1.8 | Fully Added |
 | [Simply Light](https://www.curseforge.com/minecraft/mc-mods/simply-light) | 1.4.6 | Miniscule |
 | [Sky Arena](https://www.curseforge.com/minecraft/mc-mods/sky-arena) | 1.0.0 | Fully Added |
 | [Snowy Spirit](https://modrinth.com/mod/snowy-spirit) | | Foliage Only |
-| [SoulsWeapons](https://modrinth.com/mod/mariums-soulslike-weaponry) | 1.2 |Partial Support | #Added Ore Glowing
+| [SoulsWeapons](https://modrinth.com/mod/mariums-soulslike-weaponry) | 1.2 | Partial Support | #Added Ore Glowing
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
 | [Spelunkery](https://modrinth.com/mod/spelunkery) | | Fully Added |
 | [Streams] (https://www.curseforge.com/minecraft/mc-mods/streams) | 0.4.9 | Fullly Added |
@@ -252,6 +256,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [TechReborn](https://www.curseforge.com/minecraft/mc-mods/techreborn) | 5.8.7 | Fully Added | #basically added full support, only thing missing is items glowing and what not, but is not rly needed
 | [Theurgy](https://www.curseforge.com/minecraft/mc-mods/theurgy) | | Fully Added |
 | [Thermal Expansion](https://modrinth.com/mod/thermal-expansion) | | Miniscule |
+| [Thermal Foundation](https://www.curseforge.com/minecraft/mc-mods/thermal-foundation) | 2.6.7.1 | Ores Only |
 | [Thermal: Extra](https://modrinth.com/mod/thermal-extra) | | Miniscule |
 | [Thin Air](https://www.curseforge.com/minecraft/mc-mods/new-thin-air) | | Fullly Added | #It was only one lantern
 | [Things](https://www.curseforge.com/minecraft/mc-mods/things-fabric) | 0.3.3 | Partial | #Ores are glowing now 
@@ -289,7 +294,8 @@ Here we can keep track of what mods has been added and what version a contributo
 - Miniscule: A very small portion of the mod's content has been added or reviewed.
 - Foliage Only: Self-explanatory, only plants, flowers, vines, and other various plantlife has been added.
 - Items Only: Only includes item.properties entries.
-- Entities Only: Only includes entity.properties entries
+- Entities Only: Only includes entity.properties entries.
+- Ores Only: Only Ores have been added to block.properties.
 - Autogenerated Content: This mod contains content that is auto-generated and the blocks that exist will change per modlist. Typically we'll try and support as many of said blocks as possible or use tags where applicable (Iris exclusive feature), however it is most likely you'll need to add blocks yourself. If you're going to use this tag, please explain what is being autogenerated and why in a comment.
 - Unknown: Unable to make a determination of how well a mod has been added due to various factors. Please leave a comment if you're gonna use this status!
 
