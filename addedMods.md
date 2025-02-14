@@ -189,6 +189,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [MEGA Cells](https://www.curseforge.com/minecraft/mc-mods/mega-cells) | 4.3.0 | Fully Added |
 | [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) | 10.7.7.64 | Partial Support |
 | [Midnight Madness](https://modrinth.com/mod/midnight-madness) | | Partial Support |
+| [Milk Lib](https://github.com/TropheusJ/milk-lib) | 1.2.60 | Fully Added | # Part of Create, Milk Lib is a submod
 | [MineCells](https://www.curseforge.com/minecraft/mc-mods/minecells) | 1.9.1 | Miniscule | #added emissive torches
 | [Miner's Delight +](https://www.curseforge.com/minecraft/mc-mods/miners-delight-plus) | 1.2.3 | Partial Support |
 | [Mo' Creatures Extended](https://www.curseforge.com/minecraft/mc-mods/mo-creatures-extended) | 12.3.2 | Ores Only |
@@ -224,10 +225,12 @@ Here we can keep track of what mods has been added and what version a contributo
 | raitherts | | Miniscule / Unknown | # I legit have no idea what mod this is or why it was added
 | [Railcraft Reborn](https://www.curseforge.com/minecraft/mc-mods/railcraft-reborn) | 1.2.4 | Partial Support |
 | [Randomium Ore](https://modrinth.com/mod/randomium-ore) | | Partial Support |
+| [Rare Ice](https://modrinth.com/mod/rare-ice) | 0.1.1 | Fully Added |
 | [Rechiseled](https://modrinth.com/mod/rechiseled) | | Miniscule |
 | [Rechiseled: Create](https://modrinth.com/mod/rechiseled-create) | | Miniscule |
 | [Red Bits (redstone)](https://modrinth.com/mod/red-bits) | | Partial Support |
 | [Regions Unexplored](https://modrinth.com/mod/regions-unexplored) | 0.5.6 | Partial Support |
+| [Reliquary Reincarnations](https://www.curseforge.com/minecraft/mc-mods/reliquary-reincarnations) | 1.3.4.796 | Miniscule |
 | [Ribbits](https://modrinth.com/mod/ribbits) | | Foliage Only |
 | [Rustic Delight](https://www.curseforge.com/minecraft/mc-mods/rustic-delight) | 1.1.2 | Fully Added |
 | [Sandwichable](https://modrinth.com/mod/sandwichable) | | Foliage Only |
