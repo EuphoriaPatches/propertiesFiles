@@ -44,12 +44,15 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Autumnity](https://modrinth.com/mod/autumnity) | | Partial Support |
 | [\[Let's Do\] Bakery](https://modrinth.com/mod/lets-do-bakery) | | Partial Support |
 | [\[Let's Do\] Beachparty](https://modrinth.com/mod/lets-do-beachparty) | | Partial Support |
+| [Beast Slayer](https://www.curseforge.com/minecraft/mc-mods/beast-slayer) | 2.0_test1 | Blocks Only | # Think this mod used to be called Ancient Beasts, at least that's what the mod namespace has
 | [Better End Ore](https://modrinth.com/mod/better-end-ore) | 1.0.3 | Fully Added |
 | [BetterEnd](https://modrinth.com/mod/betterend) | 4.0.11 | Fully Added |
 | [BetterNether](https://modrinth.com/mod/betternether) | 9.0.10 | Fully Added |
+| [BiblioCraft](https://www.curseforge.com/minecraft/mc-mods/bibliocraft) | 2.4.6 | Partial Support | # Lots of block entities in this mod
 | [Bigger Reactors](https://www.curseforge.com/minecraft/mc-mods/biggerreactors) | | Fully Added |
 | [Biome Makeover](https://modrinth.com/mod/biome-makeover) | | Fully Added |
 | [Biomes O' Plenty](https://modrinth.com/mod/biomes-o-plenty) | | Fully Added |
+| [Blockcraftery](https://www.curseforge.com/minecraft/mc-mods/blockcraftery) | 1.2.0 | Fully Added | # Another copycat mod. Can't do much but put ID's in no properties
 | [Blockus](https://modrinth.com/mod/blockus) | 2.7.19 | Fully Added |
 | [Blood Magic](https://modrinth.com/mod/blood-magic) | | Partial Support |
 | [\[Let's Do\] BloomingNature](https://modrinth.com/mod/lets-do-bloomingnature) | | Partial Support |
@@ -71,10 +74,15 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Charm](https://modrinth.com/mod/charm) | | Fully Added |
 | [ChemLib](https://www.curseforge.com/minecraft/mc-mods/chemlib) | | Partial Support |
 | [Chipped](https://modrinth.com/mod/chipped) | | Fully Added |
-| [ChocoCraft Plus](https://modrinth.com/mod/chococraft-plus) | 4.5.8 | Foliage Only |
+| [Chisel](https://www.curseforge.com/minecraft/mc-mods/chisel) | 1.0.2.45 | Blocks Only |
+| [Chisels & Bits](https://www.curseforge.com/minecraft/mc-mods/chisels-bits) | 14.33 | Blocks Only | # Support kinda sucks, but what else can you do with a chiseling out rocks mod.
+| [ChocoCraft Plus](https://modrinth.com/mod/chococraft-plus) | 4.5.8 | Fully Added |
+| [Chocolate Quest Repoured](https://www.curseforge.com/minecraft/mc-mods/cqrepoured)| 2.6.15B | Minuiscule |
 | [Cinderscapes](https://modrinth.com/mod/cinderscapes) | | Fully Added |
 | [Clockwork](https://modrinth.com/mod/create-clockwork) | | Miniscule |
 | [Cobblemon](https://modrinth.com/mod/cobblemon) | | Partial Support | # Someone should see if the entities look good
+| [Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts) | 1.4.1.3 | Fully Added |
+| [Construct's Armory](https://www.curseforge.com/minecraft/mc-mods/constructs-armory) | 1.3.4 | Miniscule | 
 | [Corn Delight](https://modrinth.com/mod/corn-delight) | | In Testing | # Corn plants are 2 blocks tall, current blocks.properties only has one entry!
 | [Create](https://modrinth.com/mod/create) | 0.5.1.f-build.1417 | Fully Added | # Create has a new version out on forge but has yet to make it's way to fabric, unless you build it yourself. Waiting for offical release so addons can update as well
 | [Create Big Cannons](https://modrinth.com/mod/create-big-cannons) | 5.5.1 | Fully Added  |
@@ -250,6 +258,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [SoulsWeapons](https://modrinth.com/mod/mariums-soulslike-weaponry) | 1.2 | Partial Support | #Added Ore Glowing
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
 | [Spelunkery](https://modrinth.com/mod/spelunkery) | | Fully Added |
+| [Statues: Rechiseled](https://www.curseforge.com/minecraft/mc-mods/statues-rechiseled) | 1.0.1 | Fully Added | # Can't predict what block this could be, placed in no properties
 | [Streams](https://www.curseforge.com/minecraft/mc-mods/streams) | 0.4.9 | Fullly Added |
 | [Supplementaries](https://modrinth.com/mod/supplementaries) | | Fully Added |
 | [Sushi Go Crafting](https://modrinth.com/mod/sushigocrafting) | | Foliage Only |
@@ -290,17 +299,18 @@ Here we can keep track of what mods has been added and what version a contributo
 ---
 
 ## Status Definitions
-- Fully Added: All blocks, items, entities, and dimensions (if applicable) has been reviewed and added to its most appropriate ID.
-- Partial Support: Only parts of a mod was added / reviewed. For example, only block.properties and dimension.properties were updated to include mod ID's, or a good amount of blocks were added, but not all.
-- In Testing: This mod either needs to be re-reviewed, or simply is still in the process of being added.
-- Planned: Support for this mod is planned but not yet implemented. Please leave your username if you are the one adding this status so we don't have multiple people working on the same thing.
-- Miniscule: A very small portion of the mod's content has been added or reviewed.
-- Foliage Only: Self-explanatory, only plants, flowers, vines, and other various plantlife has been added.
-- Items Only: Only includes item.properties entries.
-- Entities Only: Only includes entity.properties entries.
-- Ores Only: Only Ores have been added to block.properties.
-- Autogenerated Content: This mod contains content that is auto-generated and the blocks that exist will change per modlist. Typically we'll try and support as many of said blocks as possible or use tags where applicable (Iris exclusive feature), however it is most likely you'll need to add blocks yourself. If you're going to use this tag, please explain what is being autogenerated and why in a comment.
-- Unknown: Unable to make a determination of how well a mod has been added due to various factors. Please leave a comment if you're gonna use this status!
+- **Autogenerated Content**: This mod contains content that is auto-generated and the blocks that exist will change per modlist. Typically we'll try and support as many of said blocks as possible or use tags where applicable (Iris exclusive feature), however it is most likely you'll need to add blocks yourself. If you're going to use this tag, please explain what is being autogenerated and why in a comment.
+- **Blocks Only**: All blocks have been added but nothing else.
+- **Entities Only**: Only includes entity.properties entries.
+- **Foliage Only**: Self-explanatory, only plants, flowers, vines, and other various plantlife has been added.
+- **Fully Added**: All blocks, items, entities, and dimensions (if applicable) has been reviewed and added to its most appropriate ID.
+- **In Testing**: This mod either needs to be re-reviewed, or simply is still in the process of being added.
+- **Items Only**: Only includes item.properties entries.
+- **Miniscule**: A very small portion of the mod's content has been added or reviewed.
+- **Ores Only**: Only Ores have been added to block.properties.
+- **Partial Support**: Only parts of a mod was added / reviewed. For example, only block.properties and dimension.properties were updated to include mod ID's, or a good amount of blocks were added, but not all.
+- **Planned**: Support for this mod is planned but not yet implemented. Please leave your username if you are the one adding this status so we don't have multiple people working on the same thing.
+- **Unknown**: Unable to make a determination of how well a mod has been added due to various factors. Please leave a comment if you're gonna use this status!
 
 ## Template
 `| [modName1](modLink) | Mod's Version | Mod's Added Status | #Optional Comment`

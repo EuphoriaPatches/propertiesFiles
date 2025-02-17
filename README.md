@@ -1,8 +1,8 @@
 # Euphoria Patches Properties Files
-Welcome to the community-driven block.property files!
+Welcome to the community-driven ``.properties`` files!
 ## How to contribute
 - A Pull Request can be opened and the changes will be merged with Euphoria Patches.
-- The raw property file can also be shared on [discord](https://euphoriapatches.com/discord) for those who have not worked with GitHub before
+- The raw property file can also be shared on [Discord](https://euphoriapatches.com/discord) for those who have not worked with GitHub before.
 
 ## - Please use the Template!
 ## - Please document mods in addedMods.md!
@@ -116,15 +116,16 @@ Once you've added your blocks, please go to addedMods.md and add what mod you've
 <p>
 </details>
 
-Also please keep this list alphebeticlly sorted!
+Also please keep this list alphebeticlly sorted for ease of reading!
 
 ## Version
 - Each property file has an independent version system which increases when a vanilla component has been changed, it does not increase when the community has added modded entries
 - The properties files will always be up-to-date with the Euphoria Patches dev versions
 
 ## Tips And Tricks
-- Use the mod [ItemStackExporter](https://modrinth.com/mod/itemstackexporter) to export many modded blocks at once
-- Create a fork [instructions](https://www.git-tower.com/learn/git/faq/github-fork-repository)
-- Create a pull request from a fork [instructions](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
-- Read the text in the files
-- Ask on [discord](https://euphoriapatches.com/discord) if questions arise
+- Use mod [ItemStackExporter](https://modrinth.com/mod/itemstackexporter) to export many modded blocks at once via JEI or REI.
+- Use mod [Euphoria Companion](https://modrinth.com/mod/euphoria-companion) to gather an external list of all blocks registered within the current game.
+- How to create a fork: [Instructions](https://www.git-tower.com/learn/git/faq/github-fork-repository)
+- How to create a pull request from a fork: [Instructions](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
+- Read the documentation left within the files!
+- Ask on [Discord](https://euphoriapatches.com/discord) if questions arise.
