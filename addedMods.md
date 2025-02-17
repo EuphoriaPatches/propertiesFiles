@@ -313,4 +313,4 @@ Here we can keep track of what mods has been added and what version a contributo
 - **Unknown**: Unable to make a determination of how well a mod has been added due to various factors. Please leave a comment if you're gonna use this status!
 
 ## Template
-`| [modName1](modLink) | Mod's Version | Mod's Added Status | #Optional Comment`c
+`| [modName1](modLink) | Mod's Version | Mod's Added Status | #Optional Comment`
