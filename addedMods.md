@@ -259,7 +259,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
 | [Spelunkery](https://modrinth.com/mod/spelunkery) | | Fully Added |
 | [Statues: Rechiseled](https://www.curseforge.com/minecraft/mc-mods/statues-rechiseled) | 1.0.1 | Fully Added | # Can't predict what block this could be, placed in no properties
-| [Streams] (https://www.curseforge.com/minecraft/mc-mods/streams) | 0.4.9 | Fullly Added |
+| [Streams](https://www.curseforge.com/minecraft/mc-mods/streams) | 0.4.9 | Fullly Added |
 | [Supplementaries](https://modrinth.com/mod/supplementaries) | | Fully Added |
 | [Sushi Go Crafting](https://modrinth.com/mod/sushigocrafting) | | Foliage Only |
 | [Terrestria](https://modrinth.com/mod/terrestria) | | Foliage Only |
