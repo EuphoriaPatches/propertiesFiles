@@ -123,7 +123,7 @@ Also please keep this list alphebeticlly sorted for ease of reading!
 - The properties files will always be up-to-date with the Euphoria Patches dev versions
 
 ## Tips And Tricks
-- Use mod [ItemStackExporter](https://modrinth.com/mod/itemstackexporter) to export many modded blocks at once via JEI or REI.
+- Use mod [ItemStackExporter](https://modrinth.com/mod/itemstackexporter) to export many modded blocks at once via JEI or REI or just the normal vanilla inventory.
 - Use mod [Euphoria Companion](https://modrinth.com/mod/euphoria-companion) to gather an external list of all blocks registered within the current game.
 - How to create a fork: [Instructions](https://www.git-tower.com/learn/git/faq/github-fork-repository)
 - How to create a pull request from a fork: [Instructions](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
