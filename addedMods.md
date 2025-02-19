@@ -286,6 +286,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [\[Let's Do\] Vinery](https://modrinth.com/mod/lets-do-vinery) | | Foliage Only |
 | [Vintage Delight](https://www.curseforge.com/minecraft/mc-mods/vintage-delight) | 0.1.4 | Partial Support |
 | [Waystones](https://modrinth.com/mod/waystones) | | Fully Added |
+| [Wetland Whimsy](https://modrinth.com/mod/wetland-whimsy) | | Foliage Only |
 | [\[Let's Do\] WilderNature](https://modrinth.com/mod/lets-do-wildernature) | | Miniscule |
 | [Whisperwoods](https://modrinth.com/mod/whisperwoods) | 2.1.2 | Fully Added |
 | [Wilder Wild](https://modrinth.com/mod/wilder-wild) | 3.0.11 | Fully Added | # Added hopefully all remaining blocks and fixed Stone Chests. Scorched entity and all boats added. wilderwild:hollowed_pale_oak_log will need to be added to a non-full Pale Oak Log id once one is available.
