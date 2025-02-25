@@ -84,7 +84,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts) | 1.4.1.3 | Fully Added |
 | [Construct's Armory](https://www.curseforge.com/minecraft/mc-mods/constructs-armory) | 1.3.4 | Miniscule | 
 | [Corn Delight](https://modrinth.com/mod/corn-delight) | | In Testing | # Corn plants are 2 blocks tall, current blocks.properties only has one entry!
-| [Create](https://modrinth.com/mod/create) | 0.5.1.f-build.1417 | Fully Added | # Create has a new version out on forge but has yet to make it's way to fabric, unless you build it yourself. Waiting for offical release so addons can update as well
+| [Create](https://modrinth.com/mod/create) | 1.20.1-0.5.1.j | Fully Added |
 | [Create Big Cannons](https://modrinth.com/mod/create-big-cannons) | 5.5.1 | Fully Added  |
 | [Create: Bitterballen](https://modrinth.com/mod/create-bitterballen) | | Miniscule | 
 | [Create Crafts & Additions](https://modrinth.com/mod/createaddition) | 1.2.4 | Fully Added |
