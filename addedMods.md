@@ -16,8 +16,8 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Additional Additions](https://modrinth.com/mod/addadd) | 6.0.1 | Fully Added |
 | [Additional Lanterns](https://modrinth.com/mod/additional-lanterns) | 1.1.1a | Fully Added |
 | [Advanced Netherite](https://modrinth.com/mod/advanced-netherite) | | Partial Support |
-| [AdventureZ](https://modrinth.com/mod/adventurez) | | Fully Added |
-| [Artifality](https://modrinth.com/mod/artifality) |0.6.1 | Fully Added |
+| [AdventureZ](https://modrinth.com/mod/adventurez) | 1.4.20 | Fully Added |
+| [Artifality](https://modrinth.com/mod/artifality) | 0.6.1 | Fully Added |
 | [The Aether](https://modrinth.com/mod/aether) | | Partial Support |
 | [The Aether: Redux](https://modrinth.com/mod/the-aether-redux) | | Partial Support |
 | [Aether: Lost Content Addon](https://modrinth.com/mod/aether-lost-content) | | Miniscule |
@@ -26,11 +26,12 @@ Here we can keep track of what mods has been added and what version a contributo
 | [AllTheCompressed](https://www.curseforge.com/minecraft/mc-mods/allthecompressed) | | Fully Added |
 | [Allthemodium](https://www.curseforge.com/minecraft/mc-mods/allthemodium) | | Fully Added |
 | [All The Tweaks](https://www.curseforge.com/minecraft/mc-mods/all-the-tweaks) | | Fully Added |
-| [Amendments](https://modrinth.com/mod/amendments) | | Fully Added |
-| [Ancient Aether](https://modrinth.com/mod/ancient-aether) | | Partial Support |
+| [Amendments](https://modrinth.com/mod/amendments) | 1.2.19 | Fully Added |
+| [Ancient Aether](https://modrinth.com/mod/ancient-aether) | 3.0.1 | Partial Support |
 | [Another Furniture](https://modrinth.com/mod/another-furniture) | 3.0.1 | Fully Added |
 | [AntiBlocksReChiseled](https://modrinth.com/mod/antiblocksrechiseled) | | Partial Support |
 | [Applied Energistics 2](https://modrinth.com/mod/ae2) | 19.1.2-beta | Fully Added |
+| [Aqua Acrobatics](https://www.curseforge.com/minecraft/mc-mods/aqua-acrobatics) | 1.15.3 | Fully Added |
 | [Aquaculture 2](https://www.curseforge.com/minecraft/mc-mods/aquaculture) | 2.5.2 | Fully Added |
 | [Aquaculture Delight](https://www.curseforge.com/minecraft/mc-mods/aquaculture-delight) | 1.0.0 | Fully Added |
 | [Aquamirae](https://www.curseforge.com/minecraft/mc-mods/aquamirae-fabric) | 6 API16 | Partial Support |
@@ -56,7 +57,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Biome Makeover](https://modrinth.com/mod/biome-makeover) | | Fully Added |
 | [Biomes O' Plenty](https://modrinth.com/mod/biomes-o-plenty) | | Fully Added |
 | [Blockcraftery](https://www.curseforge.com/minecraft/mc-mods/blockcraftery) | 1.2.0 | Fully Added | # Another copycat mod. Can't do much but put ID's in no properties
-| [Blockus](https://modrinth.com/mod/blockus) | 2.7.19 | Fully Added |
+| [Blockus](https://modrinth.com/mod/blockus) | 2.7.21 | Fully Added |
 | [Blood Magic](https://modrinth.com/mod/blood-magic) | | Partial Support |
 | [\[Let's Do\] BloomingNature](https://modrinth.com/mod/lets-do-bloomingnature) | | Partial Support |
 | [Blossom](https://modrinth.com/mod/blossom) | 1.0.7 | Fully Added |
@@ -71,47 +72,51 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Bushier Flowers](https://modrinth.com/mod/bushier-flowers) | | Partial Support |
 | [Buzzier Bees](https://modrinth.com/mod/buzzier-bees) | | Partial Support |
 | [\[Let's Do\] Candlelight](https://modrinth.com/mod/lets-do-candlelight) | | Partial Support  |
+| [Capsule](https://www.curseforge.com/minecraft/mc-mods/capsule) | 3.4.76 | Miniscule |
 | [Caupona](https://modrinth.com/mod/caupona) | | Partial Support |
 | [Caverns & Chasms](https://modrinth.com/mod/caverns-and-chasms) | | Partial Support |
 | [Chalk](https://modrinth.com/mod/chalk-mod) | | Fully Added |
 | [Charm](https://modrinth.com/mod/charm) | | Fully Added |
 | [ChemLib](https://www.curseforge.com/minecraft/mc-mods/chemlib) | | Partial Support |
-| [Chipped](https://modrinth.com/mod/chipped) | | Fully Added |
+| [Chipped](https://modrinth.com/mod/chipped) | 3.0.7 | Fully Added |
 | [Chisel](https://www.curseforge.com/minecraft/mc-mods/chisel) | 1.0.2.45 | Blocks Only |
 | [Chisels & Bits](https://www.curseforge.com/minecraft/mc-mods/chisels-bits) | 14.33 | Blocks Only | # Support kinda sucks, but what else can you do with a chiseling out rocks mod.
 | [ChocoCraft Plus](https://modrinth.com/mod/chococraft-plus) | 4.5.8 | Fully Added |
-| [Chocolate Quest Repoured](https://www.curseforge.com/minecraft/mc-mods/cqrepoured)| 2.6.15B | Minuiscule |
+| [Chocolate Quest Repoured](https://www.curseforge.com/minecraft/mc-mods/cqrepoured)| 2.6.15B | Blocks Only |
 | [Cinderscapes](https://modrinth.com/mod/cinderscapes) | | Fully Added |
 | [Clockwork](https://modrinth.com/mod/create-clockwork) | | Miniscule |
 | [Cobblemon](https://modrinth.com/mod/cobblemon) | | Partial Support | # Someone should see if the entities look good
 | [Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts) | 1.4.1.3 | Fully Added |
 | [Construct's Armory](https://www.curseforge.com/minecraft/mc-mods/constructs-armory) | 1.3.4 | Miniscule | 
 | [Corn Delight](https://modrinth.com/mod/corn-delight) | | In Testing | # Corn plants are 2 blocks tall, current blocks.properties only has one entry!
-| [Create](https://modrinth.com/mod/create) | 1.20.1-0.5.1.j | Fully Added |
-| [Create Big Cannons](https://modrinth.com/mod/create-big-cannons) | 5.5.1 | Fully Added  |
+| [Create](https://modrinth.com/mod/create) | 0.5.1-j-build.1631 | Fully Added |
+| [Create Big Cannons](https://modrinth.com/mod/create-big-cannons) | 5.8.2 | Fully Added  |
 | [Create: Bitterballen](https://modrinth.com/mod/create-bitterballen) | | Miniscule | 
 | [Create Crafts & Additions](https://modrinth.com/mod/createaddition) | 1.2.4 | Fully Added |
 | [Create Deco](https://modrinth.com/mod/create-deco) | 2.0.2 | Fully Added |
 | [Create Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry) | 1.2.16 | Fully Added |
 | [Create: Estrogen](https://modrinth.com/mod/estrogen) | | Partial Support |
 | [Create: Garnished](https://modrinth.com/mod/create-garnished) | | Foliage Only |
-| [Create Goggles](https://modrinth.com/mod/create-goggles) | 0.5.5.g | Fully Added |
+| [Create Goggles](https://modrinth.com/mod/create-goggles) | 0.5.6 | Fully Added |
 | [Created Metallurgy](https://www.curseforge.com/minecraft/mc-mods/create-metallurgy) | 0.0.6-1.20.1 | Partial Support | #The lightbulbs should have their respected color
 | [Create: New Age](https://modrinth.com/mod/create-new-age) | | Miniscule |
-| [Create: Steam 'n' Rails](https://modrinth.com/mod/create-steam-n-rails) | 1.6.4 | Fully Added |
+| [Create Slice & Dice](https://modrinth.com/mod/slice-and-dice) | 3.3.1 | Miniscule |
+| [Create: Steam 'n' Rails](https://modrinth.com/mod/create-steam-n-rails) | 1.6.9 | Fully Added |
 | [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) | 0.9.3-1.20.1 | Partial Support | #Only touched block.properties here; most blocks besides the concrete, cinderblocks, bauxit, and galena were added
 | [Create Utilities](https://modrinth.com/mod/create-utilities) | 0.3.0 | Fully Added | # Parts of blocks that use the end portal shader doesn't render at all
 | [Croptopia](https://www.curseforge.com/minecraft/mc-mods/croptopia) | | Fully Added |
 | [Cuisine Delight](https://www.curseforge.com/minecraft/mc-mods/cuisine-delight) | 1.1.14 | Fully Added |
+| [Culinary Construct](https://www.curseforge.com/minecraft/mc-mods/culinary-construct) | 1.3.4 | Miniscule |
 | [Cultural Delights](https://modrinth.com/mod/cultural-delights) | | Partial Support | # Looks like more crops got added since this was added to the list
 | [Darker Depths](https://www.curseforge.com/minecraft/mc-mods/darker-depths) | | Partial Support |
+| [Debark](https://www.curseforge.com/minecraft/mc-mods/debark) | 0.1.3 | Autogenerated Content |
 | [Decorative Blocks](https://modrinth.com/mod/decorative-blocks) | | Miniscule |
 | [Deep Aether](https://modrinth.com/mod/deep-aether) | | Foliage Only |
 | [Deeper and Darker](https://modrinth.com/mod/deeperdarker) | | Partial | #added emissive color to gloomy sculk
-| [Delightful](https://www.curseforge.com/minecraft/mc-mods/delightful) | 3.6.0 | Miniscule |
-| [Diagonal Fences](https://modrinth.com/mod/diagonal-fences) | 8.1.4 | Autogenerated Content |
+| [Delightful](https://www.curseforge.com/minecraft/mc-mods/delightful) | 1.3 | Blocks Only |
+| [Diagonal Fences](https://modrinth.com/mod/diagonal-fences) | 8.1.5 | Autogenerated Content |
 | [Diagonal Windows](https://modrinth.com/mod/diagonal-windows) | | Autogenerated Content |
-| [Dimensional Doors](https://modrinth.com/mod/dimensionaldoors) | 5.4.3 | Fully Added / Autogenerated Content | # Dimensional doors are auto-generated, most doors are now tagged with ag_door. Any stragglers should still be added
+| [Dimensional Doors](https://modrinth.com/mod/dimensionaldoors) | 5.3.4 | Fully Added / Autogenerated Content | # Dimensional doors are auto-generated, most doors are now tagged with ag_door. Any stragglers should still be added
 | [Doctor Who: Weeping Angels](https://modrinth.com/mod/weeping-angels) | | Miniscule |
 | [Draconic Evolution](https://modrinth.com/mod/draconic-evolution) | | Miniscule |
 | [DRG Flares](https://www.curseforge.com/minecraft/mc-mods/drg-flares) | 1.2.8 | Fully Added | # Emissives added to the flare entity and all flare items
@@ -134,8 +139,10 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Ecologics](https://modrinth.com/mod/ecologics) | 2.2.0 | Fully Added |
 | eidolon | | Miniscule / Unknown | # Unsure of which fork was used to add support
 | [EldritchEnd](https://www.curseforge.com/minecraft/mc-mods/eldritch-end) | 0.3.2 | Miniscule | #added ore emissive to etyr ore
+| [Enchanting Plus](https://www.curseforge.com/minecraft/mc-mods/enchanting-plus) | 5.0.0 | Fully Added |
 | [Ender IO](https://modrinth.com/mod/enderio) | | Partial Support |
 | [End Remastered](https://modrinth.com/mod/endrem) | 5.2.4 | Fully Added | # Added all eye items.
+| [Enhanced Celestials](https://modrinth.com/mod/enhanced-celestials) | 5.0.2.3 | Fully Added |
 | [Environmental](https://modrinth.com/mod/environmental) | | Foliage Only |
 | [Etcetera](https://modrinth.com/mod/etcetera/versions) | | Miniscule |
 | [Eternal Starlight](https://www.curseforge.com/minecraft/mc-mods/eternal-starlight) | 0.2.0 | Partial Support |
@@ -144,16 +151,18 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Excavated Variants](https://modrinth.com/mod/excavated_variants) | | Autogenerated Content |
 | [Expanded Delight](https://modrinth.com/mod/expanded-delight) | | Fully Added |
 | [ExtendedAE](https://www.curseforge.com/minecraft/mc-mods/ex-pattern-provider) | 2.1.8 | Fully Added | #AdreadedKing
-| [Extended block shapes](https://modrinth.com/mod/extshape/version/2.2.1-fabric-1.20.1) | 2.2.1 | Fully Added | # Total fucking anguish trying to add this. 
-| [Extended Block Shapes - Blockus](https://modrinth.com/mod/extshape_blockus) | 2.1.4 | Fully Added | # Same with you
+| [Extended Block Shapes](https://modrinth.com/mod/extshape) | 3.1.0 | Fully Added | # Total fucking anguish trying to add this. 
+| [Extended Block Shapes - Blockus](https://modrinth.com/mod/extshape_blockus) | 3.1.0 | Fully Added | # Same with you
 | [Extractinator](https://modrinth.com/mod/extractinator) | 2.3.0 | Fully Added |
 | [Eyes in the Darkness](https://www.curseforge.com/minecraft/mc-mods/eyes-in-the-darkness) | 0.1.0 | Fully Added |
 | [Fabric Seasons: Extras](https://modrinth.com/mod/fabric-seasons-extras) | 1.2-BETA | Fully Added |
+| [Fairy Lights](https://www.curseforge.com/minecraft/mc-mods/fairy-lights)| 5.0.0 | Fully Added / Unknown | # Supposidly the mod will be fixed to allow ACL on the lights, someone should check on this after some time has passed.
 | [The Farlanders](https://modrinth.com/mod/the-farlanders) | | Miniscule |
 | [\[Let's Do\] Farm & Charm](https://modrinth.com/mod/lets-do-farm-charm) | | Partial Support |
 | [Farmer's Delight](https://modrinth.com/mod/farmers-delight) | | Fully Added | # Used the Fabric port to add support, hoping forge just works lol
 | [Farmer's Respite](https://www.curseforge.com/minecraft/mc-mods/farmers-respite) | | Partial Support |
-| [Farming for Blockheads](https://modrinth.com/mod/farming-for-blockheads) | 3.1.28 | Miniscule |
+| [Farming for Blockheads](https://modrinth.com/mod/farming-for-blockheads) | 3.1.28 | Fully Added |
+| [Fish's Undead Rising](https://www.curseforge.com/minecraft/mc-mods/fishs-undead-rising) | 1.4.0 | Blocks Only |
 | [Flower Patch](https://modrinth.com/mod/flower-patch) | | Foliage Only | # Someone should confirm if the flowers can be placed in flower pots
 | [Forbidden and Arcanus](https://modrinth.com/mod/forbidden-arcanus) | | Miniscule |
 | [Frame Changer](https://modrinth.com/mod/frame-changer) | | Miniscule |
@@ -168,36 +177,45 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Geode+](https://modrinth.com/mod/geode-plus) | | Partial Support |
 | [Good Ending](https://modrinth.com/mod/good-ending) | 1.0.1 | Miniscule |
 | [Grappling Hook Mod: Restitched](https://modrinth.com/mod/grappling-hook-mod-fabric) | 1.99.0 | Fully Added |
+| [Gravestones](https://modrinth.com/mod/gravestones) | v1.15 | Fully Added |
 | [GregTech CE Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial) | | Miniscule / Unknown | # Mod ID is gtceu, Unknown if this mod was the one used.
-| [Growthcraft Community Edition](https://www.curseforge.com/minecraft/mc-mods/growthcraft-community-edition) | 4.2.3 | Foliage Only | # Seems like this is a collection of smaller Growthcraft mods, all mod namespace starts with "growthcraft"
+| [GregTechCEu Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern) | 1.6.3 | Partial support | # Add support for lamps and coil blocks
+| [GTOcore] | 1.0.1 | Partial support | # Add support for coil blocks
+| [Growthcraft Community Edition](https://www.curseforge.com/minecraft/mc-mods/growthcraft-community-edition) | 4.2.3 | Fully Added | # Seems like this is a collection of smaller 
+Growthcraft mods, all mod namespace starts with "growthcraft"
+| [HT's TreeChop](https://www.curseforge.com/minecraft/mc-mods/treechop) | 0.14.7 | Fully Added |
 | [Hamsters](https://modrinth.com/mod/hamsters) | 1.0.3 | Fully Added |
 | [Handcrafted](https://modrinth.com/mod/handcrafted/gallery) | | Miniscule |
 | [Haunted Harvest](https://modrinth.com/mod/haunted-harvest) | | Fully Added |
 | [Hearth & Home](https://modrinth.com/mod/hearth-and-home) | 2.0.3 | Fully Added |
+| [Hephaestus](https://modrinth.com/mod/hephaestus) | 3.6.4.287 | Fully Added |
 | [\[Let's Do\] HerbalBrews](https://modrinth.com/mod/lets-do-herbalbrews) | | Partial Support |
 | [Hexxit Gear](https://www.curseforge.com/minecraft/mc-mods/hexxit-gear) | 2.8.3 | Foliage Only |
 | [Hexxit World](https://www.technicpack.net/modpack/hexxit-ii.896745/mods) | 1.1.0-33 | Foliage Only | # Seems like this is the only place that even lists Hexxit World.
 | [Hydrological](https://modrinth.com/mod/hydrological) | | Unknown | # Not even sure if this is the correct mod, ID is hydrol
 | [Immersive Aircraft](https://modrinth.com/mod/immersive-aircraft) | | Fully Added |
-| [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering) | 12.0.0 | Partial Support |
-| [Immersive Weathering](https://modrinth.com/mod/immersive-weathering) | 2.0.3 | Fully Added / Autogenerated Content | # Fixed many inconsistencies with iron block variants and added missing blocks and items. A few duplicate entries removed. Also added manual Wilder Wild autogen support. Leaf Pile waving looks very broken with higher pile stacks, so they might need to be moved to a non-waving id.
+| [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering) | 12.0.0 | Partial Support |c
+| [Immersive Weathering](https://modrinth.com/mod/immersive-weathering) | 2.0.5 | Fully Added / Autogenerated Content | # Fixed many inconsistencies with iron block variants and added missing blocks and items. A few duplicate entries removed. Also added manual Wilder Wild autogen support. Leaf Pile waving looks very broken with higher pile stacks, so they might need to be moved to a non-waving id.
 | [Industrial Revolution](https://www.curseforge.com/minecraft/mc-mods/industrial-revolution) | 1.16.7BETA | Planned | #ADreadedKing
 | [Infinite Abyss](https://modrinth.com/mod/infinite-abyss/gallery) | | Partial Support |
 | [Infinity Buttons](https://modrinth.com/mod/infinitybuttons) | | Partial Support |
 | [Infusion Table](https://modrinth.com/mod/infusion-table) | 1.2.0 | Fully Added |
+| [Iron Chests](https://www.curseforge.com/minecraft/mc-mods/iron-chests) | 7.0.67.844 | Fully Added | # Originally part of IC2, became it's own mod. Original owner cpw let ProgWML6 maintain and update it.
 | [Iron Chests: Restocked](https://modrinth.com/mod/ironchests) | 5.0.2 | Fully Added |
 | Iron Furnaces | | Unknown | # Not sure what version of this mod was used
 | [Jaden's Nether Expansion](https://modrinth.com/mod/jadens-nether-expansion) | 2.2.1 | Partial Support |
 | [JDK's Mob Grinding Utilities](https://modrinth.com/mod/jdk-mgu) | | Miniscule |
 | [LevelZ](https://modrinth.com/mod/levelz) | 1.4.13 | Fully Added |
-| [Lootr](https://modrinth.com/mod/lootr) | 0.7.33.81 | Fully Added |
+| [Little Tiles](https://modrinth.com/mod/littletiles) | | Miniscule |
+| [Lootr](https://modrinth.com/mod/lootr) | 0.7.35.85 | Fully Added |
 | [Lucky TNT Mod (Too Much TNT)](https://www.curseforge.com/minecraft/mc-mods/luckytnt) | | Unknown | # Wait we don't have an ID for TNT??
 | [Illuminations Legacy 🔥](https://www.curseforge.com/minecraft/mc-mods/illuminations-legacy) | 0.4.4-hexxit | Entities Only  | # Can only find this specific edit here?? https://www.technicpack.net/modpack/hexxit-ii.896745/mods
+| [iChunUtil](https://www.curseforge.com/minecraft/mc-mods/ichunutil) | 7.2.2 | Fully Added | # There's just a single block??
 | [Luminax](https://www.curseforge.com/minecraft/mc-mods/luminax) | 1.1.1 | Fully Added |
 | [Magnum Torch](https://modrinth.com/mod/magnum-torch) | 8.0.2 | Fully Added |
 | [Malum](https://modrinth.com/mod/malum) | | Partial Support |
 | [Man of Many Planes](https://modrinth.com/mod/man-of-many-planes) | 0.1.0 | Fully Added |
-| [MCA Reborn](https://modrinth.com/mod/minecraft-comes-alive-reborn) | 7.5.19 | Fully Added |
+| [MCA Reborn](https://modrinth.com/mod/minecraft-comes-alive-reborn) | 7.6.3 | Fully Added |
 | [\[Let's Do\] Meadow](https://modrinth.com/mod/lets-do-meadow) | | Partial Support |
 | [MEGA Cells](https://www.curseforge.com/minecraft/mc-mods/mega-cells) | 4.3.0 | Fully Added |
 | [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) | 10.7.7.64 | Partial Support |
@@ -209,41 +227,50 @@ Here we can keep track of what mods has been added and what version a contributo
 | [More Buckets](https://modrinth.com/mod/more-buckets) | | Partial Support | # Someone Should return to this
 | [More Slabs Stairs & Walls](https://modrinth.com/mod/more-slabs-stairs-and-walls) | | In Testing | # A lot of these blocks were added before the partial block ID's were added and needs to be fixed.
 | [MoreOres+](https://modrinth.com/mod/moreores+) | | Partial Support |
+| [Mowzie's Mobs](https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs) | 1.5.8 | Blocks Only |
 | [Mystical Agradditions](https://modrinth.com/mod/mystical-agradditions) | | Partial Support |
 | [Mystical Agriculture](https://modrinth.com/mod/mystical-agriculture) | | Miniscule |
 | [Mythic Metals](https://modrinth.com/mod/mythicmetals) | | Miniscule |
 | [Mythic Upgrades](https://modrinth.com/mod/mythic-upgrades) | | Partial Support |
-| [Natura](https://www.curseforge.com/minecraft/mc-mods/natura) | 4.3.2.69 | Foliage Only |
+| [Natura](https://www.curseforge.com/minecraft/mc-mods/natura) | 4.3.2.69 | Fully Added |
 | [Naturalist](https://modrinth.com/mod/naturalist) | 4.0.3 | Fully Added |
 | [Nature's Spirit](https://modrinth.com/mod/natures-spirit) | | Foliage Only |
 | [Neapolitan](https://www.curseforge.com/minecraft/mc-mods/neapolitan) | 5.0.0 | Foliage Only |
 | [Netherending Ores](https://www.curseforge.com/minecraft/mc-mods/netherending-ores) | 1.4.2 | Fully Added |
 | [Nether Archives](https://modrinth.com/mod/nether-archives) | 0.3.6 | Fully Added |
 | [Nether's Delight](https://modrinth.com/mod/nethers-delight) | | In Testing | # Why is soil in the Deepslate Diamond Ore ID??
+| [Nyx](https://www.curseforge.com/minecraft/mc-mods/nyx) | 1.4.2 | Fully Added |
 | [Occultism](https://modrinth.com/mod/occultism) | | Miniscule |
+| [Ocean's Delight](https://modrinth.com/mod/oceans-delight) | 1.0.2 | Miniscule |
 | [Oh The Biomes We've Gone](https://modrinth.com/mod/oh-the-biomes-weve-gone) | 1.3.0 | Foliage Only |
 | [Oh The Biomes You'll Go](https://modrinth.com/mod/biomesyougo) | | Partial Support |
+| [OpenBlocks](https://www.curseforge.com/minecraft/mc-mods/openblocks) | 1.8.1 | Fully Added |
 | [Ore Creeper](https://modrinth.com/mod/ore-creeper) | | Fully Added |
 | [Oreberries](https://www.curseforge.com/minecraft/mc-mods/oreberries) | 0.5.0 | Fully Added |
 | [Oreganized](https://modrinth.com/mod/oreganized) | | Miniscule |
 | [Organics](https://www.curseforge.com/minecraft/mc-mods/organics) | | Miniscule |
+| [Origins] (https://modrinth.com/mod/origins) | 1.10.0 | Miniscule |
 | [Pam's HarvestCraft 2 - Trees](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-trees) | | Fully Added |
 | [Pam's HarvestCraft 2 - Crops](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops) | | Partial Support |
+| [Placeable Items](https://www.curseforge.com/minecraft/mc-mods/placeable-items) | 3.3 | Fully Added |
+| [Player Plates \(Obsidian Plates\)](https://www.curseforge.com/minecraft/mc-mods/player-plates) | 1.3.1.1 | Fully Added |
+| [PlusTiC](https://www.curseforge.com/minecraft/mc-mods/plusticminusbad) | 8.0.1.0 | Fully Added | # Rich history with this one, will not link original but it's uploaded safe counterpart made by someone else.
 | [Productive Trees](https://modrinth.com/mod/productivetrees) | | Foliage Only |
 | [Productive Bees](https://www.curseforge.com/minecraft/mc-mods/productivebees) | 13.6.6 | Miniscule |
-| [Project: Vibrant Journeys](https://modrinth.com/mod/project-vibrant-journeys) | 1.6.4 | Foliage Only |
+| [Project: Vibrant Journeys](https://modrinth.com/mod/project-vibrant-journeys) | 1.6.4 | Fully Added |
 | [Prominent](https://www.curseforge.com/minecraft/mc-mods/prominent) | | Miniscule |
 | [Pure Ores](https://modrinth.com/mod/pureores) | | Partial Support |
-| [Quark](https://modrinth.com/mod/quark) | | Fully Added | # Some stuff from 1.12.2 has to be added in addition to modern versions
+| [Quark](https://modrinth.com/mod/quark) | r1.6-180| Fully Added | # Some stuff from 1.12.2 has to be added in addition to modern versions
 | raitherts | | Miniscule / Unknown | # I legit have no idea what mod this is or why it was added
 | [Railcraft Reborn](https://www.curseforge.com/minecraft/mc-mods/railcraft-reborn) | 1.2.4 | Partial Support |
 | [Randomium Ore](https://modrinth.com/mod/randomium-ore) | | Partial Support |
 | [Rare Ice](https://modrinth.com/mod/rare-ice) | 0.1.1 | Fully Added |
 | [Rechiseled](https://modrinth.com/mod/rechiseled) | | Miniscule |
 | [Rechiseled: Create](https://modrinth.com/mod/rechiseled-create) | | Miniscule |
+| [Recurrent Complex](https://www.curseforge.com/minecraft/mc-mods/recurrent-complex) | 1.4.8.5 | Fully Added |
 | [Red Bits (redstone)](https://modrinth.com/mod/red-bits) | | Partial Support |
 | [Regions Unexplored](https://modrinth.com/mod/regions-unexplored) | 0.5.6 | Partial Support |
-| [Reliquary Reincarnations](https://www.curseforge.com/minecraft/mc-mods/reliquary-reincarnations) | 1.3.4.796 | Miniscule |
+| [Reliquary Reincarnations](https://www.curseforge.com/minecraft/mc-mods/reliquary-reincarnations) | 1.3.4.796 | Blocks Only |
 | [Ribbits](https://modrinth.com/mod/ribbits) | | Foliage Only |
 | [Rustic Delight](https://www.curseforge.com/minecraft/mc-mods/rustic-delight) | 1.1.2 | Fully Added |
 | [Sandwichable](https://modrinth.com/mod/sandwichable) | | Foliage Only |
@@ -252,6 +279,8 @@ Here we can keep track of what mods has been added and what version a contributo
 | [SCP: Overtime](https://modrinth.com/mod/scp-overtime) | | Miniscule |
 | [Seafarer](https://www.curseforge.com/minecraft/mc-mods/seafarer-forge) | 1.0.1 | Partial Support |
 | [Searchlight (& Wall Lights)](https://www.curseforge.com/minecraft/mc-mods/searchlight-forge) | 1.1.11 | Fully Added |
+| [Seared Ladder \(Backport\)](https://www.curseforge.com/minecraft/mc-mods/seared-ladder-backport) | 1.1.2 | Fully Added |
+| [SecretRoomsMod](https://www.curseforge.com/minecraft/mc-mods/secretroomsmod) | 5.6.4 | Fully Added | # Optifine shits the bed with this one on 1.12.2, made it so those using shaders could actually be fooled.
 | [SecurityCraft](https://modrinth.com/mod/security-craft) | 1.9.10 | Fully Added |
 | [Serene Shrubbery](https://modrinth.com/mod/serene-shrubbery) | 1.5.1 | Fully Added |
 | [Silent Gear](https://modrinth.com/mod/silent-gear) | | Miniscule |
@@ -261,12 +290,16 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Simply Swords](https://modrinth.com/mod/simply-swords) | 1.56.0 | Partial Support | # All base weapon tiers are added, along with some of the unique weapons. Many of the unique items have very dramatic animated textures and are pretty much impossible to support.
 | [Sky Arena](https://www.curseforge.com/minecraft/mc-mods/sky-arena) | 1.0.0 | Fully Added |
 | [Snowy Spirit](https://modrinth.com/mod/snowy-spirit) | | Foliage Only |
+| [Soul Shards Respawn](https://www.curseforge.com/minecraft/mc-mods/soul-shards-respawn) | 1.1.2 | Miniscule |
 | [SoulsWeapons](https://modrinth.com/mod/mariums-soulslike-weaponry) | 1.2 | Partial Support | #Added Ore Glowing
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
 | [Spelunkery](https://modrinth.com/mod/spelunkery) | | Fully Added |
+| Star | 1.5.2 | Fully Added | # Part of Tinkers' Construct's Fabric port Hephaestus
 | [Statues: Rechiseled](https://www.curseforge.com/minecraft/mc-mods/statues-rechiseled) | 1.0.1 | Fully Added | # Can't predict what block this could be, placed in no properties
+| [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers) | 5.5.0 | Fully Added |
 | [Streams](https://www.curseforge.com/minecraft/mc-mods/streams) | 0.4.9 | Fullly Added |
-| [Supplementaries](https://modrinth.com/mod/supplementaries) | | Fully Added |
+| [Supplementaries](https://modrinth.com/mod/supplementaries) | 3.1.16 | Fully Added |
+| [Supplementaries Squared](https://modrinth.com/mod/supplementaries-squared) | 1.1.18 | Fully Added / Autogenerated Content | # Item shelves seems to detect woodtypes and makes new variants based on it
 | [Sushi Go Crafting](https://modrinth.com/mod/sushigocrafting) | | Foliage Only |
 | [Terrestria](https://modrinth.com/mod/terrestria) | | Foliage Only |
 | [TerraFirmaCraft](https://modrinth.com/mod/terrafirmacraft) | | Foliage Only |
@@ -274,16 +307,19 @@ Here we can keep track of what mods has been added and what version a contributo
 | [TechReborn](https://www.curseforge.com/minecraft/mc-mods/techreborn) | 5.8.7 | Fully Added | #basically added full support, only thing missing is items glowing and what not, but is not rly needed
 | [Theurgy](https://www.curseforge.com/minecraft/mc-mods/theurgy) | | Fully Added |
 | [Thermal Expansion](https://modrinth.com/mod/thermal-expansion) | | Miniscule |
-| [Thermal Foundation](https://www.curseforge.com/minecraft/mc-mods/thermal-foundation) | 2.6.7.1 | Ores Only |
+| [Thermal Foundation](https://www.curseforge.com/minecraft/mc-mods/thermal-foundation) | 2.6.7.1 | Blocks Only |
 | [Thermal: Extra](https://modrinth.com/mod/thermal-extra) | | Miniscule |
 | [Thin Air](https://www.curseforge.com/minecraft/mc-mods/new-thin-air) | | Fullly Added | #It was only one lantern
 | [Things](https://www.curseforge.com/minecraft/mc-mods/things-fabric) | 0.3.3 | Partial | #Ores are glowing now 
 | [Tide](https://www.curseforge.com/minecraft/mc-mods/tide) | 1.3.3 | Fully Added |
-| [Tinkers' Construct](https://modrinth.com/mod/tinkers-construct) | | Partial Support | # Need to add liquids
-| [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) | | Fully Added | # Could improve this by placing various backpacks into their respective block ID's, unsure if this will actually work though
-| [Traverse](https://modrinth.com/mod/traverse) | | Foliage Only |
+| [Tinkers' Construct](https://modrinth.com/mod/tinkers-construct) | 2.13.0.183 | Blocks Only |
+| [Tomb Many Graves 2](https://www.curseforge.com/minecraft/mc-mods/tomb-many-graves-2) | 4.2.0 | Fully Added |
+| [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster) | 1.8.5.0 | Fully Added |
+| [Translocators 1.8.+](https://www.curseforge.com/minecraft/mc-mods/translocators-1-8) | 2.5.2.81 | Fully Added |
+| [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) | 9.1.28 | Fully Added | # Could improve this by placing various backpacks into their respective block ID's, unsure if this will actually work though
+| [Traverse](https://modrinth.com/mod/traverse) | 1.6.0-69 | Fully Added |
 | [Twigs](https://modrinth.com/mod/twigs) | 3.1.0 | Fully Added |
-| [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | | Foliage Only |
+| [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | 3.11.1022 | Fully Added | # Mostly 1.12.2 stuff
 | [THE UNDEAD REVAMPED](https://www.curseforge.com/minecraft/mc-mods/theundead) | | Miniscule |
 | [The Undergarden](https://modrinth.com/mod/the-undergarden) | | Miniscule |
 | [Universal Ores](https://modrinth.com/mod/universal_ores) | | Autogenerated Content |
@@ -291,7 +327,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [VerdantVibes](https://modrinth.com/mod/verdantvibes) | | Foliage Only |
 | [\[Let's Do\] Vinery](https://modrinth.com/mod/lets-do-vinery) | | Foliage Only |
 | [Vintage Delight](https://www.curseforge.com/minecraft/mc-mods/vintage-delight) | 0.1.4 | Partial Support |
-| [Waystones](https://modrinth.com/mod/waystones) | | Fully Added |
+| [Waystones](https://modrinth.com/mod/waystones) | 14.1.10 | Fully Added |
 | [Wetland Whimsy](https://modrinth.com/mod/wetland-whimsy) | | Foliage Only |
 | [\[Let's Do\] WilderNature](https://modrinth.com/mod/lets-do-wildernature) | | Miniscule |
 | [Whisperwoods](https://modrinth.com/mod/whisperwoods) | 2.1.2 | Fully Added |
@@ -300,9 +336,6 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
-| [Little Tiles](https://modrinth.com/mod/littletiles) | | Miniscule |
-| [GregTechCEu Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern) | 1.6.3 | Partial support | # Add support for lamps and coil blocks
-| [GTOcore] | 1.0.1 | Partial support | # Add support for coil blocks
 ---
 
 ## Status Definitions
