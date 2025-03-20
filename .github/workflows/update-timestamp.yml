@@ -3,7 +3,7 @@ name: Update Timestamp
 on:
   push:
     paths:
-      - '**/*.properties'  # Remove the **/*.md pattern
+      - '**/*.properties'
 
 jobs:
   update-timestamp:
@@ -17,15 +17,15 @@ jobs:
         id: modified-files
         run: |
           # Get the list of files modified in the most recent commit
-          FILES=$(git diff --name-only HEAD^ HEAD | grep -E '\.properties$' || true)
-          echo "Modified files: $FILES"
-          echo "modified_files=$FILES" >> $GITHUB_OUTPUT
-
+          # Use a file to store the list to avoid issues with spaces in filenames
+          git diff --name-only HEAD^ HEAD | grep -E '\.properties$' > modified_files.txt || true
+          echo "Modified files:"
+          cat modified_files.txt
+          
       - name: Update timestamp in files
-        if: steps.modified-files.outputs.modified_files != ''
         run: |
           DATE=$(date '+%B %d, %Y, %H:%M UTC')
-          for file in $(echo "${{ steps.modified-files.outputs.modified_files }}"); do
+          while IFS= read -r file || [ -n "$file" ]; do
             if [ -f "$file" ]; then
               echo "Processing file: $file"
               # Check if timestamp line already exists
@@ -36,8 +36,10 @@ jobs:
                 # Add timestamp line at the beginning of the file
                 sed -i "1i### Last updated: $DATE" "$file"
               fi
+            else
+              echo "File not found: $file"
             fi
-          done
+          done < modified_files.txt
       
       - name: Commit changes
         run: |
@@ -48,5 +50,18 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Update timestamps for modified files [skip ci]"
-            git push
+            # Add retry logic for pushing changes
+            MAX_RETRIES=3
+            RETRY_COUNT=0
+            
+            until git push origin ${GITHUB_REF#refs/heads/} || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              echo "Push failed, retrying (Attempt $RETRY_COUNT of $MAX_RETRIES)..."
+              git pull --rebase origin ${GITHUB_REF#refs/heads/}
+            done
+            
+            if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
+              echo "Failed to push after $MAX_RETRIES attempts"
+              exit 1
+            fi
           fi
