@@ -180,9 +180,8 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Gravestones](https://modrinth.com/mod/gravestones) | v1.15 | Fully Added |
 | [GregTech CE Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial) | | Miniscule / Unknown | # Mod ID is gtceu, Unknown if this mod was the one used.
 | [GregTechCEu Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern) | 1.6.3 | Partial support | # Add support for lamps and coil blocks
-| [GTOcore] | 1.0.1 | Partial support | # Add support for coil blocks
-| [Growthcraft Community Edition](https://www.curseforge.com/minecraft/mc-mods/growthcraft-community-edition) | 4.2.3 | Fully Added | # Seems like this is a collection of smaller 
-Growthcraft mods, all mod namespace starts with "growthcraft"
+| GTOcore | 1.0.1 | Partial support | # Add support for coil blocks
+| [Growthcraft Community Edition](https://www.curseforge.com/minecraft/mc-mods/growthcraft-community-edition) | 4.2.3 | Fully Added | # Seems like this is a collection of smaller Growthcraft mods, all mod namespace starts with "growthcraft"
 | [HT's TreeChop](https://www.curseforge.com/minecraft/mc-mods/treechop) | 0.14.7 | Fully Added |
 | [Hamsters](https://modrinth.com/mod/hamsters) | 1.0.3 | Fully Added |
 | [Handcrafted](https://modrinth.com/mod/handcrafted/gallery) | | Miniscule |
