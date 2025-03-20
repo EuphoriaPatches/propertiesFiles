@@ -24,6 +24,11 @@ jobs:
         with:
           python-version: '3.x'
           
+      - name: Fetch latest changes
+        run: |
+          # Fetch the latest changes from the remote repository
+          git pull origin ${GITHUB_REF#refs/heads/}
+          
       - name: Create and run sorting script
         run: |
           # Create the Python script
@@ -133,15 +138,10 @@ jobs:
         run: |
           git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
           
-      - name: Pull latest changes
-        if: steps.git-check.outputs.changes == 'true'
-        run: |
-          # Pull with rebase to incorporate any remote changes
-          git pull --rebase origin ${GITHUB_REF#refs/heads/}
-          
       - name: Commit changes
         if: steps.git-check.outputs.changes == 'true'
         run: |
           git add addedMods.md
           git commit -m "Sort mods table and update timestamp [skip ci]"
-          git push origin ${GITHUB_REF#refs/heads/}
+          # Force push to overwrite any concurrent changes
+          git push --force origin ${GITHUB_REF#refs/heads/}
