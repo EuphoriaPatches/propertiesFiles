@@ -3,13 +3,11 @@
 ### WHERE TO CONTRIBUTE:
 If you want to contribute to the Euphoria Patches modded support library, please only edit the files from GitHub. https://euphoriapatches.com/properties
 
-new test begins!
 ---
 ### What is this file?
 Here we can keep track of what mods has been added and what version a contributor used to add said mod. Whenever a new mod is added, _please_ include it here for future reference!!
 
 ---
-
 ## Mod List
 | Mod Name | Version | Status |
 |----------|---------|--------|
@@ -21,6 +19,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [\[Let's Do\] HerbalBrews](https://modrinth.com/mod/lets-do-herbalbrews) | | Partial Support |
 | [\[Let's Do\] Meadow](https://modrinth.com/mod/lets-do-meadow) | | Partial Support |
 | [\[Let's Do\] Vinery](https://modrinth.com/mod/lets-do-vinery) | | Foliage Only |
+| [Sort Test] | | Partial Support |
 | [\[Let's Do\] WilderNature](https://modrinth.com/mod/lets-do-wildernature) | | Miniscule |
 | [Absent by Design](https://modrinth.com/mod/absent-by-design) | | Partial Support |
 | [Ad Astra](https://modrinth.com/mod/ad-astra) | 1.15.18 | Fully Added |
