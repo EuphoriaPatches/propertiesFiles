@@ -13,55 +13,36 @@ jobs:
         with:
           fetch-depth: 0
           
-      - name: Get modified files
-        id: modified-files
+      - name: Get and process modified files
         run: |
-          # Get the list of files modified in the most recent commit
-          # Use a file to store the list to avoid issues with spaces in filenames
-          git diff --name-only HEAD^ HEAD | grep -E '\.properties$' > modified_files.txt || true
-          echo "Modified files:"
-          cat modified_files.txt
+          # Get the list of modified files directly into a variable (no temp file)
+          MODIFIED_FILES=$(git diff --name-only HEAD^ HEAD | grep -E '\.properties$' || true)
+          echo "Modified files: $MODIFIED_FILES"
           
-      - name: Update timestamp in files
-        run: |
-          DATE=$(date '+%B %d, %Y, %H:%M UTC')
-          while IFS= read -r file || [ -n "$file" ]; do
-            if [ -f "$file" ]; then
-              echo "Processing file: $file"
-              # Check if timestamp line already exists
-              if grep -q "^### Last updated:" "$file"; then
-                # Update existing timestamp line
-                sed -i "s/^### Last updated:.*$/### Last updated: $DATE/" "$file"
+          # Only proceed if there are modified files
+          if [ -n "$MODIFIED_FILES" ]; then
+            DATE=$(date '+%B %d, %Y, %H:%M UTC')
+            
+            # Process each file
+            for file in $MODIFIED_FILES; do
+              if [ -f "$file" ]; then
+                echo "Processing file: $file"
+                # Check if timestamp line already exists
+                if grep -q "^### Last updated:" "$file"; then
+                  # Update existing timestamp line
+                  sed -i "s/^### Last updated:.*$/### Last updated: $DATE/" "$file"
+                else
+                  # Add timestamp line at the beginning of the file
+                  sed -i "1i### Last updated: $DATE" "$file"
+                fi
               else
-                # Add timestamp line at the beginning of the file
-                sed -i "1i### Last updated: $DATE" "$file"
+                echo "File not found: $file"
               fi
-            else
-              echo "File not found: $file"
-            fi
-          done < modified_files.txt
+            done
+          else
+            echo "No .properties files were modified"
+          fi
       
       - name: Commit changes
         run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
-          git add .
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update timestamps for modified files [skip ci]"
-            # Add retry logic for pushing changes
-            MAX_RETRIES=3
-            RETRY_COUNT=0
-            
-            until git push origin ${GITHUB_REF#refs/heads/} || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
-              RETRY_COUNT=$((RETRY_COUNT + 1))
-              echo "Push failed, retrying (Attempt $RETRY_COUNT of $MAX_RETRIES)..."
-              git pull --rebase origin ${GITHUB_REF#refs/heads/}
-            done
-            
-            if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
-              echo "Failed to push after $MAX_RETRIES attempts"
-              exit 1
-            fi
-          fi
+          
