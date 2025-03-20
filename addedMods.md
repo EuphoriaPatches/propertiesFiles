@@ -1,4 +1,4 @@
-### Last updated: March 20, 2025, 20:42 UTC
+### Last updated: March 20, 2025, 20:43 UTC
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
 If you want to contribute to the Euphoria Patches modded support library, please only edit the files from GitHub. https://euphoriapatches.com/properties
@@ -19,7 +19,6 @@ Here we can keep track of what mods has been added and what version a contributo
 | [\[Let's Do\] HerbalBrews](https://modrinth.com/mod/lets-do-herbalbrews) | | Partial Support |
 | [\[Let's Do\] Meadow](https://modrinth.com/mod/lets-do-meadow) | | Partial Support |
 | [\[Let's Do\] Vinery](https://modrinth.com/mod/lets-do-vinery) | | Foliage Only |
-| [Sort Test] | | Partial Support |
 | [\[Let's Do\] WilderNature](https://modrinth.com/mod/lets-do-wildernature) | | Miniscule |
 | [Absent by Design](https://modrinth.com/mod/absent-by-design) | | Partial Support |
 | [Ad Astra](https://modrinth.com/mod/ad-astra) | 1.15.18 | Fully Added |
@@ -292,6 +291,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Simply Swords](https://modrinth.com/mod/simply-swords) | 1.56.0 | Partial Support | # All base weapon tiers are added, along with some of the unique weapons. Many of the unique items have very dramatic animated textures and are pretty much impossible to support.
 | [Sky Arena](https://www.curseforge.com/minecraft/mc-mods/sky-arena) | 1.0.0 | Fully Added |
 | [Snowy Spirit](https://modrinth.com/mod/snowy-spirit) | | Foliage Only |
+| [Sort Test] | | Partial Support |
 | [Soul Shards Respawn](https://www.curseforge.com/minecraft/mc-mods/soul-shards-respawn) | 1.1.2 | Miniscule |
 | [SoulsWeapons](https://modrinth.com/mod/mariums-soulslike-weaponry) | 1.2 | Partial Support | #Added Ore Glowing
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
