@@ -1,0 +1,53 @@
+name: Update Timestamp
+
+on:
+  push:
+    paths:
+      - '**/*.properties'
+      - '**/*.md'
+
+jobs:
+  update-timestamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Get modified files
+        id: modified-files
+        run: |
+          # Get the list of files modified in the most recent commit
+          FILES=$(git diff --name-only HEAD^ HEAD | grep -E '\.properties$|\.md$' || true)
+          echo "Modified files: $FILES"
+          echo "modified_files=$FILES" >> $GITHUB_OUTPUT
+
+      - name: Update timestamp in files
+        if: steps.modified-files.outputs.modified_files != ''
+        run: |
+          DATE=$(date '+%B %d, %Y, %H:%M UTC')
+          for file in $(echo "${{ steps.modified-files.outputs.modified_files }}"); do
+            if [ -f "$file" ]; then
+              echo "Processing file: $file"
+              # Check if timestamp line already exists
+              if grep -q "^### Last updated:" "$file"; then
+                # Update existing timestamp line
+                sed -i "s/^### Last updated:.*$/### Last updated: $DATE/" "$file"
+              else
+                # Add timestamp line at the beginning of the file
+                sed -i "1i### Last updated: $DATE" "$file"
+              fi
+            fi
+          done
+      
+      - name: Commit changes
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update timestamps for modified files [skip ci]"
+            git push
+          fi
