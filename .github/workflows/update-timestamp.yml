@@ -3,8 +3,7 @@ name: Update Timestamp
 on:
   push:
     paths:
-      - '**/*.properties'
-      - '**/*.md'
+      - '**/*.properties'  # Remove the **/*.md pattern
 
 jobs:
   update-timestamp:
@@ -18,7 +17,7 @@ jobs:
         id: modified-files
         run: |
           # Get the list of files modified in the most recent commit
-          FILES=$(git diff --name-only HEAD^ HEAD | grep -E '\.properties$|\.md$' || true)
+          FILES=$(git diff --name-only HEAD^ HEAD | grep -E '\.properties$' || true)
           echo "Modified files: $FILES"
           echo "modified_files=$FILES" >> $GITHUB_OUTPUT
 

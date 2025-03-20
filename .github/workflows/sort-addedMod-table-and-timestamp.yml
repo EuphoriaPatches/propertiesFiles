@@ -1,4 +1,4 @@
-name: Sort Mods Table
+name: Sort Mods Table and Update Timestamp
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - 'addedMods.md'
 
 jobs:
-  sort-table:
+  sort-and-timestamp:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -133,15 +133,29 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           
-      - name: Check for changes
-        id: git-check
-        run: |
-          git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
-          
-      - name: Commit changes
-        if: steps.git-check.outputs.changes == 'true'
+      - name: Commit and push with retry
         run: |
           git add addedMods.md
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
           git commit -m "Sort mods table and update timestamp [skip ci]"
-          # Force push to overwrite any concurrent changes
-          git push --force origin ${GITHUB_REF#refs/heads/}
+          
+          # Try pushing with retries for potential conflicts
+          MAX_RETRIES=3
+          RETRY_COUNT=0
+          
+          until git push origin ${GITHUB_REF#refs/heads/} || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            echo "Push failed, retrying (Attempt $RETRY_COUNT of $MAX_RETRIES)..."
+            git pull --rebase origin ${GITHUB_REF#refs/heads/}
+          done
+          
+          if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
+            echo "Failed to push after $MAX_RETRIES attempts, using force push"
+            git push --force origin ${GITHUB_REF#refs/heads/}
+          fi
