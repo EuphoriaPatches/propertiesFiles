@@ -8,6 +8,8 @@ on:
 jobs:
   update-timestamp:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -45,4 +47,12 @@ jobs:
       
       - name: Commit changes
         run: |
-          
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add *.properties
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update timestamps for modified files [skip ci]"
+            git push
+          fi
