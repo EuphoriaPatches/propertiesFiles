@@ -11,10 +11,13 @@ on:
 jobs:
   sort-table:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -120,16 +123,25 @@ jobs:
             sed -i "1i### Last updated: $DATE" "addedMods.md"
           fi
           
+      - name: Configure Git
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          
       - name: Check for changes
         id: git-check
         run: |
           git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
           
+      - name: Pull latest changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          # Pull with rebase to incorporate any remote changes
+          git pull --rebase origin ${GITHUB_REF#refs/heads/}
+          
       - name: Commit changes
         if: steps.git-check.outputs.changes == 'true'
         run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
           git add addedMods.md
           git commit -m "Sort mods table and update timestamp [skip ci]"
-          git push
+          git push origin ${GITHUB_REF#refs/heads/}
