@@ -17,7 +17,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -27,11 +26,13 @@ jobs:
       - name: Fetch latest changes
         run: |
           # Fetch the latest changes from the remote repository
+          echo "Fetching latest changes from repository..."
           git pull origin ${GITHUB_REF#refs/heads/}
           
       - name: Create and run sorting script
         run: |
           # Create the Python script
+          echo "Creating sorting script..."
           cat > sort_mods_table.py << 'EOF'
           import re
           import os
@@ -44,7 +45,7 @@ jobs:
               # Find the table by splitting at "## Mod List"
               parts = content.split("## Mod List")
               if len(parts) < 2:
-                  print("Table not found in the format expected")
+                  print("ERROR: Table not found in the format expected")
                   return False
               
               # Keep the header and everything before the table
@@ -61,13 +62,19 @@ jobs:
               header_rows = table_lines[0:2]
               content_rows = table_lines[2:] if len(table_lines) > 2 else []
               
+              # Count rows before sorting for reporting
+              original_count = len(content_rows)
+              
               # Filter out any rows that don't have proper table formatting
               valid_content_rows = []
               for i, row in enumerate(content_rows):
                   if row.strip() and row.count('|') >= 3:  # Need at least 3 pipe characters for a valid row
                       valid_content_rows.append(row)
                   else:
-                      print(f"Skipping invalid row {i+3}: '{row}'")
+                      print(f"WARNING: Skipping invalid row {i+3}: '{row}'")
+              
+              # Count valid rows for reporting
+              valid_count = len(valid_content_rows)
               
               # Sort content rows alphabetically by mod name (first column)
               # Extract the actual mod name, removing Markdown formatting and ignoring comments
@@ -108,24 +115,34 @@ jobs:
               with open(file_path, 'w', encoding='utf-8') as file:
                   file.write(full_content)
               
-              print("Table sorted successfully.")
+              print(f"SUCCESS: Table sorted successfully. Processed {valid_count}/{original_count} rows.")
               return True
 
           if __name__ == "__main__":
               file_path = "addedMods.md"
-              sort_markdown_table(file_path)
+              print(f"Processing file: {file_path}")
+              result = sort_markdown_table(file_path)
+              if result:
+                  print("Sort operation completed successfully")
+              else:
+                  print("Sort operation failed")
+                  exit(1)
           EOF
           
           # Run the script
+          echo "Running sorting script..."
           python sort_mods_table.py
           
       - name: Update timestamp
         run: |
           DATE=$(date '+%B %d, %Y, %H:%M UTC')
+          echo "Updating timestamp to: $DATE"
           if grep -q "^### Last updated:" "addedMods.md"; then
             sed -i "s/^### Last updated:.*$/### Last updated: $DATE/" "addedMods.md"
+            echo "Updated existing timestamp"
           else
             sed -i "1i### Last updated: $DATE" "addedMods.md"
+            echo "Added new timestamp"
           fi
           
       - name: Configure Git
@@ -143,6 +160,7 @@ jobs:
             exit 0
           fi
           
+          echo "Committing sorted table and timestamp changes..."
           git commit -m "Sort mods table and update timestamp [skip ci]"
           
           # Try pushing with retries for potential conflicts
@@ -158,4 +176,6 @@ jobs:
           if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
             echo "Failed to push after $MAX_RETRIES attempts, using force push"
             git push --force origin ${GITHUB_REF#refs/heads/}
+          else
+            echo "Sort and timestamp updates pushed successfully"
           fi

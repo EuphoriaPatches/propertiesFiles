@@ -15,6 +15,12 @@ jobs:
         with:
           fetch-depth: 0
           
+      - name: Fetch latest changes
+        run: |
+          # Fetch the latest changes from the remote repository
+          echo "Fetching latest changes from repository..."
+          git pull origin ${GITHUB_REF#refs/heads/}
+          
       - name: Get and process modified files
         run: |
           # Get the list of modified files directly into a variable (no temp file)
@@ -24,6 +30,7 @@ jobs:
           # Only proceed if there are modified files
           if [ -n "$MODIFIED_FILES" ]; then
             DATE=$(date '+%B %d, %Y, %H:%M UTC')
+            echo "Updating timestamps to: $DATE"
             
             # Process each file
             for file in $MODIFIED_FILES; do
@@ -33,26 +40,52 @@ jobs:
                 if grep -q "^### Last updated:" "$file"; then
                   # Update existing timestamp line
                   sed -i "s/^### Last updated:.*$/### Last updated: $DATE/" "$file"
+                  echo "  - Updated existing timestamp"
                 else
                   # Add timestamp line at the beginning of the file
                   sed -i "1i### Last updated: $DATE" "$file"
+                  echo "  - Added new timestamp"
                 fi
               else
-                echo "File not found: $file"
+                echo "File not found: $file (may have been deleted)"
               fi
             done
+            echo "Timestamp updates complete"
           else
             echo "No .properties files were modified"
           fi
       
-      - name: Commit changes
+      - name: Configure Git
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
+          
+      - name: Commit and push with retry
+        run: |
           git add *.properties
+          
+          # Check if there are changes to commit
           if git diff --staged --quiet; then
             echo "No changes to commit"
+            exit 0
+          fi
+          
+          echo "Committing timestamp changes..."
+          git commit -m "Update timestamps for modified files [skip ci]"
+          
+          # Try pushing with retries for potential conflicts
+          MAX_RETRIES=3
+          RETRY_COUNT=0
+          
+          until git push origin ${GITHUB_REF#refs/heads/} || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            echo "Push failed, retrying (Attempt $RETRY_COUNT of $MAX_RETRIES)..."
+            git pull --rebase origin ${GITHUB_REF#refs/heads/}
+          done
+          
+          if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
+            echo "Failed to push after $MAX_RETRIES attempts, using force push"
+            git push --force origin ${GITHUB_REF#refs/heads/}
           else
-            git commit -m "Update timestamps for modified files [skip ci]"
-            git push
+            echo "Timestamp updates pushed successfully"
           fi
