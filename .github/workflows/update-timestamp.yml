@@ -22,12 +22,12 @@ jobs:
         run: |
           # Fetch the latest changes from the remote repository
           echo "Fetching latest changes from repository..."
-          git pull origin ${GITHUB_REF#refs/heads/}
+          git fetch origin
           
       - name: Get and process modified files
         run: |
-          # Get the list of modified files directly into a variable (no temp file)
-          MODIFIED_FILES=$(git diff --name-only HEAD^ HEAD | grep -E '\.properties$' || true)
+          # Use GITHUB_SHA to ensure we compare the correct commits
+          MODIFIED_FILES=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA | grep -E '\.properties$' || true)
           echo "Modified files: $MODIFIED_FILES"
           
           # Only proceed if there are modified files
@@ -63,11 +63,6 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           
-      - name: Wait for potential concurrent workflows
-        run: |
-          echo "Waiting a moment to avoid conflicts with other workflows..."
-          sleep 3
-          
       - name: Commit and push with retry
         run: |
           git add *.properties
@@ -88,10 +83,7 @@ jobs:
           until git push origin ${GITHUB_REF#refs/heads/} || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
             RETRY_COUNT=$((RETRY_COUNT + 1))
             echo "Push failed, retrying (Attempt $RETRY_COUNT of $MAX_RETRIES)..."
-            echo "Fetching latest changes and rebasing..."
-            git fetch origin
-            git rebase origin/${GITHUB_REF#refs/heads/}
-            echo "Rebase complete, trying push again..."
+            git pull --rebase origin ${GITHUB_REF#refs/heads/}
           done
           
           if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
