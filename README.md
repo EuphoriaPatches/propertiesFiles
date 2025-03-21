@@ -7,13 +7,14 @@ These `.properties` files help Euphoria Patches recognize blocks, items, entitie
 ## ⚠️ IMPORTANT REMINDERS ⚠️
 - **Please use the templates provided below!**
 - **Always document your additions in `addedMods.md`!**
+- **Only do changes to the latest version from GitHub!**
 
 ## How to Contribute
 
 There are two easy ways to contribute:
 
-1. **For GitHub users:** Open a Pull Request with your changes
-2. **For everyone else:** Share the raw property file on our [Discord](https://euphoriapatches.com/discord)
+1. **For GitHub users:** Open a Pull Request with your changes (preferred method)
+2. **For everyone else:** Share the raw property file on [Discord](https://euphoriapatches.com/discord)
 
 ## Getting Started (Step-by-Step)
 
