@@ -1,14 +1,33 @@
 # Euphoria Patches Properties Files
-Welcome to the community-driven ``.properties`` files!
-## How to contribute
-- A Pull Request can be opened and the changes will be merged with Euphoria Patches.
-- The raw property file can also be shared on [Discord](https://euphoriapatches.com/discord) for those who have not worked with GitHub before.
 
-## - Please use the Template!
-## - Please document mods in addedMods.md!
-## Template
-### At the top of each property file, there is a template on how new entries should look like
-<details><summary><ins><strong>Click</strong></ins> to expand for block.properties template!</summary>
+## What Are These Files?
+
+These `.properties` files help Euphoria Patches recognize blocks, items, entities, and dimensions from different mods. By contributing to these files, you help improve compatibility for everyone!
+
+## ⚠️ IMPORTANT REMINDERS ⚠️
+- **Please use the templates provided below!**
+- **Always document your additions in `addedMods.md`!**
+
+## How to Contribute
+
+There are two easy ways to contribute:
+
+1. **For GitHub users:** Open a Pull Request with your changes
+2. **For everyone else:** Share the raw property file on our [Discord](https://euphoriapatches.com/discord)
+
+## Getting Started (Step-by-Step)
+
+1. Find the property file you want to modify (block, item, entity, or dimension)
+2. Follow the template provided at the top of each file (see examples below)
+3. Add your mod entries
+4. Document your changes in `addedMods.md`
+5. Submit your contribution
+
+## Important Templates
+
+Each properties file has a specific format. Click to see the template you need:
+
+<details><summary>📦 <strong>block.properties</strong> template (click to expand)</summary>
 <p>
 
 #### Template for Modded Blocks:
@@ -25,16 +44,16 @@ lastModInThisIDName:modId1 lastModInThisIDName:modId2 lastModInThisIDName:modId3
 
 # Description of the Next block ID
 block.YYYYY = ...
-...
-
-- The last line of a block.XXXX does not have a "\"
-
---- IDs should be grouped by mods, for every new mod it should be added in a new line using "\" ---
 ```
+
+**Important Notes:**
+- Group IDs by mods (each mod on its own line)
+- Use a backslash `\` at the end of each line EXCEPT the last line of an entry
+- Always add a blank line with just `\` between different mods
 </p>
 </details>
 
-<details><summary><ins><strong>Click</strong></ins> to expand for item.properties template!</summary>
+<details><summary>🧰 <strong>item.properties</strong> template (click to expand)</summary>
 <p>
 
 #### Template for Modded Items:
@@ -50,16 +69,16 @@ lastModInThisIDName:modId1 lastModInThisIDName:modId2 lastModInThisIDName:modId3
 
 # Description of the Next item ID
 item.YYYYY = ...
-...
-
-- The last line of a item.XXXX does not have a "\"
-
---- IDs should be grouped by mods, for every new mod it should be added in a new line using "\" ---
 ```
+
+**Important Notes:**
+- Group IDs by mods (each mod on its own line)
+- Use a backslash `\` at the end of each line EXCEPT the last line of an entry
+- Always add a blank line with just `\` between different mods
 </p>
 </details>
 
-<details><summary><ins><strong>Click</strong></ins> to expand for entity.properties template!</summary>
+<details><summary>🐑 <strong>entity.properties</strong> template (click to expand)</summary>
 <p>
 
 #### Template for Modded Entities:
@@ -75,16 +94,16 @@ lastModInThisIDName:modId1 lastModInThisIDName:modId2 lastModInThisIDName:modId3
 
 # Description of the Next Entity ID
 entity.YYYYY = ...
-...
-
-- The last line of a entity.XXXX does not have a "\"
-
---- IDs should be grouped by mods, for every new mod it should be added in a new line using "\" ---
 ```
+
+**Important Notes:**
+- Group IDs by mods (each mod on its own line)
+- Use a backslash `\` at the end of each line EXCEPT the last line of an entry
+- Always add a blank line with just `\` between different mods
 </p>
 </details>
 
-<details><summary><ins><strong>Click</strong></ins> to expand for dimension.properties template!</summary>
+<details><summary>🌎 <strong>dimension.properties</strong> template (click to expand)</summary>
 <p>
 
 #### Template for Modded Dimensions:
@@ -93,39 +112,73 @@ dimension.world-1 = vanillaId1 vanillaId2 \
 \
 modName1:modId1 modName1:modId2 modName1:modId3 ... \
 \
-modName2:modId1 modName2:modId2 modName2:modId3 ... \
+modName2:modId1 modName2:modId2 modName2:modId3 ...
 
 dimension.world1 = ...
-...
+```
 
---- IDs should be grouped by mods, for every new mod it should be added in a new line using "\" ---
+**Important Notes:**
+- Group IDs by mods (each mod on its own line)
+- Use a backslash `\` at the end of each line EXCEPT the last line of an entry
+- Always add a blank line with just `\` between different mods
+</p>
+</details>
+
+## Documenting Your Changes
+
+After adding your mod entries, please update the `addedMods.md` file with your additions:
+
+<details><summary>📝 <strong>How to document your changes</strong> (click to expand)</summary>
+<p>
+
+Add a new line like this to `addedMods.md`:
+
+```markdown
+| [ModName](https://link-to-mod) | Mod's Version | Status Definitions | # Optional comments about what's included
+```
+
+Example:
+```markdown
+| [Applied Energistics 2](https://modrinth.com/mod/ae2) | 15.0.8 | Fully Added | # All blocks and items added
 ```
 </p>
 </details>
-This template was implemented so modded blocks can be easily added without having the risk of vanilla blocks being edited and one can easily see which mods are already supported as different mods are in different lines. 
 
-## Documentating Changes
-Once you've added your blocks, please go to addedMods.md and add what mod you've added with the appropriate status following this template.
-<details><summary><ins><strong>Click</strong></ins> to expand for addedMods.md template!</summary>
+## Version Information
 
-<p>
+- Each properties file has its own version number
+- Version increases ONLY when vanilla components change
+- Adding mod entries doesn't change the version number
+- These files are always up-to-date with Euphoria Patches dev versions
 
-```markdown
-| [modName1](modLink) | Mod's Version | Mod's Added Status | #Optional Comment
-```
-<p>
-</details>
+## Helpful Tools
 
-Also please keep this list alphebeticlly sorted for ease of reading!
+These tools make contributing easier:
 
-## Version
-- Each property file has an independent version system which increases when a vanilla component has been changed, it does not increase when the community has added modded entries
-- The properties files will always be up-to-date with the Euphoria Patches dev versions
+- **[Euphoria Companion](https://modrinth.com/mod/euphoria-companion)**: Get a complete list of all blocks in your current game and which ones are missing in the properties files and much more!
+- **[ItemStackExporter](https://modrinth.com/mod/itemstackexporter)**: Export many blocks at once from JEI/REI or inventory
 
-## Tips And Tricks
-- Use mod [ItemStackExporter](https://modrinth.com/mod/itemstackexporter) to export many modded blocks at once via JEI or REI or just the normal vanilla inventory.
-- Use mod [Euphoria Companion](https://modrinth.com/mod/euphoria-companion) to gather an external list of all blocks registered within the current game.
-- How to create a fork: [Instructions](https://www.git-tower.com/learn/git/faq/github-fork-repository)
-- How to create a pull request from a fork: [Instructions](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
-- Read the documentation left within the files!
-- Ask on [Discord](https://euphoriapatches.com/discord) if questions arise.
+## Need Help?
+
+- **GitHub Help**: 
+  - [How to fork a repository](https://www.git-tower.com/learn/git/faq/github-fork-repository)
+  - [How to create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
+- **Ask questions** on our [Discord](https://euphoriapatches.com/discord)
+
+## Frequently Asked Questions
+
+**Q: Do I need to know coding to contribute?**  
+A: No! Just follow the templates and add the mod IDs you want to include.
+
+**Q: How do I find mod IDs?**  
+A: Use the F3 screen when and the Targeted Block info on the right side, or F3+H in-game to show advanced tooltips, additionally use the recommended tools (ItemStackExporter or Euphoria Companion).
+
+**Q: How can I use the GitHub version of these files in game to test my additions?**  
+A: You can download and test as follows:
+1. Download the files from this GitHub repository - big green `<> code` button and then download zip. The zip file contains all files of this repository.
+2. Navigate to your Minecraft instance folder
+3. Go to the `shaderpacks` folder
+4. Find the Euphoria Patches folder
+5. Inside, go to the `shaders` folder
+6. Replace the existing properties files with your downloaded versions
+7. Reload shaders in-game with F3+R or by re-selecting the shader pack
