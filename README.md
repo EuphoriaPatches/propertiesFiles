@@ -13,8 +13,10 @@ These `.properties` files help Euphoria Patches recognize blocks, items, entitie
 
 There are two easy ways to contribute:
 
-1. **For GitHub users:** Open a Pull Request with your changes (preferred method)
-2. **For everyone else:** Share the raw property file on [Discord](https://euphoriapatches.com/discord)
+1. **Submit a Pull Request on GitHub** (preferred method) - [See detailed instructions below](#need-help)
+2. **Share your changes on Discord** - Post the modified property file on our [Discord server](https://euphoriapatches.com/discord)
+
+We encourage everyone to try the GitHub method when possible, as it makes tracking and reviewing changes easier!
 
 ## Getting Started (Step-by-Step)
 
