@@ -1,4 +1,4 @@
-### Last updated: March 21, 2025, 00:23 UTC
+### Last updated: March 21, 2025, 00:31 UTC
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
 If you want to contribute to the Euphoria Patches modded support library, please only edit the files from GitHub. https://euphoriapatches.com/properties
@@ -11,7 +11,6 @@ Here we can keep track of what mods has been added and what version a contributo
 ## Mod List
 | Mod Name | Version | Status |
 |----------|---------|--------|
-| [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
 | [\[Let's Do\] Bakery](https://modrinth.com/mod/lets-do-bakery) | | Partial Support |
 | [\[Let's Do\] Beachparty](https://modrinth.com/mod/lets-do-beachparty) | | Partial Support |
 | [\[Let's Do\] BloomingNature](https://modrinth.com/mod/lets-do-bloomingnature) | | Partial Support |
@@ -335,6 +334,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Wondrous Wilds](https://modrinth.com/mod/wondrous-wilds) | | Foliage Only |
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
+| [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
 ---
 
 ## Status Definitions
