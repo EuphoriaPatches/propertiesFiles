@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
         with:
@@ -60,6 +63,11 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           
+      - name: Wait for potential concurrent workflows
+        run: |
+          echo "Waiting a moment to avoid conflicts with other workflows..."
+          sleep 3
+          
       - name: Commit and push with retry
         run: |
           git add *.properties
@@ -80,7 +88,10 @@ jobs:
           until git push origin ${GITHUB_REF#refs/heads/} || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
             RETRY_COUNT=$((RETRY_COUNT + 1))
             echo "Push failed, retrying (Attempt $RETRY_COUNT of $MAX_RETRIES)..."
-            git pull --rebase origin ${GITHUB_REF#refs/heads/}
+            echo "Fetching latest changes and rebasing..."
+            git fetch origin
+            git rebase origin/${GITHUB_REF#refs/heads/}
+            echo "Rebase complete, trying push again..."
           done
           
           if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
