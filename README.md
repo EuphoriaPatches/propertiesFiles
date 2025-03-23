@@ -186,4 +186,4 @@ A: You can download and test as follows:
 6. Replace the existing properties files with your downloaded versions
 7. Reload shaders in-game with F3+R or by re-selecting the shader pack
 
-> **Note**: [Supplemental Patches](https://www.curseforge.com/minecraft/mc-mods/supplemental-patches) is a third-party mod that extends Euphoria Patches with even more modded functionality.
+> **Note**: [Supplemental Patches](https://modrinth.com/mod/supplemental-patches) is a third-party mod that extends Euphoria Patches with even more modded functionality.
