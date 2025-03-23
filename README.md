@@ -173,7 +173,7 @@ These tools make contributing easier:
 **Q: Do I need to know coding to contribute?**  
 A: No! Just follow the templates and add the mod IDs you want to include.
 
-**Q: How do I find mod IDs?**  
+**Q: How do I find mod and block IDs?**  
 A: Use the F3 screen when and the Targeted Block info on the right side, or F3+H in-game to show advanced tooltips, additionally use the recommended tools (ItemStackExporter or Euphoria Companion).
 
 **Q: How can I use the GitHub version of these files in game to test my additions?**  
