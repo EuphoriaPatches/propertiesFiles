@@ -94,6 +94,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts) | 1.4.1.3 | Fully Added |
 | [Construct's Armory](https://www.curseforge.com/minecraft/mc-mods/constructs-armory) | 1.3.4 | Miniscule | 
 | [Corn Delight](https://modrinth.com/mod/corn-delight) | | In Testing | # Corn plants are 2 blocks tall, current blocks.properties only has one entry!
+| [Countered's Terrain Slabs](https://modrinth.com/mod/countereds-terrain-slabs) | 1.3.0 | Fully Added |
 | [Create](https://modrinth.com/mod/create) | 0.5.1-j-build.1631 | Fully Added |
 | [Create Big Cannons](https://modrinth.com/mod/create-big-cannons) | 5.8.2 | Fully Added  |
 | [Create Crafts & Additions](https://modrinth.com/mod/createaddition) | 1.2.4 | Fully Added |
@@ -141,6 +142,8 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Dynamic Trees for Meadow](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-meadow) | | Foliage Only |
 | [Dynamic Trees for Nature's Spirit](https://modrinth.com/mod/dynamic-trees-for-natures-spirit) | | Foliage Only |
 | [Dynamic Trees for Vinery](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-vinery) | | Foliage Only |
+| [Easy Anvils](https://modrinth.com/mod/easy-anvils) | 21.1.0 | Fully Added |
+| [Easy Magic](https://modrinth.com/mod/easy-magic) | 21.1.0 | Fully Added |
 | [Ecologics](https://modrinth.com/mod/ecologics) | 2.2.0 | Fully Added |
 | eidolon | | Miniscule / Unknown | # Unsure of which fork was used to add support
 | [EldritchEnd](https://www.curseforge.com/minecraft/mc-mods/eldritch-end) | 0.3.2 | Miniscule | #added ore emissive to etyr ore
@@ -182,6 +185,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Good Ending](https://modrinth.com/mod/good-ending) | 1.0.1 | Miniscule |
 | [Grappling Hook Mod: Restitched](https://modrinth.com/mod/grappling-hook-mod-fabric) | 1.99.0 | Fully Added |
 | [Gravestones](https://modrinth.com/mod/gravestones) | v1.15 | Fully Added |
+| [Gravestones - Pneumono](https://modrinth.com/mod/pneumono_gravestones) | 1.0.9 | FullyAdded |
 | [GregTech CE Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial) | | Miniscule / Unknown | # Mod ID is gtceu, Unknown if this mod was the one used.
 | [GregTechCEu Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern) | 1.6.3 | Partial support | # Add support for lamps and coil blocks
 | [Growthcraft Community Edition](https://www.curseforge.com/minecraft/mc-mods/growthcraft-community-edition) | 4.2.3 | Fully Added | # Seems like this is a collection of smaller Growthcraft mods, all mod namespace starts with "growthcraft"
@@ -327,7 +331,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Upgrade Aquatic](https://modrinth.com/mod/upgrade-aquatic) | | Foliage Only |
 | [VerdantVibes](https://modrinth.com/mod/verdantvibes) | | Foliage Only |
 | [Vintage Delight](https://www.curseforge.com/minecraft/mc-mods/vintage-delight) | 0.1.4 | Partial Support |
-| [Waystones](https://modrinth.com/mod/waystones) | 14.1.10 | Fully Added |
+| [Waystones](https://modrinth.com/mod/waystones) | 21.1.13 | Fully Added |
 | [Wetland Whimsy](https://modrinth.com/mod/wetland-whimsy) | | Foliage Only |
 | [Whisperwoods](https://modrinth.com/mod/whisperwoods) | 2.1.2 | Fully Added |
 | [Wilder Wild](https://modrinth.com/mod/wilder-wild) | 3.0.11 | Fully Added | # Added hopefully all remaining blocks and fixed Stone Chests. Scorched entity and all boats added. wilderwild:hollowed_pale_oak_log will need to be added to a non-full Pale Oak Log id once one is available.
