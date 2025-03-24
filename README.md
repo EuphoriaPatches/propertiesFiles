@@ -1,5 +1,7 @@
 # Euphoria Patches Properties Files
 
+test
+
 ## What Are These Files?
 
 These `.properties` files help Euphoria Patches recognize blocks, items, entities, and dimensions from different mods. By contributing to these files, you help improve compatibility for everyone!
