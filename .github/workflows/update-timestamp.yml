@@ -39,6 +39,11 @@ jobs:
             for file in $MODIFIED_FILES; do
               if [ -f "$file" ]; then
                 echo "Processing file: $file"
+                
+                # Remove trailing whitespace
+                sed -i 's/[[:space:]]*$//' "$file"
+                echo "  - Removed trailing whitespaces"
+                
                 # Check if timestamp line already exists
                 if grep -q "^### Last updated:" "$file"; then
                   # Update existing timestamp line
@@ -53,7 +58,7 @@ jobs:
                 echo "File not found: $file (may have been deleted)"
               fi
             done
-            echo "Timestamp updates complete"
+            echo "Timestamp updates and whitespace removal complete"
           else
             echo "No .properties files were modified"
           fi
