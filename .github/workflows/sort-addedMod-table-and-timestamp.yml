@@ -24,6 +24,7 @@ jobs:
           python-version: '3.x'
           
       - name: Fetch latest changes
+        if: github.event_name == 'push'
         run: |
           # Fetch the latest changes from the remote repository
           echo "Fetching latest changes from repository..."
@@ -152,11 +153,13 @@ jobs:
           fi
           
       - name: Configure Git
+        if: github.event_name == 'push'
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           
       - name: Commit and push with retry
+        if: github.event_name == 'push'
         run: |
           git add addedMods.md
           
