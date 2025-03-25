@@ -95,7 +95,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Construct's Armory](https://www.curseforge.com/minecraft/mc-mods/constructs-armory) | 1.3.4 | Miniscule |
 | [Corn Delight](https://modrinth.com/mod/corn-delight) | | In Testing | # Corn plants are 2 blocks tall, current blocks.properties only has one entry!
 | [Countered's Terrain Slabs](https://modrinth.com/mod/countereds-terrain-slabs) | 1.3.0 | Fully Added |
-| [Create](https://modrinth.com/mod/create) | 0.5.1-j-build.1631 | Fully Added |
+| [Create](https://modrinth.com/mod/create) | 6.0.0 | In Testing |
 | [Create Big Cannons](https://modrinth.com/mod/create-big-cannons) | 5.8.2 | Fully Added  |
 | [Create Crafts & Additions](https://modrinth.com/mod/createaddition) | 1.2.4 | Fully Added |
 | [Create Deco](https://modrinth.com/mod/create-deco) | 2.0.2 | Fully Added |
