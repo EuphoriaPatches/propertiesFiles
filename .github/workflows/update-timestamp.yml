@@ -1,0 +1,102 @@
+name: Update Timestamp
+
+on:
+  push:
+    paths:
+      - '**/*.properties'
+
+jobs:
+  update-timestamp:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Fetch latest changes
+        if: github.event_name == 'push'
+        run: |
+          # Fetch the latest changes from the remote repository
+          echo "Fetching latest changes from repository..."
+          git fetch origin
+          
+      - name: Get and process modified files
+        run: |
+          # Use GITHUB_SHA to ensure we compare the correct commits
+          MODIFIED_FILES=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA | grep -E '\.properties$' || true)
+          echo "Modified files: $MODIFIED_FILES"
+          
+          # Only proceed if there are modified files
+          if [ -n "$MODIFIED_FILES" ]; then
+            DATE=$(date '+%B %d, %Y, %H:%M UTC')
+            echo "Updating timestamps to: $DATE"
+            
+            # Process each file
+            for file in $MODIFIED_FILES; do
+              if [ -f "$file" ]; then
+                echo "Processing file: $file"
+                
+                # Remove trailing whitespace
+                sed -i 's/[[:space:]]*$//' "$file"
+                echo "  - Removed trailing whitespaces"
+                
+                # Check if timestamp line already exists
+                if grep -q "^### Last updated:" "$file"; then
+                  # Update existing timestamp line
+                  sed -i "s/^### Last updated:.*$/### Last updated: $DATE/" "$file"
+                  echo "  - Updated existing timestamp"
+                else
+                  # Add timestamp line at the beginning of the file
+                  sed -i "1i### Last updated: $DATE" "$file"
+                  echo "  - Added new timestamp"
+                fi
+              else
+                echo "File not found: $file (may have been deleted)"
+              fi
+            done
+            echo "Timestamp updates and whitespace removal complete"
+          else
+            echo "No .properties files were modified"
+          fi
+      
+      - name: Configure Git
+        if: github.event_name == 'push'
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          
+      - name: Commit and push with retry
+        if: github.event_name == 'push'
+        run: |
+          git add *.properties
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          echo "Committing timestamp changes..."
+          git commit -m "Update timestamps for modified files [skip ci]"
+          
+          # Try pushing with retries for potential conflicts
+          MAX_RETRIES=3
+          RETRY_COUNT=0
+          
+          until git push origin ${GITHUB_REF#refs/heads/} || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            echo "Push failed, retrying (Attempt $RETRY_COUNT of $MAX_RETRIES)..."
+            git pull --rebase origin ${GITHUB_REF#refs/heads/}
+          done
+          
+          if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
+            echo "Failed to push after $MAX_RETRIES attempts, using force push"
+            git push --force origin ${GITHUB_REF#refs/heads/}
+          else
+            echo "Timestamp updates pushed successfully"
+          fi
