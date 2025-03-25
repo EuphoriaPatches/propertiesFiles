@@ -4,7 +4,7 @@
 
 These `.properties` files help Euphoria Patches recognize blocks, items, entities, and dimensions from different mods. By contributing to these files, you help improve compatibility for everyone!
 
-![GitHub commits difference between two branches/tags/commits](https://img.shields.io/github/commits-difference/EuphoriaPatches/propertiesFiles?base=release&head=main&style=for-the-badge&logo=github&logoColor=%23e661e8&label=Commits%20since%20last%20Euphoria%20Patches%20Update&labelColor=0d1117&color=magenta)
+<img src="https://img.shields.io/github/commits-difference/EuphoriaPatches/propertiesFiles?base=release&head=main&style=for-the-badge&logo=github&logoColor=%23e661e8&label=Commits%20since%20last%20Euphoria%20Patches%20Update&labelColor=0d1117&color=magenta" style="pointer-events: none;">
 
 ## ⚠️ IMPORTANT REMINDERS ⚠️
 - **Please use the templates provided below!**
