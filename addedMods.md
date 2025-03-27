@@ -49,6 +49,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Ars Nouveau](https://modrinth.com/mod/ars-nouveau) | | Partial Support |
 | [Artifacts](https://modrinth.com/mod/artifacts) | 9.5.12 | Fully Added |
 | [Artifality](https://modrinth.com/mod/artifality) | 0.6.1 | Fully Added |
+| [Diamond In The Rough](https://modrinth.com/mod/diamond-in-the-rough) | 1.2.1 | Fully Added |
 | [Astrological (End Terrain & Biomes)](https://modrinth.com/mod/astrological) | | Partial Support | # Was formally called Inversia, mod ID must have changed at some point. We should keep both
 | [Atmospheric](https://modrinth.com/mod/atmospheric) | | Foliage Only |
 | [ATO - All the Ores](https://www.curseforge.com/minecraft/mc-mods/ato) | | Fully Added |
