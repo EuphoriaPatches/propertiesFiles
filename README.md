@@ -28,7 +28,7 @@ We encourage everyone to try the GitHub method when possible, as it makes tracki
 2. Follow the template provided at the top of each file (see examples below)
 3. Add your mod entries
 4. Document your changes in `addedMods.md`
-5. Submit your contribution
+5. Submit your contribution (be happy)
 
 ## Important Templates
 
