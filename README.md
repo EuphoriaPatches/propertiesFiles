@@ -165,6 +165,29 @@ These tools make contributing easier:
 - **[Euphoria Companion](https://modrinth.com/mod/euphoria-companion)**: Get a complete list of all blocks in your current game and which ones are missing in the properties files and much more!
 - **[ItemStackExporter](https://modrinth.com/mod/itemstackexporter)**: Export many blocks at once from JEI/REI or inventory
 
+## Advanced Tips
+
+- **Debug Worlds**: If Euphoria Companion isn't available for your version, hold Alt while selecting world type in world creation menu to create a debug world containing every block the game knows about
+
+- **Color Coded Programs**:
+  1. Go to "Other" tab in the Shader Settings and enable "Color Coded Programs"
+  2. This reveals how blocks are rendered by coloring them based on their render program:
+     - Green: Solid blocks (gbuffers_terrain)
+     - Dark Blue: Translucent blocks (gbuffers_water)
+     - Yellow: Block entities (gbuffers_block)
+     - Red: Entities (gbuffers_entities)
+     - Other colors: Various other programs
+
+- **Finding Missing Block Properties**:
+  1. Enable Color Coded Programs
+  2. Hold a spider eye in one hand
+  3. Blocks with missing properties will appear as magenta/black striped pattern
+  4. Hold spider eyes in both hands to disable the color coding
+
+- **Block States**: Not all blockstates need to be added separately
+  - For many blocks (like facing directions), you only need the base ID
+  - Some blocks only need specific states differentiated (like `powered=true` vs `powered=false`)
+
 ## Need Help?
 
 - **GitHub Help**: 
