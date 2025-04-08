@@ -1,4 +1,4 @@
-### Last updated: April 02, 2025, 01:22 UTC
+### Last updated: April 08, 2025, 07:34 UTC
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
 If you want to contribute to the Euphoria Patches modded support library, please only edit the files from GitHub. https://euphoriapatches.com/properties
@@ -73,8 +73,8 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Botania](https://modrinth.com/mod/botania) | | Partial Support |
 | [Bountiful](https://modrinth.com/mod/bountiful) | 6.0.3 | Fully Added |
 | [Bountiful Fares](https://modrinth.com/mod/bountiful-fares) | | Fully Added |
-| [Brazilian Delight](https://modrinth.com/mod/braziliandelight) | 1.1.0 | Foliage Only |
 | [The Box Of Horrors](https://modrinth.com/mod/the-box-of-horrors) | | Partial Support |
+| [Brazilian Delight](https://modrinth.com/mod/braziliandelight) | 1.1.0 | Foliage Only |
 | [Burnt](https://modrinth.com/mod/burnt) | | Fully Added |
 | [Bushier Flowers](https://modrinth.com/mod/bushier-flowers) | | Partial Support |
 | [Buzzier Bees](https://modrinth.com/mod/buzzier-bees) | | Partial Support |
