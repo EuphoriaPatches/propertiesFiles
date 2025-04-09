@@ -119,10 +119,16 @@ jobs:
               needs_merge, latest_version = verify_version_needs_merge()
               
               if not needs_merge:
+                  # Write result to a file for the shell script to read
+                  with open(".version_change_needed", "w") as f:
+                      f.write("false")
                   return 0
                   
-              print("Version increased. Returning exit code 10 to signal merge is needed.")
-              return 10  # Special exit code to signal version increase
+              print("Version increased. Merge is needed.")
+              # Write result to a file for the shell script to read
+              with open(".version_change_needed", "w") as f:
+                  f.write("true")
+              return 0  # Always return success
 
           if __name__ == "__main__":
               sys.exit(main())
@@ -133,13 +139,16 @@ jobs:
           
           # Run the script
           python check_version_and_merge.py
-          VERSION_CHECK_STATUS=$?
           
-          # Output the status for debugging
-          echo "Version check status: $VERSION_CHECK_STATUS"
-          
-          # Save status for later steps
-          echo "VERSION_CHANGE=$([[ $VERSION_CHECK_STATUS -eq 10 ]] && echo "true" || echo "false")" >> $GITHUB_ENV
+          # Read the result file
+          if [ -f ".version_change_needed" ]; then
+            VERSION_CHANGE=$(cat .version_change_needed)
+            echo "VERSION_CHANGE=${VERSION_CHANGE}" >> $GITHUB_ENV
+            echo "Version change needed: ${VERSION_CHANGE}"
+          else
+            echo "ERROR: Result file not found"
+            exit 1
+          fi
           
           # Debug: Check if file exists after script runs
           ls -la .github/data/ || echo "Directory not found"
