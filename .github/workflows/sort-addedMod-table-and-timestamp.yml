@@ -10,6 +10,8 @@ on:
 
 jobs:
   sort-and-timestamp:
+    # Only run in the main repository
+    if: github.repository == 'EuphoriaPatches/propertiesFiles'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -24,6 +26,7 @@ jobs:
           python-version: '3.x'
           
       - name: Fetch latest changes
+        if: github.event_name == 'push'
         run: |
           # Fetch the latest changes from the remote repository
           echo "Fetching latest changes from repository..."
@@ -41,6 +44,11 @@ jobs:
               # Read the file content
               with open(file_path, 'r', encoding='utf-8') as file:
                   content = file.read()
+              
+              # Remove trailing whitespace from each line
+              lines = content.split('\n')
+              lines = [line.rstrip() for line in lines]
+              content = '\n'.join(lines)
               
               # Find the table by splitting at "## Mod List"
               parts = content.split("## Mod List")
@@ -115,22 +123,23 @@ jobs:
               with open(file_path, 'w', encoding='utf-8') as file:
                   file.write(full_content)
               
-              print(f"SUCCESS: Table sorted successfully. Processed {valid_count}/{original_count} rows.")
+              print(f"SUCCESS: Table sorted and trailing whitespaces removed. Processed {valid_count}/{original_count} rows.")
               return True
 
           if __name__ == "__main__":
               file_path = "addedMods.md"
               print(f"Processing file: {file_path}")
+              print("Removing trailing whitespaces...")
               result = sort_markdown_table(file_path)
               if result:
-                  print("Sort operation completed successfully")
+                  print("Sort operation and whitespace removal completed successfully")
               else:
-                  print("Sort operation failed")
+                  print("Operation failed")
                   exit(1)
           EOF
           
           # Run the script
-          echo "Running sorting script..."
+          echo "Running sorting and whitespace removal script..."
           python sort_mods_table.py
           
       - name: Update timestamp
@@ -146,11 +155,13 @@ jobs:
           fi
           
       - name: Configure Git
+        if: github.event_name == 'push'
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           
       - name: Commit and push with retry
+        if: github.event_name == 'push'
         run: |
           git add addedMods.md
           

@@ -1,4 +1,4 @@
-name: Update Timestamp
+name: Update Timestamp and Sort Properties Files
 
 on:
   push:
@@ -6,7 +6,9 @@ on:
       - '**/*.properties'
 
 jobs:
-  update-timestamp:
+  update-timestamp-and-sort:
+    # Only run in the main repository
+    if: github.repository == 'EuphoriaPatches/propertiesFiles'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -19,6 +21,7 @@ jobs:
           fetch-depth: 0
           
       - name: Fetch latest changes
+        if: github.event_name == 'push'
         run: |
           # Fetch the latest changes from the remote repository
           echo "Fetching latest changes from repository..."
@@ -39,6 +42,11 @@ jobs:
             for file in $MODIFIED_FILES; do
               if [ -f "$file" ]; then
                 echo "Processing file: $file"
+                
+                # Remove trailing whitespace
+                sed -i 's/[[:space:]]*$//' "$file"
+                echo "  - Removed trailing whitespaces"
+                
                 # Check if timestamp line already exists
                 if grep -q "^### Last updated:" "$file"; then
                   # Update existing timestamp line
@@ -53,17 +61,260 @@ jobs:
                 echo "File not found: $file (may have been deleted)"
               fi
             done
-            echo "Timestamp updates complete"
+            echo "Timestamp updates and whitespace removal complete"
           else
             echo "No .properties files were modified"
           fi
+          
+      - name: Set up Python for sorting script
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - name: Create and run properties sorting script
+        run: |
+          # Create the Python script
+          echo "Creating properties file sorting script..."
+          cat > sort_properties.py << 'EOF'
+          import os
+          import sys
+          import re
+
+          def sort_properties_file(file_path):
+              # Read the entire file
+              with open(file_path, 'r', encoding='utf-8') as f:
+                  original_lines = f.readlines()
+              
+              result_lines = []
+              i = 0
+              
+              while i < len(original_lines):
+                  line = original_lines[i]
+                  
+                  # Check if this line starts a section (item.XXXXX = or block.XXXXX =)
+                  section_match = re.match(r'^(item|block|entity)\.\d+\s*=', line)
+                  
+                  if section_match:
+                      # Start of a section - collect all lines in this section
+                      current_section = [line]
+                      section_end = i
+                      
+                      # Find the end of this section
+                      for j in range(i + 1, len(original_lines)):
+                          section_end = j
+                          if not original_lines[j].strip().endswith('\\'):
+                              current_section.append(original_lines[j])
+                              break
+                          current_section.append(original_lines[j])
+                      
+                      # Process the section
+                      processed_section = process_section(current_section)
+                      result_lines.extend(processed_section)
+                      
+                      # Skip past this section in the main loop
+                      i = section_end + 1
+                  else:
+                      # Not the start of a section, keep as-is
+                      result_lines.append(line)
+                      i += 1
+              
+              return result_lines
+
+          def process_section(section_lines):
+              """Process a section to sort mod entries alphabetically"""
+              # Special case: Check if the section only has a header that contains a mod
+              if len(section_lines) <= 2 and ':' in section_lines[0]:
+                  return section_lines
+              
+              # First check if it has any mod entries beyond the header (lines with colons)
+              has_mod_entries = False
+              for line in section_lines[1:]:  # Skip header
+                  if ':' in line and not line.strip().startswith('#'):
+                      has_mod_entries = True
+                      break
+              
+              # If no mod entries or only in header, return the section unchanged
+              if not has_mod_entries:
+                  return section_lines
+              
+              # Get the section header (first line with item.XXXXX = or block.XXXXX =)
+              header_line = section_lines[0].rstrip()
+              
+              # Check if header contains mod entries
+              header_has_mod = ':' in header_line and not header_line.startswith('#')
+              header_mod_entries = []
+              
+              if header_has_mod:
+                  # Extract mod entries from header to add them later
+                  parts = header_line.split('=')
+                  section_id = parts[0].strip()
+                  mod_parts = parts[1].strip().rstrip('\\').strip().split()
+                  
+                  for part in mod_parts:
+                      if ':' in part:
+                          header_mod_entries.append(part)
+              
+              # Extract tag lines and comments (if any)
+              tag_lines = []
+              comment_lines = []
+              
+              i = 1
+              while i < len(section_lines) and 'tags_' in section_lines[i]:
+                  tag_lines.append(section_lines[i].rstrip())
+                  i += 1
+              
+              # Extract all mod entries grouped by mod name
+              mod_entries = {}
+              
+              # First add header mod entries if any
+              for entry in header_mod_entries:
+                  mod_name = entry.split(':')[0]
+                  if mod_name not in mod_entries:
+                      mod_entries[mod_name] = []
+                  mod_entries[mod_name].append(entry)
+              
+              # Process all lines to collect mods and preserve comments
+              for i, line in enumerate(section_lines):
+                  line = line.strip()
+                  
+                  # Skip empty lines and backslashes
+                  if not line or line == '\\':
+                      continue
+                  
+                  # Preserve comments
+                  if line.startswith('#'):
+                      comment_lines.append((i, section_lines[i].rstrip()))
+                      continue
+                  
+                  # Skip header line (already processed)
+                  if i == 0:
+                      continue
+                      
+                  # Skip tag lines (already processed)
+                  if 'tags_' in line:
+                      continue
+                      
+                  # If this is a mod entry (has a colon)
+                  if ':' in line and not line.startswith('#'):
+                      mod_name = line.split(':')[0]
+                      
+                      # Clean the entry (remove trailing backslash)
+                      entry = line.rstrip('\\').strip()
+                      
+                      # Add to mod entries dictionary
+                      if mod_name not in mod_entries:
+                          mod_entries[mod_name] = []
+                          
+                      mod_entries[mod_name].append(entry)
+              
+              # Sort mod names
+              sorted_mod_names = sorted(mod_entries.keys())
+              
+              # Count effective mod names (excluding those that should be skipped)
+              effective_mod_count = 0
+              for mod_name in sorted_mod_names:
+                  if not (header_has_mod and all(entry in header_mod_entries for entry in mod_entries[mod_name])):
+                      effective_mod_count += 1
+              
+              # Reconstruct the section
+              result = []
+              
+              # Add the header line with a backslash if we have mod entries
+              if sorted_mod_names and not header_line.endswith('\\'):
+                  result.append(f"{header_line} \\\n")
+              else:
+                  result.append(f"{header_line}\n")
+              
+              # Add tag lines with backslashes
+              for tag in tag_lines:
+                  tag = tag.rstrip('\\').strip()
+                  if sorted_mod_names:
+                      result.append(f"{tag} \\\n")
+                  else:
+                      result.append(f"{tag}\n")
+              
+              # Add comments that appear before mod entries
+              for i, comment in comment_lines:
+                  # Only add comments that appear before the mod entries section
+                  if i < len(tag_lines) + 1:  # +1 for header
+                      result.append(f"{comment}\n")
+              
+              # Add backslash separator if needed
+              if effective_mod_count > 0:
+                  result.append("\\\n")
+                  
+              # Add sorted mod entries
+              processed_count = 0
+              for i, mod_name in enumerate(sorted_mod_names):
+                  # Skip mod entries that were in the header if preserving header
+                  if header_has_mod and all(entry in header_mod_entries for entry in mod_entries[mod_name]):
+                      continue
+                      
+                  processed_count += 1
+                  
+                  # Join all entries for this mod
+                  entries = ' '.join(mod_entries[mod_name])
+                  
+                  if processed_count < effective_mod_count:
+                      # Not the last effective mod - add backslash
+                      result.append(f"{entries} \\\n")
+                      result.append("\\\n")
+                  else:
+                      # Last mod - no backslash
+                      result.append(f"{entries}\n")
+              
+              # Add comments that appear after mod entries
+              for i, comment in comment_lines:
+                  # Only add comments that appear after the mod entries section
+                  if i >= len(tag_lines) + 1:  # +1 for header
+                      result.append(f"{comment}\n")
+              
+              return result
+
+          def main():
+              if len(sys.argv) < 2:
+                  print("Usage: python sort_properties.py <path_to_properties_file>")
+                  return
+              
+              file_path = sys.argv[1]
+              
+              if not os.path.exists(file_path):
+                  print(f"Error: File {file_path} not found")
+                  return
+              
+              # Sort file
+              sorted_lines = sort_properties_file(file_path)
+              
+              # Write sorted content back
+              with open(file_path, 'w', encoding='utf-8') as f:
+                  f.writelines(sorted_lines)
+              
+              print(f"File {file_path} sorted successfully!")
+
+          if __name__ == "__main__":
+              main()
+          EOF
+          
+          # Process each modified properties file
+          MODIFIED_FILES=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA | grep -E '\.properties$' || true)
+          if [ -n "$MODIFIED_FILES" ]; then
+            echo "Running the sort script on modified properties files..."
+            for file in $MODIFIED_FILES; do
+              if [ -f "$file" ]; then
+                echo "Sorting file: $file"
+                python sort_properties.py "$file"
+              fi
+            done
+          fi
       
       - name: Configure Git
+        if: github.event_name == 'push'
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           
       - name: Commit and push with retry
+        if: github.event_name == 'push'
         run: |
           git add *.properties
           
@@ -73,8 +324,8 @@ jobs:
             exit 0
           fi
           
-          echo "Committing timestamp changes..."
-          git commit -m "Update timestamps for modified files [skip ci]"
+          echo "Committing timestamp and sorting changes..."
+          git commit -m "Update timestamps and sort mod entries in properties files [skip ci]"
           
           # Try pushing with retries for potential conflicts
           MAX_RETRIES=3
@@ -86,9 +337,9 @@ jobs:
             git pull --rebase origin ${GITHUB_REF#refs/heads/}
           done
           
-          if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
+          if [ $RETRY_COUNT >= $MAX_RETRIES ]; then
             echo "Failed to push after $MAX_RETRIES attempts, using force push"
             git push --force origin ${GITHUB_REF#refs/heads/}
           else
-            echo "Timestamp updates pushed successfully"
+            echo "Timestamp updates and mod sorting pushed successfully"
           fi

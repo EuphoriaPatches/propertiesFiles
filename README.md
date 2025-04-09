@@ -4,6 +4,10 @@
 
 These `.properties` files help Euphoria Patches recognize blocks, items, entities, and dimensions from different mods. By contributing to these files, you help improve compatibility for everyone!
 
+<picture style="pointer-events: none;">
+<img src="https://img.shields.io/github/commits-difference/EuphoriaPatches/propertiesFiles?base=release&head=main&style=for-the-badge&logo=github&logoColor=%23e661e8&label=Commits%20since%20last%20Euphoria%20Patches%20Update&labelColor=0d1117&color=magenta" alt="Commits since last update">
+</picture>
+
 ## ⚠️ IMPORTANT REMINDERS ⚠️
 - **Please use the templates provided below!**
 - **Always document your additions in `addedMods.md`!**
@@ -24,7 +28,7 @@ We encourage everyone to try the GitHub method when possible, as it makes tracki
 2. Follow the template provided at the top of each file (see examples below)
 3. Add your mod entries
 4. Document your changes in `addedMods.md`
-5. Submit your contribution
+5. Submit your contribution (be happy)
 
 ## Important Templates
 
@@ -160,6 +164,29 @@ These tools make contributing easier:
 
 - **[Euphoria Companion](https://modrinth.com/mod/euphoria-companion)**: Get a complete list of all blocks in your current game and which ones are missing in the properties files and much more!
 - **[ItemStackExporter](https://modrinth.com/mod/itemstackexporter)**: Export many blocks at once from JEI/REI or inventory
+
+## Advanced Tips
+
+- **Debug Worlds**: If Euphoria Companion isn't available for your version, hold Alt while selecting world type in world creation menu to create a debug world containing every block the game knows about
+
+- **Color Coded Programs**:
+  1. Go to "Other" tab in the Shader Settings and enable "Color Coded Programs"
+  2. This reveals how blocks are rendered by coloring them based on their render program:
+     - Green: Solid blocks (gbuffers_terrain)
+     - Dark Blue: Translucent blocks (gbuffers_water)
+     - Yellow: Block entities (gbuffers_block)
+     - Red: Entities (gbuffers_entities)
+     - Other colors: Various other programs
+
+- **Finding Missing Block Properties**:
+  1. Enable Color Coded Programs
+  2. Hold a spider eye in one hand
+  3. Blocks with missing properties will appear as magenta/black striped pattern
+  4. Hold spider eyes in both hands to disable the color coding
+
+- **Block States**: Not all blockstates need to be added separately
+  - For many blocks (like facing directions), you only need the base ID
+  - Some blocks only need specific states differentiated (like `powered=true` vs `powered=false`)
 
 ## Need Help?
 

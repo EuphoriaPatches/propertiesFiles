@@ -1,0 +1,249 @@
+name: Modrinth Version Check and Branch Auto-Merge
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 */6 * * *'  # Run every 6 hours to check for new versions
+
+jobs:
+  check-version-and-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      
+      - name: Check Modrinth version and merge branches
+        run: |
+          # Create version check and branch merge script
+          cat > check_version_and_merge.py << 'EOF'
+          import json
+          import os
+          import requests
+          import sys
+          import subprocess
+          import time
+
+          from packaging import version
+
+          # Constants
+          PROJECT_ID = '4H6sumDB'  # Modrinth project ID 
+          INFO_PATH = '.github/data/info.json'
+          MAIN_BRANCH = 'main'
+          RELEASE_BRANCH = 'release'
+          MERGE_DELAY_SECONDS = 60  # 1 minute delay before merge
+
+          def extract_main_version(version_string):
+              """Extract main version before the first dash"""
+              return version_string.split('-')[0]
+
+          def fetch_latest_version():
+              """Fetch the latest version from Modrinth API"""
+              url = f"https://api.modrinth.com/v2/project/{PROJECT_ID}/version"
+              response = requests.get(url)
+              response.raise_for_status()
+              versions = response.json()
+              latest = versions[0]
+              return extract_main_version(latest['version_number'])
+
+          def read_stored_info():
+              """Read stored version info, or return empty dict if file doesn't exist"""
+              if not os.path.exists(INFO_PATH):
+                  return {"version": "0.0.0"}
+              
+              with open(INFO_PATH, 'r') as f:
+                  return json.load(f)
+
+          def save_info(info):
+              """Save version info to file"""
+              # Make sure directory exists
+              os.makedirs(os.path.dirname(INFO_PATH), exist_ok=True)
+              
+              with open(INFO_PATH, 'w') as f:
+                  json.dump(info, f, indent=2)
+              
+              print(f"File saved to {os.path.abspath(INFO_PATH)}")
+              # Debug: List files in directory
+              print(f"Files in directory: {os.listdir(os.path.dirname(INFO_PATH))}")
+
+          def verify_version_needs_merge():
+              """Check if version has increased and needs merging"""
+              # Fetch latest version from Modrinth
+              print("Fetching latest version from Modrinth...")
+              try:
+                  latest_version = fetch_latest_version()
+                  print(f"Latest version: {latest_version}")
+              except Exception as e:
+                  print(f"Error fetching version: {e}")
+                  return False, None
+              
+              # Read stored version info
+              print("Reading stored version info...")
+              stored_info = read_stored_info()
+              stored_version = stored_info.get("version", "0.0.0")
+              print(f"Stored version: {stored_version}")
+              
+              # Create info.json if it doesn't exist
+              first_run = not os.path.exists(INFO_PATH)
+              if first_run:
+                  print(f"First run detected. Creating new info.json at {INFO_PATH}")
+                  
+              # Update version info (always save the latest version)
+              stored_info["version"] = latest_version
+              save_info(stored_info)
+              print(f"Updated version info saved to {INFO_PATH}")
+              
+              # Check if version has increased
+              if first_run:
+                  print("First run detected. Created info.json but skipping merge.")
+                  return False, latest_version
+              
+              if version.parse(latest_version) > version.parse(stored_version):
+                  print(f"Version increased from {stored_version} to {latest_version}")
+                  return True, latest_version
+              else:
+                  print("No version increase detected, skipping merge")
+                  return False, latest_version
+
+          def main():
+              # Check if version needs merge and return the latest version
+              needs_merge, latest_version = verify_version_needs_merge()
+              
+              if not needs_merge:
+                  # Write result to a file for the shell script to read
+                  with open(".version_change_needed", "w") as f:
+                      f.write("false")
+                  return 0
+                  
+              print("Version increased. Merge is needed.")
+              # Write result to a file for the shell script to read
+              with open(".version_change_needed", "w") as f:
+                  f.write("true")
+              return 0  # Always return success
+
+          if __name__ == "__main__":
+              sys.exit(main())
+          EOF
+          
+          # Install required packages
+          pip install requests packaging
+          
+          # Run the script
+          python check_version_and_merge.py
+          
+          # Read the result file
+          if [ -f ".version_change_needed" ]; then
+            VERSION_CHANGE=$(cat .version_change_needed)
+            echo "VERSION_CHANGE=${VERSION_CHANGE}" >> $GITHUB_ENV
+            echo "Version change needed: ${VERSION_CHANGE}"
+          else
+            echo "ERROR: Result file not found"
+            exit 1
+          fi
+          
+          # Debug: Check if file exists after script runs
+          ls -la .github/data/ || echo "Directory not found"
+      
+      - name: Commit changes to info.json
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          
+          # Create directory if it doesn't exist (safety check)
+          mkdir -p .github/data
+          
+          # Add the info.json file
+          if [ -f ".github/data/info.json" ]; then
+            echo "info.json file exists, proceeding with commit"
+            git add .github/data/info.json
+            
+            # Check if there are actual changes to commit
+            if git diff --staged --quiet; then
+              echo "No changes to commit"
+            else
+              echo "Committing version info changes..."
+              git commit -m "Update Modrinth version info [skip ci]"
+            
+              # Try pushing with retries for potential conflicts
+              MAX_RETRIES=3
+              RETRY_COUNT=0
+              
+              until git push origin ${GITHUB_REF#refs/heads/} || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
+                RETRY_COUNT=$((RETRY_COUNT + 1))
+                echo "Push failed, retrying (Attempt $RETRY_COUNT of $MAX_RETRIES)..."
+                git pull --rebase origin ${GITHUB_REF#refs/heads/}
+              done
+              
+              if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
+                echo "Failed to push after $MAX_RETRIES attempts"
+                exit 1
+              else
+                echo "Version info update pushed successfully"
+              fi
+            fi
+          else
+            echo "info.json file not found in expected location"
+            # Try to find it anywhere in the repository
+            find . -name "info.json" -type f
+          fi
+      
+      - name: Merge branches if version increased
+        if: env.VERSION_CHANGE == 'true'
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          
+          # Make sure working directory is clean before branch operations
+          git status
+          
+          # Wait for other workflows to complete their commits
+          echo "Waiting ${MERGE_DELAY_SECONDS:-60} seconds to allow other workflows to complete..."
+          sleep ${MERGE_DELAY_SECONDS:-60}
+          
+          # Fetch the latest changes to ensure we have everything
+          echo "Fetching the latest changes from all branches..."
+          git fetch --all
+          
+          # Make sure we have both branches
+          echo "Verifying branches exist..."
+          if ! git ls-remote --heads origin release | grep -q release; then
+            echo "ERROR: Release branch does not exist on remote. Creating it from main..."
+            git checkout -b release
+            git push -u origin release
+          else
+            echo "Release branch exists, proceeding with merge."
+          fi
+          
+          echo "Checking out release branch..."
+          git checkout release
+          
+          # Pull latest changes for the release branch
+          echo "Pulling latest changes for release branch..."
+          git pull origin release
+          
+          # Make sure we have the latest main branch
+          echo "Ensuring latest main branch is available..."
+          git fetch origin main:main
+          
+          echo "Merging main into release..."
+          if git merge --no-ff main -m "Auto-merge main into release due to version increase"; then
+            echo "Pushing changes to release branch..."
+            if git push origin release; then
+              echo "Successfully merged main into release and pushed changes"
+            else
+              echo "ERROR: Failed to push changes to release branch"
+              exit 1
+            fi
+          else
+            echo "ERROR: Merge failed"
+            exit 1
+          fi
