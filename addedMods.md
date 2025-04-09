@@ -45,8 +45,9 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Aquamirae](https://www.curseforge.com/minecraft/mc-mods/aquamirae-fabric) | 6 API16 | Partial Support |
 | [Aquatic Torches](https://modrinth.com/mod/aquatic-torches) | 1.0.1 | Fully Added |
 | [Architect's Palette](https://modrinth.com/mod/architects-palette) | | Partial Support |
+| [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo) | 5.1.0 | Fully Added |
 | [Ars Elemental](https://www.curseforge.com/minecraft/mc-mods/ars-elemental) | | Partial Support |
-| [Ars Nouveau](https://modrinth.com/mod/ars-nouveau) | | Partial Support |
+| [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau) | 5.8.0 | Fully Added |
 | [Artifacts](https://modrinth.com/mod/artifacts) | 9.5.12 | Fully Added |
 | [Artifality](https://modrinth.com/mod/artifality) | 0.6.1 | Fully Added |
 | [Astrological (End Terrain & Biomes)](https://modrinth.com/mod/astrological) | | Partial Support | # Was formally called Inversia, mod ID must have changed at some point. We should keep both
