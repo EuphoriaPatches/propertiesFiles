@@ -9,6 +9,8 @@ on:
 
 jobs:
   check-version-and-merge:
+    # Only run in the main repository
+    if: github.repository == 'EuphoriaPatches/propertiesFiles'
     runs-on: ubuntu-latest
     permissions:
       contents: write
