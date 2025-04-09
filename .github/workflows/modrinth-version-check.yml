@@ -31,6 +31,8 @@ jobs:
           import requests
           import sys
           import subprocess
+          import time
+
           from packaging import version
 
           # Constants
@@ -38,6 +40,7 @@ jobs:
           INFO_PATH = '.github/data/info.json'
           MAIN_BRANCH = 'main'
           RELEASE_BRANCH = 'release'
+          MERGE_DELAY_SECONDS = 60  # 1 minute delay before merge
 
           def extract_main_version(version_string):
               """Extract main version before the first dash"""
@@ -79,11 +82,27 @@ jobs:
                   subprocess.run(['git', 'config', '--global', 'user.name', 'GitHub Action'])
                   subprocess.run(['git', 'config', '--global', 'user.email', 'action@github.com'])
                   
+                  # Wait for other workflows to complete their commits
+                  print(f"Waiting {MERGE_DELAY_SECONDS} seconds to allow other workflows to complete...")
+                  time.sleep(MERGE_DELAY_SECONDS)
+                  
+                  # Fetch the latest changes to ensure we have everything
+                  print("Fetching the latest changes from all branches...")
+                  subprocess.run(['git', 'fetch', '--all'])
+                  
                   print(f"Checking out {RELEASE_BRANCH} branch...")
                   subprocess.run(['git', 'checkout', RELEASE_BRANCH])
                   
+                  # Pull latest changes for the release branch
+                  print(f"Pulling latest changes for {RELEASE_BRANCH}...")
+                  subprocess.run(['git', 'pull', 'origin', RELEASE_BRANCH])
+                  
+                  # Make sure we have the latest main branch
+                  print(f"Ensuring latest {MAIN_BRANCH} is available...")
+                  subprocess.run(['git', 'fetch', 'origin', MAIN_BRANCH])
+                  
                   print(f"Merging {MAIN_BRANCH} into {RELEASE_BRANCH}...")
-                  subprocess.run(['git', 'merge', '--no-ff', MAIN_BRANCH, '-m', f"Auto-merge {MAIN_BRANCH} into {RELEASE_BRANCH} due to version increase"])
+                  subprocess.run(['git', 'merge', '--no-ff', f'origin/{MAIN_BRANCH}', '-m', f"Auto-merge {MAIN_BRANCH} into {RELEASE_BRANCH} due to version increase"])
                   
                   print("Pushing changes...")
                   subprocess.run(['git', 'push', 'origin', RELEASE_BRANCH])
