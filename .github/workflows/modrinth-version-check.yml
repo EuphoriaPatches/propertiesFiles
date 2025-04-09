@@ -1,0 +1,155 @@
+name: Modrinth Version Check and Branch Auto-Merge
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-version-and-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      
+      - name: Check Modrinth version and merge branches
+        run: |
+          # Create version check and branch merge script
+          cat > check_version_and_merge.py << 'EOF'
+          import json
+          import os
+          import requests
+          import sys
+          import subprocess
+          from packaging import version
+
+          # Constants
+          PROJECT_ID = '4H6sumDB'  # Modrinth project ID 
+          INFO_PATH = '.github/data/info.json'
+          MAIN_BRANCH = 'main'
+          RELEASE_BRANCH = 'release'
+
+          def extract_main_version(version_string):
+              """Extract main version before the first dash"""
+              return version_string.split('-')[0]
+
+          def fetch_latest_version():
+              """Fetch the latest version from Modrinth API"""
+              url = f"https://api.modrinth.com/v2/project/{PROJECT_ID}/version"
+              response = requests.get(url)
+              response.raise_for_status()
+              versions = response.json()
+              latest = versions[0]
+              return extract_main_version(latest['version_number'])
+
+          def read_stored_info():
+              """Read stored version info, or return empty dict if file doesn't exist"""
+              if not os.path.exists(INFO_PATH):
+                  return {"version": "0.0.0"}
+              
+              with open(INFO_PATH, 'r') as f:
+                  return json.load(f)
+
+          def save_info(info):
+              """Save version info to file"""
+              # Make sure directory exists
+              os.makedirs(os.path.dirname(INFO_PATH), exist_ok=True)
+              
+              with open(INFO_PATH, 'w') as f:
+                  json.dump(info, f, indent=2)
+
+          def merge_branches():
+              """Merge main branch into release branch"""
+              try:
+                  print("Setting up Git configuration...")
+                  subprocess.run(['git', 'config', '--global', 'user.name', 'GitHub Action'])
+                  subprocess.run(['git', 'config', '--global', 'user.email', 'action@github.com'])
+                  
+                  print(f"Checking out {RELEASE_BRANCH} branch...")
+                  subprocess.run(['git', 'checkout', RELEASE_BRANCH])
+                  
+                  print(f"Merging {MAIN_BRANCH} into {RELEASE_BRANCH}...")
+                  subprocess.run(['git', 'merge', '--no-ff', MAIN_BRANCH, '-m', f"Auto-merge {MAIN_BRANCH} into {RELEASE_BRANCH} due to version increase"])
+                  
+                  print("Pushing changes...")
+                  subprocess.run(['git', 'push', 'origin', RELEASE_BRANCH])
+                  
+                  return True
+              except Exception as e:
+                  print(f"Error during merge: {e}")
+                  return False
+
+          def main():
+              # Fetch latest version from Modrinth
+              print("Fetching latest version from Modrinth...")
+              try:
+                  latest_version = fetch_latest_version()
+                  print(f"Latest version: {latest_version}")
+              except Exception as e:
+                  print(f"Error fetching version: {e}")
+                  return 1
+              
+              # Read stored version info
+              print("Reading stored version info...")
+              stored_info = read_stored_info()
+              stored_version = stored_info.get("version", "0.0.0")
+              print(f"Stored version: {stored_version}")
+              
+              # Create info.json if it doesn't exist
+              first_run = not os.path.exists(INFO_PATH)
+              
+              # Update version info
+              stored_info["version"] = latest_version
+              save_info(stored_info)
+              print(f"Updated version info saved to {INFO_PATH}")
+              
+              # Check if version has increased
+              if first_run:
+                  print("First run detected. Created info.json but skipping merge.")
+                  return 0
+              
+              if version.parse(latest_version) > version.parse(stored_version):
+                  print(f"Version increased from {stored_version} to {latest_version}")
+                  print("Starting branch merge process...")
+                  success = merge_branches()
+                  if success:
+                      print(f"Successfully merged {MAIN_BRANCH} into {RELEASE_BRANCH}")
+                  else:
+                      print("Failed to merge branches")
+                      return 1
+              else:
+                  print("No version increase detected, skipping merge")
+              
+              return 0
+
+          if __name__ == "__main__":
+              sys.exit(main())
+          EOF
+          
+          # Install required packages
+          pip install requests packaging
+          
+          # Run the script
+          python check_version_and_merge.py
+      
+      - name: Commit changes to info.json
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          
+          # Check if info.json was created or modified
+          if git status --porcelain | grep -q "info.json"; then
+            git add .github/data/info.json
+            git commit -m "Update Modrinth version info [skip ci]"
+            git push origin main
+          else
+            echo "No changes to info.json"
+          fi
