@@ -151,7 +151,13 @@ jobs:
           # Debug: Check if file exists after script runs
           ls -la .github/data/ || echo "Directory not found"
       
-      - name: Commit changes to info.json
+      - name: Fetch latest changes
+        run: |
+          # Fetch the latest changes from the remote repository
+          echo "Fetching latest changes from repository..."
+          git pull origin ${GITHUB_REF#refs/heads/}
+      
+      - name: Commit changes to info.json with retry
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
@@ -159,12 +165,36 @@ jobs:
           # Create directory if it doesn't exist
           mkdir -p .github/data
           
-          # Check if info.json exists
+          # Add the info.json file
           if [ -f ".github/data/info.json" ]; then
             echo "info.json file exists, proceeding with commit"
             git add .github/data/info.json
+            
+            # Check if there are actual changes to commit
+            if git diff --staged --quiet; then
+              echo "No changes to commit"
+              exit 0
+            fi
+            
+            echo "Committing version info changes..."
             git commit -m "Update Modrinth version info [skip ci]"
-            git push origin main
+            
+            # Try pushing with retries for potential conflicts
+            MAX_RETRIES=3
+            RETRY_COUNT=0
+            
+            until git push origin ${GITHUB_REF#refs/heads/} || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              echo "Push failed, retrying (Attempt $RETRY_COUNT of $MAX_RETRIES)..."
+              git pull --rebase origin ${GITHUB_REF#refs/heads/}
+            done
+            
+            if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
+              echo "Failed to push after $MAX_RETRIES attempts"
+              exit 1
+            else
+              echo "Version info update pushed successfully"
+            fi
           else
             echo "info.json file not found in expected location"
             # Try to find it anywhere in the repository
