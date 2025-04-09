@@ -169,3 +169,4 @@ jobs:
             echo "info.json file not found in expected location"
             # Try to find it anywhere in the repository
             find . -name "info.json" -type f
+          fi
