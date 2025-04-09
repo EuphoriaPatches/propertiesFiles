@@ -10,6 +10,8 @@ on:
 
 jobs:
   sort-and-timestamp:
+    # Only run in the main repository
+    if: github.repository == 'EuphoriaPatches/propertiesFiles'
     runs-on: ubuntu-latest
     permissions:
       contents: write

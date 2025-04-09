@@ -7,6 +7,8 @@ on:
 
 jobs:
   update-timestamp-and-sort:
+    # Only run in the main repository
+    if: github.repository == 'EuphoriaPatches/propertiesFiles'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -335,7 +337,7 @@ jobs:
             git pull --rebase origin ${GITHUB_REF#refs/heads/}
           done
           
-          if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
+          if [ $RETRY_COUNT >= $MAX_RETRIES ]; then
             echo "Failed to push after $MAX_RETRIES attempts, using force push"
             git push --force origin ${GITHUB_REF#refs/heads/}
           else
