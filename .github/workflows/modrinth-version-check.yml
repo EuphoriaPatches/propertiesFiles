@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '0 */6 * * *'  # Run every 6 hours to check for new versions
 
 jobs:
   check-version-and-merge:
@@ -65,6 +67,10 @@ jobs:
               
               with open(INFO_PATH, 'w') as f:
                   json.dump(info, f, indent=2)
+              
+              print(f"File saved to {os.path.abspath(INFO_PATH)}")
+              # Debug: List files in directory
+              print(f"Files in directory: {os.listdir(os.path.dirname(INFO_PATH))}")
 
           def merge_branches():
               """Merge main branch into release branch"""
@@ -105,6 +111,8 @@ jobs:
               
               # Create info.json if it doesn't exist
               first_run = not os.path.exists(INFO_PATH)
+              if first_run:
+                  print(f"First run detected. Creating new info.json at {INFO_PATH}")
               
               # Update version info
               stored_info["version"] = latest_version
@@ -139,17 +147,25 @@ jobs:
           
           # Run the script
           python check_version_and_merge.py
+          
+          # Debug: Check if file exists after script runs
+          ls -la .github/data/ || echo "Directory not found"
       
       - name: Commit changes to info.json
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           
-          # Check if info.json was created or modified
-          if git status --porcelain | grep -q "info.json"; then
+          # Create directory if it doesn't exist
+          mkdir -p .github/data
+          
+          # Check if info.json exists
+          if [ -f ".github/data/info.json" ]; then
+            echo "info.json file exists, proceeding with commit"
             git add .github/data/info.json
             git commit -m "Update Modrinth version info [skip ci]"
             git push origin main
           else
-            echo "No changes to info.json"
-          fi
+            echo "info.json file not found in expected location"
+            # Try to find it anywhere in the repository
+            find . -name "info.json" -type f
