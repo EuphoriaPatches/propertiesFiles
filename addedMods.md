@@ -217,7 +217,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Jaden's Nether Expansion](https://modrinth.com/mod/jadens-nether-expansion) | 2.3.2 | Partial Support |
 | [JDK's Mob Grinding Utilities](https://modrinth.com/mod/jdk-mgu) | | Miniscule |
 | [LevelZ](https://modrinth.com/mod/levelz) | 1.4.13 | Fully Added |
-| [Little Tiles](https://modrinth.com/mod/littletiles) | | Miniscule |
+| [Little Tiles](https://modrinth.com/mod/littletiles) | 1.6.0-pre159 | Fully Added | # Has issues with ACL
 | [Lootr](https://modrinth.com/mod/lootr) | 0.7.35.85 | Fully Added |
 | [Lucky TNT Mod (Too Much TNT)](https://www.curseforge.com/minecraft/mc-mods/luckytnt) | | Unknown | # Wait we don't have an ID for TNT??
 | [Luminax](https://www.curseforge.com/minecraft/mc-mods/luminax) | 1.1.1 | Fully Added |
