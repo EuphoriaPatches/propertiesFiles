@@ -260,6 +260,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Origins] (https://modrinth.com/mod/origins) | 1.10.0 | Miniscule |
 | [Pam's HarvestCraft 2 - Crops](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops) | | Partial Support |
 | [Pam's HarvestCraft 2 - Trees](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-trees) | | Fully Added |
+| [Philip's Ruins](https://modrinth.com/mod/philips-ruins) | | Miniscule | # Light sources only
 | [Placeable Items](https://www.curseforge.com/minecraft/mc-mods/placeable-items) | 3.3 | Fully Added |
 | [Player Plates \(Obsidian Plates\)](https://www.curseforge.com/minecraft/mc-mods/player-plates) | 1.3.1.1 | Fully Added |
 | [PlusTiC](https://www.curseforge.com/minecraft/mc-mods/plusticminusbad) | 8.0.1.0 | Fully Added | # Rich history with this one, will not link original but it's uploaded safe counterpart made by someone else.
@@ -280,6 +281,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Regions Unexplored](https://modrinth.com/mod/regions-unexplored) | 0.5.6 | Partial Support |
 | [Reliquary Reincarnations](https://www.curseforge.com/minecraft/mc-mods/reliquary-reincarnations) | 1.3.4.796 | Blocks Only |
 | [Ribbits](https://modrinth.com/mod/ribbits) | | Foliage Only |
+| [Rounded](https://modrinth.com/mod/rounded_mod) | | Miniscule | # Light sources only
 | [Rustic Delight](https://www.curseforge.com/minecraft/mc-mods/rustic-delight) | 1.4.1 | Partial Support |
 | [Sandwichable](https://modrinth.com/mod/sandwichable) | | Foliage Only |
 | [Scorched Guns 2](https://www.curseforge.com/minecraft/mc-mods/scorched-guns) | 0.3.2.5 | Miniscule | #Only the Plasma lantern was added
