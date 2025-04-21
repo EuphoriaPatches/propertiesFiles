@@ -225,6 +225,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Malum](https://modrinth.com/mod/malum) | | Partial Support |
 | [Man of Many Planes](https://modrinth.com/mod/man-of-many-planes) | 0.1.0 | Fully Added |
 | [MCA Reborn](https://modrinth.com/mod/minecraft-comes-alive-reborn) | 7.6.3 | Fully Added |
+| [Dense Ores - Abundant!](https://www.curseforge.com/minecraft/mc-mods/dense-ores-abundant) | 1.2.2 | Fully Added |
 | [MEGA Cells](https://www.curseforge.com/minecraft/mc-mods/mega-cells) | 4.3.0 | Fully Added |
 | [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) | 10.7.7.64 | Partial Support |
 | [Midnight Madness](https://modrinth.com/mod/midnight-madness) | | Partial Support |
