@@ -1,4 +1,4 @@
-### Last updated: April 24, 2025, 22:56 UTC
+### Last updated: April 26, 2025, 16:24 UTC
 [# Copyright (c) 2025 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -57,6 +57,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Automobility](https://www.curseforge.com/minecraft/mc-mods/automobility) | 0.4.2 | Miniscule |
 | [Autumnity](https://modrinth.com/mod/autumnity) | | Partial Support |
 | [Beast Slayer](https://www.curseforge.com/minecraft/mc-mods/beast-slayer) | 2.0_test1 | Blocks Only | # Think this mod used to be called Ancient Beasts, at least that's what the mod namespace has
+| [Beautify!](https://modrinth.com/mod/beautify) | 2.0.2 | Partial Support | # Hanging flower pots still needs work to make it look good
 | [Better End Ore](https://modrinth.com/mod/better-end-ore) | 1.0.3 | Fully Added |
 | [Better Tridents](https://modrinth.com/mod/better-tridents) | 8.0.1 | Fully Added | # This mod only adds a single item
 | [BetterEnd](https://modrinth.com/mod/betterend) | 4.0.11 | Fully Added |
@@ -107,7 +108,9 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Create Slice & Dice](https://modrinth.com/mod/slice-and-dice) | 3.3.1 | Miniscule |
 | [Create Utilities](https://modrinth.com/mod/create-utilities) | 0.3.0 | Fully Added | # Parts of blocks that use the end portal shader doesn't render at all
 | [Create: Bitterballen](https://modrinth.com/mod/create-bitterballen) | | Miniscule |
+| [Create: Dragons Plus](https://modrinth.com/mod/create-dragons-plus) | 1.3.5 | Fully Added |
 | [Create: Estrogen](https://modrinth.com/mod/estrogen) | | Partial Support |
+| [Create: Framed](https://modrinth.com/mod/create-framed) | 1.6.3 | Fully Added |
 | [Create: Garnished](https://modrinth.com/mod/create-garnished) | | Foliage Only |
 | [Create: New Age](https://modrinth.com/mod/create-new-age) | | Miniscule |
 | [Create: Steam 'n' Rails](https://modrinth.com/mod/create-steam-n-rails) | 1.6.9 | Fully Added |
@@ -183,6 +186,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Frights and Foliage](https://modrinth.com/mod/frights-and-foliage) | 1.0.1 | Fully Added |
 | [Frostiful](https://modrinth.com/mod/frostiful) | 1.0.11 | Partial Support |
 | [Fruits Delight](https://modrinth.com/mod/fruits-delight) | 1.0.11 | Partial Support |
+| [Functional Storage](https://modrinth.com/mod/functional-storage) | 1.4.2 | Fully Added |
 | [Galosphere](https://modrinth.com/mod/galosphere) | | Partial Support |
 | [Gardens of the Dead](https://modrinth.com/mod/gardens-of-the-dead) |4.0.1 | Fully Added |
 | [Gauges & Switches](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches) | 1.2.22 | Miniscule | #Only did the alarm lamp
@@ -197,6 +201,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | GTOcore | 1.0.1 | Partial support | # Add support for coil blocks
 | [Hamsters](https://modrinth.com/mod/hamsters) | 1.0.3 | Fully Added |
 | [Handcrafted](https://modrinth.com/mod/handcrafted/gallery) | | Miniscule |
+| [Handcrafted](https://modrinth.com/mod/handcrafted) | 4.0.3 | Fully Added |
 | [Haunted Harvest](https://modrinth.com/mod/haunted-harvest) | | Fully Added |
 | [Hearth & Home](https://modrinth.com/mod/hearth-and-home) | 2.0.3 | Fully Added |
 | [Hephaestus](https://modrinth.com/mod/hephaestus) | 3.6.4.287 | Fully Added |
@@ -346,11 +351,6 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
-| [Functional Storage](https://modrinth.com/mod/functional-storage) | 1.4.2 | Fully Added |
-| [Handcrafted](https://modrinth.com/mod/handcrafted) | 4.0.3 | Fully Added |
-| [Create: Dragons Plus](https://modrinth.com/mod/create-dragons-plus) | 1.3.5 | Fully Added |
-| [Create: Framed](https://modrinth.com/mod/create-framed) | 1.6.3 | Fully Added |
-| [Beautify!](https://modrinth.com/mod/beautify) | 2.0.2 | Partial Support | # Hanging flower pots still needs work to make it look good
 ---
 
 ## Status Definitions
