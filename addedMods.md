@@ -64,7 +64,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [BiblioCraft](https://www.curseforge.com/minecraft/mc-mods/bibliocraft) | 2.4.6 | Partial Support | # Lots of block entities in this mod
 | [Bigger Reactors](https://www.curseforge.com/minecraft/mc-mods/biggerreactors) | | Fully Added |
 | [Biome Makeover](https://modrinth.com/mod/biome-makeover) | | Fully Added |
-| [Biomes O' Plenty](https://modrinth.com/mod/biomes-o-plenty) | | Fully Added |
+| [Biomes O' Plenty](https://modrinth.com/mod/biomes-o-plenty) | 21.1.0.7 | Fully Added |
 | [Blockcraftery](https://www.curseforge.com/minecraft/mc-mods/blockcraftery) | 1.2.0 | Fully Added | # Another copycat mod. Can't do much but put ID's in no properties
 | [Blockus](https://modrinth.com/mod/blockus) | 2.7.21 | Fully Added |
 | [Blood Magic](https://modrinth.com/mod/blood-magic) | | Partial Support |
@@ -100,9 +100,9 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Countered's Terrain Slabs](https://modrinth.com/mod/countereds-terrain-slabs) | 1.3.0 | Fully Added |
 | [Create](https://modrinth.com/mod/create) | 6.0.4 | In Testing |
 | [Create Big Cannons](https://modrinth.com/mod/create-big-cannons) | 5.8.2 | Fully Added  |
-| [Create Crafts & Additions](https://modrinth.com/mod/createaddition) | 1.2.4 | Fully Added |
+| [Create Crafts & Additions](https://modrinth.com/mod/createaddition) | 1.4.2 | Fully Added |
 | [Create Deco](https://modrinth.com/mod/create-deco) | 2.0.2 | Fully Added |
-| [Create Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry) | 1.2.16 | Fully Added |
+| [Create Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry) | 2.0.12 | Fully Added |
 | [Create Goggles](https://modrinth.com/mod/create-goggles) | 0.5.6 | Fully Added |
 | [Create Slice & Dice](https://modrinth.com/mod/slice-and-dice) | 3.3.1 | Miniscule |
 | [Create Utilities](https://modrinth.com/mod/create-utilities) | 0.3.0 | Fully Added | # Parts of blocks that use the end portal shader doesn't render at all
@@ -179,7 +179,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Forbidden and Arcanus](https://modrinth.com/mod/forbidden-arcanus) | | Miniscule |
 | [Frame Changer](https://modrinth.com/mod/frame-changer) | | Miniscule |
 | [Framed Blocks](https://www.curseforge.com/minecraft/mc-mods/framedblocks) | 10.2.0 | Partial Support |
-| [Friends&Foes](https://modrinth.com/mod/friends-and-foes) | | Partial Support |
+| [Friends&Foes](https://modrinth.com/mod/friends-and-foes) | 3.0.9 | Partial Support | # Entities needs done
 | [Frights and Foliage](https://modrinth.com/mod/frights-and-foliage) | 1.0.1 | Fully Added |
 | [Frostiful](https://modrinth.com/mod/frostiful) | 1.0.11 | Partial Support |
 | [Fruits Delight](https://modrinth.com/mod/fruits-delight) | 1.0.11 | Partial Support |
@@ -252,7 +252,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Nyx](https://www.curseforge.com/minecraft/mc-mods/nyx) | 1.4.2 | Fully Added |
 | [Occultism](https://modrinth.com/mod/occultism) | | Miniscule |
 | [Ocean's Delight](https://modrinth.com/mod/oceans-delight) | 1.0.2 | Miniscule |
-| [Oh The Biomes We've Gone](https://modrinth.com/mod/oh-the-biomes-weve-gone) | 1.3.0 | Foliage Only |
+| [Oh The Biomes We've Gone](https://modrinth.com/mod/oh-the-biomes-weve-gone) | 2.3.13 | Fully Added |
 | [Oh The Biomes You'll Go](https://modrinth.com/mod/biomesyougo) | | Partial Support |
 | [OpenBlocks](https://www.curseforge.com/minecraft/mc-mods/openblocks) | 1.8.1 | Fully Added |
 | [Ore Creeper](https://modrinth.com/mod/ore-creeper) | | Fully Added |
@@ -346,6 +346,11 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
+| [Functional Storage](https://modrinth.com/mod/functional-storage) | 1.4.2 | Fully Added |
+| [Handcrafted](https://modrinth.com/mod/handcrafted) | 4.0.3 | Fully Added |
+| [Create: Dragons Plus](https://modrinth.com/mod/create-dragons-plus) | 1.3.5 | Fully Added |
+| [Create: Framed](https://modrinth.com/mod/create-framed) | 1.6.3 | Fully Added |
+| [Beautify!](https://modrinth.com/mod/beautify) | 2.0.2 | Partial Support | # Hanging flower pots still needs work to make it look good
 ---
 
 ## Status Definitions
