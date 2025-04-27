@@ -264,7 +264,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Oreberries](https://www.curseforge.com/minecraft/mc-mods/oreberries) | 0.5.0 | Fully Added |
 | [Oreganized](https://modrinth.com/mod/oreganized) | | Miniscule |
 | [Organics](https://www.curseforge.com/minecraft/mc-mods/organics) | | Miniscule |
-| [Origins] (https://modrinth.com/mod/origins) | 1.10.0 | Miniscule |
+| [Origins](https://modrinth.com/mod/origins) | 1.10.0 | Miniscule |
 | [Pam's HarvestCraft 2 - Crops](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops) | | Partial Support |
 | [Pam's HarvestCraft 2 - Trees](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-trees) | | Fully Added |
 | [Philip's Ruins](https://modrinth.com/mod/philips-ruins) | | Miniscule | # Light sources only
@@ -281,7 +281,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | raitherts | | Miniscule / Unknown | # I legit have no idea what mod this is or why it was added
 | [Randomium Ore](https://modrinth.com/mod/randomium-ore) | | Partial Support |
 | [Rare Ice](https://modrinth.com/mod/rare-ice) | 0.1.1 | Fully Added |
-| [Rechiseled](https://modrinth.com/mod/rechiseled) | | Miniscule |
+| [Rechiseled](https://modrinth.com/mod/rechiseled) | 1.1.6a | Fully Added |
 | [Rechiseled: Create](https://modrinth.com/mod/rechiseled-create) | | Miniscule |
 | [Recurrent Complex](https://www.curseforge.com/minecraft/mc-mods/recurrent-complex) | 1.4.8.5 | Fully Added |
 | [Red Bits (redstone)](https://modrinth.com/mod/red-bits) | | Partial Support |
@@ -351,6 +351,19 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
+| [Macaw's Bridges](https://modrinth.com/mod/macaws-bridges) | 3.0.0 | Fully Added |
+| [Macaw's Doors](https://modrinth.com/mod/macaws-doors) | 1.1.2 | Fully Added |
+| [Macaw's Lights and Lamps](https://modrinth.com/mod/macaws-lights-and-lamps) | 1.1.1 | Fully Added |
+| [Macaw's Fences and Walls](https://modrinth.com/mod/macaws-fences-and-walls) | 1.2.0 | Fully Added |
+| [Macaw's Furniture](https://modrinth.com/mod/macaws-furniture) | 3.3.0 | Fully Added |
+| [Macaw's Paths and Pavings](https://modrinth.com/mod/macaws-paths-and-pavings) | 1.1.0 | Fully Added |
+| [Macaw's Roofs](https://modrinth.com/mod/macaws-roofs) | 2.3.1 | Fully Added |
+| [Macaw's Trapdoors](https://modrinth.com/mod/macaws-trapdoors) | 1.1.4 | Fully Added |
+| [Macaw's Windows](https://modrinth.com/mod/macaws-windows) | 2.3.2 | Fully Added |
+| [Missing Wilds](https://modrinth.com/mod/missing-wilds) | 1.4.0+beta | Fully Added |
+| [More Chests Variants \(MCV\)](https://modrinth.com/mod/more-chest-variants-lieonlion) | 1.5.9 | Fully Added |
+| [More Crafting Tables \(MCT\)](https://modrinth.com/mod/more-crafting-tables-lieonlion) | 1.2.9 | Fully Added |
+| [Macaws Stairs](https://modrinth.com/mod/macaws-stairs) | 1.0.1 | Fully Added |
 ---
 
 ## Status Definitions
