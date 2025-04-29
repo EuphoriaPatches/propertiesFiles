@@ -389,24 +389,30 @@ jobs:
                   else:
                       formatted_count = str(count)
                   
-                  # Replace the existing count using regex while preserving the mods list link
-                  pattern = r'(## Current Total Modded Blocks: <ins>)[^<]+(</ins>.*)'
-                  if re.search(pattern, content):
-                      updated_content = re.sub(
-                          pattern,
-                          f'\\1{formatted_count}\\2',
-                          content
-                      )
-                      
-                      # Write the updated content
-                      with open(readme_path, 'w', encoding='utf-8') as f:
-                          f.write(updated_content)
-                      
-                      print(f"README.md updated with block count: {formatted_count}")
-                      return True
-                  else:
-                      print(f"Warning: Block count section not found in README.md")
-                      return False
+                  print(f"Formatted count: {formatted_count}")
+                  
+                  # Instead of using regex replacement with backreferences, use a safer approach
+                  # Find the section markers
+                  start_marker = "## Current Total Modded Blocks: <ins>"
+                  end_marker = "</ins>"
+                  
+                  start_index = content.find(start_marker)
+                  if start_index != -1:
+                      start_index += len(start_marker)
+                      end_index = content.find(end_marker, start_index)
+                      if end_index != -1:
+                          # Replace just the count part
+                          updated_content = content[:start_index] + formatted_count + content[end_index:]
+                          
+                          # Write the updated content
+                          with open(readme_path, 'w', encoding='utf-8') as f:
+                              f.write(updated_content)
+                          
+                          print(f"README.md updated with block count: {formatted_count}")
+                          return True
+                  
+                  print(f"Warning: Count section not found in README.md")
+                  return False
               
               except Exception as e:
                   print(f"Error updating README.md: {str(e)}")
