@@ -381,9 +381,11 @@ jobs:
                   with open(readme_path, 'r', encoding='utf-8') as f:
                       content = f.read()
                   
-                  # Format the count for display (e.g., 37.3k)
-                  if count >= 1000:
-                      formatted_count = f"{count/1000:.1f}k"
+                  # Format the count for display (e.g., 37.30K or 1.25M)
+                  if count >= 1000000:
+                      formatted_count = f"{count/1000000:.2f}M"
+                  elif count >= 1000:
+                      formatted_count = f"{count/1000:.2f}K"
                   else:
                       formatted_count = str(count)
                   
