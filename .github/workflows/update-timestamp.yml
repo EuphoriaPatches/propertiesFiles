@@ -389,12 +389,12 @@ jobs:
                   else:
                       formatted_count = str(count)
                   
-                  # Replace the existing count using regex
-                  pattern = r'## Current Total Modded Blocks: <ins>[^<]+</ins>'
+                  # Replace the existing count using regex while preserving the mods list link
+                  pattern = r'(## Current Total Modded Blocks: <ins>)[^<]+(</ins>.*)'
                   if re.search(pattern, content):
                       updated_content = re.sub(
                           pattern,
-                          f'## Current Total Modded Blocks: <ins>{formatted_count}</ins>',
+                          f'\\1{formatted_count}\\2',
                           content
                       )
                       
