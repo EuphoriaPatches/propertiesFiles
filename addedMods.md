@@ -39,7 +39,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Ancient Aether](https://modrinth.com/mod/ancient-aether) | 3.0.1 | Partial Support |
 | [Another Furniture](https://modrinth.com/mod/another-furniture) | 3.0.1 | Fully Added |
 | [AntiBlocksReChiseled](https://modrinth.com/mod/antiblocksrechiseled) | | Partial Support |
-| [Applied Energistics 2](https://modrinth.com/mod/ae2) | 19.1.2-beta | Fully Added |
+| [Applied Energistics 2](https://modrinth.com/mod/ae2) | 19.2.9 | Fully Added |
 | [Aqua Acrobatics](https://www.curseforge.com/minecraft/mc-mods/aqua-acrobatics) | 1.15.3 | Fully Added |
 | [Aquaculture 2](https://www.curseforge.com/minecraft/mc-mods/aquaculture) | 2.5.2 | Fully Added |
 | [Aquaculture Delight](https://www.curseforge.com/minecraft/mc-mods/aquaculture-delight) | 1.0.0 | Fully Added |
