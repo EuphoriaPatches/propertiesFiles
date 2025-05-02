@@ -307,6 +307,134 @@ jobs:
             done
           fi
       
+      - name: Count modded blocks and update README
+        run: |
+          echo "Creating block counting script..."
+          cat > count_blocks.py << 'EOF'
+          import re
+          import os
+
+          def count_unique_modded_blocks(file_path):
+              """Count unique modded blocks in block.properties file"""
+              if not os.path.exists(file_path):
+                  print(f"Warning: {file_path} not found")
+                  return 0
+                  
+              unique_modded_blocks = set()
+              
+              try:
+                  with open(file_path, 'r', encoding='utf-8') as f:
+                      lines = f.readlines()
+                  
+                  for line in lines:
+                      line = line.strip()
+                      
+                      # Skip empty lines, comments
+                      if not line or line.startswith('#'):
+                          continue
+                      
+                      # Extract everything after equals sign if it's a block definition
+                      if line.startswith('block.'):
+                          equal_sign_index = line.find('=')
+                          if equal_sign_index > 0:
+                              line = line[equal_sign_index + 1:].strip()
+                      
+                      # Skip if just a backslash
+                      if line == '\\':
+                          continue
+                      
+                      # Split into potential block IDs
+                      potential_ids = line.split()
+                      
+                      for block_id in potential_ids:
+                          # Skip empty, backslash, or tag identifiers
+                          if not block_id or block_id == '\\' or block_id.startswith('%') or block_id.startswith('tags_'):
+                              continue
+                          
+                          # Check if it could be a modded block (contains a colon)
+                          if ':' in block_id:
+                              # Extract the mod name and block name
+                              parts = block_id.split(':')
+                              
+                              # If it has at least 2 parts and the first part isn't a blockstate
+                              if len(parts) >= 2 and '=' not in parts[0]:
+                                  # Create the base mod:block identifier without blockstate
+                                  mod_block_id = f"{parts[0]}:{parts[1]}"
+                                  unique_modded_blocks.add(mod_block_id)
+              
+                  return len(unique_modded_blocks)
+                  
+              except Exception as e:
+                  print(f"Error processing {file_path}: {str(e)}")
+                  return 0
+
+          def update_readme_with_block_count(count):
+              """Update README.md with the current block count"""
+              readme_path = "README.md"
+              
+              if not os.path.exists(readme_path):
+                  print(f"Warning: {readme_path} not found")
+                  return False
+              
+              try:
+                  # Read the current README
+                  with open(readme_path, 'r', encoding='utf-8') as f:
+                      content = f.read()
+                  
+                  # Format the count for display
+                  if count >= 1000000:
+                      formatted_count = f"{count/1000000:.2f}M"
+                  elif count >= 1000:
+                      formatted_count = f"{count/1000:.2f}K"
+                  else:
+                      formatted_count = str(count)
+                  
+                  print(f"Formatted count: {formatted_count}")
+                  
+                  # Find the section markers
+                  start_marker = "## Current Total Modded Blocks: <ins>"
+                  end_marker = "</ins>"
+                  
+                  start_index = content.find(start_marker)
+                  if start_index != -1:
+                      start_index += len(start_marker)
+                      end_index = content.find(end_marker, start_index)
+                      if end_index != -1:
+                          # Replace just the count part
+                          updated_content = content[:start_index] + formatted_count + content[end_index:]
+                          
+                          # Write the updated content
+                          with open(readme_path, 'w', encoding='utf-8') as f:
+                              f.write(updated_content)
+                          
+                          print(f"README.md updated with block count: {formatted_count}")
+                          return True
+                  
+                  print(f"Warning: Count section not found in README.md")
+                  return False
+              
+              except Exception as e:
+                  print(f"Error updating README.md: {str(e)}")
+                  return False
+
+          def main():
+              # Count blocks specifically from block.properties file
+              block_properties_path = "block.properties"
+              print(f"Counting unique modded blocks in {block_properties_path}...")
+              
+              block_count = count_unique_modded_blocks(block_properties_path)
+              print(f"Found {block_count} unique modded blocks")
+              
+              # Update README
+              update_readme_with_block_count(block_count)
+
+          if __name__ == "__main__":
+              main()
+          EOF
+          
+          echo "Running block counting script..."
+          python count_blocks.py
+
       - name: Configure Git
         if: github.event_name == 'push'
         run: |
@@ -316,7 +444,7 @@ jobs:
       - name: Commit and push with retry
         if: github.event_name == 'push'
         run: |
-          git add *.properties
+          git add *.properties README.md
           
           # Check if there are changes to commit
           if git diff --staged --quiet; then
@@ -325,7 +453,7 @@ jobs:
           fi
           
           echo "Committing timestamp and sorting changes..."
-          git commit -m "Update timestamps and sort mod entries in properties files [skip ci]"
+          git commit -m "Update timestamps, sort mod entries, and update block count [skip ci]"
           
           # Try pushing with retries for potential conflicts
           MAX_RETRIES=3
@@ -337,9 +465,9 @@ jobs:
             git pull --rebase origin ${GITHUB_REF#refs/heads/}
           done
           
-          if [ $RETRY_COUNT >= $MAX_RETRIES ]; then
+          if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
             echo "Failed to push after $MAX_RETRIES attempts, using force push"
             git push --force origin ${GITHUB_REF#refs/heads/}
           else
-            echo "Timestamp updates and mod sorting pushed successfully"
+            echo "Timestamp updates, mod sorting, and block count update pushed successfully"
           fi
