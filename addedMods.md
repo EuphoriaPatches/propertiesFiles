@@ -134,7 +134,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Doctor Who: Weeping Angels](https://modrinth.com/mod/weeping-angels) | | Miniscule |
 | [Draconic Evolution](https://modrinth.com/mod/draconic-evolution) | | Miniscule |
 | [DRG Flares](https://www.curseforge.com/minecraft/mc-mods/drg-flares) | 1.2.8 | Fully Added | # Emissives added to the flare entity and all flare items
-| [Dynamic Trees](https://modrinth.com/mod/dynamictrees) | | Foliage Only |
+| [Dynamic Trees](https://modrinth.com/mod/dynamictrees) | 1.5.0-BETA04 | Fully Added |
 | [Dynamic Trees +](https://modrinth.com/mod/dynamictreesplus) | | Fully Added |
 | [Dynamic Trees - Alex's Mobs](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-alexs-mobs) | | Foliage Only |
 | [Dynamic Trees - Autumnity](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-autumnity) | | Foliage Only |
