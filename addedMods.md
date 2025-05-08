@@ -27,7 +27,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Additional Lanterns](https://modrinth.com/mod/additional-lanterns) | 1.1.1a | Fully Added |
 | [Advanced Netherite](https://modrinth.com/mod/advanced-netherite) | | Partial Support |
 | [AdventureZ](https://modrinth.com/mod/adventurez) | 1.4.20 | Fully Added |
-| [The Aether](https://modrinth.com/mod/aether) | | Partial Support |
+| [The Aether](https://modrinth.com/mod/aether) | 1.5.8 | Fully Added |
 | [Aether: Lost Content Addon](https://modrinth.com/mod/aether-lost-content) | | Miniscule |
 | [The Aether: Redux](https://modrinth.com/mod/the-aether-redux) | | Partial Support |
 | [Alex's Caves](https://modrinth.com/mod/alexs-caves) | | Fully Added |
@@ -38,7 +38,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Amendments](https://modrinth.com/mod/amendments) | 1.2.19 | Fully Added |
 | [Ancient Aether](https://modrinth.com/mod/ancient-aether) | 3.0.1 | Partial Support |
 | [Another Furniture](https://modrinth.com/mod/another-furniture) | 3.0.1 | Fully Added |
-| [AntiBlocksReChiseled](https://modrinth.com/mod/antiblocksrechiseled) | | Partial Support |
+| [AntiBlocksReChiseled](https://modrinth.com/mod/antiblocksrechiseled) | 0.10.4 | Fully Added |
 | [Applied Energistics 2](https://modrinth.com/mod/ae2) | 19.2.9 | Fully Added |
 | [Aqua Acrobatics](https://www.curseforge.com/minecraft/mc-mods/aqua-acrobatics) | 1.15.3 | Fully Added |
 | [Aquaculture 2](https://www.curseforge.com/minecraft/mc-mods/aquaculture) | 2.5.2 | Fully Added |
@@ -157,7 +157,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [EldritchEnd](https://www.curseforge.com/minecraft/mc-mods/eldritch-end) | 0.3.2 | Miniscule | #added ore emissive to etyr ore
 | [Enchanting Plus](https://www.curseforge.com/minecraft/mc-mods/enchanting-plus) | 5.0.0 | Fully Added |
 | [End Remastered](https://modrinth.com/mod/endrem) | 5.2.4 | Fully Added | # Added all eye items.
-| [Ender IO](https://modrinth.com/mod/enderio) | | Partial Support |
+| [Ender IO](https://modrinth.com/mod/enderio) | 7.1.8-alpha | In Testing | # Lots of jank here, did the best I could but lets see what people think before we call it "done". Glass render layers can't be changed so placing this stuff in the only other ID possible, being glazed terracotta. Machinery blocks don't give off any light what-so-ever but have flame and soul flame animations, limiting us to blocks with "fake" ACL lighting.
 | [Enhanced Celestials](https://modrinth.com/mod/enhanced-celestials) | 5.0.2.3 | Fully Added |
 | [Environmental](https://modrinth.com/mod/environmental) | | Foliage Only |
 | [Etcetera](https://modrinth.com/mod/etcetera/versions) | | Miniscule |
@@ -230,12 +230,12 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Lucky TNT Mod (Too Much TNT)](https://www.curseforge.com/minecraft/mc-mods/luckytnt) | | Unknown | # Wait we don't have an ID for TNT??
 | [Luminax](https://www.curseforge.com/minecraft/mc-mods/luminax) | 1.1.1 | Fully Added |
 | [Macaw's Bridges](https://modrinth.com/mod/macaws-bridges) | 3.0.0 | Fully Added |
-| [Macaw's Doors](https://modrinth.com/mod/macaws-doors) | 1.1.2 | Fully Added |
+| [Macaw's Doors](https://modrinth.com/mod/macaws-doors) | 1.1.3 | Fully Added |
 | [Macaw's Fences and Walls](https://modrinth.com/mod/macaws-fences-and-walls) | 1.2.0 | Fully Added |
 | [Macaw's Furniture](https://modrinth.com/mod/macaws-furniture) | 3.3.0 | Fully Added |
-| [Macaw's Lights and Lamps](https://modrinth.com/mod/macaws-lights-and-lamps) | 1.1.1 | Fully Added |
+| [Macaw's Lights and Lamps](https://modrinth.com/mod/macaws-lights-and-lamps) | 1.1.2 | Fully Added |
 | [Macaw's Paths and Pavings](https://modrinth.com/mod/macaws-paths-and-pavings) | 1.1.0 | Fully Added |
-| [Macaw's Roofs](https://modrinth.com/mod/macaws-roofs) | 2.3.1 | Fully Added |
+| [Macaw's Roofs](https://modrinth.com/mod/macaws-roofs) | 2.3.2 | Fully Added |
 | [Macaw's Trapdoors](https://modrinth.com/mod/macaws-trapdoors) | 1.1.4 | Fully Added |
 | [Macaw's Windows](https://modrinth.com/mod/macaws-windows) | 2.3.2 | Fully Added |
 | [Macaws Stairs](https://modrinth.com/mod/macaws-stairs) | 1.0.1 | Fully Added |
@@ -360,11 +360,18 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Waystones](https://modrinth.com/mod/waystones) | 21.1.13 | Fully Added |
 | [Wetland Whimsy](https://modrinth.com/mod/wetland-whimsy) | | Foliage Only |
 | [Whisperwoods](https://modrinth.com/mod/whisperwoods) | 2.1.2 | Fully Added |
-| [Wilder Wild](https://modrinth.com/mod/wilder-wild) | 3.0.11 | Fully Added | # Added hopefully all remaining blocks and fixed Stone Chests. Scorched entity and all boats added. wilderwild:hollowed_pale_oak_log will need to be added to a non-full Pale Oak Log id once one is available.
+| [Wilder Wild](https://modrinth.com/mod/wilder-wild) | 3.0.11 | Fully Added | # wilderwild:hollowed_pale_oak_log was added
 | [Wondrous Wilds](https://modrinth.com/mod/wondrous-wilds) | | Foliage Only |
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
+| [Butchery](https://modrinth.com/mod/butchery) | 3.4 | Fully Added | # Assload of block entities and no property blocks.
+| [Dis-Enchanting Table](https://modrinth.com/mod/dis-enchanting-table) | 4.0.2 | Fully Added |
+| [CC: Tweaked](https://modrinth.com/mod/cc-tweaked) | 1.115.1 | Fully Added |
+| [Ars Énergistique](https://modrinth.com/mod/ars-energistique) | 2.1.1-beta | Fully Added |
+| [Ars Nouveau's Flavors & Delight](https://modrinth.com/mod/arsdelight) | 2.1.7 | Fully Added |
+| [Brewin' And Chewin'](https://modrinth.com/mod/brewin-and-chewin) | 4.3.0 | Fully Added |
+| [Fast Paintings](https://modrinth.com/mod/fast-paintings) | 1.2.15 | Fully Added |
 ---
 
 ## Status Definitions
