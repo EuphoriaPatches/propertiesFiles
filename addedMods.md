@@ -379,6 +379,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Mutant Monsters](https://modrinth.com/mod/mutant-monsters) | v21.1.0 | Fully Added |
 | [Industrial Foregoing](https://modrinth.com/mod/industrial-foregoing) | 3.6.33 | Blocks Only |
 | [Serene Seasons](https://modrinth.com/mod/serene-seasons) | 10.1.0.3 | Fully Added |
+| [Immersive Engineering](https://modrinth.com/mod/immersiveengineering) | 12.3.0-188 | BlockS Only |
 ---
 
 ## Status Definitions
