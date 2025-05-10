@@ -376,6 +376,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
+| [Mutant Monsters](https://modrinth.com/mod/mutant-monsters) | v21.1.0 | Fully Added |
 ---
 
 ## Status Definitions
