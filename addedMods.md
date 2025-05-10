@@ -378,6 +378,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
 | [Mutant Monsters](https://modrinth.com/mod/mutant-monsters) | v21.1.0 | Fully Added |
 | [Industrial Foregoing](https://modrinth.com/mod/industrial-foregoing) | 3.6.33 | Blocks Only |
+| [Serene Seasons](https://modrinth.com/mod/serene-seasons) | 10.1.0.3 | Fully Added |
 ---
 
 ## Status Definitions
