@@ -250,7 +250,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Macaw's Trapdoors](https://modrinth.com/mod/macaws-trapdoors) | 1.1.4 | Fully Added |
 | [Macaw's Windows](https://modrinth.com/mod/macaws-windows) | 2.3.2 | Fully Added |
 | [Macaws Stairs](https://modrinth.com/mod/macaws-stairs) | 1.0.1 | Fully Added |
-| [Magnum Torch](https://modrinth.com/mod/magnum-torch) | 8.0.2 | Fully Added |
+| [Magnum Torch](https://modrinth.com/mod/magnum-torch) | v21.1.0 | Fully Added |
 | [Malum](https://modrinth.com/mod/malum) | | Partial Support |
 | [Man of Many Planes](https://modrinth.com/mod/man-of-many-planes) | 0.1.0 | Fully Added |
 | [MCA Reborn](https://modrinth.com/mod/minecraft-comes-alive-reborn) | 7.6.3 | Fully Added |
