@@ -1,4 +1,4 @@
-### Last updated: May 09, 2025, 07:07 UTC
+### Last updated: May 10, 2025, 22:04 UTC
 [# Copyright (c) 2025 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -82,6 +82,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [The Box Of Horrors](https://modrinth.com/mod/the-box-of-horrors) | | Partial Support |
 | [Brazilian Delight](https://modrinth.com/mod/braziliandelight) | 1.1.0 | Foliage Only |
 | [Brewin' And Chewin'](https://modrinth.com/mod/brewin-and-chewin) | 4.3.0 | Fully Added |
+| [The Broken Script](https://modrinth.com/mod/the-broken-script) | 1.9.7 | Blocks Only | #Only added err.integrity block as mod dev said that should be the only colored block but it doesnt doesnt emmit light or colored light since idk how to :P
 | [Burnt](https://modrinth.com/mod/burnt) | | Fully Added |
 | [Bushier Flowers](https://modrinth.com/mod/bushier-flowers) | | Partial Support |
 | [Butchery](https://modrinth.com/mod/butchery) | 3.4 | Fully Added | # Assload of block entities and no property blocks.
