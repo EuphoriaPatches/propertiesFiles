@@ -96,10 +96,11 @@ Here we can keep track of what mods has been added and what version a contributo
 | [ChemLib](https://www.curseforge.com/minecraft/mc-mods/chemlib) | | Partial Support |
 | [Chipped](https://modrinth.com/mod/chipped) | 3.0.7 | Fully Added |
 | [Chisel](https://www.curseforge.com/minecraft/mc-mods/chisel) | 1.0.2.45 | Blocks Only |
+| [Chisel Reborn](https://www.curseforge.com/minecraft/mc-mods/chisel-reborn) | 2.0.0 | Blocks Only |
 | [Chisels & Bits](https://www.curseforge.com/minecraft/mc-mods/chisels-bits) | 14.33 | Blocks Only | # Support kinda sucks, but what else can you do with a chiseling out rocks mod.
 | [ChocoCraft Plus](https://modrinth.com/mod/chococraft-plus) | 4.5.8 | Fully Added |
 | [Chocolate Quest Repoured](https://www.curseforge.com/minecraft/mc-mods/cqrepoured)| 2.6.15B | Blocks Only |
-| [Cinderscapes](https://modrinth.com/mod/cinderscapes) | | Fully Added |
+| [Cinderscapes](https://modrinth.com/mod/cinderscapes) | 5.2.0 | Fully Added |
 | [Clockwork](https://modrinth.com/mod/create-clockwork) | | Miniscule |
 | [Cobblemon](https://modrinth.com/mod/cobblemon) | | Partial Support | # Someone should see if the entities look good
 | [Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts) | 1.4.1.3 | Fully Added |
@@ -316,6 +317,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Red Bits (redstone)](https://modrinth.com/mod/red-bits) | | Partial Support |
 | [Regions Unexplored](https://modrinth.com/mod/regions-unexplored) | 0.5.6 | Partial Support |
 | [Reliquary Reincarnations](https://www.curseforge.com/minecraft/mc-mods/reliquary-reincarnations) | 1.3.4.796 | Blocks Only |
+| [Resource Cracker](https://modrinth.com/mod/resource-cracker) | 2.5.0 | Blocks Only |
 | [Ribbits](https://modrinth.com/mod/ribbits) | | Foliage Only |
 | [Rounded](https://modrinth.com/mod/rounded_mod) | | Miniscule | # Light sources only
 | [Rustic Delight](https://www.curseforge.com/minecraft/mc-mods/rustic-delight) | 1.4.1 | Partial Support |
