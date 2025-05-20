@@ -121,7 +121,7 @@ jobs:
               return result_lines
 
           def process_section(section_lines):
-              """Process a section to sort mod entries alphabetically"""
+              """Process a section to sort mod entries alphabetically both vertically and horizontally"""
               # Special case: Check if the section only has a header that contains a mod
               if len(section_lines) <= 2 and ':' in section_lines[0]:
                   return section_lines
@@ -196,16 +196,18 @@ jobs:
                       
                   # If this is a mod entry (has a colon)
                   if ':' in line and not line.startswith('#'):
-                      mod_name = line.split(':')[0]
-                      
-                      # Clean the entry (remove trailing backslash)
-                      entry = line.rstrip('\\').strip()
-                      
-                      # Add to mod entries dictionary
-                      if mod_name not in mod_entries:
-                          mod_entries[mod_name] = []
-                          
-                      mod_entries[mod_name].append(entry)
+                      mod_parts = line.split()
+                      for part in mod_parts:
+                          if ':' in part and not part.startswith('#'):
+                              mod_name = part.split(':')[0]
+                              
+                              # Add to mod entries dictionary
+                              if mod_name not in mod_entries:
+                                  mod_entries[mod_name] = []
+                                  
+                              # Clean the entry (remove trailing backslash)
+                              entry = part.rstrip('\\').strip()
+                              mod_entries[mod_name].append(entry)
               
               # Sort mod names
               sorted_mod_names = sorted(mod_entries.keys())
@@ -252,8 +254,11 @@ jobs:
                       
                   processed_count += 1
                   
+                  # Sort entries within this mod alphabetically
+                  sorted_entries = sorted(mod_entries[mod_name])
+                  
                   # Join all entries for this mod
-                  entries = ' '.join(mod_entries[mod_name])
+                  entries = ' '.join(sorted_entries)
                   
                   if processed_count < effective_mod_count:
                       # Not the last effective mod - add backslash
