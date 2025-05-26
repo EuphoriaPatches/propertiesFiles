@@ -1,4 +1,4 @@
-### Last updated: May 26, 2025, 06:33 UTC
+### Last updated: May 26, 2025, 14:56 UTC
 [# Copyright (c) 2025 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -366,6 +366,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Things](https://www.curseforge.com/minecraft/mc-mods/things-fabric) | 0.3.3 | Partial | #Ores are glowing now
 | [Tide](https://www.curseforge.com/minecraft/mc-mods/tide) | 1.3.3 | Fully Added |
 | [Tinkers' Construct](https://modrinth.com/mod/tinkers-construct) | 2.13.0.183 | Blocks Only |
+| [Tinted Campfires](https://www.curseforge.com/minecraft/mc-mods/tinted-campfires) | | Fully Added |
 | [Tomb Many Graves 2](https://www.curseforge.com/minecraft/mc-mods/tomb-many-graves-2) | 4.2.0 | Fully Added |
 | [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster) | 1.8.5.0 | Fully Added |
 | [Translocators 1.8.+](https://www.curseforge.com/minecraft/mc-mods/translocators-1-8) | 2.5.2.81 | Fully Added |
@@ -386,7 +387,6 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
-| [Tinted Campfires](https://www.curseforge.com/minecraft/mc-mods/tinted-campfires) | | Fully Added |
 ---
 
 ## Status Definitions
