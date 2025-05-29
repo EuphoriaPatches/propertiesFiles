@@ -387,6 +387,10 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
+| [T.O Magic 'n Extras - Iron's Spells Addon](https://www.curseforge.com/minecraft/mc-mods/to-tweaks-irons-spells) | 4.4.0 | All Melee |
+| [L_Ender 's Cataclysm](https://www.curseforge.com/minecraft/mc-mods/lendercataclysm) | 2.66 | Only weapons |
+| [Legendary Survival Overhaul](https://www.curseforge.com/minecraft/mc-mods/legendary-survival-overhaul) | 2.3.11.3 | Foliage only | 
+
 ---
 
 ## Status Definitions
