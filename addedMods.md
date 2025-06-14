@@ -282,7 +282,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Mythic Upgrades](https://modrinth.com/mod/mythic-upgrades) | | Partial Support |
 | [Natura](https://www.curseforge.com/minecraft/mc-mods/natura) | 4.3.2.69 | Fully Added |
 | [Naturalist](https://modrinth.com/mod/naturalist) | 4.0.3 | Fully Added |
-| [Nature's Spirit](https://modrinth.com/mod/natures-spirit) | | Foliage Only |
+| [Nature's Spirit](https://modrinth.com/mod/natures-spirit) | | Partial Support|
 | [Neapolitan](https://www.curseforge.com/minecraft/mc-mods/neapolitan) | 5.0.0 | Foliage Only |
 | [Nether Archives](https://modrinth.com/mod/nether-archives) | 0.3.6 | Fully Added |
 | [Nether's Delight](https://modrinth.com/mod/nethers-delight) | | In Testing | # Why is soil in the Deepslate Diamond Ore ID??
