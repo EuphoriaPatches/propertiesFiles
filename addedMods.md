@@ -6,7 +6,7 @@ If you want to contribute to the Euphoria Patches modded support library, please
 
 ---
 ### What is this file?
-Here we can keep track of what mods has been added and what version a contributor used to add said mod. Whenever a new mod is added, _please_ include it here for future reference!!
+Here we can keep track of what mods have been added and what version a contributor used to add said mod. Whenever a new mod is added, _please_ include it here for future reference!!
 
 ---
 ## Mod List
