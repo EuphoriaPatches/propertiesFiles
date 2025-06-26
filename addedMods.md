@@ -224,7 +224,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Hexxit World](https://www.technicpack.net/modpack/hexxit-ii.896745/mods) | 1.1.0-33 | Foliage Only | # Seems like this is the only place that even lists Hexxit World.
 | [HT's TreeChop](https://www.curseforge.com/minecraft/mc-mods/treechop) | 0.14.7 | Fully Added |
 | [Hydrological](https://modrinth.com/mod/hydrological) | | Unknown | # Not even sure if this is the correct mod, ID is hydrol
-| [Ice and Fire](https://modrinth.com/mod/iceandfire-ce) | 1.0.2 | Blocks Only | # Tested using the Community Edition, but IDs should match the original. Items and entities planned. Dread Portals are still invisible but no ID seems to fix them.
+| [Ice and Fire](https://modrinth.com/mod/iceandfire-ce) | 1.0.2 | Fully Added | # Tested using the Community Edition, but IDs should match the original. Dread Portals are still invisible but no ID seems to fix them.
 | [iChunUtil](https://www.curseforge.com/minecraft/mc-mods/ichunutil) | 7.2.2 | Fully Added | # There's just a single block??
 | [Illuminations Legacy 🔥](https://www.curseforge.com/minecraft/mc-mods/illuminations-legacy) | 0.4.4-hexxit | Entities Only  | # Can only find this specific edit here?? https://www.technicpack.net/modpack/hexxit-ii.896745/mods
 | [Immersive Aircraft](https://modrinth.com/mod/immersive-aircraft) | | Fully Added |
