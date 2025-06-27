@@ -294,6 +294,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Ocean's Delight](https://modrinth.com/mod/oceans-delight) | 1.0.2 | Miniscule |
 | [Oh The Biomes We've Gone](https://modrinth.com/mod/oh-the-biomes-weve-gone) | 2.3.13 | Fully Added |
 | [Oh The Biomes You'll Go](https://modrinth.com/mod/biomesyougo) | | Partial Support |
+| [Opcraft](https://modrinth.com/mod/opcraftdimensions) | 1.0.0 | Partial Support |
 | [OpenBlocks](https://www.curseforge.com/minecraft/mc-mods/openblocks) | 1.8.1 | Fully Added |
 | [Ore Creeper](https://modrinth.com/mod/ore-creeper) | | Fully Added |
 | [Oreberries](https://www.curseforge.com/minecraft/mc-mods/oreberries) | 0.5.0 | Fully Added |
@@ -308,6 +309,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [PlusTiC](https://www.curseforge.com/minecraft/mc-mods/plusticminusbad) | 8.0.1.0 | Fully Added | # Rich history with this one, will not link original but it's uploaded safe counterpart made by someone else.
 | [Productive Bees](https://www.curseforge.com/minecraft/mc-mods/productivebees) | 13.6.6 | Miniscule |
 | [Productive Trees](https://modrinth.com/mod/productivetrees) | | Foliage Only |
+| [Profile Blocks](https://modrinth.com/mod/profile-blocks) | | Miniscule |
 | [Project: Vibrant Journeys](https://modrinth.com/mod/project-vibrant-journeys) | 1.6.4 | Fully Added |
 | [Prominent](https://www.curseforge.com/minecraft/mc-mods/prominent) | | Miniscule |
 | [Pure Ores](https://modrinth.com/mod/pureores) | | Partial Support |
