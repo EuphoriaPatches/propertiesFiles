@@ -349,7 +349,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Soul Shards Respawn](https://www.curseforge.com/minecraft/mc-mods/soul-shards-respawn) | 1.1.2 | Miniscule |
 | [SoulsWeapons](https://modrinth.com/mod/mariums-soulslike-weaponry) | 1.2 | Partial Support | #Added Ore Glowing
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
-| [Spelunkery](https://modrinth.com/mod/spelunkery) | | Fully Added |
+| [Spelunkery](https://modrinth.com/mod/spelunkery) | 0.3.16 | Fully Added |
 | Star | 1.5.2 | Fully Added | # Part of Tinkers' Construct's Fabric port Hephaestus
 | [Statues: Rechiseled](https://www.curseforge.com/minecraft/mc-mods/statues-rechiseled) | 1.0.1 | Fully Added | # Can't predict what block this could be, placed in no properties
 | [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers) | 5.5.0 | Fully Added |
