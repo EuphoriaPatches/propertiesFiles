@@ -44,7 +44,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Aqua Acrobatics](https://www.curseforge.com/minecraft/mc-mods/aqua-acrobatics) | 1.15.3 | Fully Added |
 | [Aquaculture 2](https://www.curseforge.com/minecraft/mc-mods/aquaculture) | 2.5.2 | Fully Added |
 | [Aquaculture Delight](https://www.curseforge.com/minecraft/mc-mods/aquaculture-delight) | 1.0.0 | Fully Added |
-| [Aquamirae](https://www.curseforge.com/minecraft/mc-mods/aquamirae-fabric) | 6 API16 | Partial Support |
+| [Aquamirae](https://www.curseforge.com/minecraft/mc-mods/aquamirae-fabric) | 6 API16 | Fully Added | # Added missing blocks and items and adjusted equipment materials. Also added Astral Dust from Obscure API
 | [Aquatic Torches](https://modrinth.com/mod/aquatic-torches) | 1.0.1 | Fully Added |
 | [Architect's Palette](https://modrinth.com/mod/architects-palette) | | Partial Support |
 | [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo) | 5.1.0 | Fully Added |
@@ -61,6 +61,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Autumnity](https://modrinth.com/mod/autumnity) | | Partial Support |
 | [Beast Slayer](https://www.curseforge.com/minecraft/mc-mods/beast-slayer) | 2.0_test1 | Blocks Only | # Think this mod used to be called Ancient Beasts, at least that's what the mod namespace has
 | [Beautify!](https://modrinth.com/mod/beautify) | 2.0.2 | Partial Support | # Hanging flower pots still needs work to make it look good
+| [Bedrockify](https://modrinth.com/mod/bedrockify) | 1.9.1 | Fully Added | # This mod only adds 2 types of cauldrons
 | [Better End Ore](https://modrinth.com/mod/better-end-ore) | 1.0.3 | Fully Added |
 | [Better Tridents](https://modrinth.com/mod/better-tridents) | 8.0.1 | Fully Added | # This mod only adds a single item
 | [BetterEnd](https://modrinth.com/mod/betterend) | 4.0.11 | Fully Added |
@@ -92,7 +93,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Caverns & Chasms](https://modrinth.com/mod/caverns-and-chasms) | 2.0.0 | Partial Support |
 | [CC: Tweaked](https://modrinth.com/mod/cc-tweaked) | 1.115.1 | Fully Added |
 | [Chalk](https://modrinth.com/mod/chalk-mod) | | Fully Added |
-| [Charm](https://modrinth.com/mod/charm) | | Fully Added |
+| [Charm](https://modrinth.com/mod/charm) | 6.0.24 | Fully Added | # Added all missing blocks and items in this version, available as Charm Forked here: https://modrinth.com/mod/charm-forked . v7.0.0+ has new, unadded blocks from my knowledge
 | [ChemLib](https://www.curseforge.com/minecraft/mc-mods/chemlib) | | Partial Support |
 | [Chipped](https://modrinth.com/mod/chipped) | 3.0.7 | Fully Added |
 | [Chisel](https://www.curseforge.com/minecraft/mc-mods/chisel) | 1.0.2.45 | Blocks Only |
@@ -168,8 +169,9 @@ Here we can keep track of what mods have been added and what version a contribut
 | eidolon | | Miniscule / Unknown | # Unsure of which fork was used to add support
 | [EldritchEnd](https://www.curseforge.com/minecraft/mc-mods/eldritch-end) | 0.3.2 | Miniscule | #added ore emissive to etyr ore
 | [Enchanting Plus](https://www.curseforge.com/minecraft/mc-mods/enchanting-plus) | 5.0.0 | Fully Added |
-| [End Remastered](https://modrinth.com/mod/endrem) | 5.2.4 | Fully Added | # Added all eye items.
+| [End Remastered](https://modrinth.com/mod/endrem) | 5.2.4 | Fully Added | # Added Undead Soul
 | [Ender IO](https://modrinth.com/mod/enderio) | 7.1.8-alpha | In Testing | # Lots of jank here, did the best I could but lets see what people think before we call it "done". Glass render layers can't be changed so placing this stuff in the only other ID possible, being glazed terracotta. Machinery blocks don't give off any light what-so-ever but have flame and soul flame animations, limiting us to blocks with "fake" ACL lighting.
+| [Ender Zoology](https://modrinth.com/mod/ender-zoology) | 8.0.3 | Fully Added |
 | [Enhanced Celestials](https://modrinth.com/mod/enhanced-celestials) | 5.0.2.3 | Fully Added |
 | [Environmental](https://modrinth.com/mod/environmental) | | Foliage Only |
 | [Etcetera](https://modrinth.com/mod/etcetera/versions) | | Miniscule |
@@ -187,8 +189,9 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Fabric Seasons: Extras](https://modrinth.com/mod/fabric-seasons-extras) | 1.2-BETA | Fully Added |
 | [Fairy Lights](https://www.curseforge.com/minecraft/mc-mods/fairy-lights)| 5.0.0 | Fully Added / Unknown | # Supposidly the mod will be fixed to allow ACL on the lights, someone should check on this after some time has passed.
 | [The Farlanders](https://modrinth.com/mod/the-farlanders) | | Miniscule |
-| [Farmer's Delight](https://modrinth.com/mod/farmers-delight) | | Fully Added | # Used the Fabric port to add support, hoping forge just works lol
+| [Farmer's Delight](https://modrinth.com/mod/farmers-delight) | | Fully Added | # Added an older ID for Rice Panicles
 | [Farmer's Respite](https://www.curseforge.com/minecraft/mc-mods/farmers-respite) | | Partial Support |
+| [Farmer's Knives](https://modrinth.com/mod/farmers-knives) | 3.0.2 | Miniscule | # Only added Additional Additions knives
 | [Farming for Blockheads](https://modrinth.com/mod/farming-for-blockheads) | 3.1.28 | Fully Added |
 | [Fast Paintings](https://modrinth.com/mod/fast-paintings) | 1.2.15 | Fully Added |
 | [Fish's Undead Rising](https://www.curseforge.com/minecraft/mc-mods/fishs-undead-rising) | 1.4.0 | Blocks Only |
@@ -224,13 +227,14 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Hexxit World](https://www.technicpack.net/modpack/hexxit-ii.896745/mods) | 1.1.0-33 | Foliage Only | # Seems like this is the only place that even lists Hexxit World.
 | [HT's TreeChop](https://www.curseforge.com/minecraft/mc-mods/treechop) | 0.14.7 | Fully Added |
 | [Hydrological](https://modrinth.com/mod/hydrological) | | Unknown | # Not even sure if this is the correct mod, ID is hydrol
-| [Ice and Fire](https://modrinth.com/mod/iceandfire-ce) | 1.0.2 | Fully Added | # Tested using the Community Edition, but IDs should match the original. Dread Portals are still invisible but no ID seems to fix them.
+| [Ice and Fire](https://modrinth.com/mod/iceandfire-ce) | 1.0.2 | Fully Added | # Tested using the Community Edition, but IDs should match the original. Dread Portals are still invisible but no ID seems to fix them. Added some food items and changed handling of Pixie Jars.
 | [iChunUtil](https://www.curseforge.com/minecraft/mc-mods/ichunutil) | 7.2.2 | Fully Added | # There's just a single block??
+| [Illager Invasion](https://modrinth.com/mod/illager-invasion) | 8.0.7 | Fully Added |
 | [Illuminations Legacy 🔥](https://www.curseforge.com/minecraft/mc-mods/illuminations-legacy) | 0.4.4-hexxit | Entities Only  | # Can only find this specific edit here?? https://www.technicpack.net/modpack/hexxit-ii.896745/mods
 | [Immersive Aircraft](https://modrinth.com/mod/immersive-aircraft) | | Fully Added |
 | [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering) | 12.1.0 | Partial Support |c
 | [Immersive Engineering](https://modrinth.com/mod/immersiveengineering) | 12.3.0-188 | Blocks Only |
-| [Immersive Weathering](https://modrinth.com/mod/immersive-weathering) | 2.0.5 | Fully Added / Autogenerated Content | # Fixed many inconsistencies with iron block variants and added missing blocks and items. A few duplicate entries removed. Also added manual Wilder Wild autogen support. Leaf Pile waving looks very broken with higher pile stacks, so they might need to be moved to a non-waving id.
+| [Immersive Weathering](https://modrinth.com/mod/immersive-weathering) | 2.0.5 | Fully Added / Autogenerated Content | # Added Ice and Fire autogen and fixed Snowy Stone blocks being too reflective
 | [Industrial Foregoing](https://modrinth.com/mod/industrial-foregoing) | 3.6.33 | Blocks Only |
 | [Industrial Revolution](https://www.curseforge.com/minecraft/mc-mods/industrial-revolution) | 1.16.7BETA | Planned | #ADreadedKing
 | [Industrial Upgrade](https://www.curseforge.com/minecraft/mc-mods/industrial-upgrade) | 3.3.0.5 | Fully Added |
@@ -349,7 +353,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Soul Shards Respawn](https://www.curseforge.com/minecraft/mc-mods/soul-shards-respawn) | 1.1.2 | Miniscule |
 | [SoulsWeapons](https://modrinth.com/mod/mariums-soulslike-weaponry) | 1.2 | Partial Support | #Added Ore Glowing
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
-| [Spelunkery](https://modrinth.com/mod/spelunkery) | 0.3.16 | Fully Added |
+| [Spelunkery](https://modrinth.com/mod/spelunkery) | 0.3.16 | Fully Added | # Added everything besides 2 unused blocks and adjusted handling of ores and glowsticks
 | Star | 1.5.2 | Fully Added | # Part of Tinkers' Construct's Fabric port Hephaestus
 | [Statues: Rechiseled](https://www.curseforge.com/minecraft/mc-mods/statues-rechiseled) | 1.0.1 | Fully Added | # Can't predict what block this could be, placed in no properties
 | [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers) | 5.5.0 | Fully Added |
@@ -387,11 +391,11 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Waystones](https://modrinth.com/mod/waystones) | 21.1.13 | Fully Added |
 | [Wetland Whimsy](https://modrinth.com/mod/wetland-whimsy) | | Foliage Only |
 | [Whisperwoods](https://modrinth.com/mod/whisperwoods) | 2.1.2 | Fully Added |
-| [Wilder Wild](https://modrinth.com/mod/wilder-wild) | 3.0.11 | Fully Added | # wilderwild:hollowed_pale_oak_log was added
+| [Wilder Wild](https://modrinth.com/mod/wilder-wild) | 3.0.11 | Fully Added | # Added potted plants. The new v4.0.0+ content has not been added yet
 | [Wondrous Wilds](https://modrinth.com/mod/wondrous-wilds) | | Foliage Only |
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
-| [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.0 | Fully Added |
+| [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.5 | Fully Added | # Added Suspicious Ancient Sand and the Ice Cube entity, completing this mod
 ---
 
 ## Status Definitions
