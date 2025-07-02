@@ -78,7 +78,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Born in Chaos](https://www.curseforge.com/minecraft/mc-mods/born-in-chaos) | 1.3.1 | Fully Added |
 | [Bosses Of Mass Destruction](https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction) | 1.7.5 | Fully Added | # Added all blocks, almost all items, and some of the entities. I unfortunately couldn't find any good IDs for the Void Blossom or Obsidilith.
 | [Botania](https://modrinth.com/mod/botania) | | Partial Support |
-| [Bountiful](https://modrinth.com/mod/bountiful) | 6.0.3 | Fully Added |
+| [Bountiful](https://modrinth.com/mod/bountiful) | 6.0.4 | Fully Added | # Changed Bounty Board to have no properties as the paper had a metalic shine
 | [Bountiful Fares](https://modrinth.com/mod/bountiful-fares) | | Fully Added |
 | [The Box Of Horrors](https://modrinth.com/mod/the-box-of-horrors) | | Partial Support |
 | [Brazilian Delight](https://modrinth.com/mod/braziliandelight) | 1.1.0 | Foliage Only |
