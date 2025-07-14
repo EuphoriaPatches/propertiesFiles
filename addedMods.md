@@ -54,7 +54,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Ars Énergistique](https://modrinth.com/mod/ars-energistique) | 2.1.1-beta | Fully Added |
 | [Artifacts](https://modrinth.com/mod/artifacts) | 9.5.12 | Fully Added |
 | [Artifality](https://modrinth.com/mod/artifality) | 0.6.1 | Fully Added |
-| [Arts & Crafts](https://modrinth.com/mod/artsandcrafts) | 1.5.1 | Partial Support |
+| [Arts & Crafts](https://modrinth.com/mod/artsandcrafts) | 1.5.1 | Foliage Only |
 | [Astrological (End Terrain & Biomes)](https://modrinth.com/mod/astrological) | | Partial Support | # Was formally called Inversia, mod ID must have changed at some point. We should keep both
 | [Atmospheric](https://modrinth.com/mod/atmospheric) | | Foliage Only |
 | [ATO - All the Ores](https://www.curseforge.com/minecraft/mc-mods/ato) | | Fully Added |
