@@ -211,7 +211,6 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Gardens of the Dead](https://modrinth.com/mod/gardens-of-the-dead) |4.0.1 | Fully Added |
 | [Gauges & Switches](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches) | 1.2.22 | Miniscule | #Only did the alarm lamp
 | [Geode+](https://modrinth.com/mod/geode-plus) | | Partial Support |
-| [Generator Galore](https://modrinth.com/mod/generatorgalore) | 1.3.4 | Planned |
 | [Good Ending](https://modrinth.com/mod/good-ending) | 1.0.1 | Miniscule |
 | [Grappling Hook Mod: Restitched](https://modrinth.com/mod/grappling-hook-mod-fabric) | 1.99.0 | Fully Added |
 | [Gravestones](https://modrinth.com/mod/gravestones) | v1.15 | Fully Added |
