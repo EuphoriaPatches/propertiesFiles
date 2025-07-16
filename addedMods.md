@@ -83,6 +83,7 @@ Here we can keep track of what mods has been added and what version a contributo
 | [Brazilian Delight](https://modrinth.com/mod/braziliandelight) | 1.1.0 | Foliage Only |
 | [Brewin' And Chewin'](https://modrinth.com/mod/brewin-and-chewin) | 4.3.0 | Fully Added |
 | [The Broken Script](https://modrinth.com/mod/the-broken-script) | 1.9.7 | Fully Added | #Only added err.integrity block as mod dev said that should be the only colored block that glows
+| [The Broken Content](https://modrinth.com/mod/thebrokencontent) | 1.5.1 | Blocks Only | #Only added Corrupted bedrock for now as it is the only block that glows.
 | [Burnt](https://modrinth.com/mod/burnt) | | Fully Added |
 | [Bushier Flowers](https://modrinth.com/mod/bushier-flowers) | | Partial Support |
 | [Butchery](https://modrinth.com/mod/butchery) | 3.4 | Fully Added | # Assload of block entities and no property blocks.
