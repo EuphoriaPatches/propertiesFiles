@@ -60,6 +60,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [ATO - All the Ores](https://www.curseforge.com/minecraft/mc-mods/ato) | | Fully Added |
 | [Automobility](https://www.curseforge.com/minecraft/mc-mods/automobility) | 0.4.2 | Miniscule |
 | [Autumnity](https://modrinth.com/mod/autumnity) | | Partial Support |
+| [Bamboo Everything](https://www.curseforge.com/minecraft/mc-mods/bamboo-everything) | 3.0.3 | Fully Added |
 | [Beast Slayer](https://www.curseforge.com/minecraft/mc-mods/beast-slayer) | 2.0_test1 | Blocks Only | # Think this mod used to be called Ancient Beasts, at least that's what the mod namespace has
 | [Beautify!](https://modrinth.com/mod/beautify) | 2.0.2 | Partial Support | # Hanging flower pots still needs work to make it look good
 | [Bedrockify](https://modrinth.com/mod/bedrockify) | 1.9.1 | Fully Added | # This mod only adds 2 types of cauldrons
@@ -302,6 +303,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Oh The Biomes You'll Go](https://modrinth.com/mod/biomesyougo) | | Partial Support |
 | [Opcraft](https://modrinth.com/mod/opcraftdimensions) | 1.0.0 | Partial Support |
 | [OpenBlocks](https://www.curseforge.com/minecraft/mc-mods/openblocks) | 1.8.1 | Fully Added |
+| [OpenBlocks Elevator](https://www.curseforge.com/minecraft/mc-mods/openblocks-elevator) | 1.11.3 | Fully Added |
 | [Ore Creeper](https://modrinth.com/mod/ore-creeper) | | Fully Added |
 | [Oreberries](https://www.curseforge.com/minecraft/mc-mods/oreberries) | 0.5.0 | Fully Added |
 | [Oreganized](https://modrinth.com/mod/oreganized) | | Miniscule |
