@@ -1,4 +1,4 @@
-### Last updated: July 21, 2025, 06:19 UTC
+### Last updated: July 26, 2025, 19:06 UTC
 [# Copyright (c) 2025 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -105,6 +105,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Chisels & Bits](https://www.curseforge.com/minecraft/mc-mods/chisels-bits) | 14.33 | Blocks Only | # Support kinda sucks, but what else can you do with a chiseling out rocks mod.
 | [ChocoCraft Plus](https://modrinth.com/mod/chococraft-plus) | 4.5.8 | Fully Added |
 | [Chocolate Quest Repoured](https://www.curseforge.com/minecraft/mc-mods/cqrepoured)| 2.6.15B | Blocks Only |
+| [Chunk Loaders](https://modrinth.com/mod/chunk-loaders) | 1.2.8 | Fully Added | # Why doesn't these loaders get effect by any ID??
 | [Cinderscapes](https://modrinth.com/mod/cinderscapes) | 5.2.0 | Fully Added |
 | [Clockwork](https://modrinth.com/mod/create-clockwork) | | Miniscule |
 | [Cobblemon](https://modrinth.com/mod/cobblemon) | | Partial Support | # Someone should see if the entities look good
@@ -173,6 +174,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Ecologics](https://modrinth.com/mod/ecologics) | 2.2.0 | Fully Added |
 | eidolon | | Miniscule / Unknown | # Unsure of which fork was used to add support
 | [EldritchEnd](https://www.curseforge.com/minecraft/mc-mods/eldritch-end) | 0.3.2 | Miniscule | #added ore emissive to etyr ore
+| [Ember's Kiln](https://modrinth.com/mod/embers-kiln) | 1.1.2 | Fully Added |
 | [Enchanting Plus](https://www.curseforge.com/minecraft/mc-mods/enchanting-plus) | 5.0.0 | Fully Added |
 | [End Remastered](https://modrinth.com/mod/endrem) | 5.2.4 | Fully Added | # Added Undead Soul
 | [Ender IO](https://modrinth.com/mod/enderio) | 7.1.8-alpha | In Testing | # Lots of jank here, did the best I could but lets see what people think before we call it "done". Glass render layers can't be changed so placing this stuff in the only other ID possible, being glazed terracotta. Machinery blocks don't give off any light what-so-ever but have flame and soul flame animations, limiting us to blocks with "fake" ACL lighting.
@@ -404,8 +406,6 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.5 | Fully Added | # Added Suspicious Ancient Sand and the Ice Cube entity, completing this mod
-| [Ember's Kiln](https://modrinth.com/mod/embers-kiln) | 1.1.2 | Fully Added |
-| [Chunk Loaders](https://modrinth.com/mod/chunk-loaders) | 1.2.8 | Fully Added | # Why doesn't these loaders get effect by any ID??
 ---
 
 ## Status Definitions
