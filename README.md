@@ -13,7 +13,7 @@ These `.properties` files help Euphoria Patches recognize blocks, items, entitie
 ## ⚠️ IMPORTANT REMINDERS ⚠️
 - **Please use the templates provided below!**
 - **Always document your additions in `addedMods.md`!**
-- **Only do changes to the latest version from GitHub!**
+- **Only do changes to the latest version from GitHub (the files you're looking at right now in this repository)!**
 
 ## How to Contribute
 
