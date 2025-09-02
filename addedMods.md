@@ -253,7 +253,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | Iron Furnaces | | Unknown | # Not sure what version of this mod was used
 | [Jaden's Nether Expansion](https://modrinth.com/mod/jadens-nether-expansion) | 2.3.2 | Partial Support |
 | [JDK's Mob Grinding Utilities](https://modrinth.com/mod/jdk-mgu) | | Miniscule |
-| [Just a Greenhouse]([https://modrinth.com/mod/jdk-mgu](https://modrinth.com/mod/just-a-greenhouse)) | 1.1.3 | Fully Added | # Items still have to be added but as a wise person once said "I cannot be arsed"
+| [Just a Greenhouse](https://modrinth.com/mod/just-a-greenhouse) | 1.1.3 | Fully Added | # Items still have to be added but as a wise person once said "I cannot be arsed"
 | [L_Ender 's Cataclysm](https://www.curseforge.com/minecraft/mc-mods/lendercataclysm) | 2.66 | Only weapons |
 | [Legendary Survival Overhaul](https://www.curseforge.com/minecraft/mc-mods/legendary-survival-overhaul) | 2.3.11.3 | Foliage only |
 | [LevelZ](https://modrinth.com/mod/levelz) | 1.4.13 | Fully Added |
