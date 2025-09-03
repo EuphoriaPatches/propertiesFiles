@@ -336,6 +336,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Rechiseled: Create](https://modrinth.com/mod/rechiseled-create) | | Miniscule |
 | [Recurrent Complex](https://www.curseforge.com/minecraft/mc-mods/recurrent-complex) | 1.4.8.5 | Fully Added |
 | [Red Bits (redstone)](https://modrinth.com/mod/red-bits) | | Partial Support |
+| [Redstone Lamps Plus](https://www.curseforge.com/minecraft/mc-mods/redstone-lamps-plus) | 1.5.4 | Fully Added |
 | [Regions Unexplored](https://modrinth.com/mod/regions-unexplored) | 0.5.6 | Partial Support |
 | [Reliquary Reincarnations](https://www.curseforge.com/minecraft/mc-mods/reliquary-reincarnations) | 1.3.4.796 | Blocks Only |
 | [Resource Cracker](https://modrinth.com/mod/resource-cracker) | 2.5.0 | Blocks Only |
