@@ -86,6 +86,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [The Box Of Horrors](https://modrinth.com/mod/the-box-of-horrors) | | Partial Support |
 | [Brazilian Delight](https://modrinth.com/mod/braziliandelight) | 1.1.0 | Foliage Only |
 | [Brewin' And Chewin'](https://modrinth.com/mod/brewin-and-chewin) | 4.3.0 | Fully Added |
+| [Bronze](https://modrinth.com/mod/bronze) | 2.0.1 | Ores Only |
 | [The Broken Content](https://modrinth.com/mod/thebrokencontent) | 1.5.1 | Blocks Only | #Only added Corrupted bedrock for now as it is the only block that glows.
 | [The Broken Script](https://modrinth.com/mod/the-broken-script) | 1.9.7 | Fully Added | #Only added err.integrity block as mod dev said that should be the only colored block that glows
 | [Burnt](https://modrinth.com/mod/burnt) | | Fully Added |
