@@ -81,7 +81,7 @@ jobs:
           def read_stored_info():
               """Read stored version info, or return empty dict if file doesn't exist"""
               if not os.path.exists(INFO_PATH):
-                  return {"version": "0.0.0"}
+                  return {"version": "0.0.0", "versionsToSkip": []}
               
               with open(INFO_PATH, 'r') as f:
                   return json.load(f)
@@ -109,14 +109,24 @@ jobs:
               print("Reading stored version info...")
               stored_info = read_stored_info()
               stored_version = stored_info.get("version", "0.0.0")
+              versions_to_skip = stored_info.get("versionsToSkip", [])
               print(f"Stored version: {stored_version}")
+              print(f"Versions to skip: {versions_to_skip}")
               
               # Create info.json if it doesn't exist
               first_run = not os.path.exists(INFO_PATH)
               if first_run:
                   print(f"First run detected. Creating new info.json at {INFO_PATH}")
-                  
-              # Update version info (always save the latest version)
+                  if "versionsToSkip" not in stored_info:
+                      stored_info["versionsToSkip"] = []
+              
+              # Check if the latest version should be skipped
+              if latest_version in versions_to_skip:
+                  print(f"Version {latest_version} is in the skip list. Keeping current version and skipping merge.")
+                  # Don't update the stored version if this version should be skipped
+                  return False, latest_version
+              
+              # Update version info (always save the latest version if not skipped)
               stored_info["version"] = latest_version
               save_info(stored_info)
               print(f"Updated version info saved to {INFO_PATH}")
