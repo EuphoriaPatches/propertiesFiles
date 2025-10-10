@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
   schedule:
     - cron: '0 */6 * * *'  # Run every 6 hours to check for new versions
 
