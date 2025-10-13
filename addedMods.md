@@ -345,6 +345,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Resource Cracker](https://modrinth.com/mod/resource-cracker) | 2.5.0 | Blocks Only |
 | [Ribbits](https://modrinth.com/mod/ribbits) | | Foliage Only |
 | [Rounded](https://modrinth.com/mod/rounded_mod) | | Miniscule | # Light sources only
+| [Rubinated Nether](https://modrinth.com/mod/rubinated-nether) | 2.0.1 | Partial Support |
 | [Rustic Delight](https://www.curseforge.com/minecraft/mc-mods/rustic-delight) | 1.4.1 | Partial Support |
 | [Sandwichable](https://modrinth.com/mod/sandwichable) | | Foliage Only |
 | [Scorched Guns 2](https://www.curseforge.com/minecraft/mc-mods/scorched-guns) | 0.3.2.5 | Miniscule | #Only the Plasma lantern was added
@@ -392,6 +393,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Tinkers' Construct](https://modrinth.com/mod/tinkers-construct) | 2.13.0.183 | Blocks Only |
 | [Tinted Campfires](https://www.curseforge.com/minecraft/mc-mods/tinted-campfires) | | Fully Added |
 | [Tomb Many Graves 2](https://www.curseforge.com/minecraft/mc-mods/tomb-many-graves-2) | 4.2.0 | Fully Added |
+| [Tom's Simple Storage Mod](https://modrinth.com/mod/toms-storage) | 2.5.1 | Fully Added |
 | [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster) | 1.8.5.0 | Fully Added |
 | [Translocators 1.8.+](https://www.curseforge.com/minecraft/mc-mods/translocators-1-8) | 2.5.2.81 | Fully Added |
 | [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) | 9.1.28 | Fully Added | # Could improve this by placing various backpacks into their respective block ID's, unsure if this will actually work though
