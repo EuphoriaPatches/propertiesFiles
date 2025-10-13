@@ -1,4 +1,4 @@
-### Last updated: October 08, 2025, 09:21 UTC
+### Last updated: October 13, 2025, 17:32 UTC
 [# Copyright (c) 2025 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -392,8 +392,8 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Tide](https://www.curseforge.com/minecraft/mc-mods/tide) | 1.3.3 | Fully Added |
 | [Tinkers' Construct](https://modrinth.com/mod/tinkers-construct) | 2.13.0.183 | Blocks Only |
 | [Tinted Campfires](https://www.curseforge.com/minecraft/mc-mods/tinted-campfires) | | Fully Added |
-| [Tomb Many Graves 2](https://www.curseforge.com/minecraft/mc-mods/tomb-many-graves-2) | 4.2.0 | Fully Added |
 | [Tom's Simple Storage Mod](https://modrinth.com/mod/toms-storage) | 2.5.1 | Fully Added |
+| [Tomb Many Graves 2](https://www.curseforge.com/minecraft/mc-mods/tomb-many-graves-2) | 4.2.0 | Fully Added |
 | [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster) | 1.8.5.0 | Fully Added |
 | [Translocators 1.8.+](https://www.curseforge.com/minecraft/mc-mods/translocators-1-8) | 2.5.2.81 | Fully Added |
 | [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) | 9.1.28 | Fully Added | # Could improve this by placing various backpacks into their respective block ID's, unsure if this will actually work though
