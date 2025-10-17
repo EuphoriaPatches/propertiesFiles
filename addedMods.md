@@ -414,6 +414,8 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.5 | Fully Added | # Added Suspicious Ancient Sand and the Ice Cube entity, completing this mod
+| [Reliquary Reincarnations](https://www.curseforge.com/minecraft/mc-mods/reliquary-reincarnations) | 2.052.1299 | Miniscule | #Only the interdiction_torch
+| [ProjectE](https://www.curseforge.com/minecraft/mc-mods/projecte) | 1.0.1 | Miniscule | #Only the interdiction_torch
 ---
 
 ## Status Definitions
