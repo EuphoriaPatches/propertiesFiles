@@ -214,6 +214,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Frights and Foliage](https://modrinth.com/mod/frights-and-foliage) | 1.0.1 | Fully Added |
 | [Frostiful](https://modrinth.com/mod/frostiful) | 1.0.11 | Partial Support |
 | [Fruits Delight](https://modrinth.com/mod/fruits-delight) | 1.0.11 | Partial Support |
+| [FTB Materials](https://www.curseforge.com/minecraft/mc-mods/ftb-materials) | 21.1.3 | Ores Added |
 | [Functional Storage](https://modrinth.com/mod/functional-storage) | 1.4.2 | Fully Added |
 | [Galosphere](https://modrinth.com/mod/galosphere) | | Partial Support |
 | [Gardens of the Dead](https://modrinth.com/mod/gardens-of-the-dead) |4.0.1 | Fully Added |
