@@ -159,19 +159,31 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Dynamic Trees](https://modrinth.com/mod/dynamictrees) | 1.5.0-BETA07 | Fully Added |
 | [Dynamic Trees +](https://modrinth.com/mod/dynamictreesplus) | 1.3.0-BETA2 | Fully Added |
 | [Dynamic Trees - Alex's Mobs](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-alexs-mobs) | | Foliage Only |
+| [Dynamic Trees - Arts and Crafts](https://modrinth.com/mod/dynamic-trees-arts-and-crafts) | | Fully Added |
 | [Dynamic Trees - Autumnity](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-autumnity) | | Foliage Only |
-| [Dynamic Trees - Biomes O' Plenty](https://modrinth.com/mod/dynamic-trees-biomes-o-plenty) | | Foliage Only |
-| [Dynamic Trees - Ecologics](https://modrinth.com/mod/dynamic-trees-ecologics) | | Foliage Only |
+| [Dynamic Trees - Beachparty](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-beachparty) | | Foliage Only |
+| [Dynamic Trees - Biomes O' Plenty](https://modrinth.com/mod/dynamic-trees-biomes-o-plenty) | | Fully Added |
+| [Dynamic Trees - BloomingNature](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-bloomingnature) | | Foliage Only |
+| [Dynamic Trees - Cobblemon](https://modrinth.com/mod/dynamic-trees-cobblemon) | | Fully Added |
+| [Dynamic Trees - Croptopia](https://modrinth.com/mod/dynamic-trees-croptopia) | | Fully Added |
+| [Dynamic Trees - Ecologics](https://modrinth.com/mod/dynamic-trees-ecologics) | | Fully Added |
+| [Dynamic Trees - Fish of Thieves](https://modrinth.com/mod/dynamic-trees-fish-of-thieves) | | Fully Added |
+| [Dynamic Trees - Hexcasting](https://modrinth.com/mod/dynamic-trees-hexcasting) | | Fully Added |
 | [Dynamic Trees - Hexerei](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-hexerei) | | Foliage Only |
+| [Dynamic Trees - Meadow](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-meadow) | | Foliage Only |
+| [Dynamic Trees - More Apple Trees](https://modrinth.com/mod/dynamic-trees-more-apple-trees) | | Fully Added |
+| [Dynamic Trees - Nature's Spirit](https://modrinth.com/mod/dynamic-trees-for-natures-spirit) | | Fully Added |
 | [Dynamic Trees - Neapolitan](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-neapolitan) | | Foliage Only |
-| [Dynamic Trees - Quark](https://modrinth.com/mod/dynamic-trees-quark) | | Foliage Only |
-| [Dynamic Trees - Terralith](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-terralith) | | Partial Foliage |
+| [Dynamic Trees - Quark](https://modrinth.com/mod/dynamic-trees-quark) | | Fully Added |
+| [Dynamic Trees - Regions Unexplored](https://modrinth.com/mod/dynamic-trees-ru) | | Foliage Only |
+| [Dynamic Trees - Slayers Beasts](https://modrinth.com/mod/dynamictrees-slayersbeasts) | | Fully Added |
+| [Dynamic Trees - Sonicraft](https://modrinth.com/mod/dynamic-trees-sonicraft) | | Fully Added |
+| [Dynamic Trees - Super Block World](https://modrinth.com/mod/dynamic-trees-super-block-world) | | Fully Added |
+| [Dynamic Trees - Terralith](https://modrinth.com/mod/dynamic-trees-terralith) | | Fully Added |
+| [Dynamic Trees - TFC](https://modrinth.com/mod/dynamictreestfc) | | Fully Added |
+| [Dynamic Trees - The Aether](https://modrinth.com/mod/dynamic-trees-aether) | | Fully Added |
 | [Dynamic Trees - Upgrade Aquatic](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-upgrade-aquatic) | | Foliage Only |
-| [Dynamic Trees for Beachparty](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-beachparty) | | Foliage Only |
-| [Dynamic Trees for BloomingNature](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-bloomingnature) | | Foliage Only |
-| [Dynamic Trees for Meadow](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-meadow) | | Foliage Only |
-| [Dynamic Trees for Nature's Spirit](https://modrinth.com/mod/dynamic-trees-for-natures-spirit) | | Foliage Only |
-| [Dynamic Trees for Vinery](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-vinery) | | Foliage Only |
+| [Dynamic Trees - Vinery](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-vinery) | | Foliage Only |
 | [Easy Anvils](https://modrinth.com/mod/easy-anvils) | 21.1.0 | Fully Added |
 | [Easy Anvils](https://modrinth.com/mod/easy-anvils) | v21.1.0 | Fully Added |
 | [Easy Magic](https://modrinth.com/mod/easy-magic) | 21.1.0 | Fully Added |
