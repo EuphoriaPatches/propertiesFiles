@@ -198,6 +198,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Ender Zoology](https://modrinth.com/mod/ender-zoology) | 8.0.3 | Fully Added |
 | [Enhanced Celestials](https://modrinth.com/mod/enhanced-celestials) | 5.0.2.3 | Fully Added |
 | [Environmental](https://modrinth.com/mod/environmental) | | Foliage Only |
+| [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) | | Partial Support | # For GTNH/1.7.10, about half added
 | [Etcetera](https://modrinth.com/mod/etcetera/versions) | | Miniscule |
 | [Eternal Starlight](https://www.curseforge.com/minecraft/mc-mods/eternal-starlight) | 0.2.0 | Partial Support |
 | [Eternal Starlight Vanilla Ores](https://modrinth.com/mod/eternal-starlight-vo) | 1.0.0 | Fully Added |
