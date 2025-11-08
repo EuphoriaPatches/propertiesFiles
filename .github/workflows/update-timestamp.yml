@@ -71,6 +71,170 @@ jobs:
         with:
           python-version: '3.x'
           
+      - name: Create and run duplicate remover script
+        run: |
+          # Create the duplicate remover Python script
+          echo "Creating duplicate remover script..."
+          cat > remove_duplicates.py << 'EOF'
+          import sys
+          import re
+
+          def remove_duplicates_in_section(section_lines):
+              """Remove duplicate mod entries within a section, preserving different blockstates"""
+              if not section_lines:
+                  return section_lines
+              
+              # Get the section header (first line)
+              header_line = section_lines[0].rstrip()
+              
+              # Extract all lines
+              result = [header_line]
+              seen_entries = set()
+              
+              for i, line in enumerate(section_lines[1:], 1):
+                  line_stripped = line.rstrip()
+                  
+                  # Preserve comments and empty lines
+                  if line_stripped.startswith('#') or not line_stripped.strip() or line_stripped.strip() == '\\':
+                      result.append(line_stripped)
+                      continue
+                  
+                  # Check if this is a tag line
+                  if 'tags_' in line_stripped:
+                      result.append(line_stripped)
+                      continue
+                  
+                  # Process mod entries
+                  parts = line_stripped.split()
+                  filtered_parts = []
+                  
+                  for part in parts:
+                      # Skip backslashes
+                      if part == '\\':
+                          continue
+                      
+                      # If this is a mod entry (contains colon)
+                      if ':' in part and not part.startswith('#'):
+                          # Use the full part (including blockstate) as the key to check for duplicates
+                          unique_key = part.rstrip('\\').strip()
+                          
+                          if unique_key not in seen_entries:
+                              seen_entries.add(unique_key)
+                              filtered_parts.append(part)
+                      else:
+                          # Not a mod entry, keep as-is
+                          filtered_parts.append(part)
+                  
+                  # Reconstruct the line if we have filtered parts
+                  if filtered_parts:
+                      # Check if original line had a backslash at the end
+                      has_backslash = line_stripped.rstrip().endswith('\\')
+                      reconstructed = ' '.join(filtered_parts)
+                      if has_backslash and not reconstructed.endswith('\\'):
+                          reconstructed += ' \\'
+                      result.append(reconstructed)
+                  elif line_stripped.strip() == '\\':
+                      # Preserve standalone backslashes
+                      result.append(line_stripped)
+              
+              # Add newlines back
+              return [line + '\n' for line in result]
+
+          def process_properties_file(file_path):
+              """Process a properties file to remove duplicates within each section"""
+              try:
+                  with open(file_path, 'r', encoding='utf-8') as f:
+                      lines = f.readlines()
+              except FileNotFoundError:
+                  print(f"Error: File '{file_path}' not found")
+                  return False
+              except Exception as e:
+                  print(f"Error reading file: {e}")
+                  return False
+              
+              result_lines = []
+              i = 0
+              duplicates_removed = 0
+              
+              while i < len(lines):
+                  line = lines[i]
+                  
+                  # Check if this line starts a section (block.XXXXX =, item.XXXXX =, entity.XXXXX =)
+                  section_match = re.match(r'^(item|block|entity)\.\d+\s*=', line)
+                  
+                  if section_match:
+                      # Start of a section - collect all lines in this section
+                      current_section = [line]
+                      section_start = i
+                      section_end = i
+                      
+                      # Find the end of this section
+                      for j in range(i + 1, len(lines)):
+                          current_section.append(lines[j])
+                          # Check if this line ends the section (no backslash at end or empty line)
+                          stripped = lines[j].strip()
+                          if not stripped.endswith('\\') and stripped != '\\':
+                              section_end = j
+                              break
+                          section_end = j
+                      
+                      # Count entries before deduplication
+                      original_count = sum(1 for line in current_section for part in line.split() if ':' in part and part != '\\')
+                      
+                      # Remove duplicates in this section
+                      processed_section = remove_duplicates_in_section(current_section)
+                      
+                      # Count entries after deduplication
+                      new_count = sum(1 for line in processed_section for part in line.split() if ':' in part and part != '\\')
+                      
+                      if original_count > new_count:
+                          duplicates_removed += (original_count - new_count)
+                          print(f"Section {section_match.group()}: Removed {original_count - new_count} duplicate(s)")
+                      
+                      result_lines.extend(processed_section)
+                      
+                      # Skip past this section in the main loop
+                      i = section_end + 1
+                  else:
+                      # Not the start of a section, keep as-is
+                      result_lines.append(line)
+                      i += 1
+              
+              # Write back to file
+              try:
+                  with open(file_path, 'w', encoding='utf-8') as f:
+                      f.writelines(result_lines)
+                  if duplicates_removed > 0:
+                      print(f"Total duplicates removed: {duplicates_removed}")
+                  return True
+              except Exception as e:
+                  print(f"Error writing file: {e}")
+                  return False
+
+          def main():
+              if len(sys.argv) < 2:
+                  print("Usage: python remove_duplicates.py <path_to_properties_file>")
+                  return
+              
+              file_path = sys.argv[1]
+              process_properties_file(file_path)
+
+          if __name__ == "__main__":
+              main()
+          EOF
+          
+          # Process each modified properties file to remove duplicates
+          MODIFIED_FILES=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA | grep -E '\.properties$' || true)
+          if [ -n "$MODIFIED_FILES" ]; then
+            echo "Running duplicate remover on modified properties files..."
+            for file in $MODIFIED_FILES; do
+              if [ -f "$file" ]; then
+                echo "Removing duplicates in file: $file"
+                python remove_duplicates.py "$file"
+              fi
+            done
+          fi
+          
       - name: Create and run properties sorting script
         run: |
           # Create the Python script
@@ -457,8 +621,8 @@ jobs:
             exit 0
           fi
           
-          echo "Committing timestamp and sorting changes..."
-          git commit -m "Update timestamps, sort mod entries, and update block count [skip ci]"
+          echo "Committing timestamp, duplicate removal, sorting changes, and block count update..."
+          git commit -m "Update timestamps, remove duplicates, sort mod entries, and update block count [skip ci]"
           
           # Try pushing with retries for potential conflicts
           MAX_RETRIES=3
@@ -474,5 +638,5 @@ jobs:
             echo "Failed to push after $MAX_RETRIES attempts, using force push"
             git push --force origin ${GITHUB_REF#refs/heads/}
           else
-            echo "Timestamp updates, mod sorting, and block count update pushed successfully"
+            echo "Timestamp updates, duplicate removal, mod sorting, and block count update pushed successfully"
           fi
