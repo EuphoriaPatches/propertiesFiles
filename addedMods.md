@@ -198,6 +198,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Ender Zoology](https://modrinth.com/mod/ender-zoology) | 8.0.3 | Fully Added |
 | [Enhanced Celestials](https://modrinth.com/mod/enhanced-celestials) | 5.0.2.3 | Fully Added |
 | [Environmental](https://modrinth.com/mod/environmental) | | Foliage Only |
+| [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) | | Partial Support | # For GTNH/1.7.10, about half added
 | [Etcetera](https://modrinth.com/mod/etcetera/versions) | | Miniscule |
 | [Eternal Starlight](https://www.curseforge.com/minecraft/mc-mods/eternal-starlight) | 0.2.0 | Partial Support |
 | [Eternal Starlight Vanilla Ores](https://modrinth.com/mod/eternal-starlight-vo) | 1.0.0 | Fully Added |
@@ -435,6 +436,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.5 | Fully Added | # Added Suspicious Ancient Sand and the Ice Cube entity, completing this mod
+| [Ztones](https://www.curseforge.com/minecraft/mc-mods/ztones) | | Partial Support | # Some additionsfor GTNH / 1.7.10
 ---
 
 ## Status Definitions
