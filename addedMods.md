@@ -436,6 +436,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.5 | Fully Added | # Added Suspicious Ancient Sand and the Ice Cube entity, completing this mod
+| [Ztones](https://www.curseforge.com/minecraft/mc-mods/ztones) | | Partial Support | # Some additionsfor GTNH / 1.7.10
 ---
 
 ## Status Definitions
