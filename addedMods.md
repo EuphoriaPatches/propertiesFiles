@@ -1,4 +1,4 @@
-### Last updated: November 02, 2025, 13:11 UTC
+### Last updated: November 08, 2025, 10:15 UTC
 [# Copyright (c) 2025 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -159,19 +159,31 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Dynamic Trees](https://modrinth.com/mod/dynamictrees) | 1.5.0-BETA07 | Fully Added |
 | [Dynamic Trees +](https://modrinth.com/mod/dynamictreesplus) | 1.3.0-BETA2 | Fully Added |
 | [Dynamic Trees - Alex's Mobs](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-alexs-mobs) | | Foliage Only |
+| [Dynamic Trees - Arts and Crafts](https://modrinth.com/mod/dynamic-trees-arts-and-crafts) | | Fully Added |
 | [Dynamic Trees - Autumnity](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-autumnity) | | Foliage Only |
-| [Dynamic Trees - Biomes O' Plenty](https://modrinth.com/mod/dynamic-trees-biomes-o-plenty) | | Foliage Only |
-| [Dynamic Trees - Ecologics](https://modrinth.com/mod/dynamic-trees-ecologics) | | Foliage Only |
+| [Dynamic Trees - Beachparty](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-beachparty) | | Foliage Only |
+| [Dynamic Trees - Biomes O' Plenty](https://modrinth.com/mod/dynamic-trees-biomes-o-plenty) | | Fully Added |
+| [Dynamic Trees - BloomingNature](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-bloomingnature) | | Foliage Only |
+| [Dynamic Trees - Cobblemon](https://modrinth.com/mod/dynamic-trees-cobblemon) | | Fully Added |
+| [Dynamic Trees - Croptopia](https://modrinth.com/mod/dynamic-trees-croptopia) | | Fully Added |
+| [Dynamic Trees - Ecologics](https://modrinth.com/mod/dynamic-trees-ecologics) | | Fully Added |
+| [Dynamic Trees - Fish of Thieves](https://modrinth.com/mod/dynamic-trees-fish-of-thieves) | | Fully Added |
+| [Dynamic Trees - Hexcasting](https://modrinth.com/mod/dynamic-trees-hexcasting) | | Fully Added |
 | [Dynamic Trees - Hexerei](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-hexerei) | | Foliage Only |
+| [Dynamic Trees - Meadow](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-meadow) | | Foliage Only |
+| [Dynamic Trees - More Apple Trees](https://modrinth.com/mod/dynamic-trees-more-apple-trees) | | Fully Added |
+| [Dynamic Trees - Nature's Spirit](https://modrinth.com/mod/dynamic-trees-for-natures-spirit) | | Fully Added |
 | [Dynamic Trees - Neapolitan](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-neapolitan) | | Foliage Only |
-| [Dynamic Trees - Quark](https://modrinth.com/mod/dynamic-trees-quark) | | Foliage Only |
-| [Dynamic Trees - Terralith](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-terralith) | | Partial Foliage |
+| [Dynamic Trees - Quark](https://modrinth.com/mod/dynamic-trees-quark) | | Fully Added |
+| [Dynamic Trees - Regions Unexplored](https://modrinth.com/mod/dynamic-trees-ru) | | Foliage Only |
+| [Dynamic Trees - Slayers Beasts](https://modrinth.com/mod/dynamictrees-slayersbeasts) | | Fully Added |
+| [Dynamic Trees - Sonicraft](https://modrinth.com/mod/dynamic-trees-sonicraft) | | Fully Added |
+| [Dynamic Trees - Super Block World](https://modrinth.com/mod/dynamic-trees-super-block-world) | | Fully Added |
+| [Dynamic Trees - Terralith](https://modrinth.com/mod/dynamic-trees-terralith) | | Fully Added |
+| [Dynamic Trees - TFC](https://modrinth.com/mod/dynamictreestfc) | | Fully Added |
+| [Dynamic Trees - The Aether](https://modrinth.com/mod/dynamic-trees-aether) | | Fully Added |
 | [Dynamic Trees - Upgrade Aquatic](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-upgrade-aquatic) | | Foliage Only |
-| [Dynamic Trees for Beachparty](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-beachparty) | | Foliage Only |
-| [Dynamic Trees for BloomingNature](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-bloomingnature) | | Foliage Only |
-| [Dynamic Trees for Meadow](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-meadow) | | Foliage Only |
-| [Dynamic Trees for Nature's Spirit](https://modrinth.com/mod/dynamic-trees-for-natures-spirit) | | Foliage Only |
-| [Dynamic Trees for Vinery](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-vinery) | | Foliage Only |
+| [Dynamic Trees - Vinery](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-for-vinery) | | Foliage Only |
 | [Easy Anvils](https://modrinth.com/mod/easy-anvils) | 21.1.0 | Fully Added |
 | [Easy Anvils](https://modrinth.com/mod/easy-anvils) | v21.1.0 | Fully Added |
 | [Easy Magic](https://modrinth.com/mod/easy-magic) | 21.1.0 | Fully Added |
@@ -186,6 +198,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Ender Zoology](https://modrinth.com/mod/ender-zoology) | 8.0.3 | Fully Added |
 | [Enhanced Celestials](https://modrinth.com/mod/enhanced-celestials) | 5.0.2.3 | Fully Added |
 | [Environmental](https://modrinth.com/mod/environmental) | | Foliage Only |
+| [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) | | Partial Support | # For GTNH/1.7.10, about half added
 | [Etcetera](https://modrinth.com/mod/etcetera/versions) | | Miniscule |
 | [Eternal Starlight](https://www.curseforge.com/minecraft/mc-mods/eternal-starlight) | 0.2.0 | Partial Support |
 | [Eternal Starlight Vanilla Ores](https://modrinth.com/mod/eternal-starlight-vo) | 1.0.0 | Fully Added |
@@ -423,6 +436,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.5 | Fully Added | # Added Suspicious Ancient Sand and the Ice Cube entity, completing this mod
+| [Ztones](https://www.curseforge.com/minecraft/mc-mods/ztones) | | Partial Support | # Some additionsfor GTNH / 1.7.10
 ---
 
 ## Status Definitions
