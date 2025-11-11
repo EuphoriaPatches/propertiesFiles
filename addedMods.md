@@ -338,6 +338,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Oreganized](https://modrinth.com/mod/oreganized) | | Miniscule |
 | [Organics](https://www.curseforge.com/minecraft/mc-mods/organics) | | Miniscule |
 | [Origins](https://modrinth.com/mod/origins) | 1.10.0 | Miniscule |
+| [Oritech](https://modrinth.com/mod/oritech) | 0.19.4 | Ores Only |
 | [Pam's HarvestCraft 2 - Crops](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops) | | Partial Support |
 | [Pam's HarvestCraft 2 - Trees](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-trees) | | Fully Added |
 | [Philip's Ruins](https://modrinth.com/mod/philips-ruins) | | Miniscule | # Light sources only
