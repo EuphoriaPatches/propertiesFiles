@@ -1,4 +1,4 @@
-### Last updated: November 08, 2025, 10:15 UTC
+### Last updated: November 11, 2025, 18:37 UTC
 [# Copyright (c) 2025 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -49,7 +49,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Aquatic Torches](https://modrinth.com/mod/aquatic-torches) | 1.0.1 | Fully Added |
 | [Architect's Palette](https://modrinth.com/mod/architects-palette) | | Partial Support |
 | [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo) | 5.1.0 | Fully Added |
-| [Ars Elemental](https://www.curseforge.com/minecraft/mc-mods/ars-elemental) | 0.7.6.2 | Partial Support | # Added Flashing Archwoods blocks and few flora, still missing few blocks. Set LabPBR > Integrated for better emission on source vines.
+| [Ars Elemental](https://www.curseforge.com/minecraft/mc-mods/ars-elemental) | 0.7.6.2 | Fully Added | # Set LabPBR > Integrated for better emission on source vines.
 | [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau) | 5.10.2 | Fully Added |
 | [Ars Nouveau's Flavors & Delight](https://modrinth.com/mod/arsdelight) | 2.1.7 | Fully Added |
 | [Ars Énergistique](https://modrinth.com/mod/ars-energistique) | 2.1.1-beta | Fully Added |
