@@ -1,4 +1,4 @@
-### Last updated: November 11, 2025, 18:37 UTC
+### Last updated: November 13, 2025, 23:09 UTC
 [# Copyright (c) 2025 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -338,6 +338,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Oreganized](https://modrinth.com/mod/oreganized) | | Miniscule |
 | [Organics](https://www.curseforge.com/minecraft/mc-mods/organics) | | Miniscule |
 | [Origins](https://modrinth.com/mod/origins) | 1.10.0 | Miniscule |
+| [Oritech](https://modrinth.com/mod/oritech) | 0.19.4 | Fully Added |
 | [Pam's HarvestCraft 2 - Crops](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops) | | Partial Support |
 | [Pam's HarvestCraft 2 - Trees](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-trees) | | Fully Added |
 | [Philip's Ruins](https://modrinth.com/mod/philips-ruins) | | Miniscule | # Light sources only
