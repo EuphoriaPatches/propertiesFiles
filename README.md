@@ -43,6 +43,7 @@ Each properties file has a specific format. Click to see the template you need:
 ```properties
 # Description of the block ID
 block.XXXXX = vanillaId1 vanillaId2 vanillaId3 ... \
+tagsName1 tagsName2 tagsName3... \
 \
 modName1:modId1 modName1:modId2 modName1:modId3 ... \
 \
