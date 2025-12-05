@@ -121,6 +121,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Create](https://modrinth.com/mod/create) | 6.0.4 | In Testing |
 | [Create Big Cannons](https://modrinth.com/mod/create-big-cannons) | 5.8.2 | Fully Added  |
 | [Create Crafts & Additions](https://modrinth.com/mod/createaddition) | 1.4.2 | Fully Added |
+| [Create: DDCL] (https://modrinth.com/mod/create-ddcl) | 1.0.0 | Blocks Only |
 | [Create Deco](https://modrinth.com/mod/create-deco) | 2.0.2 | Fully Added |
 | [Create Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry) | 2.0.12 | Fully Added |
 | [Create Goggles](https://modrinth.com/mod/create-goggles) | 0.5.6 | Fully Added |
