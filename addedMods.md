@@ -1,4 +1,4 @@
-### Last updated: December 01, 2025, 20:46 UTC
+### Last updated: December 05, 2025, 14:55 UTC
 [# Copyright (c) 2025 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -121,13 +121,13 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Create](https://modrinth.com/mod/create) | 6.0.4 | In Testing |
 | [Create Big Cannons](https://modrinth.com/mod/create-big-cannons) | 5.8.2 | Fully Added  |
 | [Create Crafts & Additions](https://modrinth.com/mod/createaddition) | 1.4.2 | Fully Added |
-| [Create: DDCL] (https://modrinth.com/mod/create-ddcl) | 1.0.0 | Blocks Only |
 | [Create Deco](https://modrinth.com/mod/create-deco) | 2.0.2 | Fully Added |
 | [Create Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry) | 2.0.12 | Fully Added |
 | [Create Goggles](https://modrinth.com/mod/create-goggles) | 0.5.6 | Fully Added |
 | [Create Slice & Dice](https://modrinth.com/mod/slice-and-dice) | 3.3.1 | Miniscule |
 | [Create Utilities](https://modrinth.com/mod/create-utilities) | 0.3.0 | Fully Added | # Parts of blocks that use the end portal shader doesn't render at all
 | [Create: Bitterballen](https://modrinth.com/mod/create-bitterballen) | | Miniscule |
+| [Create: DDCL] (https://modrinth.com/mod/create-ddcl) | 1.0.0 | Blocks Only |
 | [Create: Dragons Plus](https://modrinth.com/mod/create-dragons-plus) | 1.3.5 | Fully Added |
 | [Create: Estrogen](https://modrinth.com/mod/estrogen) | | Partial Support |
 | [Create: Framed](https://modrinth.com/mod/create-framed) | 1.6.6 | Fully Added |
