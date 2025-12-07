@@ -390,7 +390,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Snowy Spirit](https://modrinth.com/mod/snowy-spirit) | | Foliage Only |
 | [Soul Shards Respawn](https://www.curseforge.com/minecraft/mc-mods/soul-shards-respawn) | 1.1.2 | Miniscule |
 | [SoulsWeapons](https://modrinth.com/mod/mariums-soulslike-weaponry) | 1.2 | Partial Support | #Added Ore Glowing
-| [Spectrum](https://modrinth.com/mod/spectrum) | 1.8.9 | Ores Only |
+| [Spectrum](https://modrinth.com/mod/spectrum) | 1.8.9 | In Testing |
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
 | [Spelunkery](https://modrinth.com/mod/spelunkery) | 0.3.16 | Fully Added | # Added everything besides 2 unused blocks and adjusted handling of ores and glowsticks
 | [Spring to Life Backport](https://modrinth.com/mod/spring-to-life-backport) | 1.3.0 | Fully Added |
