@@ -1,4 +1,4 @@
-### Last updated: December 07, 2025, 14:20 UTC
+### Last updated: December 14, 2025, 08:24 UTC
 [# Copyright (c) 2025 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -322,6 +322,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Naturalist](https://modrinth.com/mod/naturalist) | 4.0.3 | Fully Added |
 | [Nature's Spirit](https://modrinth.com/mod/natures-spirit) | 2.2.4 | Partial Support|
 | [Neapolitan](https://www.curseforge.com/minecraft/mc-mods/neapolitan) | 5.0.0 | Foliage Only |
+| [Nekomas Fixed](https://modrinth.com/mod/nekomas-fixed) | 0.2.0 | Fully Added |
 | [Neon Lamps](https://curseforge.com/minecraft/mc-mods/neon-lamps) | 1.0.0 | Fully Added |
 | [Nether Archives](https://modrinth.com/mod/nether-archives) | 0.3.6 | Fully Added |
 | [Nether's Delight](https://modrinth.com/mod/nethers-delight) | | In Testing | # Why is soil in the Deepslate Diamond Ore ID??
@@ -442,7 +443,6 @@ Here we can keep track of what mods have been added and what version a contribut
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.5 | Fully Added | # Added Suspicious Ancient Sand and the Ice Cube entity, completing this mod
 | [Ztones](https://www.curseforge.com/minecraft/mc-mods/ztones) | | Partial Support | # Some additionsfor GTNH / 1.7.10
-| [Nekomas Fixed](https://modrinth.com/mod/nekomas-fixed) | 0.2.0 | Fully Added |
 ---
 
 ## Status Definitions
