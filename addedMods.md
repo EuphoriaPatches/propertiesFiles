@@ -222,7 +222,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Farming for Blockheads](https://modrinth.com/mod/farming-for-blockheads) | 3.1.28 | Fully Added |
 | [Fast Paintings](https://modrinth.com/mod/fast-paintings) | 1.2.15 | Fully Added |
 | [Fish's Undead Rising](https://www.curseforge.com/minecraft/mc-mods/fishs-undead-rising) | 1.4.0 | Blocks Only |
-| [Fixed](https://modrinth.com/mod/fixed) | 1.5.0 | Fully Added |
+| [Fixed](https://modrinth.com/mod/fixed) | 1.6.0 | Fully Added |
 | [Flower Patch](https://modrinth.com/mod/flower-patch) | | Foliage Only | # Someone should confirm if the flowers can be placed in flower pots
 | [Forbidden and Arcanus](https://modrinth.com/mod/forbidden-arcanus) | | Miniscule |
 | [Fossils and Archaeology: Legacy](https://modrinth.com/mod/fossils-and-archaeology-legacy) | 1.4.9 | Fully Added |
