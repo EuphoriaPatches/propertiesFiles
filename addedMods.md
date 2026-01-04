@@ -127,7 +127,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Create Slice & Dice](https://modrinth.com/mod/slice-and-dice) | 3.3.1 | Miniscule |
 | [Create Utilities](https://modrinth.com/mod/create-utilities) | 0.3.0 | Fully Added | # Parts of blocks that use the end portal shader doesn't render at all
 | [Create: Bitterballen](https://modrinth.com/mod/create-bitterballen) | | Miniscule |
-| [Create: DDCL] (https://modrinth.com/mod/create-ddcl) | 1.0.0 | Blocks Only |
+| [Create: DDCL](https://modrinth.com/mod/create-ddcl) | 1.0.0 | Blocks Only |
 | [Create: Dragons Plus](https://modrinth.com/mod/create-dragons-plus) | 1.3.5 | Fully Added |
 | [Create: Estrogen](https://modrinth.com/mod/estrogen) | | Partial Support |
 | [Create: Framed](https://modrinth.com/mod/create-framed) | 1.6.6 | Fully Added |
