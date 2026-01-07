@@ -76,6 +76,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Biomes O' Plenty](https://modrinth.com/mod/biomes-o-plenty) | 21.1.0.7 | Fully Added |
 | [Blockcraftery](https://www.curseforge.com/minecraft/mc-mods/blockcraftery) | 1.2.0 | Fully Added | # Another copycat mod. Can't do much but put ID's in no properties
 | [Blockus](https://modrinth.com/mod/blockus) | 2.9.9 | Fully Added |
+| [The Block Box](https://modrinth.com/mod/the-block-box) | 0.1.1 | Fully Added |
 | [Blood Magic](https://modrinth.com/mod/blood-magic) | | Partial Support |
 | [Blossom](https://modrinth.com/mod/blossom) | 1.0.7 | Fully Added |
 | [Blue Skies](https://modrinth.com/mod/blue-skies) | | Partial Support |
