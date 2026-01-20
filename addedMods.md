@@ -128,7 +128,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Create Slice & Dice](https://modrinth.com/mod/slice-and-dice) | 3.3.1 | Miniscule |
 | [Create Utilities](https://modrinth.com/mod/create-utilities) | 0.3.0 | Fully Added | # Parts of blocks that use the end portal shader doesn't render at all
 | [Create: Bitterballen](https://modrinth.com/mod/create-bitterballen) | | Miniscule |
-| [Create: DDCL] (https://modrinth.com/mod/create-ddcl) | 1.0.0 | Blocks Only |
+| [Create: DDCL](https://modrinth.com/mod/create-ddcl) | 1.0.0 | Blocks Only |
 | [Create: Dragons Plus](https://modrinth.com/mod/create-dragons-plus) | 1.3.5 | Fully Added |
 | [Create: Estrogen](https://modrinth.com/mod/estrogen) | | Partial Support |
 | [Create: Framed](https://modrinth.com/mod/create-framed) | 1.6.6 | Fully Added |
@@ -280,6 +280,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Legendary Survival Overhaul](https://www.curseforge.com/minecraft/mc-mods/legendary-survival-overhaul) | 2.3.11.3 | Foliage only |
 | [LevelZ](https://modrinth.com/mod/levelz) | 1.4.13 | Fully Added |
 | [Little Tiles](https://modrinth.com/mod/littletiles) | 1.6.0-pre159 | Fully Added | # Has issues with ACL
+| [The Lord of the Rings Mod: Legacy](https://www.curseforge.com/minecraft/mc-mods/the-lord-of-the-rings-mod-legacy) | beta 36.15 | Blocks Only
 | [Lootr](https://modrinth.com/mod/lootr) | 0.7.35.85 | Fully Added |
 | [Lucky TNT Mod (Too Much TNT)](https://www.curseforge.com/minecraft/mc-mods/luckytnt) | | Unknown | # Wait we don't have an ID for TNT??
 | [Luminax](https://www.curseforge.com/minecraft/mc-mods/luminax) | 1.3.0 | Blocks Only |
