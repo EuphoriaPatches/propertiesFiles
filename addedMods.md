@@ -1,4 +1,4 @@
-### Last updated: January 21, 2026, 17:15 UTC
+### Last updated: January 21, 2026, 21:56 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -38,7 +38,6 @@ Here we can keep track of what mods have been added and what version a contribut
 | [AllTheCompressed](https://www.curseforge.com/minecraft/mc-mods/allthecompressed) | | Fully Added |
 | [Allthemodium](https://www.curseforge.com/minecraft/mc-mods/allthemodium) | | Fully Added |
 | [Amendments](https://modrinth.com/mod/amendments) | 1.2.19 | Fully Added |
-| [Durability Overhaul](https://modrinth.com/mod/durability-overhaul) | 1.11.0 | Fully Added |
 | [Ancient Aether](https://modrinth.com/mod/ancient-aether) | 3.0.1 | Partial Support |
 | [Another Furniture](https://modrinth.com/mod/another-furniture) | 3.0.1 | Fully Added |
 | [AntiBlocksReChiseled](https://modrinth.com/mod/antiblocksrechiseled) | 0.10.4 | Fully Added |
@@ -160,6 +159,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Doctor Who: Weeping Angels](https://modrinth.com/mod/weeping-angels) | | Miniscule |
 | [Draconic Evolution](https://modrinth.com/mod/draconic-evolution) | | Miniscule |
 | [DRG Flares](https://www.curseforge.com/minecraft/mc-mods/drg-flares) | 1.2.8 | Fully Added | # Emissives added to the flare entity and all flare items
+| [Durability Overhaul](https://modrinth.com/mod/durability-overhaul) | 1.11.0 | Fully Added |
 | [Dynamic Trees](https://modrinth.com/mod/dynamictrees) | 1.5.0-BETA07 | Fully Added |
 | [Dynamic Trees +](https://modrinth.com/mod/dynamictreesplus) | 1.3.0-BETA2 | Fully Added |
 | [Dynamic Trees - Alex's Mobs](https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-alexs-mobs) | | Foliage Only |
