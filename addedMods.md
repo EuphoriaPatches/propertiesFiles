@@ -38,6 +38,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [AllTheCompressed](https://www.curseforge.com/minecraft/mc-mods/allthecompressed) | | Fully Added |
 | [Allthemodium](https://www.curseforge.com/minecraft/mc-mods/allthemodium) | | Fully Added |
 | [Amendments](https://modrinth.com/mod/amendments) | 1.2.19 | Fully Added |
+| [Durability Overhaul](https://modrinth.com/mod/durability-overhaul) | 1.11.0 | Fully Added |
 | [Ancient Aether](https://modrinth.com/mod/ancient-aether) | 3.0.1 | Partial Support |
 | [Another Furniture](https://modrinth.com/mod/another-furniture) | 3.0.1 | Fully Added |
 | [AntiBlocksReChiseled](https://modrinth.com/mod/antiblocksrechiseled) | 0.10.4 | Fully Added |
