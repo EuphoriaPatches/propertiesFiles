@@ -283,7 +283,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [LevelZ](https://modrinth.com/mod/levelz) | 1.4.13 | Fully Added |
 | [Little Tiles](https://modrinth.com/mod/littletiles) | 1.6.0-pre159 | Fully Added | # Has issues with ACL
 | [Lootr](https://modrinth.com/mod/lootr) | 0.7.35.85 | Fully Added |
-| [The Lord of the Rings Mod: Legacy](https://www.curseforge.com/minecraft/mc-mods/the-lord-of-the-rings-mod-legacy) | beta 36.15 | Blocks Only
+| [The Lord of the Rings Mod: Legacy](https://www.curseforge.com/minecraft/mc-mods/the-lord-of-the-rings-mod-legacy) | beta 36.15 | Blocks & Dimensions Only
 | [Lucky TNT Mod (Too Much TNT)](https://www.curseforge.com/minecraft/mc-mods/luckytnt) | | Unknown | # Wait we don't have an ID for TNT??
 | [Luminax](https://www.curseforge.com/minecraft/mc-mods/luminax) | 1.3.0 | Blocks Only |
 | [Macaw's Bridges](https://modrinth.com/mod/macaws-bridges) | 3.0.0 | Fully Added |
