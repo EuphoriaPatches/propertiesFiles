@@ -8,7 +8,7 @@ These `.properties` files help Euphoria Patches recognize blocks, items, entitie
 <img src="https://img.shields.io/github/commits-difference/EuphoriaPatches/propertiesFiles?base=release&head=main&style=for-the-badge&logo=github&logoColor=%23e661e8&label=Commits%20since%20last%20Euphoria%20Patches%20Update&labelColor=0d1117&color=magenta" alt="Commits since last update">
 </picture>
 
-## Current Total Modded Blocks: <ins>48.51K</ins> | All Supported Mods: [<ins>List</ins>](https://www.euphoriapatches.com/properties/list)
+## Current Total Modded Blocks: <ins>54.29K</ins> | All Supported Mods: [<ins>List</ins>](https://www.euphoriapatches.com/properties/list)
 
 ## ⚠️ IMPORTANT REMINDERS ⚠️
 - **Please use the templates provided below!**
@@ -43,6 +43,7 @@ Each properties file has a specific format. Click to see the template you need:
 ```properties
 # Description of the block ID
 block.XXXXX = vanillaId1 vanillaId2 vanillaId3 ... \
+tagsName1 tagsName2 tagsName3... \
 \
 modName1:modId1 modName1:modId2 modName1:modId3 ... \
 \
