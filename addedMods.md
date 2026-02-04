@@ -1,4 +1,4 @@
-### Last updated: January 22, 2026, 10:18 UTC
+### Last updated: February 01, 2026, 10:31 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -258,6 +258,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Hexxit Gear](https://www.curseforge.com/minecraft/mc-mods/hexxit-gear) | 2.8.3 | Foliage Only |
 | [Hexxit World](https://www.technicpack.net/modpack/hexxit-ii.896745/mods) | 1.1.0-33 | Foliage Only | # Seems like this is the only place that even lists Hexxit World.
 | [HT's TreeChop](https://www.curseforge.com/minecraft/mc-mods/treechop) | 0.14.7 | Fully Added |
+| [Hybrid Aquatic](https://modrinth.com/mod/hybrid-aquatic) | 1.5.4 | Partial Support | # Added the 3 water based foliage
 | [Hydrological](https://modrinth.com/mod/hydrological) | | Unknown | # Not even sure if this is the correct mod, ID is hydrol
 | [Ice and Fire](https://modrinth.com/mod/iceandfire-ce) | 1.0.2 | Fully Added | # Tested using the Community Edition, but IDs should match the original. Dread Portals are still invisible but no ID seems to fix them. Added some food items and changed handling of Pixie Jars.
 | [iChunUtil](https://www.curseforge.com/minecraft/mc-mods/ichunutil) | 7.2.2 | Fully Added | # There's just a single block??
