@@ -220,7 +220,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Fairy Lights](https://www.curseforge.com/minecraft/mc-mods/fairy-lights)| 5.0.0 | Fully Added / Unknown | # Supposidly the mod will be fixed to allow ACL on the lights, someone should check on this after some time has passed.
 | [The Farlanders](https://modrinth.com/mod/the-farlanders) | | Miniscule |
 | [Farmer's Delight](https://modrinth.com/mod/farmers-delight) | | Fully Added | # Added an older ID for Rice Panicles
-| [Farmer's Knives](https://modrinth.com/mod/farmers-knives) | 3.0.2 | Miniscule | # Only added Additional Additions knives
+| [Farmer's Knives](https://modrinth.com/mod/farmers-knives) | 3.0.2 | Miniscule | # Only added Additional Additions and BetterEnd knives
 | [Farmer's Respite](https://www.curseforge.com/minecraft/mc-mods/farmers-respite) | | Partial Support |
 | [Farming for Blockheads](https://modrinth.com/mod/farming-for-blockheads) | 3.1.28 | Fully Added |
 | [Fast Paintings](https://modrinth.com/mod/fast-paintings) | 1.2.15 | Fully Added |
