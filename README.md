@@ -154,7 +154,7 @@ Example:
 </p>
 </details>
 
-# Euphoria Patcher Properties Merger
+## Euphoria Patcher Properties Merger
 You might have noticed that the block.properties files are split. To test it out in-game, enable the `autoMergeBlockProperties` option in the Euphoria Patcher mod config file. Any changes you do in the fragmented small files will then automatically be merged into the big block.properties file.
 
 ## Version Information
