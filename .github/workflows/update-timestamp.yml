@@ -543,8 +543,8 @@ jobs:
                   return False
 
           def main():
-              # Count blocks from all .properties files in "blockProperties" folder
-              block_properties_folder = "blockProperties"
+              # Count blocks from all .properties files in "blockPropertie" folder
+              block_properties_folder = "blockPropertie"
               print(f"Counting unique modded blocks in {block_properties_folder}...")
 
               total_count = 0
@@ -622,7 +622,8 @@ jobs:
       - name: Commit and push with retry
         if: github.event_name == 'push'
         run: |
-          git add *.properties README.md
+          # Add all properties files recursively and README
+          git add '**/*.properties' README.md
 
           # Check if there are changes to commit
           if git diff --staged --quiet; then
