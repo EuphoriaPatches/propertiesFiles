@@ -19,43 +19,54 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          
+
       - name: Fetch latest changes
         if: github.event_name == 'push'
         run: |
           # Fetch the latest changes from the remote repository
           echo "Fetching latest changes from repository..."
           git fetch origin
-          
+
       - name: Get and process modified files
         run: |
           # Use GITHUB_SHA to ensure we compare the correct commits
           MODIFIED_FILES=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA | grep -E '\.properties$' || true)
           echo "Modified files: $MODIFIED_FILES"
-          
+
           # Only proceed if there are modified files
           if [ -n "$MODIFIED_FILES" ]; then
             DATE=$(date '+%B %d, %Y, %H:%M UTC')
+            YEAR=$(date '+%Y')
             echo "Updating timestamps to: $DATE"
-            
+
             # Process each file
             for file in $MODIFIED_FILES; do
               if [ -f "$file" ]; then
                 echo "Processing file: $file"
-                
+
                 # Remove trailing whitespace
                 sed -i 's/[[:space:]]*$//' "$file"
                 echo "  - Removed trailing whitespaces"
-                
-                # Check if timestamp line already exists
-                if grep -q "^### Last updated:" "$file"; then
+
+                # Check if header exists
+                HAS_TIMESTAMP=$(grep -q "^### Last updated:" "$file" && echo "yes" || echo "no")
+                HAS_COPYRIGHT=$(grep -q "^# Copyright" "$file" && echo "yes" || echo "no")
+
+                if [ "$HAS_TIMESTAMP" = "yes" ] && [ "$HAS_COPYRIGHT" = "yes" ]; then
                   # Update existing timestamp line
                   sed -i "s/^### Last updated:.*$/### Last updated: $DATE/" "$file"
-                  echo "  - Updated existing timestamp"
+                  # Update copyright year
+                  sed -i "s/^# Copyright (c) [0-9]\{4\}/# Copyright (c) $YEAR/" "$file"
+                  echo "  - Updated existing timestamp and copyright"
+                elif [ "$HAS_TIMESTAMP" = "yes" ] && [ "$HAS_COPYRIGHT" = "no" ]; then
+                  # Update timestamp and add copyright after it
+                  sed -i "s/^### Last updated:.*$/### Last updated: $DATE/" "$file"
+                  sed -i "/^### Last updated:/a # Copyright (c) $YEAR SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT" "$file"
+                  echo "  - Updated timestamp and added copyright"
                 else
-                  # Add timestamp line at the beginning of the file
-                  sed -i "1i### Last updated: $DATE" "$file"
-                  echo "  - Added new timestamp"
+                  # Add both lines at the beginning
+                  sed -i "1i### Last updated: $DATE\n# Copyright (c) $YEAR SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT" "$file"
+                  echo "  - Added new timestamp and copyright"
                 fi
               else
                 echo "File not found: $file (may have been deleted)"
@@ -65,12 +76,12 @@ jobs:
           else
             echo "No .properties files were modified"
           fi
-          
+
       - name: Set up Python for sorting script
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-          
+
       - name: Create and run duplicate remover script
         run: |
           # Create the duplicate remover Python script
@@ -83,48 +94,48 @@ jobs:
               """Remove duplicate mod entries within a section, preserving different blockstates"""
               if not section_lines:
                   return section_lines
-              
+
               # Get the section header (first line)
               header_line = section_lines[0].rstrip()
-              
+
               # Extract all lines
               result = [header_line]
               seen_entries = set()
-              
+
               for i, line in enumerate(section_lines[1:], 1):
                   line_stripped = line.rstrip()
-                  
+
                   # Preserve comments and empty lines
                   if line_stripped.startswith('#') or not line_stripped.strip() or line_stripped.strip() == '\\':
                       result.append(line_stripped)
                       continue
-                  
+
                   # Check if this is a tag line
                   if 'tags_' in line_stripped:
                       result.append(line_stripped)
                       continue
-                  
+
                   # Process mod entries
                   parts = line_stripped.split()
                   filtered_parts = []
-                  
+
                   for part in parts:
                       # Skip backslashes
                       if part == '\\':
                           continue
-                      
+
                       # If this is a mod entry (contains colon)
                       if ':' in part and not part.startswith('#'):
                           # Use the full part (including blockstate) as the key to check for duplicates
                           unique_key = part.rstrip('\\').strip()
-                          
+
                           if unique_key not in seen_entries:
                               seen_entries.add(unique_key)
                               filtered_parts.append(part)
                       else:
                           # Not a mod entry, keep as-is
                           filtered_parts.append(part)
-                  
+
                   # Reconstruct the line if we have filtered parts
                   if filtered_parts:
                       # Check if original line had a backslash at the end
@@ -136,7 +147,7 @@ jobs:
                   elif line_stripped.strip() == '\\':
                       # Preserve standalone backslashes
                       result.append(line_stripped)
-              
+
               # Add newlines back
               return [line + '\n' for line in result]
 
@@ -151,23 +162,23 @@ jobs:
               except Exception as e:
                   print(f"Error reading file: {e}")
                   return False
-              
+
               result_lines = []
               i = 0
               duplicates_removed = 0
-              
+
               while i < len(lines):
                   line = lines[i]
-                  
+
                   # Check if this line starts a section (block.XXXXX =, item.XXXXX =, entity.XXXXX =)
                   section_match = re.match(r'^(item|block|entity)\.\d+\s*=', line)
-                  
+
                   if section_match:
                       # Start of a section - collect all lines in this section
                       current_section = [line]
                       section_start = i
                       section_end = i
-                      
+
                       # Find the end of this section
                       for j in range(i + 1, len(lines)):
                           current_section.append(lines[j])
@@ -177,29 +188,29 @@ jobs:
                               section_end = j
                               break
                           section_end = j
-                      
+
                       # Count entries before deduplication
                       original_count = sum(1 for line in current_section for part in line.split() if ':' in part and part != '\\')
-                      
+
                       # Remove duplicates in this section
                       processed_section = remove_duplicates_in_section(current_section)
-                      
+
                       # Count entries after deduplication
                       new_count = sum(1 for line in processed_section for part in line.split() if ':' in part and part != '\\')
-                      
+
                       if original_count > new_count:
                           duplicates_removed += (original_count - new_count)
                           print(f"Section {section_match.group()}: Removed {original_count - new_count} duplicate(s)")
-                      
+
                       result_lines.extend(processed_section)
-                      
+
                       # Skip past this section in the main loop
                       i = section_end + 1
                   else:
                       # Not the start of a section, keep as-is
                       result_lines.append(line)
                       i += 1
-              
+
               # Write back to file
               try:
                   with open(file_path, 'w', encoding='utf-8') as f:
@@ -215,14 +226,14 @@ jobs:
               if len(sys.argv) < 2:
                   print("Usage: python remove_duplicates.py <path_to_properties_file>")
                   return
-              
+
               file_path = sys.argv[1]
               process_properties_file(file_path)
 
           if __name__ == "__main__":
               main()
           EOF
-          
+
           # Process each modified properties file to remove duplicates
           MODIFIED_FILES=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA | grep -E '\.properties$' || true)
           if [ -n "$MODIFIED_FILES" ]; then
@@ -234,7 +245,7 @@ jobs:
               fi
             done
           fi
-          
+
       - name: Create and run properties sorting script
         run: |
           # Create the Python script
@@ -248,21 +259,21 @@ jobs:
               # Read the entire file
               with open(file_path, 'r', encoding='utf-8') as f:
                   original_lines = f.readlines()
-              
+
               result_lines = []
               i = 0
-              
+
               while i < len(original_lines):
                   line = original_lines[i]
-                  
+
                   # Check if this line starts a section (item.XXXXX = or block.XXXXX =)
                   section_match = re.match(r'^(item|block|entity)\.\d+\s*=', line)
-                  
+
                   if section_match:
                       # Start of a section - collect all lines in this section
                       current_section = [line]
                       section_end = i
-                      
+
                       # Find the end of this section
                       for j in range(i + 1, len(original_lines)):
                           section_end = j
@@ -270,18 +281,18 @@ jobs:
                               current_section.append(original_lines[j])
                               break
                           current_section.append(original_lines[j])
-                      
+
                       # Process the section
                       processed_section = process_section(current_section)
                       result_lines.extend(processed_section)
-                      
+
                       # Skip past this section in the main loop
                       i = section_end + 1
                   else:
                       # Not the start of a section, keep as-is
                       result_lines.append(line)
                       i += 1
-              
+
               return result_lines
 
           def process_section(section_lines):
@@ -289,108 +300,108 @@ jobs:
               # Special case: Check if the section only has a header that contains a mod
               if len(section_lines) <= 2 and ':' in section_lines[0]:
                   return section_lines
-              
+
               # First check if it has any mod entries beyond the header (lines with colons)
               has_mod_entries = False
               for line in section_lines[1:]:  # Skip header
                   if ':' in line and not line.strip().startswith('#'):
                       has_mod_entries = True
                       break
-              
+
               # If no mod entries or only in header, return the section unchanged
               if not has_mod_entries:
                   return section_lines
-              
+
               # Get the section header (first line with item.XXXXX = or block.XXXXX =)
               header_line = section_lines[0].rstrip()
-              
+
               # Check if header contains mod entries
               header_has_mod = ':' in header_line and not header_line.startswith('#')
               header_mod_entries = []
-              
+
               if header_has_mod:
                   # Extract mod entries from header to add them later
                   parts = header_line.split('=')
                   section_id = parts[0].strip()
                   mod_parts = parts[1].strip().rstrip('\\').strip().split()
-                  
+
                   for part in mod_parts:
                       if ':' in part:
                           header_mod_entries.append(part)
-              
+
               # Extract tag lines and comments (if any)
               tag_lines = []
               comment_lines = []
-              
+
               i = 1
               while i < len(section_lines) and 'tags_' in section_lines[i]:
                   tag_lines.append(section_lines[i].rstrip())
                   i += 1
-              
+
               # Extract all mod entries grouped by mod name
               mod_entries = {}
-              
+
               # First add header mod entries if any
               for entry in header_mod_entries:
                   mod_name = entry.split(':')[0]
                   if mod_name not in mod_entries:
                       mod_entries[mod_name] = []
                   mod_entries[mod_name].append(entry)
-              
+
               # Process all lines to collect mods and preserve comments
               for i, line in enumerate(section_lines):
                   line = line.strip()
-                  
+
                   # Skip empty lines and backslashes
                   if not line or line == '\\':
                       continue
-                  
+
                   # Preserve comments
                   if line.startswith('#'):
                       comment_lines.append((i, section_lines[i].rstrip()))
                       continue
-                  
+
                   # Skip header line (already processed)
                   if i == 0:
                       continue
-                      
+
                   # Skip tag lines (already processed)
                   if 'tags_' in line:
                       continue
-                      
+
                   # If this is a mod entry (has a colon)
                   if ':' in line and not line.startswith('#'):
                       mod_parts = line.split()
                       for part in mod_parts:
                           if ':' in part and not part.startswith('#'):
                               mod_name = part.split(':')[0]
-                              
+
                               # Add to mod entries dictionary
                               if mod_name not in mod_entries:
                                   mod_entries[mod_name] = []
-                                  
+
                               # Clean the entry (remove trailing backslash)
                               entry = part.rstrip('\\').strip()
                               mod_entries[mod_name].append(entry)
-              
+
               # Sort mod names
               sorted_mod_names = sorted(mod_entries.keys())
-              
+
               # Count effective mod names (excluding those that should be skipped)
               effective_mod_count = 0
               for mod_name in sorted_mod_names:
                   if not (header_has_mod and all(entry in header_mod_entries for entry in mod_entries[mod_name])):
                       effective_mod_count += 1
-              
+
               # Reconstruct the section
               result = []
-              
+
               # Add the header line with a backslash if we have mod entries
               if sorted_mod_names and not header_line.endswith('\\'):
                   result.append(f"{header_line} \\\n")
               else:
                   result.append(f"{header_line}\n")
-              
+
               # Add tag lines with backslashes
               for tag in tag_lines:
                   tag = tag.rstrip('\\').strip()
@@ -398,32 +409,32 @@ jobs:
                       result.append(f"{tag} \\\n")
                   else:
                       result.append(f"{tag}\n")
-              
+
               # Add comments that appear before mod entries
               for i, comment in comment_lines:
                   # Only add comments that appear before the mod entries section
                   if i < len(tag_lines) + 1:  # +1 for header
                       result.append(f"{comment}\n")
-              
+
               # Add backslash separator if needed
               if effective_mod_count > 0:
                   result.append("\\\n")
-                  
+
               # Add sorted mod entries
               processed_count = 0
               for i, mod_name in enumerate(sorted_mod_names):
                   # Skip mod entries that were in the header if preserving header
                   if header_has_mod and all(entry in header_mod_entries for entry in mod_entries[mod_name]):
                       continue
-                      
+
                   processed_count += 1
-                  
+
                   # Sort entries within this mod alphabetically
                   sorted_entries = sorted(mod_entries[mod_name])
-                  
+
                   # Join all entries for this mod
                   entries = ' '.join(sorted_entries)
-                  
+
                   if processed_count < effective_mod_count:
                       # Not the last effective mod - add backslash
                       result.append(f"{entries} \\\n")
@@ -431,39 +442,39 @@ jobs:
                   else:
                       # Last mod - no backslash
                       result.append(f"{entries}\n")
-              
+
               # Add comments that appear after mod entries
               for i, comment in comment_lines:
                   # Only add comments that appear after the mod entries section
                   if i >= len(tag_lines) + 1:  # +1 for header
                       result.append(f"{comment}\n")
-              
+
               return result
 
           def main():
               if len(sys.argv) < 2:
                   print("Usage: python sort_properties.py <path_to_properties_file>")
                   return
-              
+
               file_path = sys.argv[1]
-              
+
               if not os.path.exists(file_path):
                   print(f"Error: File {file_path} not found")
                   return
-              
+
               # Sort file
               sorted_lines = sort_properties_file(file_path)
-              
+
               # Write sorted content back
               with open(file_path, 'w', encoding='utf-8') as f:
                   f.writelines(sorted_lines)
-              
+
               print(f"File {file_path} sorted successfully!")
 
           if __name__ == "__main__":
               main()
           EOF
-          
+
           # Process each modified properties file
           MODIFIED_FILES=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA | grep -E '\.properties$' || true)
           if [ -n "$MODIFIED_FILES" ]; then
@@ -475,81 +486,26 @@ jobs:
               fi
             done
           fi
-      
+
       - name: Count modded blocks and update README
         run: |
           echo "Creating block counting script..."
           cat > count_blocks.py << 'EOF'
-          import re
           import os
-
-          def count_unique_modded_blocks(file_path):
-              """Count unique modded blocks in block.properties file"""
-              if not os.path.exists(file_path):
-                  print(f"Warning: {file_path} not found")
-                  return 0
-                  
-              unique_modded_blocks = set()
-              
-              try:
-                  with open(file_path, 'r', encoding='utf-8') as f:
-                      lines = f.readlines()
-                  
-                  for line in lines:
-                      line = line.strip()
-                      
-                      # Skip empty lines, comments
-                      if not line or line.startswith('#'):
-                          continue
-                      
-                      # Extract everything after equals sign if it's a block definition
-                      if line.startswith('block.'):
-                          equal_sign_index = line.find('=')
-                          if equal_sign_index > 0:
-                              line = line[equal_sign_index + 1:].strip()
-                      
-                      # Skip if just a backslash
-                      if line == '\\':
-                          continue
-                      
-                      # Split into potential block IDs
-                      potential_ids = line.split()
-                      
-                      for block_id in potential_ids:
-                          # Skip empty, backslash, or tag identifiers
-                          if not block_id or block_id == '\\' or block_id.startswith('%') or block_id.startswith('tags_'):
-                              continue
-                          
-                          # Check if it could be a modded block (contains a colon)
-                          if ':' in block_id:
-                              # Extract the mod name and block name
-                              parts = block_id.split(':')
-                              
-                              # If it has at least 2 parts and the first part isn't a blockstate
-                              if len(parts) >= 2 and '=' not in parts[0]:
-                                  # Create the base mod:block identifier without blockstate
-                                  mod_block_id = f"{parts[0]}:{parts[1]}"
-                                  unique_modded_blocks.add(mod_block_id)
-              
-                  return len(unique_modded_blocks)
-                  
-              except Exception as e:
-                  print(f"Error processing {file_path}: {str(e)}")
-                  return 0
 
           def update_readme_with_block_count(count):
               """Update README.md with the current block count"""
               readme_path = "README.md"
-              
+
               if not os.path.exists(readme_path):
                   print(f"Warning: {readme_path} not found")
                   return False
-              
+
               try:
                   # Read the current README
                   with open(readme_path, 'r', encoding='utf-8') as f:
                       content = f.read()
-                  
+
                   # Format the count for display
                   if count >= 1000000:
                       formatted_count = f"{count/1000000:.2f}M"
@@ -557,13 +513,13 @@ jobs:
                       formatted_count = f"{count/1000:.2f}K"
                   else:
                       formatted_count = str(count)
-                  
+
                   print(f"Formatted count: {formatted_count}")
-                  
+
                   # Find the section markers
                   start_marker = "## Current Total Modded Blocks: <ins>"
                   end_marker = "</ins>"
-                  
+
                   start_index = content.find(start_marker)
                   if start_index != -1:
                       start_index += len(start_marker)
@@ -571,36 +527,89 @@ jobs:
                       if end_index != -1:
                           # Replace just the count part
                           updated_content = content[:start_index] + formatted_count + content[end_index:]
-                          
+
                           # Write the updated content
                           with open(readme_path, 'w', encoding='utf-8') as f:
                               f.write(updated_content)
-                          
+
                           print(f"README.md updated with block count: {formatted_count}")
                           return True
-                  
+
                   print(f"Warning: Count section not found in README.md")
                   return False
-              
+
               except Exception as e:
                   print(f"Error updating README.md: {str(e)}")
                   return False
 
           def main():
-              # Count blocks specifically from block.properties file
-              block_properties_path = "block.properties"
-              print(f"Counting unique modded blocks in {block_properties_path}...")
-              
-              block_count = count_unique_modded_blocks(block_properties_path)
-              print(f"Found {block_count} unique modded blocks")
-              
+              # Count blocks from all .properties files in "block properties files" folder
+              block_properties_folder = "block properties files"
+              print(f"Counting unique modded blocks in {block_properties_folder}...")
+
+              total_count = 0
+              unique_blocks = set()
+
+              # Walk through all subdirectories
+              for root, dirs, files in os.walk(block_properties_folder):
+                  for file in files:
+                      if file.endswith('.properties'):
+                          file_path = os.path.join(root, file)
+                          print(f"Processing: {file_path}")
+
+                          try:
+                              with open(file_path, 'r', encoding='utf-8') as f:
+                                  lines = f.readlines()
+
+                              for line in lines:
+                                  line = line.strip()
+
+                                  # Skip empty lines, comments
+                                  if not line or line.startswith('#'):
+                                      continue
+
+                                  # Extract everything after equals sign if it's a block definition
+                                  if line.startswith('block.'):
+                                      equal_sign_index = line.find('=')
+                                      if equal_sign_index > 0:
+                                          line = line[equal_sign_index + 1:].strip()
+
+                                  # Skip if just a backslash
+                                  if line == '\\':
+                                      continue
+
+                                  # Split into potential block IDs
+                                  potential_ids = line.split()
+
+                                  for block_id in potential_ids:
+                                      # Skip empty, backslash, or tag identifiers
+                                      if not block_id or block_id == '\\' or block_id.startswith('%') or block_id.startswith('tags_'):
+                                          continue
+
+                                      # Check if it could be a modded block (contains a colon)
+                                      if ':' in block_id:
+                                          # Extract the mod name and block name
+                                          parts = block_id.split(':')
+
+                                          # If it has at least 2 parts and the first part isn't a blockstate
+                                          if len(parts) >= 2 and '=' not in parts[0]:
+                                              # Create the base mod:block identifier without blockstate
+                                              mod_block_id = f"{parts[0]}:{parts[1]}"
+                                              unique_blocks.add(mod_block_id)
+
+                          except Exception as e:
+                              print(f"Error processing {file_path}: {str(e)}")
+
+              total_count = len(unique_blocks)
+              print(f"Found {total_count} unique modded blocks across all files")
+
               # Update README
-              update_readme_with_block_count(block_count)
+              update_readme_with_block_count(total_count)
 
           if __name__ == "__main__":
               main()
           EOF
-          
+
           echo "Running block counting script..."
           python count_blocks.py
 
@@ -609,31 +618,31 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          
+
       - name: Commit and push with retry
         if: github.event_name == 'push'
         run: |
           git add *.properties README.md
-          
+
           # Check if there are changes to commit
           if git diff --staged --quiet; then
             echo "No changes to commit"
             exit 0
           fi
-          
+
           echo "Committing timestamp, duplicate removal, sorting changes, and block count update..."
           git commit -m "Update timestamps, remove duplicates, sort mod entries, and update block count [skip ci]"
-          
+
           # Try pushing with retries for potential conflicts
           MAX_RETRIES=3
           RETRY_COUNT=0
-          
+
           until git push origin ${GITHUB_REF#refs/heads/} || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
             RETRY_COUNT=$((RETRY_COUNT + 1))
             echo "Push failed, retrying (Attempt $RETRY_COUNT of $MAX_RETRIES)..."
             git pull --rebase origin ${GITHUB_REF#refs/heads/}
           done
-          
+
           if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
             echo "Failed to push after $MAX_RETRIES attempts, using force push"
             git push --force origin ${GITHUB_REF#refs/heads/}
