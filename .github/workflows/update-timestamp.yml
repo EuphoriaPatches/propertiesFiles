@@ -543,8 +543,8 @@ jobs:
                   return False
 
           def main():
-              # Count blocks from all .properties files in "block properties files" folder
-              block_properties_folder = "block properties files"
+              # Count blocks from all .properties files in "blockProperties" folder
+              block_properties_folder = "blockProperties"
               print(f"Counting unique modded blocks in {block_properties_folder}...")
 
               total_count = 0
