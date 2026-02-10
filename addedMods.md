@@ -1,4 +1,4 @@
-### Last updated: February 01, 2026, 10:31 UTC
+### Last updated: February 09, 2026, 22:24 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -68,7 +68,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Better End Ore](https://modrinth.com/mod/better-end-ore) | 1.0.3 | Fully Added |
 | [Better Tridents](https://modrinth.com/mod/better-tridents) | 8.0.1 | Fully Added | # This mod only adds a single item
 | [BetterArcheology](https://www.curseforge.com/minecraft/mc-mods/better-archeology) | 1.2.1 | Blocks Only |
-| [BetterEnd](https://modrinth.com/mod/betterend) | 4.0.11 | Fully Added |
+| [BetterEnd](https://modrinth.com/mod/betterend) | 4.0.11 | Fully Added | # Added miscellaneous items
 | [BetterNether](https://modrinth.com/mod/betternether) | 9.0.10 | Fully Added |
 | [BiblioCraft](https://www.curseforge.com/minecraft/mc-mods/bibliocraft) | 2.4.6 | Partial Support | # Lots of block entities in this mod
 | [Bigger Reactors](https://www.curseforge.com/minecraft/mc-mods/biggerreactors) | | Fully Added |
@@ -109,7 +109,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [ChocoCraft Plus](https://modrinth.com/mod/chococraft-plus) | 4.5.8 | Fully Added |
 | [Chocolate Quest Repoured](https://www.curseforge.com/minecraft/mc-mods/cqrepoured)| 2.6.15B | Blocks Only |
 | [Chunk Loaders](https://modrinth.com/mod/chunk-loaders) | 1.2.8 | Fully Added | # Why doesn't these loaders get effect by any ID??
-| [Cinderscapes](https://modrinth.com/mod/cinderscapes) | 5.2.0 | Fully Added |
+| [Cinderscapes](https://modrinth.com/mod/cinderscapes) | 5.2.0 | Fully Added | # Moved 1.12.2- blocks to 1.13+ as they were probably there by mistake; Cinderscapes doesn't have a 1.12.2 version.
 | [Clockwork](https://modrinth.com/mod/create-clockwork) | | Miniscule |
 | [Cobblemon](https://modrinth.com/mod/cobblemon) | | Partial Support | # Someone should see if the entities look good
 | Colight | | Fully Added |
@@ -220,7 +220,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Fairy Lights](https://www.curseforge.com/minecraft/mc-mods/fairy-lights)| 5.0.0 | Fully Added / Unknown | # Supposidly the mod will be fixed to allow ACL on the lights, someone should check on this after some time has passed.
 | [The Farlanders](https://modrinth.com/mod/the-farlanders) | | Miniscule |
 | [Farmer's Delight](https://modrinth.com/mod/farmers-delight) | | Fully Added | # Added an older ID for Rice Panicles
-| [Farmer's Knives](https://modrinth.com/mod/farmers-knives) | 3.0.2 | Miniscule | # Only added Additional Additions knives
+| [Farmer's Knives](https://modrinth.com/mod/farmers-knives) | 3.0.2 | Miniscule | # Only added Additional Additions and BetterEnd knives
 | [Farmer's Respite](https://www.curseforge.com/minecraft/mc-mods/farmers-respite) | | Partial Support |
 | [Farming for Blockheads](https://modrinth.com/mod/farming-for-blockheads) | 3.1.28 | Fully Added |
 | [Fast Paintings](https://modrinth.com/mod/fast-paintings) | 1.2.15 | Fully Added |
@@ -253,6 +253,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Handcrafted](https://modrinth.com/mod/handcrafted/gallery) | | Miniscule |
 | [Handcrafted](https://modrinth.com/mod/handcrafted) | 4.0.3 | Fully Added |
 | [Haunted Harvest](https://modrinth.com/mod/haunted-harvest) | | Fully Added |
+| [Healing Pretty Good](https://modrinth.com/mod/healing-pretty-good) | 1.5.3 | Fully Added | # Added both the old and new IDs for this mod.
 | [Hearth & Home](https://modrinth.com/mod/hearth-and-home) | 2.0.3 | Fully Added |
 | [Hephaestus](https://modrinth.com/mod/hephaestus) | 3.6.4.287 | Fully Added |
 | [Hexxit Gear](https://www.curseforge.com/minecraft/mc-mods/hexxit-gear) | 2.8.3 | Foliage Only |
@@ -402,7 +403,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [SoulsWeapons](https://modrinth.com/mod/mariums-soulslike-weaponry) | 1.2 | Partial Support | #Added Ore Glowing
 | [Spectrum](https://modrinth.com/mod/spectrum) | 1.8.9 | In Testing |
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
-| [Spelunkery](https://modrinth.com/mod/spelunkery) | 0.3.16 | Fully Added | # Added everything besides 2 unused blocks and adjusted handling of ores and glowsticks
+| [Spelunkery](https://modrinth.com/mod/spelunkery) | 0.3.16 | Fully Added | # Added everything, including the 2 unused blocks.
 | [Spring to Life Backport](https://modrinth.com/mod/spring-to-life-backport) | 1.3.0 | Fully Added |
 | Star | 1.5.2 | Fully Added | # Part of Tinkers' Construct's Fabric port Hephaestus
 | [Statues: Rechiseled](https://www.curseforge.com/minecraft/mc-mods/statues-rechiseled) | 1.0.1 | Fully Added | # Can't predict what block this could be, placed in no properties
@@ -437,13 +438,13 @@ Here we can keep track of what mods have been added and what version a contribut
 | [The Undergarden](https://modrinth.com/mod/the-undergarden) | | Miniscule |
 | [Universal Ores](https://modrinth.com/mod/universal_ores) | | Autogenerated Content |
 | [Upgrade Aquatic](https://modrinth.com/mod/upgrade-aquatic) | | Foliage Only |
-| [Vanilla Backport](https://modrinth.com/mod/vanillabackport) | 1.1.4.3 | Fully Added |
+| [Vanilla Backport](https://modrinth.com/mod/vanillabackport) | 1.1.5.4.2 | Fully Added | # Recent versions of this mod use the official vanilla IDs and namespace so everything is pretty much compatible by default. Even base Complementary would theoretically work with this mod out of the box.
 | [VerdantVibes](https://modrinth.com/mod/verdantvibes) | | Foliage Only |
 | [Vintage Delight](https://www.curseforge.com/minecraft/mc-mods/vintage-delight) | 0.1.4 | Partial Support |
 | [Waystones](https://modrinth.com/mod/waystones) | 21.1.13 | Fully Added |
 | [Wetland Whimsy](https://modrinth.com/mod/wetland-whimsy) | | Foliage Only |
 | [Whisperwoods](https://modrinth.com/mod/whisperwoods) | 2.1.2 | Fully Added |
-| [Wilder Wild](https://modrinth.com/mod/wilder-wild) | 3.0.11 | Fully Added | # Added potted plants. The new v4.0.0+ content has not been added yet
+| [Wilder Wild](https://modrinth.com/mod/wilder-wild) | 3.0.11 | Fully Added | # Moved Hollowed Pale Oak Log into the new non-full ID. The new v4.0.0+ content has still not been added yet, sorry.
 | [Wondrous Wilds](https://modrinth.com/mod/wondrous-wilds) | | Foliage Only |
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
