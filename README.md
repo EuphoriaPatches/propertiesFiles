@@ -154,6 +154,9 @@ Example:
 </p>
 </details>
 
+# Euphoria Patcher Properties Merger
+You might have noticed that the block.properties files are split. To test it out in-game, enable the `autoMergeBlockProperties` option in the Euphoria Patcher mod config file. Any changes you do in the fragmented small files will then automatically be merged into the big block.properties file.
+
 ## Version Information
 
 - Each properties file has its own version number
@@ -193,20 +196,20 @@ These tools make contributing easier:
 
 ## Need Help?
 
-- **GitHub Help**: 
+- **GitHub Help**:
   - [How to fork a repository](https://www.git-tower.com/learn/git/faq/github-fork-repository)
   - [How to create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
 - **Ask questions** on our [Discord](https://euphoriapatches.com/discord)
 
 ## Frequently Asked Questions
 
-**Q: Do I need to know coding to contribute?**  
+**Q: Do I need to know coding to contribute?**
 A: No! Just follow the templates and add the mod IDs you want to include.
 
-**Q: How do I find mod and block IDs?**  
+**Q: How do I find mod and block IDs?**
 A: Use the F3 screen when and the Targeted Block info on the right side, or F3+H in-game to show advanced tooltips, additionally use the recommended tools (ItemStackExporter or Euphoria Companion).
 
-**Q: How can I use the GitHub version of these files in game to test my additions?**  
+**Q: How can I use the GitHub version of these files in game to test my additions?**
 A: You can download and test as follows:
 1. Download the files from this GitHub repository - big green `<> code` button and then download zip. The zip file contains all files of this repository.
 2. Navigate to your Minecraft instance folder
