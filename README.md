@@ -26,7 +26,7 @@ We encourage everyone to try the GitHub method when possible, as it makes tracki
 
 ## Getting Started (Step-by-Step)
 
-1. Find the property file you want to modify (block, item, entity, or dimension)
+1. Find the property file you want to modify (block, item, entity, or dimension) - for blocks we have a custom workflow [See detailed instructions below](#euphoria-patcher-properties-merger)
 2. Follow the template provided at the top of each file (see examples below)
 3. Add your mod entries
 4. Document your changes in `addedMods.md`
