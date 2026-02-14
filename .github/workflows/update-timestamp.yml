@@ -495,6 +495,7 @@ jobs:
 
           def update_readme_with_block_count(count):
               """Update README.md with the current block count"""
+              import re
               readme_path = "README.md"
 
               if not os.path.exists(readme_path):
@@ -527,6 +528,19 @@ jobs:
                       if end_index != -1:
                           # Replace just the count part
                           updated_content = content[:start_index] + formatted_count + content[end_index:]
+
+                          # Now update the exact count line below (format: [54382]: #)
+                          exact_count_pattern = r'\[\d+\]: #'
+                          match = re.search(exact_count_pattern, updated_content[end_index:])
+                          if match:
+                              # Calculate the position in the full content
+                              match_start = end_index + match.start()
+                              match_end = end_index + match.end()
+                              # Replace with new exact count
+                              updated_content = updated_content[:match_start] + f"[{count}]: #" + updated_content[match_end:]
+                              print(f"Updated exact count reference: [{count}]: #")
+                          else:
+                              print("Warning: Exact count reference line not found")
 
                           # Write the updated content
                           with open(readme_path, 'w', encoding='utf-8') as f:

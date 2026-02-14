@@ -9,6 +9,7 @@ These `.properties` files help Euphoria Patches recognize blocks, items, entitie
 </picture>
 
 ## Current Total Modded Blocks: <ins>54.38K</ins> | All Supported Mods: [<ins>List</ins>](https://www.euphoriapatches.com/properties/list)
+[54382]: #
 
 ## ⚠️ IMPORTANT REMINDERS ⚠️
 - **Please use the templates provided below!**
@@ -26,7 +27,7 @@ We encourage everyone to try the GitHub method when possible, as it makes tracki
 
 ## Getting Started (Step-by-Step)
 
-1. Find the property file you want to modify (block, item, entity, or dimension)
+1. Find the property file you want to modify (block, item, entity, or dimension) - for blocks we have a custom workflow [See detailed instructions below](#euphoria-patcher-properties-merger)
 2. Follow the template provided at the top of each file (see examples below)
 3. Add your mod entries
 4. Document your changes in `addedMods.md`
@@ -155,7 +156,9 @@ Example:
 </details>
 
 ## Euphoria Patcher Properties Merger
-You might have noticed that the block.properties files are split. To test it out in-game, enable the `autoMergeBlockProperties` option in the Euphoria Patcher mod config file. Any changes you do in the fragmented small files will then automatically be merged into the big block.properties file.
+You might have noticed that the block.properties files are split. To test it out in-game, enable the `autoMergeBlockProperties` option in the Euphoria Patcher mod config file.  
+Any changes you do in the fragmented small files will then automatically be merged into the big block.properties file.  
+More info about this, here: [README](https://github.com/EuphoriaPatches/propertiesFiles/blob/main/blockProperties/README.md)
 
 ## Version Information
 
