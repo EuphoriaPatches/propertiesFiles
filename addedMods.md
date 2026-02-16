@@ -359,6 +359,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Productive Bees](https://www.curseforge.com/minecraft/mc-mods/productivebees) | 13.6.6 | Miniscule |
 | [Productive Trees](https://modrinth.com/mod/productivetrees) | | Foliage Only |
 | [Profile Blocks](https://modrinth.com/mod/profile-blocks) | | Miniscule |
+| [Project Red - Illumination](https://www.curseforge.com/minecraft/mc-mods/project-red-illumination) | 4.21.0 | Illumar Lamps Only |
 | [Project: Vibrant Journeys](https://modrinth.com/mod/project-vibrant-journeys) | 1.6.4 | Fully Added |
 | [ProjectE](https://www.curseforge.com/minecraft/mc-mods/projecte) | 1.0.1 | Miniscule | #Only the interdiction_torch
 | [Prominent](https://www.curseforge.com/minecraft/mc-mods/prominent) | | Miniscule |
