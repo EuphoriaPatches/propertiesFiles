@@ -312,6 +312,8 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Miner's Delight +](https://www.curseforge.com/minecraft/mc-mods/miners-delight-plus) | 1.2.3 | Partial Support |
 | [Missing Wilds](https://modrinth.com/mod/missing-wilds) | 1.4.0+beta | Fully Added |
 | [Mo' Creatures Extended](https://www.curseforge.com/minecraft/mc-mods/mo-creatures-extended) | 12.3.2 | Ores Only |
+| [Mo' Glowstone](https://www.curseforge.com/minecraft/mc-mods/mo-glowstone) | 2.4.6 | Fully Added |
+| [Mo' Glowstone Lamps](https://www.curseforge.com/minecraft/mc-mods/mo-glowstone-lamps) | 1.4.2 | Fully Added |
 | [Modern Industrialization](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization) | 2.3.11 | Ores Only |
 | [More Buckets](https://modrinth.com/mod/more-buckets) | | Partial Support | # Someone Should return to this
 | [More Chests Variants \(MCV\)](https://modrinth.com/mod/more-chest-variants-lieonlion) | 1.5.9 | Fully Added |
