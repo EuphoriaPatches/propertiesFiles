@@ -79,7 +79,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Blockus](https://modrinth.com/mod/blockus) | 2.9.9 | Fully Added |
 | [Blood Magic](https://modrinth.com/mod/blood-magic) | | Partial Support |
 | [Blossom](https://modrinth.com/mod/blossom) | 1.0.7 | Fully Added |
-| [Blue Power](https://www.curseforge.com/minecraft/mc-mods/blue-power) | 0.10.323 | Partial Support | Lamps Added
+| [Blue Power](https://www.curseforge.com/minecraft/mc-mods/blue-power) | 0.10.323 | Partial Support | #Lamps Added
 | [Blue Skies](https://modrinth.com/mod/blue-skies) | | Partial Support |
 | [Born in Chaos](https://www.curseforge.com/minecraft/mc-mods/born-in-chaos) | 1.3.1 | Fully Added |
 | [Bosses Of Mass Destruction](https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction) | 1.7.5 | Fully Added | # Added all blocks, almost all items, and some of the entities. I unfortunately couldn't find any good IDs for the Void Blossom or Obsidilith.
@@ -320,7 +320,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [More Concrete](https://www.curseforge.com/minecraft/mc-mods/more-concrete) | 1.6.0 | Fully Added |
 | [More Crafting Tables \(MCT\)](https://modrinth.com/mod/more-crafting-tables-lieonlion) | 1.2.9 | Fully Added |
 | [More Ores More Gems](https://modrinth.com/mod/more-ores-more-gem) | 1.1.6 | Partial Support |
-| [More Slabs Stairs & Walls](https://modrinth.com/mod/more-slabs-stairs-and-walls) | | Partial Support |
+| [More Slabs Stairs & Walls](https://modrinth.com/mod/more-slabs-stairs-and-walls) | 4.0.0 | Fully Added |
 | [MoreOres+](https://modrinth.com/mod/moreores+) | | Partial Support |
 | [Mowzie's Mobs](https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs) | 1.5.8 | Blocks Only |
 | [MrCrayfish's Furniture Mod](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod) | 7.0.0 | Blocks Only | Block Entities are needing to be done
