@@ -79,6 +79,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Blockus](https://modrinth.com/mod/blockus) | 2.9.9 | Fully Added |
 | [Blood Magic](https://modrinth.com/mod/blood-magic) | | Partial Support |
 | [Blossom](https://modrinth.com/mod/blossom) | 1.0.7 | Fully Added |
+| [Blue Power](https://www.curseforge.com/minecraft/mc-mods/blue-power) | 0.10.323 | Partial Support |
 | [Blue Skies](https://modrinth.com/mod/blue-skies) | | Partial Support |
 | [Born in Chaos](https://www.curseforge.com/minecraft/mc-mods/born-in-chaos) | 1.3.1 | Fully Added |
 | [Bosses Of Mass Destruction](https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction) | 1.7.5 | Fully Added | # Added all blocks, almost all items, and some of the entities. I unfortunately couldn't find any good IDs for the Void Blossom or Obsidilith.
@@ -290,6 +291,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Luminax](https://www.curseforge.com/minecraft/mc-mods/luminax) | 1.3.0 | Blocks Only |
 | [Macaw's Bridges](https://modrinth.com/mod/macaws-bridges) | 3.0.0 | Fully Added |
 | [Macaw's Doors](https://modrinth.com/mod/macaws-doors) | 1.1.3 | Fully Added |
+| [Macaw's Holidays](https://www.https://modrinth.com/mod/macaws-holidays) | 1.1.2 | Partial Support |
 | [Macaw's Fences and Walls](https://modrinth.com/mod/macaws-fences-and-walls) | 1.2.0 | Fully Added |
 | [Macaw's Furniture](https://modrinth.com/mod/macaws-furniture) | 3.3.0 | Fully Added |
 | [Macaw's Lights and Lamps](https://modrinth.com/mod/macaws-lights-and-lamps) | 1.1.2 | Fully Added |
@@ -334,6 +336,8 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Nether Archives](https://modrinth.com/mod/nether-archives) | 0.3.6 | Fully Added |
 | [Nether's Delight](https://modrinth.com/mod/nethers-delight) | | In Testing | # Why is soil in the Deepslate Diamond Ore ID??
 | [Netherending Ores](https://www.curseforge.com/minecraft/mc-mods/netherending-ores) | 1.4.2 | Fully Added |
+| [Nosiphus Custom Blocks](https://www.curseforge.com/minecraft/mc-mods/nosiphus-custom-blocks) | 2026.01.02 | Partial Support |
+| [Nosiphus Furniture Mod](https://www.curseforge.com/minecraft/mc-mods/nosiphus-furniture-mod) | 2026.01.30 | Partial Support |
 | [Nyx](https://www.curseforge.com/minecraft/mc-mods/nyx) | 1.4.2 | Fully Added |
 | [Occultism](https://modrinth.com/mod/occultism) | | Miniscule |
 | [Ocean's Delight](https://modrinth.com/mod/oceans-delight) | 1.0.2 | Miniscule |
@@ -359,6 +363,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Productive Bees](https://www.curseforge.com/minecraft/mc-mods/productivebees) | 13.6.6 | Miniscule |
 | [Productive Trees](https://modrinth.com/mod/productivetrees) | | Foliage Only |
 | [Profile Blocks](https://modrinth.com/mod/profile-blocks) | | Miniscule |
+| [Project Red - Exploration](https://www.curseforge.com/minecraft/mc-mods/project-red-exploration) | 4.21.0 | Partial Support |
 | [Project Red - Illumination](https://www.curseforge.com/minecraft/mc-mods/project-red-illumination) | 4.21.0 | Illumar Lamps Only |
 | [Project: Vibrant Journeys](https://modrinth.com/mod/project-vibrant-journeys) | 1.6.4 | Fully Added |
 | [ProjectE](https://www.curseforge.com/minecraft/mc-mods/projecte) | 1.0.1 | Miniscule | #Only the interdiction_torch
@@ -449,6 +454,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Wondrous Wilds](https://modrinth.com/mod/wondrous-wilds) | | Foliage Only |
 | [Wraith Waystones](https://www.curseforge.com/minecraft/mc-mods/fabric-waystones) | 3.3.2 | Planned | #ADreadedKing
 | [XK's Deco](https://www.curseforge.com/minecraft/mc-mods/xks-decoration) | 0.8.5+forge | Miniscule | #Only the factory lamps were added
+| [YogMod](https://www.curseforge.com/minecraft/mc-mods/yogmod) | 2025.08.31 | Partial Support |
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.5 | Fully Added | # Added Suspicious Ancient Sand and the Ice Cube entity, completing this mod
 | [Ztones](https://www.curseforge.com/minecraft/mc-mods/ztones) | | Partial Support | # Some additionsfor GTNH / 1.7.10
 ---
