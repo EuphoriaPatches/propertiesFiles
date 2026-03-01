@@ -178,7 +178,12 @@ jobs:
           until git push origin ${GITHUB_REF#refs/heads/} || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
             RETRY_COUNT=$((RETRY_COUNT + 1))
             echo "Push failed, retrying (Attempt $RETRY_COUNT of $MAX_RETRIES)..."
+
+            # Stash any unstaged changes before pulling
+            git stash --include-untracked
             git pull --rebase origin ${GITHUB_REF#refs/heads/}
+            # Pop stashed changes back if there were any
+            git stash list | grep -q "stash@{0}" && git stash pop || true
           done
 
           if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
