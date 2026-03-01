@@ -1,4 +1,4 @@
-### Last updated: February 16, 2026, 08:10 UTC
+### Last updated: March 01, 2026, 21:35 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -291,9 +291,9 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Luminax](https://www.curseforge.com/minecraft/mc-mods/luminax) | 1.3.0 | Blocks Only |
 | [Macaw's Bridges](https://modrinth.com/mod/macaws-bridges) | 3.0.0 | Fully Added |
 | [Macaw's Doors](https://modrinth.com/mod/macaws-doors) | 1.1.3 | Fully Added |
-| [Macaw's Holidays](https://www.https://modrinth.com/mod/macaws-holidays) | 1.1.2 | Partial Support |
 | [Macaw's Fences and Walls](https://modrinth.com/mod/macaws-fences-and-walls) | 1.2.0 | Fully Added |
 | [Macaw's Furniture](https://modrinth.com/mod/macaws-furniture) | 3.3.0 | Fully Added |
+| [Macaw's Holidays](https://www.https://modrinth.com/mod/macaws-holidays) | 1.1.2 | Partial Support |
 | [Macaw's Lights and Lamps](https://modrinth.com/mod/macaws-lights-and-lamps) | 1.1.2 | Fully Added |
 | [Macaw's Paths and Pavings](https://modrinth.com/mod/macaws-paths-and-pavings) | 1.1.0 | Fully Added |
 | [Macaw's Roofs](https://modrinth.com/mod/macaws-roofs) | 2.3.2 | Fully Added |
