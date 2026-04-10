@@ -102,6 +102,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [CC: Tweaked](https://modrinth.com/mod/cc-tweaked) | 1.115.1 | Fully Added |
 | [Chalk](https://modrinth.com/mod/chalk-mod) | | Fully Added |
 | [Charm](https://modrinth.com/mod/charm) | 6.0.24 | Fully Added | # Added all missing blocks and items in this version, available as Charm Forked here: https://modrinth.com/mod/charm-forked . v7.0.0+ has new, unadded blocks from my knowledge
+| [Chemica](https://www.curseforge.com/minecraft/mc-mods/chemica) | 0.5.1 | Ores Only |
 | [ChemLib](https://www.curseforge.com/minecraft/mc-mods/chemlib) | | Partial Support |
 | [Chipped](https://modrinth.com/mod/chipped) | 3.0.7 | Fully Added |
 | [Chisel](https://www.curseforge.com/minecraft/mc-mods/chisel) | 1.0.2.45 | Blocks Only |
@@ -136,8 +137,9 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Create: Framed](https://modrinth.com/mod/create-framed) | 1.6.6 | Fully Added |
 | [Create: Garnished](https://modrinth.com/mod/create-garnished) | | Foliage Only |
 | [Create: New Age](https://modrinth.com/mod/create-new-age) | | Miniscule |
+| [Create: Northstar Redux](https://www.curseforge.com/minecraft/mc-mods/northstar-redux) | 0.5.4 | Ores Only |
 | [Create: Steam 'n' Rails](https://modrinth.com/mod/create-steam-n-rails) | 1.6.9 | Fully Added |
-| [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) | 0.9.3-1.20.1 | Partial Support | #Only touched block.properties here; most blocks besides the concrete, cinderblocks, bauxit, and galena were added
+| [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) | 0.9.3-1.20.1 | Partial Support | #Only touched block.properties here; most blocks besides the concrete, cinderblocks, bauxit, and galena were added, added Ores Only
 | [Created Metallurgy](https://www.curseforge.com/minecraft/mc-mods/create-metallurgy) | 0.0.6-1.20.1 | Partial Support | #The lightbulbs should have their respected color
 | [Croptopia](https://www.curseforge.com/minecraft/mc-mods/croptopia) | 3.0.4 | Fully Added |
 | [Crystalcraft Unlimited](https://modrinth.com/mod/crystalcraft-unlimited) | 1.0.0 | Partial Support |
