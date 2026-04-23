@@ -1,4 +1,4 @@
-### Last updated: April 10, 2026, 15:50 UTC
+### Last updated: April 23, 2026, 22:32 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -364,9 +364,9 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Origins](https://modrinth.com/mod/origins) | 1.10.0 | Miniscule |
 | [Oritech](https://modrinth.com/mod/oritech) | 0.19.4 | Fully Added |
 | [Outer End](https://modrinth.com/mod/the-outer-end) | | Miniscule | # Only outer_end:rose_crystal_lamp because a user needed that one
+| [Pam's Harvest The Nether](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-trees) | 1.7.10a | Partial Support | # Added saplings, crops and leaves
 | [Pam's HarvestCraft 2 - Crops](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops) | | Partial Support |
 | [Pam's HarvestCraft 2 - Trees](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-trees) | | Fully Added |
-| [Pam's Harvest The Nether](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-trees) | 1.7.10a | Partial Support | # Added saplings, crops and leaves
 | [Philip's Ruins](https://modrinth.com/mod/philips-ruins) | | Miniscule | # Light sources only
 | [Placeable Items](https://www.curseforge.com/minecraft/mc-mods/placeable-items) | 3.3 | Fully Added |
 | [Player Plates \(Obsidian Plates\)](https://www.curseforge.com/minecraft/mc-mods/player-plates) | 1.3.1.1 | Fully Added |
