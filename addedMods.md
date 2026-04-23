@@ -243,7 +243,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [FTB Materials](https://www.curseforge.com/minecraft/mc-mods/ftb-materials) | 21.1.3 | Ores Added |
 | [Functional Storage](https://modrinth.com/mod/functional-storage) | 1.4.2 | Fully Added |
 | [Galacticraft Amun-Ra](https://www.curseforge.com/minecraft/mc-mods/amun-ra) | 0.8.2 | Miniscule | # Plants and saplings
-| [GalaxySpace](https://www.curseforge.com/minecraft/mc-mods/amun-ra) | 1.1.121-GTNH | Miniscule | # Flowers and saplings
+| [GalaxySpace](https://www.curseforge.com/minecraft/mc-mods/galaxy-space-addon-for-galacticraft) | 1.1.121-GTNH | Miniscule | # Flowers and saplings
 | [Galosphere](https://modrinth.com/mod/galosphere) | | Partial Support |
 | [Gardens of the Dead](https://modrinth.com/mod/gardens-of-the-dead) |4.0.1 | Fully Added |
 | [Gauges & Switches](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches) | 1.2.22 | Miniscule | #Only did the alarm lamp
