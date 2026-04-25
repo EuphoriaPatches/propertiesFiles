@@ -96,6 +96,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Bushier Flowers](https://modrinth.com/mod/bushier-flowers) | | Partial Support |
 | [Butchery](https://modrinth.com/mod/butchery) | 3.5.5 | Fully Added |
 | [Buzzier Bees](https://modrinth.com/mod/buzzier-bees) | | Partial Support |
+| [Campfire Backport](https://modrinth.com/mod/campfire-backport) | | Fully Added |
 | [Capsule](https://www.curseforge.com/minecraft/mc-mods/capsule) | 3.4.76 | Miniscule |
 | [Caupona](https://modrinth.com/mod/caupona) | | Partial Support |
 | [Caverns & Chasms](https://modrinth.com/mod/caverns-and-chasms) | 2.0.0 | Partial Support |
@@ -205,7 +206,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Ender Zoology](https://modrinth.com/mod/ender-zoology) | 8.0.3 | Fully Added |
 | [Enhanced Celestials](https://modrinth.com/mod/enhanced-celestials) | 5.0.2.3 | Fully Added |
 | [Environmental](https://modrinth.com/mod/environmental) | | Foliage Only |
-| [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) | | Partial Support | # For GTNH/1.7.10, about half added
+| [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) | | Fully Added | # For GTNH/1.7.10
 | [Etcetera](https://modrinth.com/mod/etcetera/versions) | | Miniscule |
 | [Eternal Starlight](https://www.curseforge.com/minecraft/mc-mods/eternal-starlight) | 0.2.0 | Partial Support |
 | [Eternal Starlight Vanilla Ores](https://modrinth.com/mod/eternal-starlight-vo) | 1.0.0 | Fully Added |
