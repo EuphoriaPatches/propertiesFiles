@@ -48,6 +48,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Aquamirae](https://www.curseforge.com/minecraft/mc-mods/aquamirae-fabric) | 6 API16 | Fully Added | # Added missing blocks and items and adjusted equipment materials. Also added Astral Dust from Obscure API
 | [Aquatic Torches](https://modrinth.com/mod/aquatic-torches) | 1.0.1 | Fully Added |
 | [Architect's Palette](https://modrinth.com/mod/architects-palette) | | Partial Support |
+| Archwood Good | | Partial Support | # Mod not on any public platform
 | [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo) | 5.1.0 | Fully Added |
 | [Ars Elemental](https://www.curseforge.com/minecraft/mc-mods/ars-elemental) | 0.7.6.2 | Fully Added | # Set LabPBR > Integrated for better emission on source vines.
 | [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau) | 5.10.2 | Fully Added |
