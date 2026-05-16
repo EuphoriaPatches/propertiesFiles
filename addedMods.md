@@ -476,6 +476,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [YogMod](https://www.curseforge.com/minecraft/mc-mods/yogmod) | 2025.08.31 | Partial Support |
 | [YUNG's Cave Biomes](https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes) | 2.0.5 | Fully Added | # Added Suspicious Ancient Sand and the Ice Cube entity, completing this mod
 | [Ztones](https://www.curseforge.com/minecraft/mc-mods/ztones) | | Partial Support | # Some additionsfor GTNH / 1.7.10
+| [PureMash Tweaks](https://www.curseforge.com/minecraft/mc-mods/puremash-tweaks) | 1.4.0 | Added Partial Content | # Added Synthorium Debris to Glowing Ores to make them shine like such.
 ---
 
 ## Status Definitions
