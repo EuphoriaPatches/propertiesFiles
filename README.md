@@ -9,7 +9,7 @@ These `.properties` files help Euphoria Patches recognize blocks, items, entitie
 </picture>
 
 ## Current Total Modded Blocks: <ins>56.67K</ins> | All Supported Mods: [<ins>List</ins>](https://www.euphoriapatches.com/properties/list)
-[56666]: #
+[56667]: #
 
 ## ⚠️ IMPORTANT REMINDERS ⚠️
 - **Please use the templates provided below!**
