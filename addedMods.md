@@ -314,6 +314,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Magnum Torch](https://modrinth.com/mod/magnum-torch) | v21.1.0 | Fully Added |
 | [Malum](https://modrinth.com/mod/malum) | | Partial Support |
 | [Man of Many Planes](https://modrinth.com/mod/man-of-many-planes) | 0.1.0 | Fully Added |
+| [Mana and Artifice](https://www.curseforge.com/minecraft/mc-mods/mana-and-artifice) | 3.1.11 | Flowers only |
 | [MCA Reborn](https://modrinth.com/mod/minecraft-comes-alive-reborn) | 7.6.3 | Fully Added |
 | [MEGA Cells](https://www.curseforge.com/minecraft/mc-mods/mega-cells) | 4.3.0 | Fully Added |
 | [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) | 10.7.7.64 | Partial Support |
