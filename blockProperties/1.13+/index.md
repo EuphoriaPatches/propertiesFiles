@@ -1,8 +1,8 @@
-block.5000-10081.properties:
+block.5000-10079.properties:
 - Signs
 - Chests
 - Ender Chest
-- Shulker Boxes, Heads, Banners, and Beds
+- Shulker Boxes, Heads, and Beds
 - Player Head
 - Conduits
 - End Portal 1.20.1+
@@ -10,6 +10,7 @@ block.5000-10081.properties:
 - End Portal before 1.20.1
 - Bell
 - Copper Block Entity
+- Banners
 - No Directional Shading
 - Small Flowers / Flowers Lower Half - Euphoria Patches Emissive Flowers
 - Short Foliage / Foliage Lower Half
@@ -28,6 +29,7 @@ block.5000-10081.properties:
 - Tall Foliage / Foliage Upper Half - No Subsurface Scattering
 - Automatic glowing modded ores - Endstone
 - Crimson Roots - Better Color balance for Soul Sand Valley Overhaul
+- Short Foliage - No Euphoria Patches Interactive Foliage
 - Stone Bricks
 - Stone Brick Walls
 - Stone Brick Slabs and Stairs
@@ -46,10 +48,10 @@ block.5000-10081.properties:
 - Fire
 - Soul Fire
 - Enabled Redstone Stone Blocks - Euphoria Patches Redstone IPBR
+
+block.10080-10156.properties:
 - Stone Blocks
 - Stone Stuff / Disabled Redstone Stone Blocks - Euphoria Patches Redstone IPBR
-
-block.10083-10159.properties:
 - Stone slabs and stairs
 - Granite Full Block
 - Granite Walls
@@ -98,10 +100,10 @@ block.10083-10159.properties:
 - Cobblestone Walls
 - Cobblestone Slabs and Stairs
 - Oak Full Blocks
+
+block.10157-10237.properties:
 - Oak Non-Full Blocks
 - Oak Slabs and Stairs
-
-block.10160-10241.properties:
 - Oak Logs
 - Oak Non-Full Logs (Modded Only)
 - Spruce Full Blocks
@@ -150,10 +152,10 @@ block.10160-10241.properties:
 - Sand Non-Full Blocks (Modded Only)
 - Red Sand
 - Red Sand Non-Full Blocks (Modded Only)
+
+block.10240-10341.properties:
 - Sandstone Full Block
 - Sandstone Walls
-
-block.10243-10349.properties:
 - Sandstone Slabs and Stairs
 - Red Sandstone Full Block
 - Red Sandstone Walls
@@ -201,13 +203,13 @@ block.10243-10349.properties:
 - Emerald Non-Full Blocks (Modded Only)
 - Glowing Ores Emerald
 - Glowing Non-Full Emerald Ore (Modded Only)
-- Azalea
 
-block.10352-10460.properties:
+block.10344-10453.properties:
+- Deepslate Variant
+- Azalea
 - Lapis Blocks
 - Lapis Non-Full Blocks (Modded Only)
 - Glowing Ores Lapis
-- Deepslate Variant
 - Full Quartz Block
 - Non-Full Quartz Block
 - Glowing Ores Nether Quartz
@@ -252,10 +254,10 @@ block.10352-10460.properties:
 - Sea Lantern
 - Magma Blocks
 - Magma Non-Full Blocks (Modded Only)
+
+block.10456-10604.properties:
 - Command Blocks
 - Concrete Blocks
-
-block.10461-10608.properties:
 - Concrete Non-Full Blocks (Modded Only)
 - Concrete Powder
 - Concrete Powder Non-Full Blocks (Modded Only)
@@ -303,10 +305,10 @@ block.10461-10608.properties:
 - Redstone Dust (Wire) Any Power Level
 - Redstone Dust (Wire) 0 Power Level
 - Redstone Torch Lit (Turned On)
+
+block.10605-10736.properties:
 - Redstone Torch Unlit (Turned Off)
 - Redstone Block
-
-block.10612-10744.properties:
 - Redstone Ore Unlit
 - Redstone Ore Lit
 - Deepslate Redstone Ore Unlit
@@ -336,7 +338,8 @@ block.10612-10744.properties:
 - Verdant Froglight
 - Pearlescent Froglight
 - Reinforced Deepslate
-- Sculk, Sculk Catalyst Block
+- Sculk
+- Sculk Catalyst Block
 - Sculk Non-Full Blocks (Modded Only)
 - Sculk Vein, Sculk Sensor:Unlit
 - Sculk Shrieker
@@ -354,11 +357,11 @@ block.10612-10744.properties:
 - Flower Pot - Subsurface Scattering
 - Flower Pot - Subsurface Scattering, Flowers - Euphoria Patches Emissive Flowers
 - Jigsaw Block
+
+block.10737-10846.properties:
 - Pitcther Crop
 - Chain
 - Soul Sand
-
-block.10746-10854.properties:
 - Soul Soil
 - Dried Kelp Blocks
 - Dried Kelp Non-Full Blocks (Modded Only)
@@ -406,12 +409,14 @@ block.10746-10854.properties:
 - Lime Wool - Euphoria Patches Green Screen
 - Lime Carpet - Euphoria Patches Green Screen
 - Blue Concrete - Euphoria Patches Euphoria Patches Blue Screen
-- Crafter
-- Copper Bulb - Normal And Exposed - Lit
-- Copper Bulb - Normal And Exposed - Unlit
 
-block.10856-10964.properties:
-- Copper Bulb - Weathered And Oxidized - Lit
+block.10848-10944.properties:
+- Crafter
+- Copper Bulb - Normal - Lit
+- Copper Bulb - Exposed - Lit
+- Copper Bulb - Normal And Exposed - Unlit
+- Copper Bulb - Weathered - Lit
+- Copper Bulb - Oxidized - Lit
 - Copper Bulb - Weathered And Oxidized - Unlit
 - Copper Door Unpowered - Euphoria Patches Redstone IPBR
 - Copper Door Powered - Euphoria Patches Redstone IPBR
@@ -456,13 +461,13 @@ block.10856-10964.properties:
 - Creaking Heart Inactive 1.21.5
 - Creaking Heart Active 1.21.5
 - Creaking Heart Inactive 1.21.4
+
+block.10948-31015.properties:
 - Creaking Heart Active 1.21.4
 - All snow layers except layer 8
 - Target 0 Power
 - Target Powered
 - Sponge
-
-block.10968-31020.properties:
 - Wet Sponge
 - Firefly Bush
 - Open Eye Blossom
@@ -512,13 +517,13 @@ block.10968-31020.properties:
 - Pink Stained Glass Panes
 - Gray Stained Glass
 - Gray Stained Glass Panes
+
+block.31016-32016.properties:
 - Light Gray Stained Glass
 - Light Gray Stained Glass Panes
 - Cyan Stained Glass
 - Cyan Stained Glass Panes
 - Purple Stained Glass
-
-block.31021-32016.properties:
 - Purple Stained Glass Panes
 - Blue Stained Glass
 - Blue Stained Glass Panes
