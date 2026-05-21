@@ -1,4 +1,4 @@
-### Last updated: May 12, 2026, 08:10 UTC
+### Last updated: May 19, 2026, 20:02 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -265,6 +265,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Haunted Harvest](https://modrinth.com/mod/haunted-harvest) | | Fully Added |
 | [Hbm's Nuclear Tech Mod](https://modrinth.com/mod/ntm) | | Partial Support |
 | [Healing Pretty Good](https://modrinth.com/mod/healing-pretty-good) | 1.5.3 | Fully Added | # Added both the old and new IDs for this mod.
+| [Heart Crystals](https://www.curseforge.com/minecraft/mc-mods/heart-crystals) | 3.0.0 | Fully Added
 | [Hearth & Home](https://modrinth.com/mod/hearth-and-home) | 2.0.3 | Fully Added |
 | [Hephaestus](https://modrinth.com/mod/hephaestus) | 3.6.4.287 | Fully Added |
 | [Hexxit Gear](https://www.curseforge.com/minecraft/mc-mods/hexxit-gear) | 2.8.3 | Foliage Only |
@@ -314,6 +315,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Magnum Torch](https://modrinth.com/mod/magnum-torch) | v21.1.0 | Fully Added |
 | [Malum](https://modrinth.com/mod/malum) | | Partial Support |
 | [Man of Many Planes](https://modrinth.com/mod/man-of-many-planes) | 0.1.0 | Fully Added |
+| [Mana and Artifice](https://www.curseforge.com/minecraft/mc-mods/mana-and-artifice) | 3.1.11 | Flowers only |
 | [MCA Reborn](https://modrinth.com/mod/minecraft-comes-alive-reborn) | 7.6.3 | Fully Added |
 | [MEGA Cells](https://www.curseforge.com/minecraft/mc-mods/mega-cells) | 4.3.0 | Fully Added |
 | [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) | 10.7.7.64 | Partial Support |
@@ -384,6 +386,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [ProjectE](https://www.curseforge.com/minecraft/mc-mods/projecte) | 1.0.1 | Miniscule | #Only the interdiction_torch
 | [Prominent](https://www.curseforge.com/minecraft/mc-mods/prominent) | | Miniscule |
 | [Pure Ores](https://modrinth.com/mod/pureores) | | Partial Support |
+| [PureMash Tweaks](https://www.curseforge.com/minecraft/mc-mods/puremash-tweaks) | 1.4.0 | Added Partial Content | # Added Synthorium Debris to Glowing Ores to make them shine like such.
 | [Quark](https://modrinth.com/mod/quark) | r1.6-180| Fully Added | # Some stuff from 1.12.2 has to be added in addition to modern versions
 | [Railcraft Reborn](https://www.curseforge.com/minecraft/mc-mods/railcraft-reborn) | 1.2.4 | Partial Support |
 | raitherts | | Miniscule / Unknown | # I legit have no idea what mod this is or why it was added
