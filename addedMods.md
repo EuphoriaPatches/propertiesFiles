@@ -1,4 +1,4 @@
-### Last updated: May 24, 2026, 15:37 UTC
+### Last updated: June 01, 2026, 15:08 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -55,7 +55,6 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Ars Nouveau's Flavors & Delight](https://modrinth.com/mod/arsdelight) | 2.1.7 | Fully Added |
 | [Ars Énergistique](https://modrinth.com/mod/ars-energistique) | 2.1.1-beta | Fully Added |
 | [Artifacts](https://modrinth.com/mod/artifacts) | 9.5.12 | Fully Added |
-| [Bits and Balance](https://modrinth.com/mod/bits-and-balance) | 2.2.10b | Partial Support |
 | [Artifality](https://modrinth.com/mod/artifality) | 0.6.1 | Fully Added |
 | [Arts & Crafts](https://modrinth.com/mod/artsandcrafts) | 1.5.1 | Foliage Only |
 | [Astrological (End Terrain & Biomes)](https://modrinth.com/mod/astrological) | | Partial Support | # Was formally called Inversia, mod ID must have changed at some point. We should keep both
@@ -76,6 +75,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Bigger Reactors](https://www.curseforge.com/minecraft/mc-mods/biggerreactors) | | Fully Added |
 | [Biome Makeover](https://modrinth.com/mod/biome-makeover) | | Fully Added |
 | [Biomes O' Plenty](https://modrinth.com/mod/biomes-o-plenty) | 21.1.0.7 | Fully Added |
+| [Bits and Balance](https://modrinth.com/mod/bits-and-balance) | 2.2.10b | Partial Support |
 | [The Block Box](https://modrinth.com/mod/the-block-box) | 0.1.1 | Fully Added |
 | [Blockcraftery](https://www.curseforge.com/minecraft/mc-mods/blockcraftery) | 1.2.0 | Fully Added | # Another copycat mod. Can't do much but put ID's in no properties
 | [Blockus](https://modrinth.com/mod/blockus) | 2.9.9 | Fully Added |
