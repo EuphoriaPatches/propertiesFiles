@@ -55,6 +55,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Ars Nouveau's Flavors & Delight](https://modrinth.com/mod/arsdelight) | 2.1.7 | Fully Added |
 | [Ars Énergistique](https://modrinth.com/mod/ars-energistique) | 2.1.1-beta | Fully Added |
 | [Artifacts](https://modrinth.com/mod/artifacts) | 9.5.12 | Fully Added |
+| [Bits and Balance](https://modrinth.com/mod/bits-and-balance) | 2.2.10b | Partial Support |
 | [Artifality](https://modrinth.com/mod/artifality) | 0.6.1 | Fully Added |
 | [Arts & Crafts](https://modrinth.com/mod/artsandcrafts) | 1.5.1 | Foliage Only |
 | [Astrological (End Terrain & Biomes)](https://modrinth.com/mod/astrological) | | Partial Support | # Was formally called Inversia, mod ID must have changed at some point. We should keep both
