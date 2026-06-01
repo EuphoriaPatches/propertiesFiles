@@ -1,4 +1,4 @@
-### Last updated: May 19, 2026, 20:02 UTC
+### Last updated: May 24, 2026, 15:37 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -90,7 +90,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [The Box Of Horrors](https://modrinth.com/mod/the-box-of-horrors) | | Partial Support |
 | [Brazilian Delight](https://modrinth.com/mod/braziliandelight) | 1.1.0 | Foliage Only |
 | [Brewin' And Chewin'](https://modrinth.com/mod/brewin-and-chewin) | 4.3.0 | Fully Added |
-| [The Broken Content](https://modrinth.com/mod/thebrokencontent) | 1.5.1 | Blocks Only | #Only added Corrupted bedrock for now as it is the only block that glows.
+| [The Broken Content](https://modrinth.com/mod/thebrokencontent) | 1.8.0 | Fully Added |
 | [The Broken Script](https://modrinth.com/mod/the-broken-script) | 1.9.7 | Fully Added | #Only added err.integrity block as mod dev said that should be the only colored block that glows
 | [Bronze](https://modrinth.com/mod/bronze) | 2.0.1 | Ores Only |
 | [Burnt](https://modrinth.com/mod/burnt) | | Fully Added |
@@ -293,6 +293,8 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Jaden's Nether Expansion](https://modrinth.com/mod/jadens-nether-expansion) | 2.3.2 | Partial Support |
 | [JDK's Mob Grinding Utilities](https://modrinth.com/mod/jdk-mgu) | | Miniscule |
 | [Just a Greenhouse](https://modrinth.com/mod/just-a-greenhouse) | 1.1.3 | Fully Added | # Items still have to be added but as a wise person once said "I cannot be arsed"
+| [Kaleidoscope Tavern](https://modrinth.com/mod/kaleidoscopetavern) | 1.1.2 | Fully Added |
+| [Kaleidoscope：Dimensions wine](https://modrinth.com/mod/kaleidoscopedimensions-wine) | 1.4.1 | Fully Added |
 | [L_Ender 's Cataclysm](https://www.curseforge.com/minecraft/mc-mods/lendercataclysm) | 2.66 | Only weapons |
 | [Legendary Survival Overhaul](https://www.curseforge.com/minecraft/mc-mods/legendary-survival-overhaul) | 2.3.11.3 | Foliage only |
 | [LevelZ](https://modrinth.com/mod/levelz) | 1.4.13 | Fully Added |
