@@ -1,4 +1,4 @@
-block.5000-10079.properties:
+block.5000-10070.properties:
 - Signs
 - Chests
 - Ender Chest
@@ -14,10 +14,12 @@ block.5000-10079.properties:
 - No Directional Shading
 - Small Flowers / Flowers Lower Half - Euphoria Patches Emissive Flowers
 - Short Foliage / Foliage Lower Half
-- Leaves - Not affected by Euphoria Patches Seasons (Don't tint in Autumn, get snow in winter)
-- Leaves
-- Leaves - Euphoria Patches Emissive Flowers
-- Waving Foliage - Vine
+- Leaves - Not affected by Euphoria Patches Seasons (Don't tint in Autumn, get snow in winter) - Not waterlogged
+- Leaves - Not affected by Euphoria Patches Seasons (Don't tint in Autumn, get snow in winter) - Waterlogged
+- Leaves - Not Waterlogged
+- Leaves - Waterlogged
+- Leaves - Euphoria Patches Emissive Flowers - Non-Waterlogged
+- Leaves - Euphoria Patches Emissive Flowers - Waterlogged
 - Non-Waving Foliage - Euphoria Patches Interactive Foliage
 - Non-Waving Foliage
 - Non-Waving Flowers - Euphoria Patches Emissive Flowers
@@ -45,11 +47,11 @@ block.5000-10079.properties:
 - Lectern
 - Still Lava - Euphoria Patches Lava Noise
 - Flowing Lava - Euphoria Patches Lava Noise
+
+block.10072-10152.properties:
 - Fire
 - Soul Fire
 - Enabled Redstone Stone Blocks - Euphoria Patches Redstone IPBR
-
-block.10080-10156.properties:
 - Stone Blocks
 - Stone Stuff / Disabled Redstone Stone Blocks - Euphoria Patches Redstone IPBR
 - Stone slabs and stairs
@@ -78,8 +80,8 @@ block.10080-10156.properties:
 - Calcite Blocks
 - Calcite Non-Full Blocks (Modded Only)
 - Dripstone
-- Pointed Dripstone
 - Daylight Detector
+- Pointed Dripstone
 - Snowy Dirt Blocks
 - Snowy Dirt Block Non-Full Blocks
 - Normal Mycelium
@@ -97,11 +99,11 @@ block.10080-10156.properties:
 - Crimson Nylium Non-Full Block / Nether Wart Non-Full Block
 - Nether Wart Block - Euphoria Patched Emissive Wart Blocks
 - Cobblestone, Piston, Dispenser, Droppers, Lodestone
+
+block.10153-10232.properties:
 - Cobblestone Walls
 - Cobblestone Slabs and Stairs
 - Oak Full Blocks
-
-block.10157-10237.properties:
 - Oak Non-Full Blocks
 - Oak Slabs and Stairs
 - Oak Logs
@@ -149,11 +151,11 @@ block.10157-10237.properties:
 - Bedrock
 - Bedrock Non-Full Blocks (Modded Only)
 - Sand
+
+block.10233-10336.properties:
 - Sand Non-Full Blocks (Modded Only)
 - Red Sand
 - Red Sand Non-Full Blocks (Modded Only)
-
-block.10240-10341.properties:
 - Sandstone Full Block
 - Sandstone Walls
 - Sandstone Slabs and Stairs
@@ -200,11 +202,11 @@ block.10240-10341.properties:
 - Amethyst Non-Full Blocks (Modded Only)
 - Amethyst Crystals
 - Emerald Blocks
+
+block.10337-10447.properties:
 - Emerald Non-Full Blocks (Modded Only)
 - Glowing Ores Emerald
 - Glowing Non-Full Emerald Ore (Modded Only)
-
-block.10344-10453.properties:
 - Deepslate Variant
 - Azalea
 - Lapis Blocks
@@ -251,11 +253,11 @@ block.10344-10453.properties:
 - Prismarine Slabs and Stairs
 - Dark Prismarine Full Blocks
 - Dark Prismarine Non-Full Blocks
+
+block.10448-10592.properties:
 - Sea Lantern
 - Magma Blocks
 - Magma Non-Full Blocks (Modded Only)
-
-block.10456-10604.properties:
 - Command Blocks
 - Concrete Blocks
 - Concrete Non-Full Blocks (Modded Only)
@@ -302,11 +304,11 @@ block.10456-10604.properties:
 - Coal Non-Full Blocks (Modded Only)
 - Respawn Anchor 0 Charge (No Glowstone)
 - Respawn Anchor Charges (Has Glowstone)
+
+block.10596-10729.properties:
 - Redstone Dust (Wire) Any Power Level
 - Redstone Dust (Wire) 0 Power Level
 - Redstone Torch Lit (Turned On)
-
-block.10605-10736.properties:
 - Redstone Torch Unlit (Turned Off)
 - Redstone Block
 - Redstone Ore Unlit
@@ -354,11 +356,11 @@ block.10605-10736.properties:
 - Gravel Full Blocks
 - Gravel Non-Full Blocks (Modded Only)
 - Flower Pot - No Subsurface Scattering
+
+block.10733-10843.properties:
 - Flower Pot - Subsurface Scattering
 - Flower Pot - Subsurface Scattering, Flowers - Euphoria Patches Emissive Flowers
 - Jigsaw Block
-
-block.10737-10846.properties:
 - Pitcther Crop
 - Chain
 - Soul Sand
@@ -406,11 +408,11 @@ block.10737-10846.properties:
 - Lime Concrete - Euphoria Patches Green Screen
 - Blue Wool - Euphoria Patches Blue Screen
 - Blue Carpet - Euphoria Patches Blue Screen
+
+block.10844-10941.properties:
 - Lime Wool - Euphoria Patches Green Screen
 - Lime Carpet - Euphoria Patches Green Screen
 - Blue Concrete - Euphoria Patches Euphoria Patches Blue Screen
-
-block.10848-10944.properties:
 - Crafter
 - Copper Bulb - Normal - Lit
 - Copper Bulb - Exposed - Lit
@@ -458,11 +460,11 @@ block.10848-10944.properties:
 - Pale Oak Door
 - Resin Full Blocks
 - Resin Non-Full Blocks
+
+block.10944-21044.properties:
 - Creaking Heart Inactive 1.21.5
 - Creaking Heart Active 1.21.5
 - Creaking Heart Inactive 1.21.4
-
-block.10948-31015.properties:
 - Creaking Heart Active 1.21.4
 - All snow layers except layer 8
 - Target 0 Power
@@ -474,6 +476,16 @@ block.10948-31015.properties:
 - Pottet Open Eye Blossom
 - Copper Torch
 - Copper Lantern
+- Sulfur
+- Sulfur Slabs, Stairs, and Walls
+- Sulfur Spike
+- Chiseled Sulfur, Polished Sulfur, and Sulfur Bricks
+- Sulfur Slabs, Stairs, and Walls - Polished and Bricks Variants
+- Cinnabar
+- Cinnabar Slabs, Stairs, and Walls
+- Chiseled Cinnabar, Polished Cinnabar, and Cinnabar Bricks
+- Cinnabar Slabs, Stairs, and Walls - Polished and Bricks Variants
+- Waving Foliage - Vine
 - Solid Blocks With No Properties
 - Non-Solid Blocks With No Properties
 - No Parallax Occlusion Mapping (POM)
@@ -495,6 +507,22 @@ block.10948-31015.properties:
 - Purple Modded Light Source
 - Magenta Modded Light Source
 - Pink Modded Light Source
+- Blocks put under these IDs will have a constant emission strength
+- White Emissive Blocks - Also used For Black / Gray
+- Brown Emissive Blocks
+- Red Emissive Blocks
+- Orange Emissive Blocks
+- Yellow Emissive Blocks
+- Lime Emissive Blocks
+- Green Emissive Blocks
+- Cyan Emissive Blocks
+- Light Blue Emissive Blocks
+- Blue Emissive Blocks
+
+block.21046-32016.properties:
+- Purple Emissive Blocks
+- Magenta Emissive Blocks
+- Pink Emissive Blocks
 - Declared but unused in Complementary itself
 - Tinted Glass Blocks
 - Tinted Glass Panes (Modded Only)
@@ -517,8 +545,6 @@ block.10948-31015.properties:
 - Pink Stained Glass Panes
 - Gray Stained Glass
 - Gray Stained Glass Panes
-
-block.31016-32016.properties:
 - Light Gray Stained Glass
 - Light Gray Stained Glass Panes
 - Cyan Stained Glass
