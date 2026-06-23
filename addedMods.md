@@ -389,7 +389,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [ProjectE](https://www.curseforge.com/minecraft/mc-mods/projecte) | 1.0.1 | Miniscule | #Only the interdiction_torch
 | [Prominent](https://www.curseforge.com/minecraft/mc-mods/prominent) | | Miniscule |
 | [Pure Ores](https://modrinth.com/mod/pureores) | | Partial Support |
-| [PureMash Tweaks](https://www.curseforge.com/minecraft/mc-mods/puremash-tweaks) | 1.4.0 | Added Partial Content | # Added Synthorium Debris to Glowing Ores to make them shine like such.
+| [PureMash Tweaks](https://www.curseforge.com/minecraft/mc-mods/puremash-tweaks) | 1.4.0+ | Fulli Added | # Added Synthorium Debris, a new workbench, and more!
 | [Quark](https://modrinth.com/mod/quark) | r1.6-180| Fully Added | # Some stuff from 1.12.2 has to be added in addition to modern versions
 | [Railcraft Reborn](https://www.curseforge.com/minecraft/mc-mods/railcraft-reborn) | 1.2.4 | Partial Support |
 | raitherts | | Miniscule / Unknown | # I legit have no idea what mod this is or why it was added
