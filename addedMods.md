@@ -443,6 +443,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Tainted Magic](https://www.curseforge.com/minecraft/mc-mods/tainted-magic) | 7.6.26-GTNH | Miniscule | # One sapling and one leaf block
 | [TechReborn](https://www.curseforge.com/minecraft/mc-mods/techreborn) | 5.8.7 | Fully Added | #basically added full support, only thing missing is items glowing and what not, but is not rly needed
 | [TerraFirmaCraft](https://modrinth.com/mod/terrafirmacraft) | 4.0.11-beta | Fully Added | # The server day counter does not increment and thus, seasons and other related time features do not currently work properly. Neither does trims due to hardcoded code within Iris
+| [TerraFirmaCraft Plus](https://www.curseforge.com/minecraft/mc-mods/terrafirmacraftplus) | 0.89.1 | Fully Added | # All blocks and fluids added
 | [Terrestria](https://modrinth.com/mod/terrestria) | | Foliage Only |
 | [Thaumcraft](https://www.curseforge.com/minecraft/mc-mods/thaumcraft) | 1.7.10-4.2.3.5 | Miniscule | # Plants and leaves only
 | [Thaumic Bases](https://www.curseforge.com/minecraft/mc-mods/thaumic-bases) | 1.8.13 | Miniscule | # Saplings only
