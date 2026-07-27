@@ -90,6 +90,16 @@ jobs:
           import sys
           import re
 
+          def tokenize(line):
+              """Split a line on whitespace, keeping "quoted entries with spaces" as a single token"""
+              return re.findall(r'"[^"]*"|\S+', line)
+
+          def strip_quotes(s):
+              """Strip surrounding quotes from a token, if present"""
+              if len(s) >= 2 and s.startswith('"') and s.endswith('"'):
+                  return s[1:-1]
+              return s
+
           def remove_duplicates_in_section(section_lines):
               """Remove duplicate mod entries within a section, preserving different blockstates"""
               if not section_lines:
@@ -116,7 +126,7 @@ jobs:
                       continue
 
                   # Process mod entries
-                  parts = line_stripped.split()
+                  parts = tokenize(line_stripped)
                   filtered_parts = []
 
                   for part in parts:
@@ -255,6 +265,16 @@ jobs:
           import sys
           import re
 
+          def tokenize(line):
+              """Split a line on whitespace, keeping "quoted entries with spaces" as a single token"""
+              return re.findall(r'"[^"]*"|\S+', line)
+
+          def strip_quotes(s):
+              """Strip surrounding quotes from a token, if present"""
+              if len(s) >= 2 and s.startswith('"') and s.endswith('"'):
+                  return s[1:-1]
+              return s
+
           def sort_properties_file(file_path):
               # Read the entire file
               with open(file_path, 'r', encoding='utf-8') as f:
@@ -323,7 +343,7 @@ jobs:
                   # Extract mod entries from header to add them later
                   parts = header_line.split('=')
                   section_id = parts[0].strip()
-                  mod_parts = parts[1].strip().rstrip('\\').strip().split()
+                  mod_parts = tokenize(parts[1].strip().rstrip('\\').strip())
 
                   for part in mod_parts:
                       if ':' in part:
@@ -343,7 +363,7 @@ jobs:
 
               # First add header mod entries if any
               for entry in header_mod_entries:
-                  mod_name = entry.split(':')[0]
+                  mod_name = strip_quotes(entry).split(':')[0]
                   if mod_name not in mod_entries:
                       mod_entries[mod_name] = []
                   mod_entries[mod_name].append(entry)
@@ -371,10 +391,10 @@ jobs:
 
                   # If this is a mod entry (has a colon)
                   if ':' in line and not line.startswith('#'):
-                      mod_parts = line.split()
+                      mod_parts = tokenize(line)
                       for part in mod_parts:
                           if ':' in part and not part.startswith('#'):
-                              mod_name = part.split(':')[0]
+                              mod_name = strip_quotes(part).split(':')[0]
 
                               # Add to mod entries dictionary
                               if mod_name not in mod_entries:
@@ -430,7 +450,7 @@ jobs:
                   processed_count += 1
 
                   # Sort entries within this mod alphabetically
-                  sorted_entries = sorted(mod_entries[mod_name])
+                  sorted_entries = sorted(mod_entries[mod_name], key=strip_quotes)
 
                   # Join all entries for this mod
                   entries = ' '.join(sorted_entries)
@@ -492,6 +512,17 @@ jobs:
           echo "Creating block counting script..."
           cat > count_blocks.py << 'EOF'
           import os
+          import re
+
+          def tokenize(line):
+              """Split a line on whitespace, keeping "quoted entries with spaces" as a single token"""
+              return re.findall(r'"[^"]*"|\S+', line)
+
+          def strip_quotes(s):
+              """Strip surrounding quotes from a token, if present"""
+              if len(s) >= 2 and s.startswith('"') and s.endswith('"'):
+                  return s[1:-1]
+              return s
 
           def update_readme_with_block_count(count):
               """Update README.md with the current block count"""
@@ -593,7 +624,7 @@ jobs:
                                       continue
 
                                   # Split into potential block IDs
-                                  potential_ids = line.split()
+                                  potential_ids = tokenize(line)
 
                                   for block_id in potential_ids:
                                       # Skip empty, backslash, or tag identifiers
@@ -603,7 +634,7 @@ jobs:
                                       # Check if it could be a modded block (contains a colon)
                                       if ':' in block_id:
                                           # Extract the mod name and block name
-                                          parts = block_id.split(':')
+                                          parts = strip_quotes(block_id).split(':')
 
                                           # If it has at least 2 parts and the first part isn't a blockstate
                                           if len(parts) >= 2 and '=' not in parts[0]:
