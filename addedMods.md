@@ -1,4 +1,4 @@
-### Last updated: July 27, 2026, 09:44 UTC
+### Last updated: July 28, 2026, 18:58 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -125,8 +125,9 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Corn Delight](https://modrinth.com/mod/corn-delight) | | In Testing | # Corn plants are 2 blocks tall, current blocks.properties only has one entry!
 | [Countered's Terrain Slabs](https://modrinth.com/mod/countereds-terrain-slabs) | 1.3.0 | Fully Added |
 | [Crate Delight](https://modrinth.com/mod/crate-delight/versions) | 24.11.22 | Fully Added |
-| [Create](https://modrinth.com/mod/create) | 6.0.4 | In Testing |
+| [Create](https://modrinth.com/mod/create) | 6.0.10+mc1.21.1 | In Testing | # Moved brass and train stuff to copper for consistency and redstone IPBR support.
 | [Create Big Cannons](https://modrinth.com/mod/create-big-cannons) | 5.8.2 | Fully Added  |
+| [Create Encased](https://modrinth.com/mod/create-encased) | 1.21.1-1.9.0-ht2 | In Testing | # Initial pass over the mod
 | [Create Crafts & Additions](https://modrinth.com/mod/createaddition) | 1.4.2 | Fully Added |
 | [Create Deco](https://modrinth.com/mod/create-deco) | 2.0.2 | Fully Added |
 | [Create Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry) | 2.0.12 | Fully Added |
