@@ -473,6 +473,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Vanilla Backport](https://modrinth.com/mod/vanillabackport) | 1.1.5.4.2 | Fully Added | # Recent versions of this mod use the official vanilla IDs and namespace so everything is pretty much compatible by default. Even base Complementary would theoretically work with this mod out of the box.
 | [VerdantVibes](https://modrinth.com/mod/verdantvibes) | | Foliage Only |
 | [Vintage Delight](https://www.curseforge.com/minecraft/mc-mods/vintage-delight) | 0.1.4 | Partial Support |
+| [Void Fire](https://www.curseforge.com/minecraft/mc-mods/void-fire) | 0.0.2 | Fully Added |
 | [Waystones](https://modrinth.com/mod/waystones) | 21.1.13 | Fully Added |
 | [Wetland Whimsy](https://modrinth.com/mod/wetland-whimsy) | | Foliage Only |
 | [Whisperwoods](https://modrinth.com/mod/whisperwoods) | 2.1.2 | Fully Added |
