@@ -120,12 +120,10 @@ jobs:
                       result.append(line_stripped)
                       continue
 
-                  # Check if this is a tag line
-                  if 'tags_' in line_stripped:
-                      result.append(line_stripped)
-                      continue
-
-                  # Process mod entries
+                  # Process mod entries and tag references. Tokenized (rather than
+                  # skipping the whole line when 'tags_' appears anywhere in it) so a
+                  # line mixing a tag with real mod entries is deduped correctly instead
+                  # of being passed through untouched.
                   parts = tokenize(line_stripped)
                   filtered_parts = []
 
@@ -134,8 +132,8 @@ jobs:
                       if part == '\\':
                           continue
 
-                      # If this is a mod entry (contains colon)
-                      if ':' in part and not part.startswith('#'):
+                      # If this is a mod entry (contains colon) or a tag reference
+                      if (':' in part or part.startswith('tags_')) and not part.startswith('#'):
                           # Use the full part (including blockstate) as the key to check for duplicates
                           unique_key = part.rstrip('\\').strip()
 
@@ -316,47 +314,48 @@ jobs:
               return result_lines
 
           def process_section(section_lines):
-              """Process a section to sort mod entries alphabetically both vertically and horizontally"""
+              """Process a section to sort mod entries alphabetically both vertically and
+              horizontally. Any tags_ reference found anywhere in the section - even mixed
+              into the same line as real mod entries - is pulled out and placed on its own
+              line directly after the header, so it can never be silently dropped."""
               # Special case: Check if the section only has a header that contains a mod
               if len(section_lines) <= 2 and ':' in section_lines[0]:
                   return section_lines
 
-              # First check if it has any mod entries beyond the header (lines with colons)
-              has_mod_entries = False
+              # First check if it has any mod entries or tag references beyond the header
+              has_content = False
               for line in section_lines[1:]:  # Skip header
-                  if ':' in line and not line.strip().startswith('#'):
-                      has_mod_entries = True
+                  stripped = line.strip()
+                  if not stripped.startswith('#') and (':' in stripped or 'tags_' in stripped):
+                      has_content = True
                       break
 
-              # If no mod entries or only in header, return the section unchanged
-              if not has_mod_entries:
+              # If no mod entries/tags or only in header, return the section unchanged
+              if not has_content:
                   return section_lines
 
               # Get the section header (first line with item.XXXXX = or block.XXXXX =)
               header_line = section_lines[0].rstrip()
 
-              # Check if header contains mod entries
+              # Check if header contains mod entries or tag references
               header_has_mod = ':' in header_line and not header_line.startswith('#')
               header_mod_entries = []
+              tag_entries = []
+              seen_tags = set()
 
               if header_has_mod:
-                  # Extract mod entries from header to add them later
+                  # Extract mod entries and tags from header to add them later
                   parts = header_line.split('=')
                   section_id = parts[0].strip()
                   mod_parts = tokenize(parts[1].strip().rstrip('\\').strip())
 
                   for part in mod_parts:
-                      if ':' in part:
+                      if part.startswith('tags_'):
+                          if part not in seen_tags:
+                              seen_tags.add(part)
+                              tag_entries.append(part)
+                      elif ':' in part:
                           header_mod_entries.append(part)
-
-              # Extract tag lines and comments (if any)
-              tag_lines = []
-              comment_lines = []
-
-              i = 1
-              while i < len(section_lines) and 'tags_' in section_lines[i]:
-                  tag_lines.append(section_lines[i].rstrip())
-                  i += 1
 
               # Extract all mod entries grouped by mod name
               mod_entries = {}
@@ -368,7 +367,12 @@ jobs:
                       mod_entries[mod_name] = []
                   mod_entries[mod_name].append(entry)
 
-              # Process all lines to collect mods and preserve comments
+              # Track where the first real mod entry shows up so comments can still be
+              # bucketed into "before" vs "after" the entry block once tags are pulled out
+              first_entry_index = None
+              comment_lines = []
+
+              # Process all lines to collect mods, tags (wherever they appear), and comments
               for i, line in enumerate(section_lines):
                   line = line.strip()
 
@@ -385,27 +389,39 @@ jobs:
                   if i == 0:
                       continue
 
-                  # Skip tag lines (already processed)
-                  if 'tags_' in line:
-                      continue
+                  # Tokenize every content line so a tags_ reference is found and moved
+                  # regardless of whether it's alone on a line or mixed with mod entries
+                  has_real_entry = False
+                  for part in tokenize(line):
+                      if part == '\\':
+                          continue
 
-                  # If this is a mod entry (has a colon)
-                  if ':' in line and not line.startswith('#'):
-                      mod_parts = tokenize(line)
-                      for part in mod_parts:
-                          if ':' in part and not part.startswith('#'):
-                              mod_name = strip_quotes(part).split(':')[0]
+                      if part.startswith('tags_'):
+                          tag = part.rstrip('\\').strip()
+                          if tag not in seen_tags:
+                              seen_tags.add(tag)
+                              tag_entries.append(tag)
+                      elif ':' in part and not part.startswith('#'):
+                          has_real_entry = True
+                          mod_name = strip_quotes(part).split(':')[0]
 
-                              # Add to mod entries dictionary
-                              if mod_name not in mod_entries:
-                                  mod_entries[mod_name] = []
+                          # Add to mod entries dictionary
+                          if mod_name not in mod_entries:
+                              mod_entries[mod_name] = []
 
-                              # Clean the entry (remove trailing backslash)
-                              entry = part.rstrip('\\').strip()
-                              mod_entries[mod_name].append(entry)
+                          # Clean the entry (remove trailing backslash)
+                          entry = part.rstrip('\\').strip()
+                          mod_entries[mod_name].append(entry)
 
-              # Sort mod names
+                  if has_real_entry and first_entry_index is None:
+                      first_entry_index = i
+
+              if first_entry_index is None:
+                  first_entry_index = len(section_lines)
+
+              # Sort mod names and tags
               sorted_mod_names = sorted(mod_entries.keys())
+              sorted_tags = sorted(tag_entries)
 
               # Count effective mod names (excluding those that should be skipped)
               effective_mod_count = 0
@@ -416,24 +432,26 @@ jobs:
               # Reconstruct the section
               result = []
 
-              # Add the header line with a backslash if we have mod entries
-              if sorted_mod_names and not header_line.endswith('\\'):
+              has_body = bool(sorted_mod_names) or bool(sorted_tags)
+
+              # Add the header line with a backslash if we have mod entries or tags
+              if has_body and not header_line.endswith('\\'):
                   result.append(f"{header_line} \\\n")
               else:
                   result.append(f"{header_line}\n")
 
-              # Add tag lines with backslashes
-              for tag in tag_lines:
-                  tag = tag.rstrip('\\').strip()
-                  if sorted_mod_names:
+              # Add tag lines right after the header, with backslashes, so a tag can
+              # never again be silently dropped by being mixed into an entry line
+              for idx, tag in enumerate(sorted_tags):
+                  is_last_tag = idx == len(sorted_tags) - 1
+                  if effective_mod_count > 0 or not is_last_tag:
                       result.append(f"{tag} \\\n")
                   else:
                       result.append(f"{tag}\n")
 
-              # Add comments that appear before mod entries
+              # Add comments that appear before the first real mod entry
               for i, comment in comment_lines:
-                  # Only add comments that appear before the mod entries section
-                  if i < len(tag_lines) + 1:  # +1 for header
+                  if i < first_entry_index:
                       result.append(f"{comment}\n")
 
               # Add backslash separator if needed
@@ -463,10 +481,9 @@ jobs:
                       # Last mod - no backslash
                       result.append(f"{entries}\n")
 
-              # Add comments that appear after mod entries
+              # Add comments that appear after the first real mod entry
               for i, comment in comment_lines:
-                  # Only add comments that appear after the mod entries section
-                  if i >= len(tag_lines) + 1:  # +1 for header
+                  if i >= first_entry_index:
                       result.append(f"{comment}\n")
 
               return result
