@@ -430,6 +430,7 @@ block.10844-10941.properties:
 - Trial Spawner Ominous Active
 - Nether Vines with ACT Light
 - Nether Vines without ACT Light
+- Twisting Vines
 - Hay Bale
 - Hay Non-Full Blocks (Modded Only)
 - Normal Iron Door - Euphoria Patches Redstone IPBR
