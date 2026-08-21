@@ -440,14 +440,14 @@ jobs:
               else:
                   result.append(f"{header_line}\n")
 
-              # Add tag lines right after the header, with backslashes, so a tag can
+              # Add a single combined tag line right after the header, so a tag can
               # never again be silently dropped by being mixed into an entry line
-              for idx, tag in enumerate(sorted_tags):
-                  is_last_tag = idx == len(sorted_tags) - 1
-                  if effective_mod_count > 0 or not is_last_tag:
-                      result.append(f"{tag} \\\n")
+              if sorted_tags:
+                  tags_line = ' '.join(sorted_tags)
+                  if effective_mod_count > 0:
+                      result.append(f"{tags_line} \\\n")
                   else:
-                      result.append(f"{tag}\n")
+                      result.append(f"{tags_line}\n")
 
               # Add comments that appear before the first real mod entry
               for i, comment in comment_lines:
