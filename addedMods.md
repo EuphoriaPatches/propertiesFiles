@@ -1,4 +1,4 @@
-### Last updated: August 19, 2026, 14:24 UTC
+### Last updated: September 14, 2026, 18:16 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -439,9 +439,9 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
 | [Spelunkery](https://modrinth.com/mod/spelunkery) | 0.3.16 | Fully Added | # Added everything, including the 2 unused blocks.
 | [Spring to Life Backport](https://modrinth.com/mod/spring-to-life-backport) | 1.3.0 | Fully Added |
-| [Stellaris](https://modrinth.com/mod/stellaris) | 1.4.25 | Ores Only |
 | Star | 1.5.2 | Fully Added | # Part of Tinkers' Construct's Fabric port Hephaestus
 | [Statues: Rechiseled](https://www.curseforge.com/minecraft/mc-mods/statues-rechiseled) | 1.0.1 | Fully Added | # Can't predict what block this could be, placed in no properties
+| [Stellaris](https://modrinth.com/mod/stellaris) | 1.4.25 | Ores Only |
 | [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers) | 5.5.0 | Fully Added |
 | [Streams](https://www.curseforge.com/minecraft/mc-mods/streams) | 0.4.9 | Fullly Added |
 | [Supplementaries](https://modrinth.com/mod/supplementaries) | 3.1.7 | Fully Added |
