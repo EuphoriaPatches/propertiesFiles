@@ -1,4 +1,4 @@
-### Last updated: September 14, 2026, 18:16 UTC
+### Last updated: September 19, 2026, 09:00 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -262,8 +262,8 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Gravestones - Pneumono_](https://modrinth.com/mod/pneumono_gravestones) | 1.0.9 | Fully Added |
 | [GregTech CE Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial) | | Miniscule / Unknown | # Mod ID is gtceu, Unknown if this mod was the one used.
 | [GregTechCEu Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern) | 1.6.3 | Partial support | # Add support for lamps and coil blocks
-| [Growthcraft Community Edition](https://www.curseforge.com/minecraft/mc-mods/growthcraft-community-edition) | 4.2.3 | Fully Added | # Seems like this is a collection of smaller Growthcraft mods, all mod namespace starts with "growthcraft"
 | [Grounded](https://modrinth.com/mod/grounded) | 0.1.1 | Fully Added |
+| [Growthcraft Community Edition](https://www.curseforge.com/minecraft/mc-mods/growthcraft-community-edition) | 4.2.3 | Fully Added | # Seems like this is a collection of smaller Growthcraft mods, all mod namespace starts with "growthcraft"
 | GTOcore | 1.0.1 | Partial support | # Add support for coil blocks
 | [Hamsters](https://modrinth.com/mod/hamsters) | 1.0.3 | Fully Added |
 | [Handcrafted](https://modrinth.com/mod/handcrafted/gallery) | | Miniscule |
@@ -349,9 +349,9 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Mowzie's Mobs](https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs) | 1.5.8 | Blocks Only |
 | [MrCrayfish's Furniture Mod](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod) | 7.0.0 | Blocks Only | Block Entities are needing to be done
 | [Mutant Monsters](https://modrinth.com/mod/mutant-monsters) | v21.1.0 | Fully Added |
+| [Mystic's Biomes](https://modrinth.com/mod/mystics-biomes) | 3.5.2 | Fully Added |
 | [Mystical Agradditions](https://modrinth.com/mod/mystical-agradditions) | | Partial Support |
 | [Mystical Agriculture](https://modrinth.com/mod/mystical-agriculture) | | Miniscule |
-| [Mystic's Biomes](https://modrinth.com/mod/mystics-biomes) | 3.5.2 | Fully Added |
 | [Mythic Metals](https://modrinth.com/mod/mythicmetals) | | Miniscule |
 | [Mythic Upgrades](https://modrinth.com/mod/mythic-upgrades) | | Partial Support |
 | [Natura](https://www.curseforge.com/minecraft/mc-mods/natura) | 4.3.2.69 | Fully Added |
