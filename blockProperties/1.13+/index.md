@@ -320,8 +320,8 @@ block.10596-10729.properties:
 - Cave Vines Berries True
 - Redstone Lamp Unlit
 - Redstone Lamp Lit
-- Powered Compartor/Repeater
-- Unpowered Compartor/Repeater
+- Powered Comparator/Repeater
+- Unpowered Comparator/Repeater
 - Unpowered Comparator and in subtract mode
 - Shroomlight
 - Shroomlight Non-Full Blocks (Modded Only)
