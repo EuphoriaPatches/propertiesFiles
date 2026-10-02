@@ -15,11 +15,69 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: read  # needed to list running workflow runs
+    # Never run two version checks at once (e.g. a push and the schedule overlapping)
+    concurrency:
+      group: modrinth-version-check
+      cancel-in-progress: false
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
+
+      - name: Create helper script to wait for other workflows
+        run: |
+          # The other workflows commit to main (timestamps/sorting/README). This job edits
+          # info.json and merges main into release, so it must not overlap with them.
+          cat > "$RUNNER_TEMP/wait_for_workflows.sh" << 'EOF'
+          #!/bin/bash
+          WORKFLOWS=("process-properties-files.yml" "sort-addedMod-table-and-timestamp.yml")
+          STATUSES=("queued" "in_progress" "waiting" "pending")
+          TIMEOUT_SECONDS=1800
+          POLL_SECONDS=15
+
+          # Give runs triggered by the same push a moment to show up as queued
+          sleep 15
+
+          START=$(date +%s)
+          while true; do
+            BUSY=""
+            for wf in "${WORKFLOWS[@]}"; do
+              for status in "${STATUSES[@]}"; do
+                COUNT=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow "$wf" --status "$status" --json databaseId --jq 'length' || echo 0)
+                if [ "${COUNT:-0}" -gt 0 ]; then
+                  BUSY="$BUSY $wf($status:$COUNT)"
+                fi
+              done
+            done
+
+            if [ -z "$BUSY" ]; then
+              echo "No other workflows are running, continuing."
+              exit 0
+            fi
+
+            if [ $(( $(date +%s) - START )) -ge $TIMEOUT_SECONDS ]; then
+              echo "ERROR: Timed out after ${TIMEOUT_SECONDS}s waiting for:$BUSY"
+              exit 1
+            fi
+
+            echo "Waiting for:$BUSY"
+            sleep $POLL_SECONDS
+          done
+          EOF
+          chmod +x "$RUNNER_TEMP/wait_for_workflows.sh"
+
+      - name: Wait for other workflows to finish
+        run: |
+          "$RUNNER_TEMP/wait_for_workflows.sh"
+
+      - name: Pull changes pushed by other workflows
+        run: |
+          # The checkout may be stale now that the other workflows have pushed their commits
+          git pull --ff-only origin ${GITHUB_REF#refs/heads/}
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -43,7 +101,6 @@ jobs:
           INFO_PATH = '.github/data/info.json'
           MAIN_BRANCH = 'main'
           RELEASE_BRANCH = 'release'
-          MERGE_DELAY_SECONDS = 60  # 1 minute delay before merge
 
           # Retry configuration
           MAX_RETRIES = 10
@@ -235,9 +292,8 @@ jobs:
           # Make sure working directory is clean before branch operations
           git status
           
-          # Wait for other workflows to complete their commits
-          echo "Waiting ${MERGE_DELAY_SECONDS:-60} seconds to allow other workflows to complete..."
-          sleep ${MERGE_DELAY_SECONDS:-60}
+          # Make sure no other workflow started committing while we were checking versions
+          "$RUNNER_TEMP/wait_for_workflows.sh"
           
           # Fetch the latest changes to ensure we have everything
           echo "Fetching the latest changes from all branches..."

@@ -1,4 +1,4 @@
-name: Update Timestamp and Sort Properties Files
+name: Process Properties Files
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - '**/*.properties'
 
 jobs:
-  update-timestamp-and-sort:
+  process-properties:
     # Only run in the main repository
     if: github.repository == 'EuphoriaPatches/propertiesFiles'
     runs-on: ubuntu-latest
@@ -684,8 +684,8 @@ jobs:
       - name: Commit and push with retry
         if: github.event_name == 'push'
         run: |
-          # Add all properties files recursively and README
-          git add '**/*.properties' README.md
+          # Add all properties files and README
+          git add -- '*.properties' README.md
 
           # Check if there are changes to commit
           if git diff --staged --quiet; then
