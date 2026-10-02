@@ -244,7 +244,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Fossils and Archaeology: Legacy](https://modrinth.com/mod/fossils-and-archaeology-legacy) | 1.4.9 | Fully Added |
 | [Frame Changer](https://modrinth.com/mod/frame-changer) | | Miniscule |
 | [Framed Blocks](https://www.curseforge.com/minecraft/mc-mods/framedblocks) | 10.2.0 | Partial Support |
-| [Friends&Foes](https://modrinth.com/mod/friends-and-foes) | 3.0.9 | Partial Support | # Entities needs done
+| [Friends&Foes](https://modrinth.com/mod/friends-and-foes) | 3.0.9 | Partial Support | # Added Wildfire, but may need tweaks for other entities
 | [Frights and Foliage](https://modrinth.com/mod/frights-and-foliage) | 1.0.1 | Fully Added |
 | [Frostiful](https://modrinth.com/mod/frostiful) | 1.0.11 | Partial Support |
 | [Fruits Delight](https://modrinth.com/mod/fruits-delight) | 1.0.11 | Partial Support |
@@ -303,7 +303,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Just a Greenhouse](https://modrinth.com/mod/just-a-greenhouse) | 1.1.3 | Fully Added | # Items still have to be added but as a wise person once said "I cannot be arsed"
 | [Kaleidoscope Tavern](https://modrinth.com/mod/kaleidoscopetavern) | 1.1.2 | Fully Added |
 | [Kaleidoscope：Dimensions wine](https://modrinth.com/mod/kaleidoscopedimensions-wine) | 1.4.1 | Fully Added |
-| [L_Ender 's Cataclysm](https://www.curseforge.com/minecraft/mc-mods/lendercataclysm) | 2.66 | Only weapons |
+| [L_Ender 's Cataclysm](https://www.curseforge.com/minecraft/mc-mods/lendercataclysm) | 2.66 | Weapons and Entities | # Scylla may need a second pass, but otherwise should be good! Unsure if the weapons are on a different version of the mod but entities were added for version 3.31
 | [Legendary Survival Overhaul](https://www.curseforge.com/minecraft/mc-mods/legendary-survival-overhaul) | 2.3.11.3 | Foliage only |
 | [LevelZ](https://modrinth.com/mod/levelz) | 1.4.13 | Fully Added |
 | [Little Tiles](https://modrinth.com/mod/littletiles) | 1.6.0-pre159 | Fully Added | # Has issues with ACL
@@ -346,6 +346,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [More Ores More Gems](https://modrinth.com/mod/more-ores-more-gem) | 1.1.6 | Partial Support |
 | [More Slabs Stairs & Walls](https://modrinth.com/mod/more-slabs-stairs-and-walls) | 4.0.0 | Fully Added |
 | [MoreOres+](https://modrinth.com/mod/moreores+) | | Partial Support |
+| [Mounts of Mayhem Backport](https://www.curseforge.com/minecraft/mc-mods/mounts-of-mayhem-backport) | | Partial Support | # Backport for the Parched and Zombie Nautilous
 | [Mowzie's Mobs](https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs) | 1.5.8 | Blocks Only |
 | [MrCrayfish's Furniture Mod](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod) | 7.0.0 | Blocks Only | Block Entities are needing to be done
 | [Mutant Monsters](https://modrinth.com/mod/mutant-monsters) | v21.1.0 | Fully Added |
@@ -476,6 +477,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Translocators 1.8.+](https://www.curseforge.com/minecraft/mc-mods/translocators-1-8) | 2.5.2.81 | Fully Added |
 | [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) | 9.1.28 | Fully Added | # Could improve this by placing various backpacks into their respective block ID's, unsure if this will actually work though
 | [Traverse](https://modrinth.com/mod/traverse) | 1.6.0-69 | Fully Added |
+| [Trials Chambers Reuploaded]([https://www.curseforge.com/minecraft/mc-mods/mounts-of-mayhem-backport](https://www.curseforge.com/minecraft/mc-mods/trials-chambers-reuploaded)) | | Partial Support | # Backport for the Bogged
 | [Twigs](https://modrinth.com/mod/twigs) | 3.1.0 | Fully Added |
 | [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | 4.7.3196 | Fully Added | # Now contains 1.12.2 and 1.21.1 content.
 | [The Undergarden](https://modrinth.com/mod/the-undergarden) | | Miniscule |
