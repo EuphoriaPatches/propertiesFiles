@@ -1,4 +1,4 @@
-### Last updated: October 02, 2026, 08:00 UTC
+### Last updated: October 03, 2026, 07:37 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -259,8 +259,8 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Gardens of the Dead](https://modrinth.com/mod/gardens-of-the-dead) |4.0.1 | Fully Added |
 | [Gauges & Switches](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches) | 1.2.22 | Miniscule | #Only did the alarm lamp
 | [Geode+](https://modrinth.com/mod/geode-plus) | | Partial Support |
-| [Good Ending](https://modrinth.com/mod/good-ending) | 1.0.1 | Miniscule |
 | [Golem Overhaul](https://www.curseforge.com/minecraft/mc-mods/golem-overhaul) | 1.0.1 | Entities Only | # May not need extra touchups for items and such, have not checked
+| [Good Ending](https://modrinth.com/mod/good-ending) | 1.0.1 | Miniscule |
 | [Grappling Hook Mod: Restitched](https://modrinth.com/mod/grappling-hook-mod-fabric) | 1.99.0 | Fully Added |
 | [Gravestones](https://modrinth.com/mod/gravestones) | v1.15 | Fully Added |
 | [Gravestones - Pneumono_](https://modrinth.com/mod/pneumono_gravestones) | 1.0.9 | Fully Added |
