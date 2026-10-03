@@ -84,7 +84,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Blood Magic](https://modrinth.com/mod/blood-magic) | | Partial Support |
 | [Blossom](https://modrinth.com/mod/blossom) | 1.0.7 | Fully Added |
 | [Blue Power](https://www.curseforge.com/minecraft/mc-mods/blue-power) | 0.10.323 | Partial Support | #Lamps Added
-| [Blue Skies](https://modrinth.com/mod/blue-skies) | | Partial Support | # Recently Added Mobs
+| [Blue Skies](https://modrinth.com/mod/blue-skies) | | Partial Support | # Recently Added Mobs and Portals
 | [Born in Chaos](https://www.curseforge.com/minecraft/mc-mods/born-in-chaos) | 1.3.1 | Fully Added |
 | [Bosses Of Mass Destruction](https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction) | 1.7.5 | Fully Added | # Added all blocks, almost all items, and some of the entities. I unfortunately couldn't find any good IDs for the Void Blossom or Obsidilith.
 | [Botania](https://modrinth.com/mod/botania) | | Partial Support |
@@ -482,7 +482,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Translocators 1.8.+](https://www.curseforge.com/minecraft/mc-mods/translocators-1-8) | 2.5.2.81 | Fully Added |
 | [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) | 9.1.28 | Fully Added | # Could improve this by placing various backpacks into their respective block ID's, unsure if this will actually work though
 | [Traverse](https://modrinth.com/mod/traverse) | 1.6.0-69 | Fully Added |
-| [Trials Chambers Reuploaded]([https://www.curseforge.com/minecraft/mc-mods/mounts-of-mayhem-backport](https://www.curseforge.com/minecraft/mc-mods/trials-chambers-reuploaded)) | | Partial Support | # Backport for the Bogged
+| [Trials Chambers Reuploaded](https://www.curseforge.com/minecraft/mc-mods/trials-chambers-reuploaded) | | Partial Support | # Backport for the Bogged
 | [Twigs](https://modrinth.com/mod/twigs) | 3.1.0 | Fully Added |
 | [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | 4.7.3196 | Fully Added | # Now contains 1.12.2 and 1.21.1 content, as well as tweaks to most of the mobs (Ur-Ghast and Carminite Ghasts didn't have a great ID to choose, not even the Ghast one funnily enough)
 | [The Undergarden](https://modrinth.com/mod/the-undergarden) | | Partial Support | # Some foliage, almost all entities, and portal.
