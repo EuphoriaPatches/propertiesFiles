@@ -32,7 +32,9 @@ Here we can keep track of what mods have been added and what version a contribut
 | [The Aether](https://modrinth.com/mod/aether) | 1.5.8 | Fully Added |
 | [Aether: Lost Content Addon](https://modrinth.com/mod/aether-lost-content) | | Miniscule |
 | [The Aether: Redux](https://modrinth.com/mod/the-aether-redux) | | Partial Support |
-| [Alex's Caves](https://modrinth.com/mod/alexs-caves) | | Fully Added |
+| [Alex's Caves](https://modrinth.com/mod/alexs-caves) | | Fully Added | # Block and Item Support, added some new Mob tweaks (Luxtructosaurus and Tremorzilla may need a second pass, and many items or entities have rendering issues such as the Gossamer Worm)
+| [Alex's Caves: Stuff & Torpedoes](https://www.curseforge.com/minecraft/mc-mods/alexs-caves-torpedoes) | | Miniscule | # Support for one mob
+| [Alex's Mobs](https://modrinth.com/mod/alexs-mobs) | | Partial Support | # Mobs and Entities (Void Worm shots may be too bright, and Dimensional Carver is visually broken)
 | [All The Tweaks](https://www.curseforge.com/minecraft/mc-mods/all-the-tweaks) | | Fully Added |
 | [Alloy Forgery](https://www.curseforge.com/minecraft/mc-mods/alloy-forgery) | 2.1.2 | Fully Added | #ADreadedKing
 | [AllTheCompressed](https://www.curseforge.com/minecraft/mc-mods/allthecompressed) | | Fully Added |
@@ -82,7 +84,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Blood Magic](https://modrinth.com/mod/blood-magic) | | Partial Support |
 | [Blossom](https://modrinth.com/mod/blossom) | 1.0.7 | Fully Added |
 | [Blue Power](https://www.curseforge.com/minecraft/mc-mods/blue-power) | 0.10.323 | Partial Support | #Lamps Added
-| [Blue Skies](https://modrinth.com/mod/blue-skies) | | Partial Support |
+| [Blue Skies](https://modrinth.com/mod/blue-skies) | | Partial Support | # Recently Added Mobs
 | [Born in Chaos](https://www.curseforge.com/minecraft/mc-mods/born-in-chaos) | 1.3.1 | Fully Added |
 | [Bosses Of Mass Destruction](https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction) | 1.7.5 | Fully Added | # Added all blocks, almost all items, and some of the entities. I unfortunately couldn't find any good IDs for the Void Blossom or Obsidilith.
 | [Botania](https://modrinth.com/mod/botania) | | Partial Support |
@@ -146,6 +148,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Create: Steam 'n' Rails](https://modrinth.com/mod/create-steam-n-rails) | 1.6.9 | Fully Added |
 | [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) | 0.9.3-1.20.1 | Partial Support | #Only touched block.properties here; most blocks besides the concrete, cinderblocks, bauxit, and galena were added, added Ores Only
 | [Created Metallurgy](https://www.curseforge.com/minecraft/mc-mods/create-metallurgy) | 0.0.6-1.20.1 | Partial Support | #The lightbulbs should have their respected color
+| [Creeper Overhaul](https://www.curseforge.com/minecraft/mc-mods/creeper-overhaul) | 4.0.6 | Full Support | #Mobs
 | [Croptopia](https://www.curseforge.com/minecraft/mc-mods/croptopia) | 3.0.4 | Fully Added |
 | [Crystalcraft Unlimited](https://modrinth.com/mod/crystalcraft-unlimited) | 1.0.0 | Partial Support |
 | [Cuisine Delight](https://www.curseforge.com/minecraft/mc-mods/cuisine-delight) | 1.1.14 | Fully Added |
@@ -257,6 +260,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Gauges & Switches](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches) | 1.2.22 | Miniscule | #Only did the alarm lamp
 | [Geode+](https://modrinth.com/mod/geode-plus) | | Partial Support |
 | [Good Ending](https://modrinth.com/mod/good-ending) | 1.0.1 | Miniscule |
+| [Golem Overhaul](https://www.curseforge.com/minecraft/mc-mods/golem-overhaul) | 1.0.1 | Entities Only | # May not need extra touchups for items and such, have not checked
 | [Grappling Hook Mod: Restitched](https://modrinth.com/mod/grappling-hook-mod-fabric) | 1.99.0 | Fully Added |
 | [Gravestones](https://modrinth.com/mod/gravestones) | v1.15 | Fully Added |
 | [Gravestones - Pneumono_](https://modrinth.com/mod/pneumono_gravestones) | 1.0.9 | Fully Added |
@@ -347,9 +351,9 @@ Here we can keep track of what mods have been added and what version a contribut
 | [More Slabs Stairs & Walls](https://modrinth.com/mod/more-slabs-stairs-and-walls) | 4.0.0 | Fully Added |
 | [MoreOres+](https://modrinth.com/mod/moreores+) | | Partial Support |
 | [Mounts of Mayhem Backport](https://www.curseforge.com/minecraft/mc-mods/mounts-of-mayhem-backport) | | Partial Support | # Backport for the Parched and Zombie Nautilous
-| [Mowzie's Mobs](https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs) | 1.5.8 | Blocks Only |
+| [Mowzie's Mobs](https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs) | 1.5.8 | Blocks and Entities | # Umvuthi and the Umvuthana didn't have a singular best ID to pick, so they may need tweaking as they can be somewhat bright. The Ice Crystal breath effect also does not render.
 | [MrCrayfish's Furniture Mod](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod) | 7.0.0 | Blocks Only | Block Entities are needing to be done
-| [Mutant Monsters](https://modrinth.com/mod/mutant-monsters) | v21.1.0 | Fully Added |
+| [Mutant Monsters](https://modrinth.com/mod/mutant-monsters) | v21.1.0 | Fully Added | #Touched up Mutant Creeper and Mutant Enderman (the latter more substantially, as its clones now glow (though so do the blocks it throws))
 | [Mystic's Biomes](https://modrinth.com/mod/mystics-biomes) | 3.5.2 | Fully Added |
 | [Mystical Agradditions](https://modrinth.com/mod/mystical-agradditions) | | Partial Support |
 | [Mystical Agriculture](https://modrinth.com/mod/mystical-agriculture) | | Miniscule |
@@ -440,6 +444,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Snowy Spirit](https://modrinth.com/mod/snowy-spirit) | | Foliage Only |
 | [Soul Shards Respawn](https://www.curseforge.com/minecraft/mc-mods/soul-shards-respawn) | 1.1.2 | Miniscule |
 | [SoulsWeapons](https://modrinth.com/mod/mariums-soulslike-weaponry) | 1.2 | Partial Support | #Added Ore Glowing
+| [Spawn](https://www.curseforge.com/minecraft/mc-mods/spawn-mod) | | Miniscule | # Only a handful of mobs, bubbles refuse to render with any tested ID
 | [Spectrum](https://modrinth.com/mod/spectrum) | 1.8.9 | In Testing |
 | [Spelunker's Charm II](https://modrinth.com/mod/spelunkers-charm-ii) | 3.6.0 | Partial Support |
 | [Spelunkery](https://modrinth.com/mod/spelunkery) | 0.3.16 | Fully Added | # Added everything, including the 2 unused blocks.
@@ -479,7 +484,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Traverse](https://modrinth.com/mod/traverse) | 1.6.0-69 | Fully Added |
 | [Trials Chambers Reuploaded]([https://www.curseforge.com/minecraft/mc-mods/mounts-of-mayhem-backport](https://www.curseforge.com/minecraft/mc-mods/trials-chambers-reuploaded)) | | Partial Support | # Backport for the Bogged
 | [Twigs](https://modrinth.com/mod/twigs) | 3.1.0 | Fully Added |
-| [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | 4.7.3196 | Fully Added | # Now contains 1.12.2 and 1.21.1 content.
+| [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | 4.7.3196 | Fully Added | # Now contains 1.12.2 and 1.21.1 content, as well as tweaks to most of the mobs (Ur-Ghast and Carminite Ghasts didn't have a great ID to choose, not even the Ghast one funnily enough)
 | [The Undergarden](https://modrinth.com/mod/the-undergarden) | | Miniscule |
 | [Universal Ores](https://modrinth.com/mod/universal_ores) | | Autogenerated Content |
 | [Upgrade Aquatic](https://modrinth.com/mod/upgrade-aquatic) | | Foliage Only |
