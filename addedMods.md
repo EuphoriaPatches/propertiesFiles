@@ -32,7 +32,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [The Aether](https://modrinth.com/mod/aether) | 1.5.8 | Fully Added |
 | [Aether: Lost Content Addon](https://modrinth.com/mod/aether-lost-content) | | Miniscule |
 | [The Aether: Redux](https://modrinth.com/mod/the-aether-redux) | | Partial Support |
-| [Alex's Caves](https://modrinth.com/mod/alexs-caves) | | Unknown | # Block and Item Support, added some new Mob tweaks (Luxtructosaurus and Tremorzilla may need a second pass, and many items or entities have rendering issues such as the Gossamer Worm)
+| [Alex's Caves](https://modrinth.com/mod/alexs-caves) | | Fully Added | # Block and Item Support, added some new Mob tweaks (Luxtructosaurus and Tremorzilla may need a second pass, and many items or entities have rendering issues such as the Gossamer Worm)
 | [Alex's Caves: Stuff & Torpedoes](https://www.curseforge.com/minecraft/mc-mods/alexs-caves-torpedoes) | | Miniscule | # Support for one mob
 | [Alex's Mobs](https://modrinth.com/mod/alexs-mobs) | | Partial Support | # Mobs and Entities (Void Worm shots may be too bright, and Dimensional Carver is visually broken)
 | [All The Tweaks](https://www.curseforge.com/minecraft/mc-mods/all-the-tweaks) | | Fully Added |
