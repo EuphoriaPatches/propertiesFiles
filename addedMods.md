@@ -431,6 +431,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Scorched Guns 2](https://www.curseforge.com/minecraft/mc-mods/scorched-guns) | 0.3.2.5 | Miniscule | #Only the Plasma lantern was added
 | [Scorchful](https://modrinth.com/mod/scorchful) | 0.6.5 | Fully Added |
 | [SCP: Overtime](https://modrinth.com/mod/scp-overtime) | | Miniscule |
+| [Sculk and Jaw](https://www.curseforge.com/minecraft/mc-mods/sculkandjaw) | 1.0.4 | Fully Added |
 | [Seafarer](https://www.curseforge.com/minecraft/mc-mods/seafarer-forge) | 1.0.1 | Partial Support |
 | [Searchlight (& Wall Lights)](https://www.curseforge.com/minecraft/mc-mods/searchlight-forge) | 1.1.11 | Fully Added |
 | [Seared Ladder \(Backport\)](https://www.curseforge.com/minecraft/mc-mods/seared-ladder-backport) | 1.1.2 | Fully Added |
