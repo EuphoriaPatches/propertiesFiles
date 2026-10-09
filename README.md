@@ -8,8 +8,8 @@ These `.properties` files help Euphoria Patches recognize blocks, items, entitie
 <img src="https://img.shields.io/github/commits-difference/EuphoriaPatches/propertiesFiles?base=release&head=main&style=for-the-badge&logo=github&logoColor=%23e661e8&label=Commits%20since%20last%20Euphoria%20Patches%20Update&labelColor=0d1117&color=magenta" alt="Commits since last update">
 </picture>
 
-## Current Total Modded Blocks: <ins>58.32K</ins> | All Supported Mods: [<ins>List</ins>](https://www.euphoriapatches.com/properties/list)
-[58320]: #
+## Current Total Modded Blocks: <ins>58.33K</ins> | All Supported Mods: [<ins>List</ins>](https://www.euphoriapatches.com/properties/list)
+[58330]: #
 
 ## ⚠️ IMPORTANT REMINDERS ⚠️
 - **Please use the templates provided below!**
