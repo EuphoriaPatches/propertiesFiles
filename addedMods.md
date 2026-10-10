@@ -366,7 +366,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Naturalist](https://modrinth.com/mod/naturalist) | 4.0.3 | Fully Added |
 | [Nature's Spirit](https://modrinth.com/mod/natures-spirit) | 2.2.4 | Partial Support|
 | [Neapolitan](https://www.curseforge.com/minecraft/mc-mods/neapolitan) | 5.0.0 | Foliage Only |
-| [Nekomas Fixed](https://modrinth.com/mod/nekomas-fixed) | 0.2.0 | Fully Added |
+| [Nekomas Fixed](https://modrinth.com/mod/nekomas-fixed) | 0.5.4 | Fully Added |
 | [Neo Eco AE Extension](https://modrinth.com/mod/neoecoae) | 21.1.1 | Ores Only |
 | [Neon Lamps](https://curseforge.com/minecraft/mc-mods/neon-lamps) | 1.0.0 | Fully Added |
 | [Nether Archives](https://modrinth.com/mod/nether-archives) | 0.3.6 | Fully Added |
