@@ -273,6 +273,100 @@ jobs:
                   return s[1:-1]
               return s
 
+          DIMENSION_RE = re.compile(r'^(dimension\.[^\s=]+\s*=\s*)')
+          PREPROCESSOR_RE = re.compile(r'^#(if|ifdef|ifndef|elif|else|endif|define|undef)\b')
+
+          def collect_dimension_section(lines, start):
+              section = [lines[start]]
+              j = start + 1
+              while section[-1].rstrip().endswith('\\') and j < len(lines):
+                  if PREPROCESSOR_RE.match(lines[j].strip()):
+                      break
+                  section.append(lines[j])
+                  j += 1
+              return section, j
+
+          # Dimensions with no : part never move
+          def process_dimension_section(section_lines):
+              prefix = DIMENSION_RE.match(section_lines[0]).group(1)
+
+              body = list(section_lines)
+              trailing_blank = 0
+              while len(body) > 1 and not body[-1].strip():
+                  body.pop()
+                  trailing_blank += 1
+
+              group_index = 0
+              header_plain = []
+              trailing_plain = []
+              header_has_mod = False
+              mods = {}
+              seen = set()
+              comments = []  # (appears_after_first_mod, text)
+              first_mod_seen = False
+
+              for idx, raw in enumerate(body):
+                  text = raw[len(prefix):] if idx == 0 else raw
+                  stripped = text.strip()
+
+                  if idx > 0 and stripped.startswith('#'):
+                      comments.append((first_mod_seen, raw.rstrip()))
+                      continue
+
+                  # A standalone backslash line is the separator between groups
+                  if idx > 0 and stripped == '\\':
+                      group_index += 1
+                      continue
+
+                  for token in tokenize(stripped):
+                      token = token.rstrip('\\')
+                      if not token or token in seen:
+                          continue
+                      seen.add(token)
+
+                      if ':' in strip_quotes(token):
+                          first_mod_seen = True
+                          if idx == 0:
+                              header_has_mod = True
+                          mod_name = strip_quotes(token).split(':')[0]
+                          mods.setdefault(mod_name, []).append(token)
+                      elif group_index == 0:
+                          header_plain.append(token)
+                      else:
+                          trailing_plain.append(token)
+
+              # Nothing to sort (e.g. dimension.world0=* or an empty dimension.world_space=)
+              if not mods:
+                  return section_lines
+
+              group_lines = [' '.join(sorted(mods[name], key=strip_quotes)) for name in sorted(mods)]
+              header_gets_group = header_has_mod or not header_plain
+              header_text = ' '.join(header_plain + (group_lines[:1] if header_gets_group else []))
+              rest = group_lines[1:] if header_gets_group else group_lines
+
+              units = [prefix + header_text] + rest
+              if trailing_plain:
+                  units.append(' '.join(trailing_plain))
+
+              comments_before = [text for after, text in comments if not after]
+              comments_after = [text for after, text in comments if after]
+
+              result = []
+              for i, unit in enumerate(units):
+                  if i == len(units) - 1:
+                      result.append(f"{unit}\n")
+                  else:
+                      result.append(f"{unit} \\\n")
+                      if i == 0:
+                          result.extend(f"{c}\n" for c in comments_before)
+                      result.append("\\\n")
+              if len(units) == 1:
+                  result.extend(f"{c}\n" for c in comments_before)
+              result.extend(f"{c}\n" for c in comments_after)
+              result.extend("\n" for _ in range(trailing_blank))
+
+              return result
+
           def sort_properties_file(file_path):
               # Read the entire file
               with open(file_path, 'r', encoding='utf-8') as f:
@@ -283,6 +377,12 @@ jobs:
 
               while i < len(original_lines):
                   line = original_lines[i]
+
+                  # dimension.<name> = sections are handled by their own sorter
+                  if DIMENSION_RE.match(line):
+                      dimension_section, i = collect_dimension_section(original_lines, i)
+                      result_lines.extend(process_dimension_section(dimension_section))
+                      continue
 
                   # Check if this line starts a section (item.XXXXX = or block.XXXXX =)
                   section_match = re.match(r'^(item|block|entity)\.\d+\s*=', line)
