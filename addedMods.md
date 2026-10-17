@@ -1,4 +1,4 @@
-### Last updated: October 13, 2026, 18:36 UTC
+### Last updated: October 17, 2026, 07:54 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -33,8 +33,8 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Aether: Lost Content Addon](https://modrinth.com/mod/aether-lost-content) | | Partial Support | # Entities and some blocks
 | [The Aether: Redux](https://modrinth.com/mod/the-aether-redux) | | Partial Support | # Recently added entities
 | [Alex's Caves](https://modrinth.com/mod/alexs-caves) | | Fully Added | # Some entities have rendering issues
-| [Alex's Caves: Stuff & Torpedoes](https://www.curseforge.com/minecraft/mc-mods/alexs-caves-torpedoes) | | Fully Added | 
-| [Alex's Mobs](https://modrinth.com/mod/alexs-mobs) | | Fully Added | 
+| [Alex's Caves: Stuff & Torpedoes](https://www.curseforge.com/minecraft/mc-mods/alexs-caves-torpedoes) | | Fully Added |
+| [Alex's Mobs](https://modrinth.com/mod/alexs-mobs) | | Fully Added |
 | [All The Tweaks](https://www.curseforge.com/minecraft/mc-mods/all-the-tweaks) | | Fully Added |
 | [Alloy Forgery](https://www.curseforge.com/minecraft/mc-mods/alloy-forgery) | 2.1.2 | Fully Added | #ADreadedKing
 | [AllTheCompressed](https://www.curseforge.com/minecraft/mc-mods/allthecompressed) | | Fully Added |
@@ -490,7 +490,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Translocators 1.8.+](https://www.curseforge.com/minecraft/mc-mods/translocators-1-8) | 2.5.2.81 | Fully Added |
 | [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) | 9.1.28 | Fully Added | # Could improve this by placing various backpacks into their respective block ID's, unsure if this will actually work though
 | [Traverse](https://modrinth.com/mod/traverse) | 1.6.0-69 | Fully Added |
-| [Trials Chambers Reuploaded](https://www.curseforge.com/minecraft/mc-mods/trials-chambers-reuploaded) | | Fully Added | 
+| [Trials Chambers Reuploaded](https://www.curseforge.com/minecraft/mc-mods/trials-chambers-reuploaded) | | Fully Added |
 | [Twigs](https://modrinth.com/mod/twigs) | 3.1.0 | Fully Added |
 | [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | 4.7.3196 | Fully Added | # Now contains 1.12.2 and 1.21.1 content, as well as tweaks to most of the mobs (Ur-Ghast and Carminite Ghasts didn't have a great ID to choose, not even the Ghast one funnily enough)
 | [The Undergarden](https://modrinth.com/mod/the-undergarden) | | Partial Support | # Some foliage, almost all entities, and portal.
