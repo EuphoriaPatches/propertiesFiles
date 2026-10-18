@@ -115,7 +115,7 @@ def main():
             print(f"#### `{name}`\n\n| Entry | Found in |\n| --- | --- |")
             for (_, identity), places in duplicates.items():
                 print(f"| `{identity}` | " + "<br>".join(
-                    f"`{key}` ([{path}:{number}]({BLOB}{path.replace(' ', '%20')}#L{number}))" for key, path, number in places) + " |")
+                    f"`{key}` ([{os.path.basename(path)}:{number}]({BLOB}{path.replace(' ', '%20')}#L{number}))" for key, path, number in places) + " |")
             print()
 
 
