@@ -1,0 +1,95 @@
+name: Check for Duplicate Entries
+
+# pull_request_target so that the workflow can comment on pull requests from forks.
+# This is safe because nothing from the pull request is ever executed: the script is taken from the base branch and
+# the pull request files are only read as text. Do not add steps that run code from the "pr" folder.
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: duplicate-check-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check-duplicates:
+    runs-on: ubuntu-latest
+    steps:
+      # Default checkout of pull_request_target = the base branch, which is where the trusted script comes from
+      - name: Checkout base branch (trusted script)
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/scripts
+          persist-credentials: false
+
+      # Prefer the merge result so duplicates with entries that were added to the base branch in the meantime are
+      # found too. Falls back to the pull request head if it has merge conflicts.
+      - name: Fetch pull request files
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          git init -q pr
+          cd pr
+          git remote add origin "https://github.com/$REPO.git"
+          if ! git fetch -q --depth=1 origin "refs/pull/$PR_NUMBER/merge"; then
+            echo "No merge ref (merge conflicts?), checking the pull request head instead"
+            git fetch -q --depth=1 origin "refs/pull/$PR_NUMBER/head"
+          fi
+          git checkout -q --detach FETCH_HEAD
+          echo "HEAD_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      # The script prints a markdown report, nothing if there are no duplicates
+      - name: Look for duplicates
+        env:
+          HEAD_REPO: ${{ github.repository }}
+        run: python3 -I .github/scripts/check_duplicates.py pr > "$RUNNER_TEMP/duplicates.md"
+
+      - name: Create, update or resolve the comment
+        uses: actions/github-script@v7
+        env:
+          REPORT_PATH: ${{ runner.temp }}/duplicates.md
+        with:
+          script: |
+            const fs = require('fs');
+            const marker = '<!-- euphoria-duplicate-check -->';
+            let report = fs.readFileSync(process.env.REPORT_PATH, 'utf8').trim();
+            const issue_number = context.payload.pull_request.number;
+            const { owner, repo } = context.repo;
+
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner, repo, issue_number, per_page: 100,
+            });
+            // Only trust comments written by this workflow, somebody could copy the marker
+            const existing = comments.find(c => c.user.login === 'github-actions[bot]' && c.body.includes(marker));
+
+            let body;
+            if (report) {
+              if (report.length > 55000) {
+                report = report.slice(0, 55000) + '\n\n_…report shortened, there are too many duplicates to list._';
+              }
+              body = `${marker}\n## ⚠️ Duplicate entries found\n\n` +
+                `The same entry is listed under more than one ID, Iris warns about this in the log when its debug options are enabled. ` +
+                `Only one of the IDs will actually be used, so please keep each entry in a single place.\n\n` +
+                `${report}\n\n` +
+                `_This comment updates automatically when you push new commits._`;
+            } else if (existing) {
+              body = `${marker}\nAll duplicates have been removed!`;
+            } else {
+              console.log('No duplicates and no earlier comment, nothing to do.');
+              return;
+            }
+
+            if (existing) {
+              if (existing.body === body) {
+                console.log('Comment is already up to date.');
+                return;
+              }
+              await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number, body });
+            }
