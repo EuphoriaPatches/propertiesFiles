@@ -100,6 +100,31 @@ jobs:
                   return s[1:-1]
               return s
 
+          # An entry from a mod (modname:block, modname:block:meta, modname:block[nbt]) but not a vanilla one
+          # (minecraft:block, block:property=value, and for old versions block:meta)
+          MODDED_ENTRY = re.compile(r'^(?!minecraft:)[^\s:=\[\]"]+:(?!\d+(?:,\d+)*(?:[:\[]|$))[^\s:=\[\]]+(?=[:\[]|$)')
+
+          def dedupe_parts(parts, seen_entries):
+              """Drop repeated mod entries and tag references, the first one stays"""
+              kept = []
+              for part in parts:
+                  # Skip backslashes
+                  if part == '\\':
+                      continue
+
+                  # If this is a mod entry (contains colon) or a tag reference
+                  if (':' in part or part.startswith('tags_')) and not part.startswith('#'):
+                      # Use the full part (including blockstate) as the key to check for duplicates
+                      unique_key = part.rstrip('\\').strip()
+
+                      if unique_key not in seen_entries:
+                          seen_entries.add(unique_key)
+                          kept.append(part)
+                  else:
+                      # Not a mod entry, keep as-is
+                      kept.append(part)
+              return kept
+
           def remove_duplicates_in_section(section_lines):
               """Remove duplicate mod entries within a section, preserving different blockstates"""
               if not section_lines:
@@ -107,10 +132,22 @@ jobs:
 
               # Get the section header (first line)
               header_line = section_lines[0].rstrip()
+              seen_entries = set()
+
+              # The first line stays exactly as it is (1:1 with Complementary), unless it starts with an entry from a
+              # mod, like block.21000 = ForgeMultipart:block[parts.id=pr_fixture,...] ... - then repeats are removed too
+              key, equals, value = header_line.partition('=')
+              header_parts = tokenize(value)
+              if equals and header_parts and MODDED_ENTRY.match(header_parts[0]):
+                  kept = dedupe_parts(header_parts, seen_entries)
+                  if len(kept) < len([p for p in header_parts if p != '\\']):
+                      has_backslash = header_line.endswith('\\')
+                      header_line = key + equals + ' ' + ' '.join(kept)
+                      if has_backslash:
+                          header_line += ' \\'
 
               # Extract all lines
               result = [header_line]
-              seen_entries = set()
 
               for i, line in enumerate(section_lines[1:], 1):
                   line_stripped = line.rstrip()
@@ -124,25 +161,7 @@ jobs:
                   # skipping the whole line when 'tags_' appears anywhere in it) so a
                   # line mixing a tag with real mod entries is deduped correctly instead
                   # of being passed through untouched.
-                  parts = tokenize(line_stripped)
-                  filtered_parts = []
-
-                  for part in parts:
-                      # Skip backslashes
-                      if part == '\\':
-                          continue
-
-                      # If this is a mod entry (contains colon) or a tag reference
-                      if (':' in part or part.startswith('tags_')) and not part.startswith('#'):
-                          # Use the full part (including blockstate) as the key to check for duplicates
-                          unique_key = part.rstrip('\\').strip()
-
-                          if unique_key not in seen_entries:
-                              seen_entries.add(unique_key)
-                              filtered_parts.append(part)
-                      else:
-                          # Not a mod entry, keep as-is
-                          filtered_parts.append(part)
+                  filtered_parts = dedupe_parts(tokenize(line_stripped), seen_entries)
 
                   # Reconstruct the line if we have filtered parts
                   if filtered_parts:
@@ -187,8 +206,8 @@ jobs:
                       section_start = i
                       section_end = i
 
-                      # Find the end of this section
-                      for j in range(i + 1, len(lines)):
+                      # Find the end of this section (an entry on a single line has no more lines)
+                      for j in range(i + 1, len(lines) if line.rstrip().endswith('\\') else i + 1):
                           current_section.append(lines[j])
                           # Check if this line ends the section (no backslash at end or empty line)
                           stripped = lines[j].strip()

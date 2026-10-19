@@ -3,6 +3,7 @@
 Prints a markdown report of entries that are listed under more than one ID (nothing if there are none).
 Same rule as Iris with debug options enabled (IdMap.java / DuplicateTracker, 26.2 branch). Angelica (1.7.10) has no
 check, so the old "name:meta" block files use: same block + meta + blockstate + NBT filters.
+An entry repeated inside one entry (block.X = a a) is not reported: the "Process Properties Files" workflow removes those.
 Branches of the same #if / #elif / #else chain are never active together, so entries in different branches don't clash.
 Only reads the files, never executes anything from them.
 
@@ -74,9 +75,9 @@ def block_ids(token):
         block, rest = f"{parts[0]}:{rest[0]}", rest[1:]
     else:
         block = "minecraft:" + parts[0]
-    block += "".join(":" + p for p in sorted(p for p in rest if "=" in p)) + bracket + nbt
+    states = "".join(":" + p for p in sorted(p for p in rest if "=" in p)) + bracket + nbt
     metas = sorted({m for p in rest if META.fullmatch(p) for m in p.split(",")}, key=int)
-    return [f"{block}:{m}" for m in metas] or [block]
+    return [f"{block}:{m}{states}" for m in metas] or [block + states]
 
 
 def identities(kind, token):
@@ -99,8 +100,10 @@ def find_duplicates(root, paths):
                 seen.setdefault((kind, identity), []).append((key, path, number, conditions))
     duplicates = {}
     for identity, places in seen.items():
+        # a[1:3] == b[1:3]: repeated inside one entry, the "Process Properties Files" workflow removes those
         hits = {k for (i, a), (j, b) in combinations(enumerate(places), 2)
-                if not any(b[3].get(chain, branch) != branch for chain, branch in a[3].items()) for k in (i, j)}
+                if a[1:3] != b[1:3] and not any(b[3].get(chain, branch) != branch for chain, branch in a[3].items())
+                for k in (i, j)}
         if hits:
             duplicates[identity] = [places[k][:3] for k in sorted(hits)]
     return duplicates

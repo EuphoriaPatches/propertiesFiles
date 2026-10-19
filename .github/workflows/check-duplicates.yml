@@ -31,17 +31,29 @@ jobs:
       - name: Fetch pull request files
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
           REPO: ${{ github.repository }}
         run: |
           git init -q pr
           cd pr
           git remote add origin "https://github.com/$REPO.git"
-          if ! git fetch -q --depth=1 origin "refs/pull/$PR_NUMBER/merge"; then
-            echo "No merge ref (merge conflicts?), checking the pull request head instead"
-            git fetch -q --depth=1 origin "refs/pull/$PR_NUMBER/head"
+          git fetch -q --depth=1 origin "refs/pull/$PR_NUMBER/head"
+          PR_HEAD=$(git rev-parse FETCH_HEAD)
+          TARGET=$PR_HEAD
+          for attempt in 1 2 3 4 5 6 7 8; do
+            if git fetch -q --depth=2 origin "refs/pull/$PR_NUMBER/merge" \
+               && [ "$(git rev-parse FETCH_HEAD^1)" = "$BASE_SHA" ] && [ "$(git rev-parse FETCH_HEAD^2)" = "$PR_HEAD" ]; then
+              TARGET=$(git rev-parse FETCH_HEAD)
+              break
+            fi
+            echo "Merge ref is missing or outdated, waiting (attempt $attempt)..."
+            sleep 5
+          done
+          if [ "$TARGET" = "$PR_HEAD" ]; then
+            echo "::warning::No up to date merge ref (merge conflicts?), checking the pull request head instead"
           fi
-          git checkout -q --detach FETCH_HEAD
-          echo "HEAD_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          git checkout -q --detach "$TARGET"
+          echo "HEAD_SHA=$TARGET" >> "$GITHUB_ENV"
 
       # The script prints a markdown report, nothing if there are no duplicates
       - name: Look for duplicates
