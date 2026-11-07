@@ -13,8 +13,8 @@ def strip_quotes(s):
     return s
 
 def natural_key(s):
-    """Sort key that orders numbers by value: kryp_blockz_2 comes before kryp_blockz_10"""
-    return [int(part) if i % 2 else part for i, part in enumerate(re.split(r'(\d+)', s))]
+    """Like plain string sorting, but a run of digits is compared by value: kryp_blockz_2 comes before kryp_blockz_10"""
+    return [(ord('0'), int(part)) if part.isdecimal() else (ord(part), 0) for part in re.findall(r'[0-9]+|[^0-9]', s)]
 
 def entry_key(token):
     return natural_key(strip_quotes(token))
