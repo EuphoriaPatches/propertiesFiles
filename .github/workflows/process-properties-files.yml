@@ -4,6 +4,10 @@ on:
   push:
     paths:
       - '**/*.properties'
+      - '.github/workflows/process-properties-files.yml'
+      - '.github/scripts/remove_duplicates.py'
+      - '.github/scripts/sort_properties.py'
+      - '.github/scripts/count_blocks.py'
 
 jobs:
   process-properties:
@@ -27,10 +31,22 @@ jobs:
           echo "Fetching latest changes from repository..."
           git fetch origin
 
-      - name: Get and process modified files
+      - name: Find files to process
         run: |
           # Use GITHUB_SHA to ensure we compare the correct commits
-          MODIFIED_FILES=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA | grep -E '\.properties$' || true)
+          CHANGED=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA)
+
+          # If the workflow or one of its scripts changed, run over every properties file
+          if echo "$CHANGED" | grep -qE '^\.github/(workflows/process-properties-files\.yml|scripts/(remove_duplicates|sort_properties|count_blocks)\.py)$'; then
+            echo "Workflow or scripts changed, processing all properties files"
+            git ls-files '*.properties' > "$RUNNER_TEMP/files_to_process.txt"
+          else
+            echo "$CHANGED" | grep -E '\.properties$' > "$RUNNER_TEMP/files_to_process.txt" || true
+          fi
+
+      - name: Get and process modified files
+        run: |
+          MODIFIED_FILES=$(cat "$RUNNER_TEMP/files_to_process.txt")
           echo "Modified files: $MODIFIED_FILES"
 
           # Only proceed if there are modified files
@@ -85,7 +101,7 @@ jobs:
       - name: Remove duplicates
         run: |
           # Process each modified properties file to remove duplicates
-          MODIFIED_FILES=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA | grep -E '\.properties$' || true)
+          MODIFIED_FILES=$(cat "$RUNNER_TEMP/files_to_process.txt")
           if [ -n "$MODIFIED_FILES" ]; then
             echo "Running duplicate remover on modified properties files..."
             for file in $MODIFIED_FILES; do
@@ -99,7 +115,7 @@ jobs:
       - name: Sort properties files
         run: |
           # Process each modified properties file
-          MODIFIED_FILES=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA | grep -E '\.properties$' || true)
+          MODIFIED_FILES=$(cat "$RUNNER_TEMP/files_to_process.txt")
           if [ -n "$MODIFIED_FILES" ]; then
             echo "Running the sort script on modified properties files..."
             for file in $MODIFIED_FILES; do

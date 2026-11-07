@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'addedMods.md'
+      - '.github/workflows/sort-addedMod-table-and-timestamp.yml'
+      - '.github/scripts/sort_mods_table.py'
 
 jobs:
   sort-and-timestamp:
