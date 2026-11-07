@@ -73,6 +73,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Better End Ore](https://modrinth.com/mod/better-end-ore) | 1.0.3 | Fully Added |
 | [Better Tridents](https://modrinth.com/mod/better-tridents) | 8.0.1 | Fully Added | # This mod only adds a single item
 | [BetterArcheology](https://www.curseforge.com/minecraft/mc-mods/better-archeology) | 1.2.1 | Blocks Only |
+| [BetterBlockZ](https://modrinth.com/mod/betterblockz) | 0.2.10 | Partial Support | # Cyberlights, copper, diamond, gold, iron, kryp, stone, tinted glass, zeon
 | [BetterEnd](https://modrinth.com/mod/betterend) | 4.0.11 | Fully Added | # Added miscellaneous items
 | [BetterNether](https://modrinth.com/mod/betternether) | 9.0.10 | Fully Added |
 | [BiblioCraft](https://www.curseforge.com/minecraft/mc-mods/bibliocraft) | 2.4.6 | Partial Support | # Lots of block entities in this mod
