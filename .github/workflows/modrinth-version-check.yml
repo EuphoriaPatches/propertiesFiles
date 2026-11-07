@@ -27,51 +27,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Create helper script to wait for other workflows
-        run: |
-          # The other workflows commit to main (timestamps/sorting/README). This job edits
-          # info.json and merges main into release, so it must not overlap with them.
-          cat > "$RUNNER_TEMP/wait_for_workflows.sh" << 'EOF'
-          #!/bin/bash
-          WORKFLOWS=("process-properties-files.yml" "sort-addedMod-table-and-timestamp.yml")
-          STATUSES=("queued" "in_progress" "waiting" "pending")
-          TIMEOUT_SECONDS=1800
-          POLL_SECONDS=15
-
-          # Give runs triggered by the same push a moment to show up as queued
-          sleep 15
-
-          START=$(date +%s)
-          while true; do
-            BUSY=""
-            for wf in "${WORKFLOWS[@]}"; do
-              for status in "${STATUSES[@]}"; do
-                COUNT=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow "$wf" --status "$status" --json databaseId --jq 'length' || echo 0)
-                if [ "${COUNT:-0}" -gt 0 ]; then
-                  BUSY="$BUSY $wf($status:$COUNT)"
-                fi
-              done
-            done
-
-            if [ -z "$BUSY" ]; then
-              echo "No other workflows are running, continuing."
-              exit 0
-            fi
-
-            if [ $(( $(date +%s) - START )) -ge $TIMEOUT_SECONDS ]; then
-              echo "ERROR: Timed out after ${TIMEOUT_SECONDS}s waiting for:$BUSY"
-              exit 1
-            fi
-
-            echo "Waiting for:$BUSY"
-            sleep $POLL_SECONDS
-          done
-          EOF
-          chmod +x "$RUNNER_TEMP/wait_for_workflows.sh"
-
       - name: Wait for other workflows to finish
         run: |
-          "$RUNNER_TEMP/wait_for_workflows.sh"
+          bash .github/scripts/wait_for_workflows.sh
 
       - name: Pull changes pushed by other workflows
         run: |
@@ -85,147 +43,11 @@ jobs:
       
       - name: Check Modrinth version and merge branches
         run: |
-          # Create version check and branch merge script
-          cat > check_version_and_merge.py << 'EOF'
-          import json
-          import os
-          import requests
-          import sys
-          import subprocess
-          import time
-
-          from packaging import version
-
-          # Constants
-          PROJECT_ID = '4H6sumDB'  # Modrinth project ID 
-          INFO_PATH = '.github/data/info.json'
-          MAIN_BRANCH = 'main'
-          RELEASE_BRANCH = 'release'
-
-          # Retry configuration
-          MAX_RETRIES = 10
-          RETRY_DELAYS = [60, 120, 300, 600, 900, 1200, 1500, 1800, 2100, 2400]  # in seconds
-
-          def extract_main_version(version_string):
-              """Extract main version before the first dash"""
-              return version_string.split('-')[0]
-
-          def fetch_latest_version_with_retry():
-              """Fetch the latest version from Modrinth API with retry mechanism"""
-              last_exception = None
-              
-              for attempt in range(MAX_RETRIES):
-                  try:
-                      print(f"Attempt {attempt + 1}/{MAX_RETRIES} to fetch Modrinth version information")
-                      url = f"https://api.modrinth.com/v2/project/{PROJECT_ID}/version"
-                      response = requests.get(url, timeout=30)
-                      response.raise_for_status()
-                      versions = response.json()
-                      latest = versions[0]
-                      return extract_main_version(latest['version_number'])
-                  except Exception as e:
-                      last_exception = e
-                      delay = RETRY_DELAYS[attempt]
-                      print(f"Error accessing Modrinth API: {e}")
-                      print(f"Retrying in {delay} seconds...")
-                      time.sleep(delay)
-              
-              # If we get here, all retries failed
-              print(f"CRITICAL ERROR: Modrinth API is down or unreachable after {MAX_RETRIES} attempts")
-              print(f"Last error: {last_exception}")
-              print("Exiting with success status to avoid failing the workflow")
-              sys.exit(0)  # Exit with success to avoid failing the whole workflow
-
-          def read_stored_info():
-              """Read stored version info, or return empty dict if file doesn't exist"""
-              if not os.path.exists(INFO_PATH):
-                  return {"version": "0.0.0", "versionsToSkip": []}
-              
-              with open(INFO_PATH, 'r') as f:
-                  return json.load(f)
-
-          def save_info(info):
-              """Save version info to file"""
-              # Make sure directory exists
-              os.makedirs(os.path.dirname(INFO_PATH), exist_ok=True)
-              
-              with open(INFO_PATH, 'w') as f:
-                  json.dump(info, f, indent=2)
-              
-              print(f"File saved to {os.path.abspath(INFO_PATH)}")
-              # Debug: List files in directory
-              print(f"Files in directory: {os.listdir(os.path.dirname(INFO_PATH))}")
-
-          def verify_version_needs_merge():
-              """Check if version has increased and needs merging"""
-              # Fetch latest version from Modrinth with retry
-              print("Fetching latest version from Modrinth...")
-              latest_version = fetch_latest_version_with_retry()
-              print(f"Latest version: {latest_version}")
-              
-              # Read stored version info
-              print("Reading stored version info...")
-              stored_info = read_stored_info()
-              stored_version = stored_info.get("version", "0.0.0")
-              versions_to_skip = stored_info.get("versionsToSkip", [])
-              print(f"Stored version: {stored_version}")
-              print(f"Versions to skip: {versions_to_skip}")
-              
-              # Create info.json if it doesn't exist
-              first_run = not os.path.exists(INFO_PATH)
-              if first_run:
-                  print(f"First run detected. Creating new info.json at {INFO_PATH}")
-                  if "versionsToSkip" not in stored_info:
-                      stored_info["versionsToSkip"] = []
-              
-              # Check if the latest version should be skipped
-              if latest_version in versions_to_skip:
-                  print(f"Version {latest_version} is in the skip list. Keeping current version and skipping merge.")
-                  # Don't update the stored version if this version should be skipped
-                  return False, latest_version
-              
-              # Update version info (always save the latest version if not skipped)
-              stored_info["version"] = latest_version
-              save_info(stored_info)
-              print(f"Updated version info saved to {INFO_PATH}")
-              
-              # Check if version has increased
-              if first_run:
-                  print("First run detected. Created info.json but skipping merge.")
-                  return False, latest_version
-              
-              if version.parse(latest_version) > version.parse(stored_version):
-                  print(f"Version increased from {stored_version} to {latest_version}")
-                  return True, latest_version
-              else:
-                  print("No version increase detected, skipping merge")
-                  return False, latest_version
-
-          def main():
-              # Check if version needs merge and return the latest version
-              needs_merge, latest_version = verify_version_needs_merge()
-              
-              if not needs_merge:
-                  # Write result to a file for the shell script to read
-                  with open(".version_change_needed", "w") as f:
-                      f.write("false")
-                  return 0
-                  
-              print("Version increased. Merge is needed.")
-              # Write result to a file for the shell script to read
-              with open(".version_change_needed", "w") as f:
-                  f.write("true")
-              return 0  # Always return success
-
-          if __name__ == "__main__":
-              sys.exit(main())
-          EOF
-          
           # Install required packages
           pip install requests packaging
           
           # Run the script
-          python check_version_and_merge.py
+          python3 .github/scripts/check_version_and_merge.py
           
           # Read the result file
           if [ -f ".version_change_needed" ]; then
@@ -293,7 +115,7 @@ jobs:
           git status
           
           # Make sure no other workflow started committing while we were checking versions
-          "$RUNNER_TEMP/wait_for_workflows.sh"
+          bash .github/scripts/wait_for_workflows.sh
           
           # Fetch the latest changes to ensure we have everything
           echo "Fetching the latest changes from all branches..."
