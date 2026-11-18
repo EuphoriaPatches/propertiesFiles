@@ -320,9 +320,9 @@ block.10596-10729.properties:
 - Cave Vines Berries True
 - Redstone Lamp Unlit
 - Redstone Lamp Lit
-- Powered Compartor/Repeater
-- Unpowered Compartor/Repeater
-- Unpowered Compartor and in subtract mode
+- Powered Comparator/Repeater
+- Unpowered Comparator/Repeater
+- Unpowered Comparator and in subtract mode
 - Shroomlight
 - Shroomlight Non-Full Blocks (Modded Only)
 - Campfire Lit
@@ -337,6 +337,8 @@ block.10596-10729.properties:
 - Non-Full Bone Blocks (Modded Only)
 - Barrel \ Bee Blocks
 - Barrel Non-Full Blocks \ Bee Non-Full Blocks
+- Honeycomb Block
+- Honeycomb Non-Full Blocks
 - Ochre Froglight
 - Verdant Froglight
 - Pearlescent Froglight
@@ -362,7 +364,7 @@ block.10733-10843.properties:
 - Flower Pot - Subsurface Scattering
 - Flower Pot - Subsurface Scattering, Flowers - Euphoria Patches Emissive Flowers
 - Jigsaw Block
-- Pitcther Crop
+- Pitcher Crop
 - Chain - Horizontal
 - Chain - Vertical
 - Soul Sand
@@ -414,7 +416,7 @@ block.10733-10843.properties:
 block.10844-10941.properties:
 - Lime Wool - Euphoria Patches Green Screen
 - Lime Carpet - Euphoria Patches Green Screen
-- Blue Concrete - Euphoria Patches Euphoria Patches Blue Screen
+- Blue Concrete - Euphoria Patches Blue Screen
 - Crafter
 - Copper Bulb - Normal - Lit
 - Copper Bulb - Exposed - Lit
@@ -476,7 +478,7 @@ block.10944-21044.properties:
 - Wet Sponge
 - Firefly Bush
 - Open Eye Blossom
-- Pottet Open Eye Blossom
+- Potted Open Eye Blossom
 - Copper Torch
 - Copper Lantern
 - Sulfur

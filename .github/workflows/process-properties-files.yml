@@ -1,0 +1,175 @@
+name: Process Properties Files
+
+on:
+  push:
+    paths:
+      - '**/*.properties'
+      - '.github/workflows/process-properties-files.yml'
+      - '.github/scripts/remove_duplicates.py'
+      - '.github/scripts/sort_properties.py'
+      - '.github/scripts/count_blocks.py'
+
+jobs:
+  process-properties:
+    # Only run in the main repository
+    if: github.repository == 'EuphoriaPatches/propertiesFiles'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch latest changes
+        if: github.event_name == 'push'
+        run: |
+          # Fetch the latest changes from the remote repository
+          echo "Fetching latest changes from repository..."
+          git fetch origin
+
+      - name: Find files to process
+        run: |
+          # Use GITHUB_SHA to ensure we compare the correct commits
+          CHANGED=$(git diff --name-only $GITHUB_SHA^ $GITHUB_SHA)
+
+          # If the workflow or one of its scripts changed, run over every properties file
+          if echo "$CHANGED" | grep -qE '^\.github/(workflows/process-properties-files\.yml|scripts/(remove_duplicates|sort_properties|count_blocks)\.py)$'; then
+            echo "Workflow or scripts changed, processing all properties files"
+            git ls-files '*.properties' > "$RUNNER_TEMP/files_to_process.txt"
+          else
+            echo "$CHANGED" | grep -E '\.properties$' > "$RUNNER_TEMP/files_to_process.txt" || true
+          fi
+
+      - name: Get and process modified files
+        run: |
+          MODIFIED_FILES=$(cat "$RUNNER_TEMP/files_to_process.txt")
+          echo "Modified files: $MODIFIED_FILES"
+
+          # Only proceed if there are modified files
+          if [ -n "$MODIFIED_FILES" ]; then
+            DATE=$(date '+%B %d, %Y, %H:%M UTC')
+            YEAR=$(date '+%Y')
+            echo "Updating timestamps to: $DATE"
+
+            # Process each file
+            for file in $MODIFIED_FILES; do
+              if [ -f "$file" ]; then
+                echo "Processing file: $file"
+
+                # Remove trailing whitespace
+                sed -i 's/[[:space:]]*$//' "$file"
+                echo "  - Removed trailing whitespaces"
+
+                # Check if header exists
+                HAS_TIMESTAMP=$(grep -q "^### Last updated:" "$file" && echo "yes" || echo "no")
+                HAS_COPYRIGHT=$(grep -q "^# Copyright" "$file" && echo "yes" || echo "no")
+
+                if [ "$HAS_TIMESTAMP" = "yes" ] && [ "$HAS_COPYRIGHT" = "yes" ]; then
+                  # Update existing timestamp line
+                  sed -i "s/^### Last updated:.*$/### Last updated: $DATE/" "$file"
+                  # Update copyright year
+                  sed -i "s/^# Copyright (c) [0-9]\{4\}/# Copyright (c) $YEAR/" "$file"
+                  echo "  - Updated existing timestamp and copyright"
+                elif [ "$HAS_TIMESTAMP" = "yes" ] && [ "$HAS_COPYRIGHT" = "no" ]; then
+                  # Update timestamp and add copyright after it
+                  sed -i "s/^### Last updated:.*$/### Last updated: $DATE/" "$file"
+                  sed -i "/^### Last updated:/a # Copyright (c) $YEAR SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT" "$file"
+                  echo "  - Updated timestamp and added copyright"
+                else
+                  # Add both lines at the beginning
+                  sed -i "1i### Last updated: $DATE\n# Copyright (c) $YEAR SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT" "$file"
+                  echo "  - Added new timestamp and copyright"
+                fi
+              else
+                echo "File not found: $file (may have been deleted)"
+              fi
+            done
+            echo "Timestamp updates and whitespace removal complete"
+          else
+            echo "No .properties files were modified"
+          fi
+
+      - name: Set up Python for sorting script
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Remove duplicates
+        run: |
+          # Process each modified properties file to remove duplicates
+          MODIFIED_FILES=$(cat "$RUNNER_TEMP/files_to_process.txt")
+          if [ -n "$MODIFIED_FILES" ]; then
+            echo "Running duplicate remover on modified properties files..."
+            for file in $MODIFIED_FILES; do
+              if [ -f "$file" ]; then
+                echo "Removing duplicates in file: $file"
+                python3 .github/scripts/remove_duplicates.py "$file"
+              fi
+            done
+          fi
+
+      - name: Sort properties files
+        run: |
+          # Process each modified properties file
+          MODIFIED_FILES=$(cat "$RUNNER_TEMP/files_to_process.txt")
+          if [ -n "$MODIFIED_FILES" ]; then
+            echo "Running the sort script on modified properties files..."
+            for file in $MODIFIED_FILES; do
+              if [ -f "$file" ]; then
+                echo "Sorting file: $file"
+                python3 .github/scripts/sort_properties.py "$file"
+              fi
+            done
+          fi
+
+      - name: Count modded blocks and update README
+        run: |
+          echo "Running block counting script..."
+          python3 .github/scripts/count_blocks.py
+
+      - name: Configure Git
+        if: github.event_name == 'push'
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+
+      - name: Commit and push with retry
+        if: github.event_name == 'push'
+        run: |
+          # Add all properties files and README
+          git add -- '*.properties' README.md
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          echo "Committing timestamp, duplicate removal, sorting changes, and block count update..."
+          git commit -m "Update timestamps, remove duplicates, sort mod entries, and update block count [skip ci]"
+
+          # Try pushing with retries for potential conflicts
+          MAX_RETRIES=3
+          RETRY_COUNT=0
+
+          until git push origin ${GITHUB_REF#refs/heads/} || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            echo "Push failed, retrying (Attempt $RETRY_COUNT of $MAX_RETRIES)..."
+
+            # Stash any unstaged changes before pulling
+            git stash --include-untracked
+            git pull --rebase origin ${GITHUB_REF#refs/heads/}
+            # Pop stashed changes back if there were any
+            git stash list | grep -q "stash@{0}" && git stash pop || true
+          done
+
+          if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then
+            echo "Failed to push after $MAX_RETRIES attempts, using force push"
+            git push --force origin ${GITHUB_REF#refs/heads/}
+          else
+            echo "Timestamp updates, duplicate removal, mod sorting, and block count update pushed successfully"
+          fi
