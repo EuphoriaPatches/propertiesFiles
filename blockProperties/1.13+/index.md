@@ -337,6 +337,8 @@ block.10596-10729.properties:
 - Non-Full Bone Blocks (Modded Only)
 - Barrel \ Bee Blocks
 - Barrel Non-Full Blocks \ Bee Non-Full Blocks
+- Honeycomb Block
+- Honeycomb Non-Full Blocks
 - Ochre Froglight
 - Verdant Froglight
 - Pearlescent Froglight

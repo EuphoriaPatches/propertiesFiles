@@ -1,4 +1,4 @@
-### Last updated: October 21, 2026, 07:12 UTC
+### Last updated: November 07, 2026, 06:36 UTC
 [# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
@@ -73,6 +73,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Better End Ore](https://modrinth.com/mod/better-end-ore) | 1.0.3 | Fully Added |
 | [Better Tridents](https://modrinth.com/mod/better-tridents) | 8.0.1 | Fully Added | # This mod only adds a single item
 | [BetterArcheology](https://www.curseforge.com/minecraft/mc-mods/better-archeology) | 1.2.1 | Blocks Only |
+| [BetterBlockZ](https://modrinth.com/mod/betterblockz) | 0.2.10 | Partial Support | # Cyberlights, copper, diamond, gold, iron, kryp, stone, tinted glass, zeon
 | [BetterEnd](https://modrinth.com/mod/betterend) | 4.0.11 | Fully Added | # Added miscellaneous items
 | [BetterNether](https://modrinth.com/mod/betternether) | 9.0.10 | Fully Added |
 | [BiblioCraft](https://www.curseforge.com/minecraft/mc-mods/bibliocraft) | 2.4.6 | Partial Support | # Lots of block entities in this mod
@@ -314,6 +315,7 @@ Here we can keep track of what mods have been added and what version a contribut
 | [Kaleidoscope Tavern](https://modrinth.com/mod/kaleidoscopetavern) | 1.1.2 | Fully Added |
 | [Kaleidoscope：Dimensions wine](https://modrinth.com/mod/kaleidoscopedimensions-wine) | 1.4.1 | Fully Added |
 | [L_Ender 's Cataclysm](https://www.curseforge.com/minecraft/mc-mods/lendercataclysm) | 3.31 | Fully Added | # Scylla may need a second pass
+| [Legendary Monsters](https://www.curseforge.com/minecraft/mc-mods/legendary-monsters) | | Miniscule #Just Annihilation Lantern
 | [Legendary Survival Overhaul](https://www.curseforge.com/minecraft/mc-mods/legendary-survival-overhaul) | 2.3.11.3 | Foliage only |
 | [LevelZ](https://modrinth.com/mod/levelz) | 1.4.13 | Fully Added |
 | [Little Tiles](https://modrinth.com/mod/littletiles) | 1.6.0-pre159 | Fully Added | # Has issues with ACL
