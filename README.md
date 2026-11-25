@@ -223,3 +223,24 @@ A: You can download and test as follows:
 7. Reload shaders in-game with F3+R or by re-selecting the shader pack
 
 > **Note**: [Supplemental Patches](https://modrinth.com/mod/supplemental-patches) is a third-party mod that extends Euphoria Patches with even more modded functionality.
+
+## License
+
+You may use the files in this repository under **either** of these options:
+
+1. **MIT License**: See [LICENSE](LICENSE). Include the copyright notice and license text.
+2. **Credit only**: Instead of including the MIT text, you may use, modify and distribute the content if you visibly credit SpacEagle17 directly above each reused section (or at the top of the file if you reuse a whole file), for example:
+
+   ```properties
+   # Credit: SpacEagle17 - https://github.com/EuphoriaPatches/propertiesFiles
+   ```
+
+   Also mentioning the Euphoria Patches community is optional, but a nice way to say thanks:
+
+   ```properties
+   # Credit: SpacEagle17 and the Euphoria Patches community - https://github.com/EuphoriaPatches/propertiesFiles
+   ```
+
+Under both options, the content is provided "as is", without warranty of any kind, and the authors are not liable for any claim or damages arising from its use.
+
+By contributing, you agree that your contribution may be used under both options.

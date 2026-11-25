@@ -77,17 +77,21 @@ jobs:
                 elif [ "$HAS_TIMESTAMP" = "yes" ] && [ "$HAS_COPYRIGHT" = "no" ]; then
                   # Update timestamp and add copyright after it
                   sed -i "s/^### Last updated:.*$/### Last updated: $DATE/" "$file"
-                  sed -i "/^### Last updated:/a # Copyright (c) $YEAR SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT" "$file"
+                  sed -i "/^### Last updated:/a # Copyright (c) $YEAR SpacEagle17 – MIT License (https://opensource.org/licenses/MIT) or credit-only use, see https://github.com/EuphoriaPatches/propertiesFiles#license" "$file"
                   echo "  - Updated timestamp and added copyright"
                 else
                   # Add both lines at the beginning
-                  sed -i "1i### Last updated: $DATE\n# Copyright (c) $YEAR SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT" "$file"
+                  sed -i "1i### Last updated: $DATE\n# Copyright (c) $YEAR SpacEagle17 – MIT License (https://opensource.org/licenses/MIT) or credit-only use, see https://github.com/EuphoriaPatches/propertiesFiles#license" "$file"
                   echo "  - Added new timestamp and copyright"
                 fi
               else
                 echo "File not found: $file (may have been deleted)"
               fi
             done
+
+            # Update the copyright year in LICENSE
+            sed -i "s/^Copyright (c) [0-9]\{4\}/Copyright (c) $YEAR/" LICENSE
+
             echo "Timestamp updates and whitespace removal complete"
           else
             echo "No .properties files were modified"
@@ -140,8 +144,8 @@ jobs:
       - name: Commit and push with retry
         if: github.event_name == 'push'
         run: |
-          # Add all properties files and README
-          git add -- '*.properties' README.md
+          # Add all properties files, README and LICENSE
+          git add -- '*.properties' README.md LICENSE
 
           # Check if there are changes to commit
           if git diff --staged --quiet; then

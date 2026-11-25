@@ -45,6 +45,9 @@ jobs:
             sed -i "1i### Last updated: $DATE" "addedMods.md"
             echo "Added new timestamp"
           fi
+          # Update the copyright year in the hidden header line
+          YEAR=$(date '+%Y')
+          sed -i "s/^\[# Copyright (c) [0-9]\{4\}/[# Copyright (c) $YEAR/" "addedMods.md"
 
       - name: Configure Git
         if: github.event_name == 'push'

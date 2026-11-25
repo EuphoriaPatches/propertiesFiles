@@ -1,5 +1,5 @@
 ### Last updated: November 23, 2026, 05:57 UTC
-[# Copyright (c) 2026 SpacEagle17 – Licensed under the MIT License: https://opensource.org/licenses/MIT]: #
+[# Copyright (c) 2026 SpacEagle17 – MIT License (https://opensource.org/licenses/MIT) or credit-only use, see https://github.com/EuphoriaPatches/propertiesFiles#license]: #
 # CURRENTLY ADDED MODS
 ### WHERE TO CONTRIBUTE:
 If you want to contribute to the Euphoria Patches modded support library, please only edit the files from GitHub. https://euphoriapatches.com/properties
